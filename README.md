@@ -2,4 +2,4 @@
 ### Samay Chandna
 
 #### Useful Links
-* [microbit API](https://microbit-micropython.readthedocs.io/en/v2-docs/)
+* [micro:bit API for TS](https://www.augmentedmind.de/2020/04/12/an-introduction-to-the-microbit-for-software-developers/)
