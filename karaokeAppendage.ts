@@ -8,7 +8,7 @@ class karaokeAppendage extends appendageParent {
     constructor () {
         super(0);
     }
-    writeAppendage() {
+    override writeAppendage() {
         super.writeAppendage()
         while (true) {
             pins.analogWritePin(AnalogPin.P0, (this.appendageID + 1) * 200);
