@@ -15,7 +15,7 @@ class musicBlockAppendage extends appendageParent {
         }
         this.noteOrChordMode = true;
     }
-    writeAppendage() {
+    override writeAppendage() {
         super.writeAppendage()
         while (true) {
             pins.analogWritePin(AnalogPin.P0, (this.appendageID + 1) * 200);
