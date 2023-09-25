@@ -9,7 +9,7 @@ class displayAppendage extends appendageParent {
     writeAppendage() {
         super.writeAppendage()
         while (true) {
-            pins.analogWritePin(AnalogPin.P0, (this.appendageID + 1) * 200)
+            pins.analogWritePin(AnalogPin.P0, (this.appendageID + 1) * 200);
             // karaoke code
         }
     }

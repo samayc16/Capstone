@@ -27,24 +27,24 @@
     ;
 ; Function main.ts(1,1): <main>
     ;
-    .object _main___P146448 "main.ts(1,1): <main>"
-_main___P146448_pre:
+    .object _main___P151308 "main.ts(1,1): <main>"
+_main___P151308_pre:
     .section code
     .balign 4
-_main___P146448_Lit:
+_main___P151308_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word _main___P146448_args@fn
-_main___P146448_args:
+    .word _main___P151308_args@fn
+_main___P151308_args:
     .section code
-_main___P146448:
-_main___P146448_nochk:
+_main___P151308:
+_main___P151308_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-_main___P146448_locals:
+_main___P151308_locals:
     ldr r0, _ldlit_2 ; 65537      
     movs r1, #180
     ldr r7, [r6, #0]
@@ -286,11 +286,11 @@ _proccall152:
     ldr r7, [r6, #0]
     str r0, [r7, #48]
     @stackempty locals
-.ret.146448:
+.ret.151308:
     @stackempty locals
     movs r0, #0
 .final_2_1:
-_main___P146448_end:
+_main___P151308_end:
     pop {pc}
     @stackempty func
     @stackempty args
