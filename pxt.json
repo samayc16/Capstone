@@ -1,0 +1,18 @@
+{
+    "name": "my-project",
+    "version": "0.0.0",
+    "files": [
+        "main.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "jacdac": "github:microsoft/pxt-jacdac#v1.9.17",
+        "jacdac-led": "github:microsoft/pxt-jacdac/button#v1.9.17"
+    },
+    "testDependencies": {}
+}
