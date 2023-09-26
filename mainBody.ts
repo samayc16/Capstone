@@ -1,32 +1,33 @@
 // main body micro:bit module that extends micro:bit
 
 // pins used
-// 5, 6, 7, 9 : analogIn for appendage ID
-// 4 : battery pin
-// 0, 1, 2, 8,     RX for appendage
-// 12, 13, 14, 15, TX for appendage
+// 0, 1, 2, 3 : analogIn for appendage ID
+// 5 : battery pin
+// Communicate via analog values, each value is a different command, 1023 commands
+// 10, 11, 12, 13, RX for appendage
+// 14, 15, 16, 19, TX for appendage
 // (RX, TX) pairs
-// (0, 12), (1, 13), (2, 14), (8, 15),
+// (10, 14), (11, 15), (12, 16), (13, 19),
 
 class mainBody extends microBit {
     // one-hot vector of which appendages are connected
-    appendagesConnected: [boolean, boolean, boolean, boolean, boolean];
+    appendagesConnected: [boolean, boolean, boolean, boolean];
     // decimal between 0 and 1 representing battery percentage
     batteryRemaining: number;
     // create main body contructor
     constructor() {
         super();
-        this.appendagesConnected = [false, false, false, false, false];
+        this.appendagesConnected = [false, false, false, false];
         // assume battery is connected to pin 5 for votage reading
         // assuming 3.3V is max current, can add resistor and voltage divide
-        this.batteryRemaining = pins.analogReadPin(AnalogPin.P4) / 1023;
+        this.batteryRemaining = pins.analogReadPin(AnalogPin.P5) / 1023;
     }
     // create a thread for each module connected
     readAppendages() {
         // assume all appendages are outputting data from pin 0, 1: 
-        // pin 0 (appendageID), 1 (appendage TX) appendage => main body
+        // pin 0 (appendageID), 1 (appendage TX) appendage => main body (mainBody RX)
         // assume all appendages are inputting data from pin 2: 
-        // mainBody => appendage pin 2 (mainBody RX)
+        // mainBody => appendage pin 2 (mainBody TX) (appendage RX)
         control.inBackground(function () { this.readKaraoke} );
         control.inBackground(function () { this.readDisplayAppendage });
         control.inBackground(function () { this.readWheelAppendage });
@@ -105,21 +106,19 @@ class mainBody extends microBit {
     }
 }
 
-// sets the pins for RxTx pair depending on which part of the body they are on
-// the AnalogPin for appendageID lets us know which pin the RxTX pairs are
-function setRxTX (analogInValue : number) : [SerialPin | undefined, SerialPin | undefined, boolean] {
+function setRxTX (analogInValue : number) : [AnalogPin | undefined, AnalogPin | undefined, boolean] {
     // check all appendageIDPins
-    if (pins.analogReadPin(AnalogPin.P5) == analogInValue) {
-        return [SerialPin.P0, SerialPin.P12, true];
+    if (pins.analogReadPin(AnalogPin.P0) == analogInValue) {
+        return [AnalogPin.P10, AnalogPin.P14, true];
     }
-    else if (pins.analogReadPin(AnalogPin.P6) == analogInValue) {
-        return [SerialPin.P1, SerialPin.P13, true];
+    else if (pins.analogReadPin(AnalogPin.P1) == analogInValue) {
+        return [AnalogPin.P11, AnalogPin.P15, true];
     }
-    else if (pins.analogReadPin(AnalogPin.P7) == analogInValue) {
-        return [SerialPin.P2, SerialPin.P14, true];
+    else if (pins.analogReadPin(AnalogPin.P2) == analogInValue) {
+        return [AnalogPin.P12, AnalogPin.P16, true];
     }
-    else if (pins.analogReadPin(AnalogPin.P9) == analogInValue) {
-        return [SerialPin.P8, SerialPin.P15, true];
+    else if (pins.analogReadPin(AnalogPin.P3) == analogInValue) {
+        return [AnalogPin.P13, AnalogPin.P19, true];
     }
     // if no appendageID signal
     // there is no data-pin to be checked
