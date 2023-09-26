@@ -27,24 +27,24 @@
     ;
 ; Function main.ts(1,1): <main>
     ;
-    .object _main___P155196 "main.ts(1,1): <main>"
-_main___P155196_pre:
+    .object _main___P47410 "main.ts(1,1): <main>"
+_main___P47410_pre:
     .section code
     .balign 4
-_main___P155196_Lit:
+_main___P47410_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word _main___P155196_args@fn
-_main___P155196_args:
+    .word _main___P47410_args@fn
+_main___P47410_args:
     .section code
-_main___P155196:
-_main___P155196_nochk:
+_main___P47410:
+_main___P47410_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-_main___P155196_locals:
+_main___P47410_locals:
     ldr r0, _ldlit_2 ; 65537      
     movs r1, #180
     ldr r7, [r6, #0]
@@ -72,7 +72,7 @@ _main___P155196_locals:
     ldr r7, [r6, #0]
     str r0, [r7, r1]
     @stackempty locals
-    bl settings_initScopes__P3945
+    bl settings_initScopes__P3944
 _proccall143:
     @stackempty locals
     movs r0, #10
@@ -273,10 +273,10 @@ _proccall148:
     @stackempty locals
 .else_0_1:
 .afterif_1_1:
-    bl jacdac_startProxy__P4180
+    bl jacdac_startProxy__P4179
 _proccall151:
     @stackempty locals
-    ldr r0, _ldlit_31 ; jacdac_inline__P4190_Lit      
+    ldr r0, _ldlit_31 ; jacdac_inline__P4189_Lit      
     push {r0} ; proc-arg
     bl control_runInParallel__P2297
 _proccall152:
@@ -286,11 +286,11 @@ _proccall152:
     ldr r7, [r6, #0]
     str r0, [r7, #48]
     @stackempty locals
-.ret.155196:
+.ret.47410:
     @stackempty locals
     movs r0, #0
 .final_2_1:
-_main___P155196_end:
+_main___P47410_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -298,34 +298,34 @@ _main___P155196_end:
     ;
 ; Function jacdac/routing.ts(2055,27): jacdac.inline
     ;
-    .object jacdac_inline__P4190 "jacdac/routing.ts(2055,27): jacdac.inline"
-jacdac_inline__P4190_pre:
+    .object jacdac_inline__P4189 "jacdac/routing.ts(2055,27): jacdac.inline"
+jacdac_inline__P4189_pre:
     .section code
     .balign 4
-jacdac_inline__P4190_Lit:
+jacdac_inline__P4189_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_inline__P4190_args@fn
-jacdac_inline__P4190_args:
+    .word jacdac_inline__P4189_args@fn
+jacdac_inline__P4189_args:
     .section code
-jacdac_inline__P4190:
-jacdac_inline__P4190_nochk:
+jacdac_inline__P4189:
+jacdac_inline__P4189_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_inline__P4190_locals:
+jacdac_inline__P4189_locals:
     movs r0, #0
     push {r0} ; proc-arg
     bl jacdac_start__P3603
 _proccall153:
     add sp, #4*1 ; pop locals 1
-.ret.4190:
+.ret.4189:
     @stackempty locals
     movs r0, #0
 .final_0_2:
-jacdac_inline__P4190_end:
+jacdac_inline__P4189_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -411,7 +411,7 @@ _proccall158:
     @stackempty locals
     ldr r0, _ldlit_35 ; _str138      
     push {r0} ; proc-arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall159:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -487,14 +487,14 @@ _proccall164:
 .afterif_9_3:
     movs r0, #66
     push {r0} ; proc-arg
-    bl jacdac_enablePower__P4176
+    bl jacdac_enablePower__P4175
 _proccall165:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    bl jacdac_enablePowerFaultPin__P4177
+    bl jacdac_enablePowerFaultPin__P4176
 _proccall166:
     @stackempty locals
-    bl jacdac_enableIdentityLED__P4178
+    bl jacdac_enableIdentityLED__P4177
 _proccall167:
     @stackempty locals
     ldr r0, [sp, args@0]
@@ -518,13 +518,13 @@ _proccall169:
     cmp r0, #0
     beq .else_10_3      
 .jmpz168:
-    ldr r0, _ldlit_36 ; jacdac_BrainServer__C4155_VT      
+    ldr r0, _ldlit_36 ; jacdac_BrainServer__C4154_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
     push {r0}; tmpstore @1
     push {r0} ; proc-arg
-    bl jacdac_BrainServer_constructor__P4157
+    bl jacdac_BrainServer_constructor__P4156
 _proccall170:
     add sp, #4*1 ; pop locals 1
     ldr r0, [sp, #0]      
@@ -594,7 +594,7 @@ _ldlit_29:
 _ldlit_30:
  .word _str133
 _ldlit_31:
- .word jacdac_inline__P4190_Lit
+ .word jacdac_inline__P4189_Lit
 _ldlit_32:
  .word _str141
 _ldlit_33:
@@ -604,7 +604,7 @@ _ldlit_34:
 _ldlit_35:
  .word _str138
 _ldlit_36:
- .word jacdac_BrainServer__C4155_VT
+ .word jacdac_BrainServer__C4154_VT
 .object POP
 .else_10_3:
 .afterif_11_3:
@@ -620,13 +620,13 @@ _proccall173:
     cmp r0, #0
     beq .else_12_3      
 .jmpz172:
-    ldr r0, _ldlit_38 ; jacdac_ProxyServer__C4152_VT      
+    ldr r0, _ldlit_38 ; jacdac_ProxyServer__C4151_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
     push {r0}; tmpstore @1
     push {r0} ; proc-arg
-    bl jacdac_ProxyServer_constructor__P4154
+    bl jacdac_ProxyServer_constructor__P4153
 _proccall174:
     add sp, #4*1 ; pop locals 1
     ldr r0, [sp, #0]      
@@ -663,7 +663,7 @@ _proccall177:
     cmp r0, #0
     beq .else_14_3      
 .jmpz176:
-    ldr r0, _ldlit_39 ; jacdac_start_inline__P4291_Lit      
+    ldr r0, _ldlit_39 ; jacdac_start_inline__P4294_Lit      
     push {r0} ; proc-arg
     bl console_addListener__P2386
 _proccall178:
@@ -713,7 +713,7 @@ _proccall182:
     bl jacdac::__physId
     bl _numops_fromInt
     push {r0} ; proc-arg
-    ldr r0, _ldlit_40 ; jacdac_consumePackets__P4182_Lit      
+    ldr r0, _ldlit_40 ; jacdac_consumePackets__P4181_Lit      
     push {r0} ; proc-arg
     bl _conv_5
     movs r1, #1
@@ -728,7 +728,7 @@ _proccall182:
     bl jacdac::__physId
     bl _numops_fromInt
     push {r0} ; proc-arg
-    ldr r0, _ldlit_41 ; jacdac_start_inline__P4318_Lit      
+    ldr r0, _ldlit_41 ; jacdac_start_inline__P4321_Lit      
     push {r0} ; proc-arg
     bl _conv_5
     movs r1, #100
@@ -740,7 +740,7 @@ _proccall182:
     @stackempty locals
     ldr r0, _ldlit_42 ; _str139      
     push {r0} ; proc-arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall183:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -786,7 +786,7 @@ _proccall185:
 .jmpz186:
     ldr r0, _ldlit_43 ; _str140      
     push {r0} ; proc-arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall187:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -832,32 +832,32 @@ jacdac_start__P3603_end:
     ;
 ; Function jacdac/routing.ts(1927,33): jacdac.start.inline
     ;
-    .object jacdac_start_inline__P4291 "jacdac/routing.ts(1927,33): jacdac.start.inline"
-jacdac_start_inline__P4291_pre:
+    .object jacdac_start_inline__P4294 "jacdac/routing.ts(1927,33): jacdac.start.inline"
+jacdac_start_inline__P4294_pre:
     .section code
     .balign 4
-jacdac_start_inline__P4291_Lit:
+jacdac_start_inline__P4294_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_start_inline__P4291_args@fn
-jacdac_start_inline__P4291_args:
+    .word jacdac_start_inline__P4294_args@fn
+jacdac_start_inline__P4294_args:
     cmp r4, #2
-    bge jacdac_start_inline__P4291_nochk
+    bge jacdac_start_inline__P4294_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_start_inline__P4291_nochk
+    bl jacdac_start_inline__P4294_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_start_inline__P4291:
-jacdac_start_inline__P4291_nochk:
+jacdac_start_inline__P4294:
+jacdac_start_inline__P4294_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_start_inline__P4291_locals:
+jacdac_start_inline__P4294_locals:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     bl _conv_8
@@ -883,11 +883,11 @@ _proccall192:
     @stackempty locals
 .else_0_4:
 .afterif_1_4:
-.ret.4291:
+.ret.4294:
     @stackempty locals
     movs r0, #0
 .final_2_4:
-jacdac_start_inline__P4291_end:
+jacdac_start_inline__P4294_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -895,35 +895,35 @@ jacdac_start_inline__P4291_end:
     ;
 ; Function jacdac/routing.ts(1942,72): jacdac.start.inline
     ;
-    .object jacdac_start_inline__P4318 "jacdac/routing.ts(1942,72): jacdac.start.inline"
-jacdac_start_inline__P4318_pre:
+    .object jacdac_start_inline__P4321 "jacdac/routing.ts(1942,72): jacdac.start.inline"
+jacdac_start_inline__P4321_pre:
     .section code
     .balign 4
-jacdac_start_inline__P4318_Lit:
+jacdac_start_inline__P4321_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_start_inline__P4318_args@fn
-jacdac_start_inline__P4318_args:
+    .word jacdac_start_inline__P4321_args@fn
+jacdac_start_inline__P4321_args:
     .section code
-jacdac_start_inline__P4318:
-jacdac_start_inline__P4318_nochk:
+jacdac_start_inline__P4321:
+jacdac_start_inline__P4321_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_start_inline__P4318_locals:
+jacdac_start_inline__P4321_locals:
     ldr r7, [r6, #0]
     ldr r0, [r7, #12]
     push {r0} ; proc-arg
     bl jacdac_Bus_queueAnnounce__P3466
 _proccall193:
     add sp, #4*1 ; pop locals 1
-.ret.4318:
+.ret.4321:
     @stackempty locals
     movs r0, #0
 .final_0_5:
-jacdac_start_inline__P4318_end:
+jacdac_start_inline__P4321_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -1017,7 +1017,7 @@ jacdac__rolemgr_RoleManagerServer_bindRoles__P3332_locals:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.4342:
+.fortop.4345:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
@@ -1034,7 +1034,7 @@ jacdac__rolemgr_RoleManagerServer_bindRoles__P3332_locals:
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
     bne .jmpz195
-    b .brk.4342      
+    b .brk.4345      
 .jmpz195:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
@@ -1081,13 +1081,13 @@ jacdac__rolemgr_RoleManagerServer_bindRoles__P3332_locals:
 .object PUSH
 .balign 4
 _ldlit_38:
- .word jacdac_ProxyServer__C4152_VT
+ .word jacdac_ProxyServer__C4151_VT
 _ldlit_39:
- .word jacdac_start_inline__P4291_Lit
+ .word jacdac_start_inline__P4294_Lit
 _ldlit_40:
- .word jacdac_consumePackets__P4182_Lit
+ .word jacdac_consumePackets__P4181_Lit
 _ldlit_41:
- .word jacdac_start_inline__P4318_Lit
+ .word jacdac_start_inline__P4321_Lit
 _ldlit_42:
  .word _str139
 _ldlit_43:
@@ -1188,7 +1188,7 @@ _proccall199:
     str r0, [sp, locals@4]
     @stackempty locals
     movs r0, #1
-    ldr r1, _ldlit_47 ; services_inline__P4368_Lit      
+    ldr r1, _ldlit_47 ; services_inline__P4371_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -1395,13 +1395,13 @@ _proccall211:
 .afterif_20_6:
 .else_2_6:
 .afterif_21_6:
-.cont.4342:
+.cont.4345:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
-    b .fortop.4342      
-.brk.4342:
+    b .fortop.4345      
+.brk.4345:
     movs r0, #0
     str r0, [sp, locals@1]
     ldr r7, [r6, #0]
@@ -1421,7 +1421,7 @@ _proccall211:
 .jmpz212:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_nochk
+    bl jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_nochk
 _proccall213:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -1438,7 +1438,7 @@ _proccall213:
     bl _inst_jacdac_Bus__C3452_validate_3
     ldr r0, [r0, #12]
     mov r3, r0
-    ldr r0, _ldlit_48 ; wraps_inline__P4427_Lit      
+    ldr r0, _ldlit_48 ; wraps_inline__P4430_Lit      
     push {r0} ; proc-arg
     push {r3} ; the one arg
     bl helpers_arrayMap__P1998
@@ -1457,7 +1457,7 @@ _proccall214:
     movs r0, #1
     str r0, [sp, locals@11]
     @stackempty locals
-.fortop.4438:
+.fortop.4441:
     ldr r0, [sp, locals@11]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@10]
@@ -1474,7 +1474,7 @@ _proccall214:
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
     bne .jmpz215
-    b .brk.4438      
+    b .brk.4441      
 .jmpz215:
     ldr r0, [sp, locals@10]
     push {r0} ; proc-arg
@@ -1530,12 +1530,12 @@ _proccall214:
 _ldlit_46:
  .word _str74
 _ldlit_47:
- .word services_inline__P4368_Lit
+ .word services_inline__P4371_Lit
 _ldlit_48:
- .word wraps_inline__P4427_Lit
+ .word wraps_inline__P4430_Lit
 .object POP
 .jmpz217:
-    ldr r0, _ldlit_50 ; jacdac__rolemgr_RoleBinding__C4106_VT      
+    ldr r0, _ldlit_50 ; jacdac__rolemgr_RoleBinding__C4105_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
@@ -1559,7 +1559,7 @@ _proccall218:
     push {r3}
     ldr r0, [sp, #4*3] ; tmpref @1
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_RoleBinding_constructor__P4109
+    bl jacdac__rolemgr_RoleBinding_constructor__P4108
 _proccall219:
     add sp, #4*4 ; pop locals 4
     pop {r0} ; tmpref @1
@@ -1580,7 +1580,7 @@ _proccall219:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     str r1, [r0, #4]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -1592,7 +1592,7 @@ _proccall219:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     str r1, [r0, #8]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -1604,7 +1604,7 @@ _proccall219:
     movs r0, #1
     str r0, [sp, locals@15]
     @stackempty locals
-.fortop.4468:
+.fortop.4471:
     ldr r0, [sp, locals@15]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@14]
@@ -1620,7 +1620,7 @@ _proccall219:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.4468      
+    beq .brk.4471      
 .jmpz221:
     ldr r0, [sp, locals@14]
     push {r0} ; proc-arg
@@ -1635,7 +1635,7 @@ _proccall219:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@13]
     ldr r0, [sp, locals@13]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@9]
@@ -1648,7 +1648,7 @@ _proccall219:
     beq .else_28_6      
 .jmpz222:
     ldr r0, [sp, locals@13]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@9]
@@ -1663,16 +1663,16 @@ _proccall219:
     bl _pxt_array_set
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-    b .brk.4468      
+    b .brk.4471      
 .else_28_6:
 .afterif_29_6:
-.cont.4468:
+.cont.4471:
     ldr r0, [sp, locals@15]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@15]
-    b .fortop.4468      
-.brk.4468:
+    b .fortop.4471      
+.brk.4471:
     movs r0, #0
     str r0, [sp, locals@14]
 .else_27_6:
@@ -1689,13 +1689,13 @@ _proccall219:
     @stackempty locals
 .else_24_6:
 .afterif_31_6:
-.cont.4438:
+.cont.4441:
     ldr r0, [sp, locals@11]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@11]
-    b .fortop.4438      
-.brk.4438:
+    b .fortop.4441      
+.brk.4441:
     movs r0, #0
     str r0, [sp, locals@10]
     mov r7, sp
@@ -1711,7 +1711,7 @@ _proccall219:
     movs r0, #1
     str r0, [sp, locals@19]
     @stackempty locals
-.fortop.4489:
+.fortop.4492:
     ldr r0, [sp, locals@19]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@18]
@@ -1727,7 +1727,7 @@ _proccall219:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.4489      
+    beq .brk.4492      
 .jmpz223:
     ldr r0, [sp, locals@18]
     push {r0} ; proc-arg
@@ -1743,13 +1743,13 @@ _proccall219:
     str r0, [sp, locals@17]
     ldr r0, [sp, locals@17]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_RoleBinding_host__P4107
+    bl jacdac__rolemgr_RoleBinding_host__P4106
 _proccall224:
     add sp, #4*1 ; pop locals 1
     str r0, [sp, locals@20]
     @stackempty locals
     movs r0, #1
-    ldr r1, _ldlit_51 ; h_inline__P4497_Lit      
+    ldr r1, _ldlit_51 ; h_inline__P4500_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -1783,7 +1783,7 @@ _proccall225:
     cmp r0, #0
     beq .else_32_6      
 .jmpz226:
-    ldr r0, _ldlit_52 ; jacdac__rolemgr_ServerBindings__C4110_VT      
+    ldr r0, _ldlit_52 ; jacdac__rolemgr_ServerBindings__C4109_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
@@ -1792,7 +1792,7 @@ _proccall225:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; tmpref @1
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_ServerBindings_constructor__P4113
+    bl jacdac__rolemgr_ServerBindings_constructor__P4112
 _proccall227:
     add sp, #4*2 ; pop locals 2
     pop {r0} ; tmpref @1
@@ -1811,7 +1811,7 @@ _proccall227:
 .else_32_6:
 .afterif_33_6:
     ldr r0, [sp, locals@21]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@17]
@@ -1822,16 +1822,16 @@ _proccall227:
     bl Array_::push
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.4489:
+.cont.4492:
     ldr r0, [sp, locals@19]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@19]
-    b .fortop.4489      
-.brk.4489:
+    b .fortop.4492      
+.brk.4492:
     movs r0, #0
     str r0, [sp, locals@18]
-    ldr r0, _ldlit_53 ; jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_Lit      
+    ldr r0, _ldlit_53 ; jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_Lit      
     push {r0} ; proc-arg
     ldr r0, [sp, locals@16]
     push {r0} ; proc-arg
@@ -1867,7 +1867,7 @@ _proccall228:
 _proccall229:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.cont.4536:
+.cont.4539:
     ldr r0, [sp, locals@16]
     push {r0} ; proc-arg
     bl _conv_13
@@ -1879,15 +1879,15 @@ _proccall229:
     movs r1, #1
     bl _cmp_gt
     bne .jmpz230
-    b .brk.4536      
+    b .brk.4539      
 .jmpz230:
-    ldr r0, _ldlit_56 ; h_inline__P4553_Lit      
+    ldr r0, _ldlit_56 ; h_inline__P4556_Lit      
     push {r0} ; proc-arg
-    ldr r0, _ldlit_57 ; h_inline__P4543_Lit      
+    ldr r0, _ldlit_57 ; h_inline__P4546_Lit      
     push {r0} ; proc-arg
     ldr r0, [sp, locals@16]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_maxIn__P4114
+    bl jacdac__rolemgr_maxIn__P4113
 _proccall231:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@22]
@@ -1900,7 +1900,7 @@ _proccall231:
     movs r0, #1
     str r0, [sp, locals@25]
     @stackempty locals
-.fortop.4564:
+.fortop.4567:
     ldr r0, [sp, locals@25]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@24]
@@ -1917,25 +1917,25 @@ _proccall231:
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
     bne .jmpz232
-    b .brk.4564      
+    b .brk.4567      
 .object PUSH
 .balign 4
 _ldlit_50:
- .word jacdac__rolemgr_RoleBinding__C4106_VT
+ .word jacdac__rolemgr_RoleBinding__C4105_VT
 _ldlit_51:
- .word h_inline__P4497_Lit
+ .word h_inline__P4500_Lit
 _ldlit_52:
- .word jacdac__rolemgr_ServerBindings__C4110_VT
+ .word jacdac__rolemgr_ServerBindings__C4109_VT
 _ldlit_53:
- .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_Lit
+ .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_Lit
 _ldlit_54:
  .word _str75
 _ldlit_55:
  .word _str76
 _ldlit_56:
- .word h_inline__P4553_Lit
+ .word h_inline__P4556_Lit
 _ldlit_57:
- .word h_inline__P4543_Lit
+ .word h_inline__P4546_Lit
 .object POP
 .jmpz232:
     ldr r0, [sp, locals@24]
@@ -1958,38 +1958,38 @@ _ldlit_57:
     push {r0} ; proc-arg
     ldr r0, [sp, locals@22]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_ServerBindings_scoreFor__P4112
+    bl jacdac__rolemgr_ServerBindings_scoreFor__P4111
 _proccall233:
     add sp, #4*3 ; pop locals 3
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     str r1, [r0, #8]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.4564:
+.cont.4567:
     ldr r0, [sp, locals@25]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@25]
-    b .fortop.4564      
-.brk.4564:
+    b .fortop.4567      
+.brk.4567:
     movs r0, #0
     str r0, [sp, locals@24]
-    ldr r0, _ldlit_59 ; dev_inline__P4583_Lit      
+    ldr r0, _ldlit_59 ; dev_inline__P4586_Lit      
     push {r0} ; proc-arg
-    ldr r0, _ldlit_60 ; dev_inline__P4575_Lit      
+    ldr r0, _ldlit_60 ; dev_inline__P4578_Lit      
     push {r0} ; proc-arg
     ldr r0, [sp, locals@8]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_maxIn__P4114
+    bl jacdac__rolemgr_maxIn__P4113
 _proccall234:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@26]
     @stackempty locals
     ldr r0, [sp, locals@26]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #8]
     movs r1, #1
     bl _cmp_eq
@@ -2008,14 +2008,14 @@ _proccall234:
     str r7, [r6, #4]
     bl pxt::fromBool
     @stackempty locals
-    b .cont.4536      
+    b .cont.4539      
 .else_34_6:
 .afterif_35_6:
     ldr r0, [sp, locals@22]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     ldr r0, [r0, #4]
     mov r3, r0
-    ldr r0, _ldlit_61 ; jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_Lit      
+    ldr r0, _ldlit_61 ; jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_Lit      
     push {r0} ; proc-arg
     push {r3} ; the one arg
     bl helpers_arraySort__P1997
@@ -2028,14 +2028,14 @@ _proccall236:
     push {r0} ; proc-arg
     ldr r0, [sp, locals@22]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_ServerBindings_scoreFor__P4112
+    bl jacdac__rolemgr_ServerBindings_scoreFor__P4111
 _proccall237:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@27]
     @stackempty locals
     ldr r0, [sp, locals@22]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_ServerBindings_fullyBound__P4111
+    bl jacdac__rolemgr_ServerBindings_fullyBound__P4110
 _proccall239:
     add sp, #4*1 ; pop locals 1
     mov r7, sp
@@ -2060,7 +2060,7 @@ _proccall239:
     b .afterif_37_6      
 .else_36_6:
     movs r0, #1
-    ldr r1, _ldlit_62 ; jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_Lit      
+    ldr r1, _ldlit_62 ; jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -2073,7 +2073,7 @@ _proccall239:
     ldr r0, [sp, locals@22]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@22]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     ldr r0, [r0, #4]
     mov r3, r0
     ldr r0, [sp, #4*1] ; tmpref @1
@@ -2087,16 +2087,16 @@ _proccall240:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     str r1, [r0, #4]
     add sp, #4*3 ; pop locals 3
     @stackempty locals
 .afterif_37_6:
-    b .cont.4536      
-.brk.4536:
+    b .cont.4539      
+.brk.4539:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_nochk
+    bl jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_nochk
 _proccall241:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -2113,32 +2113,32 @@ jacdac__rolemgr_RoleManagerServer_bindRoles__P3332_end:
     ;
 ; Function jacdac/rolemgr.ts(230,68): services.inline
     ;
-    .object services_inline__P4368 "jacdac/rolemgr.ts(230,68): services.inline"
-services_inline__P4368_pre:
+    .object services_inline__P4371 "jacdac/rolemgr.ts(230,68): services.inline"
+services_inline__P4371_pre:
     .section code
     .balign 4
-services_inline__P4368_Lit:
+services_inline__P4371_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word services_inline__P4368_args@fn
-services_inline__P4368_args:
+    .word services_inline__P4371_args@fn
+services_inline__P4371_args:
     cmp r4, #1
-    bge services_inline__P4368_nochk
+    bge services_inline__P4371_nochk
     push {lr}
     bl _expand_args_1_9
-    bl services_inline__P4368_nochk
+    bl services_inline__P4371_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-services_inline__P4368:
-services_inline__P4368_nochk:
+services_inline__P4371:
+services_inline__P4371_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-services_inline__P4368_locals:
+services_inline__P4371_locals:
     ldr r0, [sp, args@0]
     bl _inst_jacdac_Server__C3491_validate_15
     ldr r0, [r0, #64]
@@ -2151,10 +2151,10 @@ services_inline__P4368_locals:
     str r7, [r6, #4]
     bl numops::eq
     add sp, #4*2 ; pop locals 2
-.ret.4368:
+.ret.4371:
     @stackempty locals
 .final_0_7:
-services_inline__P4368_end:
+services_inline__P4371_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2162,33 +2162,33 @@ services_inline__P4368_end:
     ;
 ; Function jacdac/rolemgr.ts(262,43): wraps.inline
     ;
-    .object wraps_inline__P4427 "jacdac/rolemgr.ts(262,43): wraps.inline"
-wraps_inline__P4427_pre:
+    .object wraps_inline__P4430 "jacdac/rolemgr.ts(262,43): wraps.inline"
+wraps_inline__P4430_pre:
     .section code
     .balign 4
-wraps_inline__P4427_Lit:
+wraps_inline__P4430_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word wraps_inline__P4427_args@fn
-wraps_inline__P4427_args:
+    .word wraps_inline__P4430_args@fn
+wraps_inline__P4430_args:
     cmp r4, #1
-    bge wraps_inline__P4427_nochk
+    bge wraps_inline__P4430_nochk
     push {lr}
     bl _expand_args_1_9
-    bl wraps_inline__P4427_nochk
+    bl wraps_inline__P4430_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-wraps_inline__P4427:
-wraps_inline__P4427_nochk:
+wraps_inline__P4430:
+wraps_inline__P4430_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-wraps_inline__P4427_locals:
-    ldr r0, _ldlit_63 ; jacdac__rolemgr_DeviceWrapper__C4104_VT      
+wraps_inline__P4430_locals:
+    ldr r0, _ldlit_63 ; jacdac__rolemgr_DeviceWrapper__C4103_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
@@ -2197,14 +2197,14 @@ wraps_inline__P4427_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; tmpref @1
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_DeviceWrapper_constructor__P4105
+    bl jacdac__rolemgr_DeviceWrapper_constructor__P4104
 _proccall242:
     add sp, #4*2 ; pop locals 2
     pop {r0} ; tmpref @1
-.ret.4427:
+.ret.4430:
     @stackempty locals
 .final_0_8:
-wraps_inline__P4427_end:
+wraps_inline__P4430_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2212,34 +2212,34 @@ wraps_inline__P4427_end:
     ;
 ; Function jacdac/rolemgr.ts(285,38): h.inline
     ;
-    .object h_inline__P4497 "jacdac/rolemgr.ts(285,38): h.inline"
-h_inline__P4497_pre:
+    .object h_inline__P4500 "jacdac/rolemgr.ts(285,38): h.inline"
+h_inline__P4500_pre:
     .section code
     .balign 4
-h_inline__P4497_Lit:
+h_inline__P4500_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word h_inline__P4497_args@fn
-h_inline__P4497_args:
+    .word h_inline__P4500_args@fn
+h_inline__P4500_args:
     cmp r4, #1
-    bge h_inline__P4497_nochk
+    bge h_inline__P4500_nochk
     push {lr}
     bl _expand_args_1_9
-    bl h_inline__P4497_nochk
+    bl h_inline__P4500_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-h_inline__P4497:
-h_inline__P4497_nochk:
+h_inline__P4500:
+h_inline__P4500_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-h_inline__P4497_locals:
+h_inline__P4500_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     ldr r0, [r5, #4*3]
@@ -2250,10 +2250,10 @@ h_inline__P4497_locals:
     str r7, [r6, #4]
     bl numops::eq
     add sp, #4*2 ; pop locals 2
-.ret.4497:
+.ret.4500:
     @stackempty locals
 .final_0_9:
-h_inline__P4497_end:
+h_inline__P4500_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2261,35 +2261,35 @@ h_inline__P4497_end:
     ;
 ; Function jacdac/rolemgr.ts(294,38): jacdac._rolemgr.RoleManagerServer.bindRoles.inline
     ;
-    .object jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523 "jacdac/rolemgr.ts(294,38): jacdac._rolemgr.RoleManagerServer.bindRoles.inline"
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_pre:
+    .object jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526 "jacdac/rolemgr.ts(294,38): jacdac._rolemgr.RoleManagerServer.bindRoles.inline"
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_pre:
     .section code
     .balign 4
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_Lit:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_args@fn
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_args:
+    .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_args@fn
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_args:
     cmp r4, #1
-    bge jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_nochk
+    bge jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_nochk
+    bl jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523:
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_nochk:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_locals:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_ServerBindings_fullyBound__P4111
+    bl jacdac__rolemgr_ServerBindings_fullyBound__P4110
 _proccall243:
     add sp, #4*1 ; pop locals 1
     mov r7, sp
@@ -2301,10 +2301,10 @@ _proccall243:
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::fromBool
-.ret.4523:
+.ret.4526:
     @stackempty locals
 .final_0_10:
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_end:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4526_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2312,34 +2312,34 @@ jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4523_end:
     ;
 ; Function jacdac/rolemgr.ts(303,21): h.inline
     ;
-    .object h_inline__P4543 "jacdac/rolemgr.ts(303,21): h.inline"
-h_inline__P4543_pre:
+    .object h_inline__P4546 "jacdac/rolemgr.ts(303,21): h.inline"
+h_inline__P4546_pre:
     .section code
     .balign 4
-h_inline__P4543_Lit:
+h_inline__P4546_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word h_inline__P4543_args@fn
-h_inline__P4543_args:
+    .word h_inline__P4546_args@fn
+h_inline__P4546_args:
     cmp r4, #2
-    bge h_inline__P4543_nochk
+    bge h_inline__P4546_nochk
     push {lr}
     bl _expand_args_2_7
-    bl h_inline__P4543_nochk
+    bl h_inline__P4546_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-h_inline__P4543:
-h_inline__P4543_nochk:
+h_inline__P4546:
+h_inline__P4546_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-h_inline__P4543_locals:
+h_inline__P4546_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     bl _conv_13
@@ -2350,7 +2350,7 @@ h_inline__P4543_locals:
     bl _numops_fromInt
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     bl _conv_13
@@ -2364,10 +2364,10 @@ h_inline__P4543_locals:
     ldr r1, [sp, #4*0] ; estack
     bl _numops_subs
     add sp, #4*2 ; pop locals 2
-.ret.4543:
+.ret.4546:
     @stackempty locals
 .final_0_11:
-h_inline__P4543_end:
+h_inline__P4546_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2375,38 +2375,38 @@ h_inline__P4543_end:
     ;
 ; Function jacdac/rolemgr.ts(304,21): h.inline
     ;
-    .object h_inline__P4553 "jacdac/rolemgr.ts(304,21): h.inline"
-h_inline__P4553_pre:
+    .object h_inline__P4556 "jacdac/rolemgr.ts(304,21): h.inline"
+h_inline__P4556_pre:
     .section code
     .balign 4
-h_inline__P4553_Lit:
+h_inline__P4556_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word h_inline__P4553_args@fn
-h_inline__P4553_args:
+    .word h_inline__P4556_args@fn
+h_inline__P4556_args:
     cmp r4, #2
-    bge h_inline__P4553_nochk
+    bge h_inline__P4556_nochk
     push {lr}
     bl _expand_args_2_7
-    bl h_inline__P4553_nochk
+    bl h_inline__P4556_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-h_inline__P4553:
-h_inline__P4553_nochk:
+h_inline__P4556:
+h_inline__P4556_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-h_inline__P4553_locals:
+h_inline__P4556_locals:
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     bl _conv_21
@@ -2415,10 +2415,10 @@ h_inline__P4553_locals:
     bl String_::compare
     add sp, #4*2 ; pop locals 2
     bl _numops_fromInt
-.ret.4553:
+.ret.4556:
     @stackempty locals
 .final_0_12:
-h_inline__P4553_end:
+h_inline__P4556_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2426,48 +2426,48 @@ h_inline__P4553_end:
     ;
 ; Function jacdac/rolemgr.ts(315,21): dev.inline
     ;
-    .object dev_inline__P4575 "jacdac/rolemgr.ts(315,21): dev.inline"
-dev_inline__P4575_pre:
+    .object dev_inline__P4578 "jacdac/rolemgr.ts(315,21): dev.inline"
+dev_inline__P4578_pre:
     .section code
     .balign 4
-dev_inline__P4575_Lit:
+dev_inline__P4578_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word dev_inline__P4575_args@fn
-dev_inline__P4575_args:
+    .word dev_inline__P4578_args@fn
+dev_inline__P4578_args:
     cmp r4, #2
-    bge dev_inline__P4575_nochk
+    bge dev_inline__P4578_nochk
     push {lr}
     bl _expand_args_2_7
-    bl dev_inline__P4575_nochk
+    bl dev_inline__P4578_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-dev_inline__P4575:
-dev_inline__P4575_nochk:
+dev_inline__P4578:
+dev_inline__P4578_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-dev_inline__P4575_locals:
+dev_inline__P4578_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
     bl _numops_subs
     add sp, #4*2 ; pop locals 2
-.ret.4575:
+.ret.4578:
     @stackempty locals
 .final_0_13:
-dev_inline__P4575_end:
+dev_inline__P4578_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2475,53 +2475,53 @@ dev_inline__P4575_end:
     ;
 ; Function jacdac/rolemgr.ts(316,21): dev.inline
     ;
-    .object dev_inline__P4583 "jacdac/rolemgr.ts(316,21): dev.inline"
-dev_inline__P4583_pre:
+    .object dev_inline__P4586 "jacdac/rolemgr.ts(316,21): dev.inline"
+dev_inline__P4586_pre:
     .section code
     .balign 4
-dev_inline__P4583_Lit:
+dev_inline__P4586_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word dev_inline__P4583_args@fn
-dev_inline__P4583_args:
+    .word dev_inline__P4586_args@fn
+dev_inline__P4586_args:
     cmp r4, #2
-    bge dev_inline__P4583_nochk
+    bge dev_inline__P4586_nochk
     push {lr}
     bl _expand_args_2_7
-    bl dev_inline__P4583_nochk
+    bl dev_inline__P4586_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
 .object PUSH
 .balign 4
 _ldlit_59:
- .word dev_inline__P4583_Lit
+ .word dev_inline__P4586_Lit
 _ldlit_60:
- .word dev_inline__P4575_Lit
+ .word dev_inline__P4578_Lit
 _ldlit_61:
- .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_Lit
+ .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_Lit
 _ldlit_62:
- .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_Lit
+ .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_Lit
 _ldlit_63:
- .word jacdac__rolemgr_DeviceWrapper__C4104_VT
+ .word jacdac__rolemgr_DeviceWrapper__C4103_VT
 .object POP
     .section code
-dev_inline__P4583:
-dev_inline__P4583_nochk:
+dev_inline__P4586:
+dev_inline__P4586_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-dev_inline__P4583_locals:
+dev_inline__P4586_locals:
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #12]
     bl _inst_jacdac_Device__C3569_validate_14
     ldr r0, [r0, #32]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #12]
     bl _inst_jacdac_Device__C3569_validate_14
     ldr r0, [r0, #32]
@@ -2532,10 +2532,10 @@ dev_inline__P4583_locals:
     bl String_::compare
     add sp, #4*2 ; pop locals 2
     bl _numops_fromInt
-.ret.4583:
+.ret.4586:
     @stackempty locals
 .final_0_14:
-dev_inline__P4583_end:
+dev_inline__P4586_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2543,26 +2543,26 @@ dev_inline__P4583_end:
     ;
 ; Function jacdac/rolemgr.ts(327,33): jacdac._rolemgr.RoleManagerServer.bindRoles.inline
     ;
-    .object jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603 "jacdac/rolemgr.ts(327,33): jacdac._rolemgr.RoleManagerServer.bindRoles.inline"
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_pre:
+    .object jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606 "jacdac/rolemgr.ts(327,33): jacdac._rolemgr.RoleManagerServer.bindRoles.inline"
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_pre:
     .section code
     .balign 4
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_Lit:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_args@fn
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_args:
+    .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_args@fn
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_args:
     cmp r4, #2
-    bge jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_nochk
+    bge jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_nochk
+    bl jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603:
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_nochk:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -2570,13 +2570,13 @@ jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_locals:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
@@ -2593,17 +2593,17 @@ jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_locals:
     beq .else_0_15      
 .jmpz244:
     ldr r0, [sp, locals@0]
-    b .ret.4603      
+    b .ret.4606      
 .else_0_15:
 .afterif_1_15:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #20]
     bl _inst_jacdac_ClientRoleQuery__C3532_validate_11
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #20]
     bl _inst_jacdac_ClientRoleQuery__C3532_validate_11
     ldr r0, [r0, #16]
@@ -2622,15 +2622,15 @@ jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_locals:
     beq .else_2_15      
 .jmpz245:
     ldr r0, [sp, locals@0]
-    b .ret.4603      
+    b .ret.4606      
 .else_2_15:
 .afterif_3_15:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     bl _conv_21
@@ -2639,11 +2639,11 @@ jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_locals:
     bl String_::compare
     add sp, #4*2 ; pop locals 2
     bl _numops_fromInt
-.ret.4603:
+.ret.4606:
     @stackempty locals
 .final_4_15:
     add sp, #4*1 ; pop locals 1
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_end:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4606_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2651,38 +2651,38 @@ jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4603_end:
     ;
 ; Function jacdac/rolemgr.ts(345,25): jacdac._rolemgr.RoleManagerServer.bindRoles.inline
     ;
-    .object jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649 "jacdac/rolemgr.ts(345,25): jacdac._rolemgr.RoleManagerServer.bindRoles.inline"
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_pre:
+    .object jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652 "jacdac/rolemgr.ts(345,25): jacdac._rolemgr.RoleManagerServer.bindRoles.inline"
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_pre:
     .section code
     .balign 4
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_Lit:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_args@fn
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_args:
+    .word jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_args@fn
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_args:
     cmp r4, #1
-    bge jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_nochk
+    bge jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_nochk
+    bl jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649:
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_nochk:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_locals:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     ldr r0, [r5, #4*3]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
@@ -2691,10 +2691,10 @@ jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_locals:
     str r7, [r6, #4]
     bl numops::neq
     add sp, #4*2 ; pop locals 2
-.ret.4649:
+.ret.4652:
     @stackempty locals
 .final_0_16:
-jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4649_end:
+jacdac__rolemgr_RoleManagerServer_bindRoles_inline__P4652_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -2762,7 +2762,7 @@ helpers_arraySort__P1997_locals:
     cmp r0, #0
     beq .else_0_17      
 .jmpz247:
-    ldr r0, _ldlit_65 ; helpers_arraySort_inline__P4666_Lit      
+    ldr r0, _ldlit_65 ; helpers_arraySort_inline__P4669_Lit      
     str r0, [sp, args@1]
     @stackempty locals
 .else_0_17:
@@ -2771,7 +2771,7 @@ helpers_arraySort__P1997_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl helpers_sortHelper__P3774
+    bl helpers_sortHelper__P3773
 _proccall248:
     add sp, #4*2 ; pop locals 2
 .ret.1997:
@@ -2785,26 +2785,26 @@ helpers_arraySort__P1997_end:
     ;
 ; Function core/pxt-helpers.ts(210,26): helpers.arraySort.inline
     ;
-    .object helpers_arraySort_inline__P4666 "core/pxt-helpers.ts(210,26): helpers.arraySort.inline"
-helpers_arraySort_inline__P4666_pre:
+    .object helpers_arraySort_inline__P4669 "core/pxt-helpers.ts(210,26): helpers.arraySort.inline"
+helpers_arraySort_inline__P4669_pre:
     .section code
     .balign 4
-helpers_arraySort_inline__P4666_Lit:
+helpers_arraySort_inline__P4669_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word helpers_arraySort_inline__P4666_args@fn
-helpers_arraySort_inline__P4666_args:
+    .word helpers_arraySort_inline__P4669_args@fn
+helpers_arraySort_inline__P4669_args:
     cmp r4, #2
-    bge helpers_arraySort_inline__P4666_nochk
+    bge helpers_arraySort_inline__P4669_nochk
     push {lr}
     bl _expand_args_2_7
-    bl helpers_arraySort_inline__P4666_nochk
+    bl helpers_arraySort_inline__P4669_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-helpers_arraySort_inline__P4666:
-helpers_arraySort_inline__P4666_nochk:
+helpers_arraySort_inline__P4669:
+helpers_arraySort_inline__P4669_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -2815,7 +2815,7 @@ helpers_arraySort_inline__P4666_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-helpers_arraySort_inline__P4666_locals:
+helpers_arraySort_inline__P4669_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     movs r1, #0
@@ -2860,7 +2860,7 @@ helpers_arraySort_inline__P4666_locals:
     beq .else_0_18      
 .jmpz250:
     movs r0, #1
-    b .ret.4666      
+    b .ret.4669      
     b .afterif_3_18      
 .else_0_18:
     ldr r0, [sp, locals@0]
@@ -2871,7 +2871,7 @@ helpers_arraySort_inline__P4666_locals:
     beq .else_4_18      
 .jmpz251:
     movs r0, #3
-    b .ret.4666      
+    b .ret.4669      
     b .afterif_5_18      
 .else_4_18:
     ldr r0, [sp, locals@1]
@@ -2883,7 +2883,7 @@ helpers_arraySort_inline__P4666_locals:
 .jmpz252:
     movs r0, #1
     negs r0, r0
-    b .ret.4666      
+    b .ret.4669      
 .else_6_18:
 .afterif_7_18:
 .afterif_5_18:
@@ -2932,7 +2932,7 @@ helpers_arraySort_inline__P4666_locals:
     beq .else_8_18      
 .jmpz254:
     movs r0, #1
-    b .ret.4666      
+    b .ret.4669      
     b .afterif_11_18      
 .else_8_18:
     ldr r0, [sp, locals@2]
@@ -2943,7 +2943,7 @@ helpers_arraySort_inline__P4666_locals:
     beq .else_12_18      
 .jmpz255:
     movs r0, #3
-    b .ret.4666      
+    b .ret.4669      
     b .afterif_13_18      
 .else_12_18:
     ldr r0, [sp, locals@3]
@@ -2955,7 +2955,7 @@ helpers_arraySort_inline__P4666_locals:
 .jmpz256:
     movs r0, #1
     negs r0, r0
-    b .ret.4666      
+    b .ret.4669      
 .else_14_18:
 .afterif_15_18:
 .afterif_13_18:
@@ -2990,11 +2990,11 @@ helpers_arraySort_inline__P4666_locals:
     bl String_::compare
     add sp, #4*2 ; pop locals 2
     bl _numops_fromInt
-.ret.4666:
+.ret.4669:
     @stackempty locals
 .final_16_18:
     add sp, #4*4 ; pop locals 4
-helpers_arraySort_inline__P4666_end:
+helpers_arraySort_inline__P4669_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -3002,13 +3002,13 @@ helpers_arraySort_inline__P4666_end:
     ;
 ; Function core/pxt-helpers.ts(192,5): helpers.sortHelper
     ;
-    .object helpers_sortHelper__P3774 "core/pxt-helpers.ts(192,5): helpers.sortHelper"
-helpers_sortHelper__P3774_pre:
+    .object helpers_sortHelper__P3773 "core/pxt-helpers.ts(192,5): helpers.sortHelper"
+helpers_sortHelper__P3773_pre:
     .section code
     .balign 4
     .section code
-helpers_sortHelper__P3774:
-helpers_sortHelper__P3774_nochk:
+helpers_sortHelper__P3773:
+helpers_sortHelper__P3773_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -3018,7 +3018,7 @@ helpers_sortHelper__P3774_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-helpers_sortHelper__P3774_locals:
+helpers_sortHelper__P3773_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     bl _conv_13
@@ -3067,7 +3067,7 @@ helpers_sortHelper__P3774_locals:
     beq .else_0_19      
 .jmpz258:
     ldr r0, [sp, args@0]
-    b .ret.3774      
+    b .ret.3773      
 .else_0_19:
 .afterif_3_19:
     ldr r0, [sp, args@0]
@@ -3083,7 +3083,7 @@ helpers_sortHelper__P3774_locals:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.4728:
+.fortop.4731:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@0]
@@ -3094,18 +3094,18 @@ helpers_sortHelper__P3774_locals:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.4728      
+    beq .brk.4731      
 .jmpz259:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.4736:
+.fortop.4739:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, locals@0]
     bl _cmp_lt
-    beq .brk.4736      
+    beq .brk.4739      
 .jmpz260:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -3144,39 +3144,39 @@ helpers_sortHelper__P3774_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl helpers_swap__P3773
+    bl helpers_swap__P3772
 _proccall263:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
 .else_4_19:
 .afterif_5_19:
-.cont.4736:
+.cont.4739:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.4736      
-.brk.4736:
-.cont.4728:
+    b .fortop.4739      
+.brk.4739:
+.cont.4731:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.4728      
-.brk.4728:
+    b .fortop.4731      
+.brk.4731:
     ldr r0, [sp, args@0]
-.ret.3774:
+.ret.3773:
     @stackempty locals
 .final_6_19:
     add sp, #4*3 ; pop locals 3
-helpers_sortHelper__P3774_end:
+helpers_sortHelper__P3773_end:
     pop {pc}
 .object PUSH
 .balign 4
 _ldlit_65:
- .word helpers_arraySort_inline__P4666_Lit
+ .word helpers_arraySort_inline__P4669_Lit
 .object POP
     @stackempty func
     @stackempty args
@@ -3184,13 +3184,13 @@ _ldlit_65:
     ;
 ; Function core/pxt-helpers.ts(186,5): helpers.swap
     ;
-    .object helpers_swap__P3773 "core/pxt-helpers.ts(186,5): helpers.swap"
-helpers_swap__P3773_pre:
+    .object helpers_swap__P3772 "core/pxt-helpers.ts(186,5): helpers.swap"
+helpers_swap__P3772_pre:
     .section code
     .balign 4
     .section code
-helpers_swap__P3773:
-helpers_swap__P3773_nochk:
+helpers_swap__P3772:
+helpers_swap__P3772_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -3198,7 +3198,7 @@ helpers_swap__P3773_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-helpers_swap__P3773_locals:
+helpers_swap__P3772_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -3240,12 +3240,12 @@ helpers_swap__P3773_locals:
     bl _pxt_array_set
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.ret.3773:
+.ret.3772:
     @stackempty locals
     movs r0, #0
 .final_0_20:
     add sp, #4*1 ; pop locals 1
-helpers_swap__P3773_end:
+helpers_swap__P3772_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -3253,26 +3253,26 @@ helpers_swap__P3773_end:
     ;
 ; Function jacdac/rolemgr.ts(74,9): jacdac._rolemgr.ServerBindings.scoreFor
     ;
-    .object jacdac__rolemgr_ServerBindings_scoreFor__P4112 "jacdac/rolemgr.ts(74,9): jacdac._rolemgr.ServerBindings.scoreFor"
-jacdac__rolemgr_ServerBindings_scoreFor__P4112_pre:
+    .object jacdac__rolemgr_ServerBindings_scoreFor__P4111 "jacdac/rolemgr.ts(74,9): jacdac._rolemgr.ServerBindings.scoreFor"
+jacdac__rolemgr_ServerBindings_scoreFor__P4111_pre:
     .section code
     .balign 4
-jacdac__rolemgr_ServerBindings_scoreFor__P4112_args:
+jacdac__rolemgr_ServerBindings_scoreFor__P4111_args:
     cmp r4, #3
-    bge jacdac__rolemgr_ServerBindings_scoreFor__P4112_nochk
+    bge jacdac__rolemgr_ServerBindings_scoreFor__P4111_nochk
     push {lr}
     bl _expand_args_3_24
-    bl jacdac__rolemgr_ServerBindings_scoreFor__P4112_nochk
+    bl jacdac__rolemgr_ServerBindings_scoreFor__P4111_nochk
     @dummystack 3
     add sp, #4*3
     pop {pc}
     .section code
-jacdac__rolemgr_ServerBindings_scoreFor__P4112:
+jacdac__rolemgr_ServerBindings_scoreFor__P4111:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     mov lr, r7
-jacdac__rolemgr_ServerBindings_scoreFor__P4112_nochk:
+jacdac__rolemgr_ServerBindings_scoreFor__P4111_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -3291,7 +3291,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
+jacdac__rolemgr_ServerBindings_scoreFor__P4111_locals:
     movs r0, #1
     str r0, [sp, locals@0]
     @stackempty locals
@@ -3299,7 +3299,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     str r0, [sp, locals@1]
     @stackempty locals
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #12]
     str r0, [sp, locals@2]
     @stackempty locals
@@ -3317,7 +3317,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     movs r0, #1
     str r0, [sp, locals@6]
     @stackempty locals
-.fortop.4784:
+.fortop.4787:
     ldr r0, [sp, locals@6]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@5]
@@ -3333,7 +3333,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.4784      
+    beq .brk.4787      
 .jmpz264:
     ldr r0, [sp, locals@5]
     push {r0} ; proc-arg
@@ -3348,7 +3348,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@4]
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #4]
     mov r7, sp
     str r7, [r6, #4]
@@ -3357,7 +3357,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     beq .else_0_21      
 .jmpz265:
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #4]
     ldr r1, [sp, locals@2]
     bl _cmp_eq
@@ -3383,13 +3383,13 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
 .afterif_3_21:
-.cont.4784:
+.cont.4787:
     ldr r0, [sp, locals@6]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@6]
-    b .fortop.4784      
-.brk.4784:
+    b .fortop.4787      
+.brk.4787:
     movs r0, #0
     str r0, [sp, locals@5]
     ldr r0, [sp, locals@2]
@@ -3400,7 +3400,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     movs r0, #9
     str r0, [sp, locals@8]
     @stackempty locals
-.fortop.4801:
+.fortop.4804:
     ldr r0, [sp, locals@8]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@7]
@@ -3417,7 +3417,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
     bne .jmpz267
-    b .brk.4801      
+    b .brk.4804      
 .jmpz267:
     ldr r0, [sp, locals@8]
     push {r0} ; proc-arg
@@ -3427,7 +3427,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     str r0, [sp, locals@9]
     @stackempty locals
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@9]
@@ -3442,7 +3442,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     cmp r0, #0
     beq .else_4_21      
 .jmpz268:
-    b .cont.4801      
+    b .cont.4804      
 .else_4_21:
 .afterif_5_21:
     ldr r0, [sp, locals@7]
@@ -3460,7 +3460,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     movs r0, #1
     str r0, [sp, locals@11]
     @stackempty locals
-.fortop.4818:
+.fortop.4821:
     ldr r0, [sp, locals@11]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@3]
@@ -3477,7 +3477,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
     bne .jmpz269
-    b .brk.4818      
+    b .brk.4821      
 .jmpz269:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
@@ -3487,7 +3487,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     ldr r1, [sp, #4*0] ; estack
     bl _pxt_array_get
     add sp, #4*2 ; pop locals 2
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #16]
     ldr r1, [sp, locals@10]
     bl _cmp_eq
@@ -3521,7 +3521,7 @@ jacdac__rolemgr_ServerBindings_scoreFor__P4112_locals:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     push {r3} ; the one arg
-    bl jacdac__rolemgr_RoleBinding_select__P4108
+    bl jacdac__rolemgr_RoleBinding_select__P4107
 _proccall272:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
@@ -3536,7 +3536,7 @@ _proccall272:
     ldr r1, [sp, #4*0] ; estack
     bl _pxt_array_get
     add sp, #4*2 ; pop locals 2
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     bl _conv_20
@@ -3595,7 +3595,7 @@ _proccall273:
     ldr r1, [sp, #4*0] ; estack
     bl _pxt_array_get
     add sp, #4*2 ; pop locals 2
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     bl _conv_21
@@ -3619,7 +3619,7 @@ _proccall273:
     ldr r1, [sp, #4*0] ; estack
     bl _pxt_array_get
     add sp, #4*2 ; pop locals 2
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     bl _conv_21
@@ -3647,32 +3647,32 @@ _proccall274:
 _proccall275:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-    b .brk.4818      
+    b .brk.4821      
 .else_6_21:
 .afterif_9_21:
-.cont.4818:
+.cont.4821:
     ldr r0, [sp, locals@11]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@11]
     @stackempty locals
-    b .fortop.4818      
-.brk.4818:
-.cont.4801:
+    b .fortop.4821      
+.brk.4821:
+.cont.4804:
     ldr r0, [sp, locals@8]
     movs r1, #9
     bl _numops_adds
     str r0, [sp, locals@8]
     @stackempty locals
-    b .fortop.4801      
-.brk.4801:
+    b .fortop.4804      
+.brk.4804:
     ldr r0, [sp, locals@1]
     movs r1, #1
     bl _cmp_eq
     beq .else_10_21      
 .jmpz276:
     movs r0, #1
-    b .ret.4112      
+    b .ret.4111      
 .else_10_21:
 .afterif_11_21:
     ldr r0, [sp, locals@0]
@@ -3682,11 +3682,11 @@ _proccall275:
     add sp, #4*1 ; pop locals 1
     ldr r1, [sp, locals@1]
     bl _numops_orrs
-.ret.4112:
+.ret.4111:
     @stackempty locals
 .final_12_21:
     add sp, #4*12 ; pop locals 12
-jacdac__rolemgr_ServerBindings_scoreFor__P4112_end:
+jacdac__rolemgr_ServerBindings_scoreFor__P4111_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -3720,11 +3720,11 @@ helpers_arraySplice__P1992_locals:
     movs r0, #1
     str r0, [sp, locals@0]
     @stackempty locals
-.fortop.4892:
+.fortop.4895:
     ldr r0, [sp, locals@0]
     ldr r1, [sp, args@2]
     bl _cmp_lt
-    beq .brk.4892      
+    beq .brk.4895      
 .jmpz278:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -3736,14 +3736,14 @@ helpers_arraySplice__P1992_locals:
     bl Array_::removeAt
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.4892:
+.cont.4895:
     ldr r0, [sp, locals@0]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@0]
     @stackempty locals
-    b .fortop.4892      
-.brk.4892:
+    b .fortop.4895      
+.brk.4895:
 .ret.1992:
     @stackempty locals
     movs r0, #0
@@ -4045,7 +4045,7 @@ _proccall282:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.4989:
+.fortop.4992:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -4061,7 +4061,7 @@ _proccall282:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.4989      
+    beq .brk.4992      
 .jmpz283:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
@@ -4170,14 +4170,14 @@ _proccall282:
     bl _pxt_buffer_set
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.cont.4989:
+.cont.4992:
     ldr r0, [sp, locals@2]
     movs r1, #5
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.4989      
-.brk.4989:
+    b .fortop.4992      
+.brk.4992:
     ldr r0, [sp, locals@1]
 .ret.2645:
     @stackempty locals
@@ -4220,7 +4220,7 @@ helpers_stringToLowerCase__P2013_locals:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.5036:
+.fortop.5039:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -4236,7 +4236,7 @@ helpers_stringToLowerCase__P2013_locals:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.5036      
+    beq .brk.5039      
 .jmpz286:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -4329,14 +4329,14 @@ _proccall289:
     @stackempty locals
 .else_0_26:
 .afterif_3_26:
-.cont.5036:
+.cont.5039:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.5036      
-.brk.5036:
+    b .fortop.5039      
+.brk.5039:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
     movs r0, #0
@@ -4578,7 +4578,7 @@ _proccall298:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.5146:
+.fortop.5149:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r7, [r6, #0]
@@ -4595,7 +4595,7 @@ _proccall298:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.5146      
+    beq .brk.5149      
 .jmpz300:
     ldr r7, [r6, #0]
     ldr r0, [r7, #40]
@@ -4616,14 +4616,14 @@ _proccall298:
     bl _lambda_call2_23
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.cont.5146:
+.cont.5149:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.5146      
-.brk.5146:
+    b .fortop.5149      
+.brk.5149:
 .else_2_29:
 .afterif_3_29:
 .ret.2379:
@@ -4874,7 +4874,7 @@ _proccall312:
 .else_12_30:
 .afterif_13_30:
     movs r0, #1
-    ldr r1, _ldlit_81 ; console_inspect_inline__P5223_Lit      
+    ldr r1, _ldlit_81 ; console_inspect_inline__P5226_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -4966,7 +4966,7 @@ _ldlit_79:
 _ldlit_80:
  .word _str11
 _ldlit_81:
- .word console_inspect_inline__P5223_Lit
+ .word console_inspect_inline__P5226_Lit
 _ldlit_82:
  .word _str15
 _ldlit_83:
@@ -4980,32 +4980,32 @@ _ldlit_84:
     ;
 ; Function core/console.ts(102,17): console.inspect.inline
     ;
-    .object console_inspect_inline__P5223 "core/console.ts(102,17): console.inspect.inline"
-console_inspect_inline__P5223_pre:
+    .object console_inspect_inline__P5226 "core/console.ts(102,17): console.inspect.inline"
+console_inspect_inline__P5226_pre:
     .section code
     .balign 4
-console_inspect_inline__P5223_Lit:
+console_inspect_inline__P5226_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word console_inspect_inline__P5223_args@fn
-console_inspect_inline__P5223_args:
+    .word console_inspect_inline__P5226_args@fn
+console_inspect_inline__P5226_args:
     cmp r4, #2
-    bge console_inspect_inline__P5223_nochk
+    bge console_inspect_inline__P5226_nochk
     push {lr}
     bl _expand_args_2_7
-    bl console_inspect_inline__P5223_nochk
+    bl console_inspect_inline__P5226_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-console_inspect_inline__P5223:
-console_inspect_inline__P5223_nochk:
+console_inspect_inline__P5226:
+console_inspect_inline__P5226_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-console_inspect_inline__P5223_locals:
+console_inspect_inline__P5226_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -5043,10 +5043,10 @@ console_inspect_inline__P5223_locals:
     str r7, [r6, #4]
     bl String_::concat
     add sp, #4*2 ; pop locals 2
-.ret.5223:
+.ret.5226:
     @stackempty locals
 .final_0_31:
-console_inspect_inline__P5223_end:
+console_inspect_inline__P5226_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -5083,11 +5083,11 @@ helpers_arrayReduce__P2004_locals:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.5254:
+.fortop.5257:
     ldr r0, [sp, locals@1]
     ldr r1, [sp, locals@0]
     bl _cmp_lt
-    beq .brk.5254      
+    beq .brk.5257      
 .jmpz315:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -5113,14 +5113,14 @@ helpers_arrayReduce__P2004_locals:
     add sp, #4*4 ; pop locals 4
     str r0, [sp, args@2]
     @stackempty locals
-.cont.5254:
+.cont.5257:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.5254      
-.brk.5254:
+    b .fortop.5257      
+.brk.5257:
     ldr r0, [sp, args@2]
 .ret.2004:
     @stackempty locals
@@ -5241,11 +5241,11 @@ _proccall319:
     ldr r0, [sp, args@1]
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.5303:
+.fortop.5306:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, args@2]
     bl _cmp_lt
-    beq .brk.5303      
+    beq .brk.5306      
 .jmpz324:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
@@ -5264,14 +5264,14 @@ _proccall319:
     bl Array_::push
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.5303:
+.cont.5306:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.5303      
-.brk.5303:
+    b .fortop.5306      
+.brk.5306:
     ldr r0, [sp, locals@0]
 .ret.2007:
     @stackempty locals
@@ -5362,12 +5362,12 @@ helpers_arrayJoin__P1995_locals:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.5331:
+.fortop.5334:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, locals@1]
     bl _cmp_lt
     bne .jmpz327
-    b .brk.5331      
+    b .brk.5334      
 .jmpz327:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
@@ -5501,14 +5501,14 @@ _ldlit_88:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@0]
     @stackempty locals
-.cont.5331:
+.cont.5334:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.5331      
-.brk.5331:
+    b .fortop.5334      
+.brk.5334:
     ldr r0, [sp, locals@0]
 .ret.1995:
     @stackempty locals
@@ -5522,26 +5522,26 @@ helpers_arrayJoin__P1995_end:
     ;
 ; Function jacdac/rolemgr.ts(49,9): jacdac._rolemgr.RoleBinding.select
     ;
-    .object jacdac__rolemgr_RoleBinding_select__P4108 "jacdac/rolemgr.ts(49,9): jacdac._rolemgr.RoleBinding.select"
-jacdac__rolemgr_RoleBinding_select__P4108_pre:
+    .object jacdac__rolemgr_RoleBinding_select__P4107 "jacdac/rolemgr.ts(49,9): jacdac._rolemgr.RoleBinding.select"
+jacdac__rolemgr_RoleBinding_select__P4107_pre:
     .section code
     .balign 4
-jacdac__rolemgr_RoleBinding_select__P4108_args:
+jacdac__rolemgr_RoleBinding_select__P4107_args:
     cmp r4, #3
-    bge jacdac__rolemgr_RoleBinding_select__P4108_nochk
+    bge jacdac__rolemgr_RoleBinding_select__P4107_nochk
     push {lr}
     bl _expand_args_3_24
-    bl jacdac__rolemgr_RoleBinding_select__P4108_nochk
+    bl jacdac__rolemgr_RoleBinding_select__P4107_nochk
     @dummystack 3
     add sp, #4*3
     pop {pc}
     .section code
-jacdac__rolemgr_RoleBinding_select__P4108:
+jacdac__rolemgr_RoleBinding_select__P4107:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     mov lr, r7
-jacdac__rolemgr_RoleBinding_select__P4108_nochk:
+jacdac__rolemgr_RoleBinding_select__P4107_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -5549,9 +5549,9 @@ jacdac__rolemgr_RoleBinding_select__P4108_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac__rolemgr_RoleBinding_select__P4108_locals:
+jacdac__rolemgr_RoleBinding_select__P4107_locals:
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #12]
     str r0, [sp, locals@0]
     @stackempty locals
@@ -5600,7 +5600,7 @@ jacdac__rolemgr_RoleBinding_select__P4108_locals:
     cmp r0, #0
     beq .else_0_35      
 .jmpz333:
-    b .ret.4108      
+    b .ret.4107      
 .else_0_35:
 .afterif_3_35:
     ldr r0, [sp, args@0]
@@ -5631,7 +5631,7 @@ _proccall335:
 .else_4_35:
 .afterif_5_35:
     ldr r0, [sp, args@1]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     ldr r0, [sp, args@2]
@@ -5669,12 +5669,12 @@ _proccall336:
     ldr r1, [sp, args@2]
     str r1, [r0, #8]
     @stackempty locals
-.ret.4108:
+.ret.4107:
     @stackempty locals
     movs r0, #0
 .final_6_35:
     add sp, #4*1 ; pop locals 1
-jacdac__rolemgr_RoleBinding_select__P4108_end:
+jacdac__rolemgr_RoleBinding_select__P4107_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -5682,13 +5682,13 @@ jacdac__rolemgr_RoleBinding_select__P4108_end:
     ;
 ; Function jacdac/rolemgr.ts(122,5): jacdac._rolemgr.maxIn
     ;
-    .object jacdac__rolemgr_maxIn__P4114 "jacdac/rolemgr.ts(122,5): jacdac._rolemgr.maxIn"
-jacdac__rolemgr_maxIn__P4114_pre:
+    .object jacdac__rolemgr_maxIn__P4113 "jacdac/rolemgr.ts(122,5): jacdac._rolemgr.maxIn"
+jacdac__rolemgr_maxIn__P4113_pre:
     .section code
     .balign 4
     .section code
-jacdac__rolemgr_maxIn__P4114:
-jacdac__rolemgr_maxIn__P4114_nochk:
+jacdac__rolemgr_maxIn__P4113:
+jacdac__rolemgr_maxIn__P4113_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -5698,7 +5698,7 @@ jacdac__rolemgr_maxIn__P4114_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac__rolemgr_maxIn__P4114_locals:
+jacdac__rolemgr_maxIn__P4113_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     movs r1, #1
@@ -5709,7 +5709,7 @@ jacdac__rolemgr_maxIn__P4114_locals:
     movs r0, #3
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.5415:
+.fortop.5418:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -5725,7 +5725,7 @@ jacdac__rolemgr_maxIn__P4114_locals:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.5415      
+    beq .brk.5418      
 .jmpz337:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -5841,20 +5841,20 @@ jacdac__rolemgr_maxIn__P4114_locals:
     @stackempty locals
 .else_0_36:
 .afterif_5_36:
-.cont.5415:
+.cont.5418:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.5415      
-.brk.5415:
+    b .fortop.5418      
+.brk.5418:
     ldr r0, [sp, locals@0]
-.ret.4114:
+.ret.4113:
     @stackempty locals
 .final_6_36:
     add sp, #4*3 ; pop locals 3
-jacdac__rolemgr_maxIn__P4114_end:
+jacdac__rolemgr_maxIn__P4113_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -5895,45 +5895,45 @@ console_log__P2383_end:
     ;
 ; Function jacdac/rolemgr.ts(67,9): jacdac._rolemgr.ServerBindings.fullyBound
     ;
-    .object jacdac__rolemgr_ServerBindings_fullyBound__P4111 "jacdac/rolemgr.ts(67,9): jacdac._rolemgr.ServerBindings.fullyBound"
-jacdac__rolemgr_ServerBindings_fullyBound__P4111_pre:
+    .object jacdac__rolemgr_ServerBindings_fullyBound__P4110 "jacdac/rolemgr.ts(67,9): jacdac._rolemgr.ServerBindings.fullyBound"
+jacdac__rolemgr_ServerBindings_fullyBound__P4110_pre:
     .section code
     .balign 4
-jacdac__rolemgr_ServerBindings_fullyBound__P4111_args:
+jacdac__rolemgr_ServerBindings_fullyBound__P4110_args:
     cmp r4, #1
-    bge jacdac__rolemgr_ServerBindings_fullyBound__P4111_nochk
+    bge jacdac__rolemgr_ServerBindings_fullyBound__P4110_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__rolemgr_ServerBindings_fullyBound__P4111_nochk
+    bl jacdac__rolemgr_ServerBindings_fullyBound__P4110_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__rolemgr_ServerBindings_fullyBound__P4111:
+jacdac__rolemgr_ServerBindings_fullyBound__P4110:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     mov lr, r7
-jacdac__rolemgr_ServerBindings_fullyBound__P4111_nochk:
+jacdac__rolemgr_ServerBindings_fullyBound__P4110_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__rolemgr_ServerBindings_fullyBound__P4111_locals:
+jacdac__rolemgr_ServerBindings_fullyBound__P4110_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #4]
     mov r3, r0
-    ldr r0, _ldlit_90 ; jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_Lit      
+    ldr r0, _ldlit_90 ; jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_Lit      
     push {r0} ; proc-arg
     push {r3} ; the one arg
     bl helpers_arrayEvery__P2000
 _proccall344:
     add sp, #4*2 ; pop locals 2
-.ret.4111:
+.ret.4110:
     @stackempty locals
 .final_0_38:
-jacdac__rolemgr_ServerBindings_fullyBound__P4111_end:
+jacdac__rolemgr_ServerBindings_fullyBound__P4110_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -5941,34 +5941,34 @@ jacdac__rolemgr_ServerBindings_fullyBound__P4111_end:
     ;
 ; Function jacdac/rolemgr.ts(68,40): jacdac._rolemgr.ServerBindings.fullyBound.inline
     ;
-    .object jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452 "jacdac/rolemgr.ts(68,40): jacdac._rolemgr.ServerBindings.fullyBound.inline"
-jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_pre:
+    .object jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455 "jacdac/rolemgr.ts(68,40): jacdac._rolemgr.ServerBindings.fullyBound.inline"
+jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_pre:
     .section code
     .balign 4
-jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_Lit:
+jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_args@fn
-jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_args:
+    .word jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_args@fn
+jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_args:
     cmp r4, #1
-    bge jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_nochk
+    bge jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_nochk
+    bl jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452:
-jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_nochk:
+jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455:
+jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_locals:
+jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     movs r1, #6
@@ -5976,10 +5976,10 @@ jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_locals:
     str r7, [r6, #4]
     bl numops::neq
     add sp, #4*1 ; pop locals 1
-.ret.5452:
+.ret.5455:
     @stackempty locals
 .final_0_39:
-jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_end:
+jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -6016,11 +6016,11 @@ helpers_arrayEvery__P2000_locals:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.5464:
+.fortop.5467:
     ldr r0, [sp, locals@1]
     ldr r1, [sp, locals@0]
     bl _cmp_lt
-    beq .brk.5464      
+    beq .brk.5467      
 .jmpz345:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -6060,14 +6060,14 @@ helpers_arrayEvery__P2000_locals:
     b .ret.2000      
 .else_0_40:
 .afterif_1_40:
-.cont.5464:
+.cont.5467:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.5464      
-.brk.5464:
+    b .fortop.5467      
+.brk.5467:
     movs r0, #66
 .ret.2000:
     @stackempty locals
@@ -6081,23 +6081,23 @@ helpers_arrayEvery__P2000_end:
     ;
 ; Function jacdac/rolemgr.ts(65,9): jacdac._rolemgr.ServerBindings.constructor
     ;
-    .object jacdac__rolemgr_ServerBindings_constructor__P4113 "jacdac/rolemgr.ts(65,9): jacdac._rolemgr.ServerBindings.constructor"
-jacdac__rolemgr_ServerBindings_constructor__P4113_pre:
+    .object jacdac__rolemgr_ServerBindings_constructor__P4112 "jacdac/rolemgr.ts(65,9): jacdac._rolemgr.ServerBindings.constructor"
+jacdac__rolemgr_ServerBindings_constructor__P4112_pre:
     .section code
     .balign 4
     .section code
-jacdac__rolemgr_ServerBindings_constructor__P4113:
+jacdac__rolemgr_ServerBindings_constructor__P4112:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
+    bl _inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
     mov lr, r7
-jacdac__rolemgr_ServerBindings_constructor__P4113_nochk:
+jacdac__rolemgr_ServerBindings_constructor__P4112_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__rolemgr_ServerBindings_constructor__P4113_locals:
+jacdac__rolemgr_ServerBindings_constructor__P4112_locals:
     ldr r0, [sp, args@0]
     ldr r1, [sp, args@1]
     str r1, [r0, #8]
@@ -6112,10 +6112,10 @@ jacdac__rolemgr_ServerBindings_constructor__P4113_locals:
     str r1, [r0, #4]
     add sp, #4*2 ; pop locals 2
     movs r0, #0
-.ret.4113:
+.ret.4112:
     @stackempty locals
 .final_0_41:
-jacdac__rolemgr_ServerBindings_constructor__P4113_end:
+jacdac__rolemgr_ServerBindings_constructor__P4112_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -6153,11 +6153,11 @@ helpers_arrayFind__P2003_locals:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.5484:
+.fortop.5487:
     ldr r0, [sp, locals@1]
     ldr r1, [sp, locals@0]
     bl _cmp_lt
-    beq .brk.5484      
+    beq .brk.5487      
 .jmpz348:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -6188,14 +6188,14 @@ helpers_arrayFind__P2003_locals:
     b .ret.2003      
 .else_0_42:
 .afterif_1_42:
-.cont.5484:
+.cont.5487:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.5484      
-.brk.5484:
+    b .fortop.5487      
+.brk.5487:
     movs r0, #0
 .ret.2003:
     @stackempty locals
@@ -6209,26 +6209,26 @@ helpers_arrayFind__P2003_end:
     ;
 ; Function jacdac/rolemgr.ts(41,9): jacdac._rolemgr.RoleBinding.host
     ;
-    .object jacdac__rolemgr_RoleBinding_host__P4107 "jacdac/rolemgr.ts(41,9): jacdac._rolemgr.RoleBinding.host"
-jacdac__rolemgr_RoleBinding_host__P4107_pre:
+    .object jacdac__rolemgr_RoleBinding_host__P4106 "jacdac/rolemgr.ts(41,9): jacdac._rolemgr.RoleBinding.host"
+jacdac__rolemgr_RoleBinding_host__P4106_pre:
     .section code
     .balign 4
-jacdac__rolemgr_RoleBinding_host__P4107_args:
+jacdac__rolemgr_RoleBinding_host__P4106_args:
     cmp r4, #1
-    bge jacdac__rolemgr_RoleBinding_host__P4107_nochk
+    bge jacdac__rolemgr_RoleBinding_host__P4106_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__rolemgr_RoleBinding_host__P4107_nochk
+    bl jacdac__rolemgr_RoleBinding_host__P4106_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__rolemgr_RoleBinding_host__P4107:
+jacdac__rolemgr_RoleBinding_host__P4106:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     mov lr, r7
-jacdac__rolemgr_RoleBinding_host__P4107_nochk:
+jacdac__rolemgr_RoleBinding_host__P4106_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -6236,7 +6236,7 @@ jacdac__rolemgr_RoleBinding_host__P4107_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac__rolemgr_RoleBinding_host__P4107_locals:
+jacdac__rolemgr_RoleBinding_host__P4106_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #20]
     bl _inst_jacdac_ClientRoleQuery__C3532_validate_11
@@ -6251,7 +6251,7 @@ jacdac__rolemgr_RoleBinding_host__P4107_locals:
     ldr r0, [r0, #20]
     bl _inst_jacdac_ClientRoleQuery__C3532_validate_11
     ldr r0, [r0, #8]
-    b .ret.4107      
+    b .ret.4106      
 .else_0_43:
 .afterif_1_43:
     ldr r0, [sp, args@0]
@@ -6274,7 +6274,7 @@ jacdac__rolemgr_RoleBinding_host__P4107_locals:
 .jmpz352:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #12]
-    b .ret.4107      
+    b .ret.4106      
     b .afterif_3_43      
 .else_2_43:
     ldr r0, [sp, args@0]
@@ -6292,14 +6292,14 @@ jacdac__rolemgr_RoleBinding_host__P4107_locals:
     bl helpers_stringSlice__P2011
 _proccall353:
     add sp, #4*3 ; pop locals 3
-    b .ret.4107      
+    b .ret.4106      
 .afterif_3_43:
     movs r0, #0
-.ret.4107:
+.ret.4106:
     @stackempty locals
 .final_4_43:
     add sp, #4*1 ; pop locals 1
-jacdac__rolemgr_RoleBinding_host__P4107_end:
+jacdac__rolemgr_RoleBinding_host__P4106_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -6307,23 +6307,23 @@ jacdac__rolemgr_RoleBinding_host__P4107_end:
     ;
 ; Function jacdac/rolemgr.ts(39,9): jacdac._rolemgr.RoleBinding.constructor
     ;
-    .object jacdac__rolemgr_RoleBinding_constructor__P4109 "jacdac/rolemgr.ts(39,9): jacdac._rolemgr.RoleBinding.constructor"
-jacdac__rolemgr_RoleBinding_constructor__P4109_pre:
+    .object jacdac__rolemgr_RoleBinding_constructor__P4108 "jacdac/rolemgr.ts(39,9): jacdac._rolemgr.RoleBinding.constructor"
+jacdac__rolemgr_RoleBinding_constructor__P4108_pre:
     .section code
     .balign 4
     .section code
-jacdac__rolemgr_RoleBinding_constructor__P4109:
+jacdac__rolemgr_RoleBinding_constructor__P4108:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
+    bl _inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
     mov lr, r7
-jacdac__rolemgr_RoleBinding_constructor__P4109_nochk:
+jacdac__rolemgr_RoleBinding_constructor__P4108_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__rolemgr_RoleBinding_constructor__P4109_locals:
+jacdac__rolemgr_RoleBinding_constructor__P4108_locals:
     ldr r0, [sp, args@0]
     ldr r1, [sp, args@1]
     str r1, [r0, #12]
@@ -6334,10 +6334,10 @@ jacdac__rolemgr_RoleBinding_constructor__P4109_locals:
     ldr r1, [sp, args@3]
     str r1, [r0, #20]
     movs r0, #0
-.ret.4109:
+.ret.4108:
     @stackempty locals
 .final_0_44:
-jacdac__rolemgr_RoleBinding_constructor__P4109_end:
+jacdac__rolemgr_RoleBinding_constructor__P4108_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -6345,23 +6345,23 @@ jacdac__rolemgr_RoleBinding_constructor__P4109_end:
     ;
 ; Function jacdac/rolemgr.ts(32,9): jacdac._rolemgr.DeviceWrapper.constructor
     ;
-    .object jacdac__rolemgr_DeviceWrapper_constructor__P4105 "jacdac/rolemgr.ts(32,9): jacdac._rolemgr.DeviceWrapper.constructor"
-jacdac__rolemgr_DeviceWrapper_constructor__P4105_pre:
+    .object jacdac__rolemgr_DeviceWrapper_constructor__P4104 "jacdac/rolemgr.ts(32,9): jacdac._rolemgr.DeviceWrapper.constructor"
+jacdac__rolemgr_DeviceWrapper_constructor__P4104_pre:
     .section code
     .balign 4
     .section code
-jacdac__rolemgr_DeviceWrapper_constructor__P4105:
+jacdac__rolemgr_DeviceWrapper_constructor__P4104:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
+    bl _inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
     mov lr, r7
-jacdac__rolemgr_DeviceWrapper_constructor__P4105_nochk:
+jacdac__rolemgr_DeviceWrapper_constructor__P4104_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__rolemgr_DeviceWrapper_constructor__P4105_locals:
+jacdac__rolemgr_DeviceWrapper_constructor__P4104_locals:
     ldr r0, [sp, args@0]
     ldr r1, [sp, args@1]
     str r1, [r0, #12]
@@ -6380,10 +6380,10 @@ jacdac__rolemgr_DeviceWrapper_constructor__P4105_locals:
     negs r1, r1
     str r1, [r0, #8]
     movs r0, #0
-.ret.4105:
+.ret.4104:
     @stackempty locals
 .final_0_45:
-jacdac__rolemgr_DeviceWrapper_constructor__P4105_end:
+jacdac__rolemgr_DeviceWrapper_constructor__P4104_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -6426,11 +6426,11 @@ helpers_arrayMap__P1998_locals:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.5533:
+.fortop.5536:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, locals@1]
     bl _cmp_lt
-    beq .brk.5533      
+    beq .brk.5536      
 .jmpz354:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
@@ -6460,14 +6460,14 @@ helpers_arrayMap__P1998_locals:
     bl Array_::push
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.5533:
+.cont.5536:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.5533      
-.brk.5533:
+    b .fortop.5536      
+.brk.5536:
     ldr r0, [sp, locals@0]
 .ret.1998:
     @stackempty locals
@@ -6475,7 +6475,7 @@ helpers_arrayMap__P1998_locals:
 .object PUSH
 .balign 4
 _ldlit_90:
- .word jacdac__rolemgr_ServerBindings_fullyBound_inline__P5452_Lit
+ .word jacdac__rolemgr_ServerBindings_fullyBound_inline__P5455_Lit
 _ldlit_91:
  .word _str71
 .object POP
@@ -6489,26 +6489,26 @@ helpers_arrayMap__P1998_end:
     ;
 ; Function jacdac/rolemgr.ts(352,9): jacdac._rolemgr.RoleManagerServer.checkChanges
     ;
-    .object jacdac__rolemgr_RoleManagerServer_checkChanges__P4117 "jacdac/rolemgr.ts(352,9): jacdac._rolemgr.RoleManagerServer.checkChanges"
-jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_pre:
+    .object jacdac__rolemgr_RoleManagerServer_checkChanges__P4116 "jacdac/rolemgr.ts(352,9): jacdac._rolemgr.RoleManagerServer.checkChanges"
+jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_pre:
     .section code
     .balign 4
-jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_args:
+jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_args:
     cmp r4, #1
-    bge jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_nochk
+    bge jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_nochk
+    bl jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__rolemgr_RoleManagerServer_checkChanges__P4117:
+jacdac__rolemgr_RoleManagerServer_checkChanges__P4116:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac__rolemgr_RoleManagerServer__C3328_validate_6
     mov lr, r7
-jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_nochk:
+jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -6516,10 +6516,10 @@ jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_locals:
+jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_nochk
+    bl jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_nochk
 _proccall356:
     add sp, #4*1 ; pop locals 1
     str r0, [sp, locals@0]
@@ -6551,12 +6551,12 @@ _proccall359:
     @stackempty locals
 .else_0_47:
 .afterif_1_47:
-.ret.4117:
+.ret.4116:
     @stackempty locals
     movs r0, #0
 .final_2_47:
     add sp, #4*1 ; pop locals 1
-jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_end:
+jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -6691,7 +6691,7 @@ jacdac_EventSource_emit__P3622_locals:
     movs r0, #1
     str r0, [sp, locals@3]
     @stackempty locals
-.fortop.5579:
+.fortop.5582:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
@@ -6707,7 +6707,7 @@ jacdac_EventSource_emit__P3622_locals:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.5579      
+    beq .brk.5582      
 .jmpz363:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
@@ -6734,13 +6734,13 @@ jacdac_EventSource_emit__P3622_locals:
     @stackempty locals
 .else_2_49:
 .afterif_3_49:
-.cont.5579:
+.cont.5582:
     ldr r0, [sp, locals@3]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@3]
-    b .fortop.5579      
-.brk.5579:
+    b .fortop.5582      
+.brk.5582:
     movs r0, #0
     str r0, [sp, locals@2]
     movs r0, #0
@@ -6752,7 +6752,7 @@ jacdac_EventSource_emit__P3622_locals:
     movs r0, #1
     str r0, [sp, locals@6]
     @stackempty locals
-.fortop.5589:
+.fortop.5592:
     ldr r0, [sp, locals@6]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@5]
@@ -6768,7 +6768,7 @@ jacdac_EventSource_emit__P3622_locals:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.5589      
+    beq .brk.5592      
 .jmpz365:
     ldr r0, [sp, locals@5]
     push {r0} ; proc-arg
@@ -6801,7 +6801,7 @@ jacdac_EventSource_emit__P3622_locals:
     cmp r0, #0
     beq .else_5_49      
 .jmpz367:
-    ldr r0, _ldlit_94 ; _catch_5598      
+    ldr r0, _ldlit_94 ; _catch_5601      
     bl _pxt_save_exception_state
     @stackempty locals
     ldr r0, [sp, locals@7]
@@ -6816,7 +6816,7 @@ jacdac_EventSource_emit__P3622_locals:
     str r7, [r6, #4]
     bl pxt::endTry
     b .catchend_8_49      
-_catch_5598:
+_catch_5601:
     movs r0, #0
     str r0, [sp, locals@8]
     @stackempty locals
@@ -6849,13 +6849,13 @@ _proccall369:
 .afterif_9_49:
 .else_4_49:
 .afterif_10_49:
-.cont.5589:
+.cont.5592:
     ldr r0, [sp, locals@6]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@6]
-    b .fortop.5589      
-.brk.5589:
+    b .fortop.5592      
+.brk.5592:
     movs r0, #0
     str r0, [sp, locals@5]
     movs r0, #66
@@ -6952,7 +6952,7 @@ _proccall374:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall375:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -7039,7 +7039,7 @@ jacdac_delayedSend__P3006_locals:
 _ldlit_93:
  .word _str77
 _ldlit_94:
- .word _catch_5598
+ .word _catch_5601
 .object POP
 .jmpz378:
     mov r7, sp
@@ -7048,7 +7048,7 @@ _ldlit_94:
     ldr r7, [r6, #0]
     str r0, [r7, #52]
     @stackempty locals
-    ldr r0, _ldlit_96 ; jacdac_processDelayedPackets__P4064_Lit      
+    ldr r0, _ldlit_96 ; jacdac_processDelayedPackets__P4063_Lit      
     push {r0} ; proc-arg
     bl control_runInParallel__P2297
 _proccall379:
@@ -7056,7 +7056,7 @@ _proccall379:
     @stackempty locals
 .else_0_51:
 .afterif_1_51:
-    ldr r0, _ldlit_97 ; jacdac_DelayedPacket__C4062_VT      
+    ldr r0, _ldlit_97 ; jacdac_DelayedPacket__C4061_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
@@ -7067,7 +7067,7 @@ _proccall379:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*2] ; tmpref @1
     push {r0} ; proc-arg
-    bl jacdac_DelayedPacket_constructor__P4063
+    bl jacdac_DelayedPacket_constructor__P4062
 _proccall380:
     add sp, #4*3 ; pop locals 3
     pop {r0} ; tmpref @1
@@ -7076,7 +7076,7 @@ _proccall380:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.5652:
+.fortop.5655:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r7, [r6, #0]
@@ -7093,7 +7093,7 @@ _proccall380:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.5652      
+    beq .brk.5655      
 .jmpz381:
     ldr r7, [r6, #0]
     ldr r0, [r7, #52]
@@ -7104,7 +7104,7 @@ _proccall380:
     ldr r1, [sp, #4*0] ; estack
     bl _pxt_array_get
     add sp, #4*2 ; pop locals 2
-    bl _inst_jacdac_DelayedPacket__C4062_validate_40
+    bl _inst_jacdac_DelayedPacket__C4061_validate_40
     ldr r0, [r0, #4]
     ldr r1, [sp, args@1]
     bl _cmp_gt
@@ -7126,14 +7126,14 @@ _proccall380:
     b .ret.3006      
 .else_2_51:
 .afterif_3_51:
-.cont.5652:
+.cont.5655:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.5652      
-.brk.5652:
+    b .fortop.5655      
+.brk.5655:
     ldr r7, [r6, #0]
     ldr r0, [r7, #52]
     push {r0} ; proc-arg
@@ -7158,23 +7158,23 @@ jacdac_delayedSend__P3006_end:
     ;
 ; Function jacdac/eventqueue.ts(8,9): jacdac.DelayedPacket.constructor
     ;
-    .object jacdac_DelayedPacket_constructor__P4063 "jacdac/eventqueue.ts(8,9): jacdac.DelayedPacket.constructor"
-jacdac_DelayedPacket_constructor__P4063_pre:
+    .object jacdac_DelayedPacket_constructor__P4062 "jacdac/eventqueue.ts(8,9): jacdac.DelayedPacket.constructor"
+jacdac_DelayedPacket_constructor__P4062_pre:
     .section code
     .balign 4
     .section code
-jacdac_DelayedPacket_constructor__P4063:
+jacdac_DelayedPacket_constructor__P4062:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac_DelayedPacket__C4062_validate_40
+    bl _inst_jacdac_DelayedPacket__C4061_validate_40
     mov lr, r7
-jacdac_DelayedPacket_constructor__P4063_nochk:
+jacdac_DelayedPacket_constructor__P4062_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_DelayedPacket_constructor__P4063_locals:
+jacdac_DelayedPacket_constructor__P4062_locals:
     ldr r0, [sp, args@0]
     ldr r1, [sp, args@1]
     str r1, [r0, #4]
@@ -7182,10 +7182,10 @@ jacdac_DelayedPacket_constructor__P4063_locals:
     ldr r1, [sp, args@2]
     str r1, [r0, #8]
     movs r0, #0
-.ret.4063:
+.ret.4062:
     @stackempty locals
 .final_0_52:
-jacdac_DelayedPacket_constructor__P4063_end:
+jacdac_DelayedPacket_constructor__P4062_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -7193,18 +7193,18 @@ jacdac_DelayedPacket_constructor__P4063_end:
     ;
 ; Function jacdac/eventqueue.ts(29,5): jacdac.processDelayedPackets
     ;
-    .object jacdac_processDelayedPackets__P4064 "jacdac/eventqueue.ts(29,5): jacdac.processDelayedPackets"
-jacdac_processDelayedPackets__P4064_pre:
+    .object jacdac_processDelayedPackets__P4063 "jacdac/eventqueue.ts(29,5): jacdac.processDelayedPackets"
+jacdac_processDelayedPackets__P4063_pre:
     .section code
     .balign 4
-jacdac_processDelayedPackets__P4064_Lit:
+jacdac_processDelayedPackets__P4063_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_processDelayedPackets__P4064_args@fn
-jacdac_processDelayedPackets__P4064_args:
+    .word jacdac_processDelayedPackets__P4063_args@fn
+jacdac_processDelayedPackets__P4063_args:
     .section code
-jacdac_processDelayedPackets__P4064:
-jacdac_processDelayedPackets__P4064_nochk:
+jacdac_processDelayedPackets__P4063:
+jacdac_processDelayedPackets__P4063_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -7213,14 +7213,14 @@ jacdac_processDelayedPackets__P4064_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_processDelayedPackets__P4064_locals:
-.cont.5676:
+jacdac_processDelayedPackets__P4063_locals:
+.cont.5679:
     movs r0, #66
     mov r7, sp
     str r7, [r6, #4]
     bl numops::toBoolDecr
     cmp r0, #0
-    beq .brk.5676      
+    beq .brk.5679      
 .jmpz383:
     movs r0, #21
     push {r0} ; proc-arg
@@ -7234,7 +7234,7 @@ _proccall384:
     bl _numops_fromInt
     str r0, [sp, locals@0]
     @stackempty locals
-.fortop.5681:
+.fortop.5684:
     ldr r7, [r6, #0]
     ldr r0, [r7, #52]
     push {r0} ; proc-arg
@@ -7269,7 +7269,7 @@ _proccall384:
     ldr r0, [sp, #4*0] ; estack
     add sp, #4*1 ; pop locals 1
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_DelayedPacket__C4062_validate_40
+    bl _inst_jacdac_DelayedPacket__C4061_validate_40
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@0]
@@ -7288,7 +7288,7 @@ _proccall384:
     cmp r0, #0
     beq .else_0_53      
 .jmpz386:
-    b .brk.5681      
+    b .brk.5684      
 .else_0_53:
 .afterif_3_53:
     ldr r7, [r6, #0]
@@ -7299,16 +7299,16 @@ _proccall387:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_DelayedPacket__C4062_validate_40
+    bl _inst_jacdac_DelayedPacket__C4061_validate_40
     ldr r0, [r0, #8]
     push {r0} ; the one arg
     bl jacdac_JDPacket__sendCore__P2954
 _proccall388:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.cont.5681:
-    b .fortop.5681      
-.brk.5681:
+.cont.5684:
+    b .fortop.5684      
+.brk.5684:
     ldr r7, [r6, #0]
     ldr r0, [r7, #52]
     push {r0} ; proc-arg
@@ -7337,17 +7337,17 @@ _proccall388:
     ldr r7, [r6, #0]
     str r0, [r7, #52]
     @stackempty locals
-    b .ret.4064      
+    b .ret.4063      
 .else_4_53:
 .afterif_5_53:
-    b .cont.5676      
-.brk.5676:
-.ret.4064:
+    b .cont.5679      
+.brk.5679:
+.ret.4063:
     @stackempty locals
     movs r0, #0
 .final_6_53:
     add sp, #4*2 ; pop locals 2
-jacdac_processDelayedPackets__P4064_end:
+jacdac_processDelayedPackets__P4063_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -7539,9 +7539,9 @@ _proccall400:
 .object PUSH
 .balign 4
 _ldlit_96:
- .word jacdac_processDelayedPackets__P4064_Lit
+ .word jacdac_processDelayedPackets__P4063_Lit
 _ldlit_97:
- .word jacdac_DelayedPacket__C4062_VT
+ .word jacdac_DelayedPacket__C4061_VT
 _ldlit_98:
  .word _str36
 .object POP
@@ -7636,7 +7636,7 @@ _proccall409:
     movs r0, #1
     str r0, [sp, locals@6]
     @stackempty locals
-.fortop.5758:
+.fortop.5761:
     ldr r0, [sp, locals@6]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@5]
@@ -7652,7 +7652,7 @@ _proccall409:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.5758      
+    beq .brk.5761      
 .jmpz410:
     ldr r0, [sp, locals@5]
     push {r0} ; proc-arg
@@ -7745,13 +7745,13 @@ _proccall416:
     @stackempty locals
 .else_7_55:
 .afterif_10_55:
-.cont.5758:
+.cont.5761:
     ldr r0, [sp, locals@6]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@6]
-    b .fortop.5758      
-.brk.5758:
+    b .fortop.5761      
+.brk.5761:
     movs r0, #0
     str r0, [sp, locals@5]
     b .afterif_11_55      
@@ -7870,7 +7870,7 @@ _proccall426:
 .else_20_55:
 .afterif_21_55:
     movs r0, #1
-    ldr r1, _ldlit_100 ; dev_inline__P5803_Lit      
+    ldr r1, _ldlit_100 ; dev_inline__P5806_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -8012,7 +8012,7 @@ _proccall436:
     bl String_::concat
     add sp, #4*1 ; pop locals 1
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall437:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -8117,7 +8117,7 @@ _proccall443:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_serviceMatches__P4160
+    bl jacdac_serviceMatches__P4159
 _proccall444:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@10]
@@ -8241,11 +8241,11 @@ _proccall454:
     bl String_::concat
     add sp, #4*1 ; pop locals 1
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall455:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    bl jacdac_resetToProxy__P4181
+    bl jacdac_resetToProxy__P4180
 _proccall456:
     @stackempty locals
 .else_30_55:
@@ -8280,7 +8280,7 @@ _proccall458:
 .object PUSH
 .balign 4
 _ldlit_100:
- .word dev_inline__P5803_Lit
+ .word dev_inline__P5806_Lit
 _ldlit_101:
  .word _str98
 _ldlit_102:
@@ -8376,32 +8376,32 @@ jacdac_Bus_processPacket__P3472_end:
     ;
 ; Function jacdac/routing.ts(289,45): dev.inline
     ;
-    .object dev_inline__P5803 "jacdac/routing.ts(289,45): dev.inline"
-dev_inline__P5803_pre:
+    .object dev_inline__P5806 "jacdac/routing.ts(289,45): dev.inline"
+dev_inline__P5806_pre:
     .section code
     .balign 4
-dev_inline__P5803_Lit:
+dev_inline__P5806_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word dev_inline__P5803_args@fn
-dev_inline__P5803_args:
+    .word dev_inline__P5806_args@fn
+dev_inline__P5806_args:
     cmp r4, #1
-    bge dev_inline__P5803_nochk
+    bge dev_inline__P5806_nochk
     push {lr}
     bl _expand_args_1_9
-    bl dev_inline__P5803_nochk
+    bl dev_inline__P5806_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-dev_inline__P5803:
-dev_inline__P5803_nochk:
+dev_inline__P5806:
+dev_inline__P5806_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-dev_inline__P5803_locals:
+dev_inline__P5806_locals:
     ldr r0, [sp, args@0]
     bl _inst_jacdac_Device__C3569_validate_14
     ldr r0, [r0, #32]
@@ -8414,10 +8414,10 @@ dev_inline__P5803_locals:
     str r7, [r6, #4]
     bl numops::eq
     add sp, #4*2 ; pop locals 2
-.ret.5803:
+.ret.5806:
     @stackempty locals
 .final_0_56:
-dev_inline__P5803_end:
+dev_inline__P5806_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -8491,7 +8491,7 @@ _proccall468:
     movs r0, #1
     str r0, [sp, locals@5]
     @stackempty locals
-.fortop.5931:
+.fortop.5934:
     ldr r0, [sp, locals@5]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@4]
@@ -8507,7 +8507,7 @@ _proccall468:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.5931      
+    beq .brk.5934      
 .jmpz469:
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
@@ -8522,7 +8522,7 @@ _proccall468:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@3]
     ldr r0, [sp, locals@3]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
@@ -8549,7 +8549,7 @@ _proccall468:
     ldr r0, [sp, #4*0] ; estack
     add sp, #4*1 ; pop locals 1
     ldr r0, [sp, locals@3]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #24]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
@@ -8570,11 +8570,11 @@ _proccall468:
 .jmpz471:
     ldr r0, [sp, locals@3]
     movs r1, #1
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     str r1, [r0, #4]
     @stackempty locals
     ldr r0, [sp, locals@3]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
     bl _conv_46
@@ -8594,13 +8594,13 @@ _proccall468:
     @stackempty locals
 .else_2_57:
 .afterif_5_57:
-.cont.5931:
+.cont.5934:
     ldr r0, [sp, locals@5]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@5]
-    b .fortop.5931      
-.brk.5931:
+    b .fortop.5934      
+.brk.5934:
     movs r0, #0
     str r0, [sp, locals@4]
     ldr r0, [sp, locals@0]
@@ -8610,7 +8610,7 @@ _proccall468:
     cmp r0, #0
     beq .else_6_57      
 .jmpz472:
-    ldr r0, _ldlit_108 ; jacdac__gotAck_inline__P5959_Lit      
+    ldr r0, _ldlit_108 ; jacdac__gotAck_inline__P5962_Lit      
     push {r0} ; proc-arg
     ldr r7, [r6, #0]
     ldr r0, [r7, #68]
@@ -8636,34 +8636,34 @@ jacdac__gotAck__P2960_end:
     ;
 ; Function jacdac/packet.ts(401,57): jacdac._gotAck.inline
     ;
-    .object jacdac__gotAck_inline__P5959 "jacdac/packet.ts(401,57): jacdac._gotAck.inline"
-jacdac__gotAck_inline__P5959_pre:
+    .object jacdac__gotAck_inline__P5962 "jacdac/packet.ts(401,57): jacdac._gotAck.inline"
+jacdac__gotAck_inline__P5962_pre:
     .section code
     .balign 4
-jacdac__gotAck_inline__P5959_Lit:
+jacdac__gotAck_inline__P5962_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac__gotAck_inline__P5959_args@fn
-jacdac__gotAck_inline__P5959_args:
+    .word jacdac__gotAck_inline__P5962_args@fn
+jacdac__gotAck_inline__P5962_args:
     cmp r4, #1
-    bge jacdac__gotAck_inline__P5959_nochk
+    bge jacdac__gotAck_inline__P5962_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__gotAck_inline__P5959_nochk
+    bl jacdac__gotAck_inline__P5962_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__gotAck_inline__P5959:
-jacdac__gotAck_inline__P5959_nochk:
+jacdac__gotAck_inline__P5962:
+jacdac__gotAck_inline__P5962_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__gotAck_inline__P5959_locals:
+jacdac__gotAck_inline__P5962_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     movs r1, #1
@@ -8671,10 +8671,10 @@ jacdac__gotAck_inline__P5959_locals:
     str r7, [r6, #4]
     bl numops::neqq
     add sp, #4*1 ; pop locals 1
-.ret.5959:
+.ret.5962:
     @stackempty locals
 .final_0_58:
-jacdac__gotAck_inline__P5959_end:
+jacdac__gotAck_inline__P5962_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -8815,7 +8815,7 @@ _proccall480:
     push {r1}
     push {r2}
     push {r3}
-    bl jacdac_Device_lookupQuery__P4149_nochk
+    bl jacdac_Device_lookupQuery__P4148_nochk
 _proccall481:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@1]
@@ -8829,7 +8829,7 @@ _proccall481:
 .jmpz482:
     ldr r0, [sp, locals@1]
     movs r1, #66
-    bl _inst_jacdac_RegQuery__C4146_validate_47
+    bl _inst_jacdac_RegQuery__C4145_validate_47
     str r1, [r0, #16]
     @stackempty locals
 .else_4_59:
@@ -8888,7 +8888,7 @@ _proccall487:
     push {r0} ; proc-arg
     push {r1}
     push {r2}
-    bl jacdac_Device_lookupQuery__P4149_nochk
+    bl jacdac_Device_lookupQuery__P4148_nochk
 _proccall488:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@3]
@@ -8907,7 +8907,7 @@ _proccall488:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
-    bl _inst_jacdac_RegQuery__C4146_validate_47
+    bl _inst_jacdac_RegQuery__C4145_validate_47
     str r1, [r0, #12]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -8920,7 +8920,7 @@ _proccall488:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
-    bl _inst_jacdac_RegQuery__C4146_validate_47
+    bl _inst_jacdac_RegQuery__C4145_validate_47
     str r1, [r0, #8]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -9014,7 +9014,7 @@ _proccall496:
 .object PUSH
 .balign 4
 _ldlit_108:
- .word jacdac__gotAck_inline__P5959_Lit
+ .word jacdac__gotAck_inline__P5962_Lit
 _ldlit_109:
  .word _dbl59
 .object POP
@@ -9175,7 +9175,7 @@ _proccall504:
 .else_28_59:
 .afterif_29_59:
     movs r0, #2
-    ldr r1, _ldlit_111 ; client_inline__P6096_Lit      
+    ldr r1, _ldlit_111 ; client_inline__P6099_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -9231,32 +9231,32 @@ jacdac_Device_processPacket__P3589_end:
     ;
 ; Function jacdac/routing.ts(1546,46): client.inline
     ;
-    .object client_inline__P6096 "jacdac/routing.ts(1546,46): client.inline"
-client_inline__P6096_pre:
+    .object client_inline__P6099 "jacdac/routing.ts(1546,46): client.inline"
+client_inline__P6099_pre:
     .section code
     .balign 4
-client_inline__P6096_Lit:
+client_inline__P6099_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word client_inline__P6096_args@fn
-client_inline__P6096_args:
+    .word client_inline__P6099_args@fn
+client_inline__P6099_args:
     cmp r4, #1
-    bge client_inline__P6096_nochk
+    bge client_inline__P6099_nochk
     push {lr}
     bl _expand_args_1_9
-    bl client_inline__P6096_nochk
+    bl client_inline__P6099_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-client_inline__P6096:
-client_inline__P6096_nochk:
+client_inline__P6099:
+client_inline__P6099_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-client_inline__P6096_locals:
+client_inline__P6099_locals:
     ldr r0, [sp, args@0]
     bl _inst_jacdac_Client__C3540_validate_10
     ldr r0, [r0, #16]
@@ -9294,10 +9294,10 @@ client_inline__P6096_locals:
     add sp, #4*2 ; pop locals 2
 .condexprfin_1_60:
 ; jmp value (already in r0)
-.ret.6096:
+.ret.6099:
     @stackempty locals
 .final_2_60:
-client_inline__P6096_end:
+client_inline__P6099_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -9418,7 +9418,7 @@ _proccall515:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #48]
     mov r3, r0
-    ldr r0, _ldlit_112 ; jacdac_Client_handlePacketOuter_inline__P6147_Lit      
+    ldr r0, _ldlit_112 ; jacdac_Client_handlePacketOuter_inline__P6150_Lit      
     push {r0} ; proc-arg
     push {r3} ; the one arg
     bl helpers_arrayForEach__P2001
@@ -9444,7 +9444,7 @@ _proccall520:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Client_raiseEvent__P4028_nochk
+    bl jacdac_Client_raiseEvent__P4027_nochk
 _proccall521:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -9459,7 +9459,7 @@ _proccall521:
     movs r0, #1
     str r0, [sp, locals@3]
     @stackempty locals
-.fortop.6159:
+.fortop.6162:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
@@ -9475,7 +9475,7 @@ _proccall521:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.6159      
+    beq .brk.6162      
 .jmpz522:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
@@ -9497,13 +9497,13 @@ _proccall521:
 _proccall523:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.6159:
+.cont.6162:
     ldr r0, [sp, locals@3]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@3]
-    b .fortop.6159      
-.brk.6159:
+    b .fortop.6162      
+.brk.6162:
     movs r0, #0
     str r0, [sp, locals@2]
 .afterif_11_61:
@@ -9529,42 +9529,42 @@ jacdac_Client_handlePacketOuter__P3557_end:
     ;
 ; Function jacdac/routing.ts(1154,44): jacdac.Client.handlePacketOuter.inline
     ;
-    .object jacdac_Client_handlePacketOuter_inline__P6147 "jacdac/routing.ts(1154,44): jacdac.Client.handlePacketOuter.inline"
-jacdac_Client_handlePacketOuter_inline__P6147_pre:
+    .object jacdac_Client_handlePacketOuter_inline__P6150 "jacdac/routing.ts(1154,44): jacdac.Client.handlePacketOuter.inline"
+jacdac_Client_handlePacketOuter_inline__P6150_pre:
     .section code
     .balign 4
-jacdac_Client_handlePacketOuter_inline__P6147_Lit:
+jacdac_Client_handlePacketOuter_inline__P6150_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_Client_handlePacketOuter_inline__P6147_args@fn
-jacdac_Client_handlePacketOuter_inline__P6147_args:
+    .word jacdac_Client_handlePacketOuter_inline__P6150_args@fn
+jacdac_Client_handlePacketOuter_inline__P6150_args:
     cmp r4, #1
-    bge jacdac_Client_handlePacketOuter_inline__P6147_nochk
+    bge jacdac_Client_handlePacketOuter_inline__P6150_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_Client_handlePacketOuter_inline__P6147_nochk
+    bl jacdac_Client_handlePacketOuter_inline__P6150_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_Client_handlePacketOuter_inline__P6147:
-jacdac_Client_handlePacketOuter_inline__P6147_nochk:
+jacdac_Client_handlePacketOuter_inline__P6150:
+jacdac_Client_handlePacketOuter_inline__P6150_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Client_handlePacketOuter_inline__P6147_locals:
+jacdac_Client_handlePacketOuter_inline__P6150_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     bl jacdac_RegisterClient_reset__P3521
 _proccall525:
     add sp, #4*1 ; pop locals 1
-.ret.6147:
+.ret.6150:
     @stackempty locals
     movs r0, #0
 .final_0_62:
-jacdac_Client_handlePacketOuter_inline__P6147_end:
+jacdac_Client_handlePacketOuter_inline__P6150_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -9685,9 +9685,9 @@ _proccall528:
 .object PUSH
 .balign 4
 _ldlit_111:
- .word client_inline__P6096_Lit
+ .word client_inline__P6099_Lit
 _ldlit_112:
- .word jacdac_Client_handlePacketOuter_inline__P6147_Lit
+ .word jacdac_Client_handlePacketOuter_inline__P6150_Lit
 .object POP
 .jmpz529:
     ldr r0, [sp, args@1]
@@ -10018,7 +10018,7 @@ helpers_bufferEquals__P2626_locals:
     movs r0, #1
     str r0, [sp, locals@0]
     @stackempty locals
-.fortop.6238:
+.fortop.6241:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -10034,7 +10034,7 @@ helpers_bufferEquals__P2626_locals:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.6238      
+    beq .brk.6241      
 .jmpz540:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -10064,14 +10064,14 @@ helpers_bufferEquals__P2626_locals:
     b .ret.2626      
 .else_6_65:
 .afterif_7_65:
-.cont.6238:
+.cont.6241:
     ldr r0, [sp, locals@0]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@0]
     @stackempty locals
-    b .fortop.6238      
-.brk.6238:
+    b .fortop.6241      
+.brk.6241:
     movs r0, #66
 .ret.2626:
     @stackempty locals
@@ -10085,32 +10085,32 @@ helpers_bufferEquals__P2626_end:
     ;
 ; Function jacdac/routing.ts(1232,9): jacdac.Client.raiseEvent
     ;
-    .object jacdac_Client_raiseEvent__P4028 "jacdac/routing.ts(1232,9): jacdac.Client.raiseEvent"
-jacdac_Client_raiseEvent__P4028_pre:
+    .object jacdac_Client_raiseEvent__P4027 "jacdac/routing.ts(1232,9): jacdac.Client.raiseEvent"
+jacdac_Client_raiseEvent__P4027_pre:
     .section code
     .balign 4
-jacdac_Client_raiseEvent__P4028_args:
+jacdac_Client_raiseEvent__P4027_args:
     cmp r4, #2
-    bge jacdac_Client_raiseEvent__P4028_nochk
+    bge jacdac_Client_raiseEvent__P4027_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Client_raiseEvent__P4028_nochk
+    bl jacdac_Client_raiseEvent__P4027_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Client_raiseEvent__P4028:
+jacdac_Client_raiseEvent__P4027:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Client__C3540_validate_10
     mov lr, r7
-jacdac_Client_raiseEvent__P4028_nochk:
+jacdac_Client_raiseEvent__P4027_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Client_raiseEvent__P4028_locals:
+jacdac_Client_raiseEvent__P4027_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
@@ -10125,11 +10125,11 @@ jacdac_Client_raiseEvent__P4028_locals:
     bl control::raiseEvent
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.ret.4028:
+.ret.4027:
     @stackempty locals
     movs r0, #0
 .final_0_66:
-jacdac_Client_raiseEvent__P4028_end:
+jacdac_Client_raiseEvent__P4027_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -10220,11 +10220,11 @@ helpers_arrayForEach__P2001_locals:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.6274:
+.fortop.6277:
     ldr r0, [sp, locals@1]
     ldr r1, [sp, locals@0]
     bl _cmp_lt
-    beq .brk.6274      
+    beq .brk.6277      
 .jmpz542:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -10246,14 +10246,14 @@ helpers_arrayForEach__P2001_locals:
     bl _lambda_call2_23
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.cont.6274:
+.cont.6277:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.6274      
-.brk.6274:
+    b .fortop.6277      
+.brk.6277:
 .ret.2001:
     @stackempty locals
     movs r0, #0
@@ -10757,32 +10757,32 @@ jacdac_JDPacket_isRegGet__P2938_end:
     ;
 ; Function jacdac/routing.ts(1416,9): jacdac.Device.lookupQuery
     ;
-    .object jacdac_Device_lookupQuery__P4149 "jacdac/routing.ts(1416,9): jacdac.Device.lookupQuery"
-jacdac_Device_lookupQuery__P4149_pre:
+    .object jacdac_Device_lookupQuery__P4148 "jacdac/routing.ts(1416,9): jacdac.Device.lookupQuery"
+jacdac_Device_lookupQuery__P4148_pre:
     .section code
     .balign 4
-jacdac_Device_lookupQuery__P4149_args:
+jacdac_Device_lookupQuery__P4148_args:
     cmp r4, #3
-    bge jacdac_Device_lookupQuery__P4149_nochk
+    bge jacdac_Device_lookupQuery__P4148_nochk
     push {lr}
     bl _expand_args_3_24
-    bl jacdac_Device_lookupQuery__P4149_nochk
+    bl jacdac_Device_lookupQuery__P4148_nochk
     @dummystack 3
     add sp, #4*3
     pop {pc}
     .section code
-jacdac_Device_lookupQuery__P4149:
+jacdac_Device_lookupQuery__P4148:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Device__C3569_validate_14
     mov lr, r7
-jacdac_Device_lookupQuery__P4149_nochk:
+jacdac_Device_lookupQuery__P4148_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Device_lookupQuery__P4149_locals:
+jacdac_Device_lookupQuery__P4148_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #24]
     mov r7, sp
@@ -10814,7 +10814,7 @@ jacdac_Device_lookupQuery__P4149_locals:
 .else_0_77:
 .afterif_1_77:
     movs r0, #2
-    ldr r1, _ldlit_117 ; jacdac_Device_lookupQuery_inline__P6352_Lit      
+    ldr r1, _ldlit_117 ; jacdac_Device_lookupQuery_inline__P6355_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -10838,10 +10838,10 @@ jacdac_Device_lookupQuery__P4149_locals:
     bl helpers_arrayFind__P2003
 _proccall559:
     add sp, #4*2 ; pop locals 2
-.ret.4149:
+.ret.4148:
     @stackempty locals
 .final_2_77:
-jacdac_Device_lookupQuery__P4149_end:
+jacdac_Device_lookupQuery__P4148_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -10849,34 +10849,34 @@ jacdac_Device_lookupQuery__P4149_end:
     ;
 ; Function jacdac/routing.ts(1418,38): jacdac.Device.lookupQuery.inline
     ;
-    .object jacdac_Device_lookupQuery_inline__P6352 "jacdac/routing.ts(1418,38): jacdac.Device.lookupQuery.inline"
-jacdac_Device_lookupQuery_inline__P6352_pre:
+    .object jacdac_Device_lookupQuery_inline__P6355 "jacdac/routing.ts(1418,38): jacdac.Device.lookupQuery.inline"
+jacdac_Device_lookupQuery_inline__P6355_pre:
     .section code
     .balign 4
-jacdac_Device_lookupQuery_inline__P6352_Lit:
+jacdac_Device_lookupQuery_inline__P6355_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_Device_lookupQuery_inline__P6352_args@fn
-jacdac_Device_lookupQuery_inline__P6352_args:
+    .word jacdac_Device_lookupQuery_inline__P6355_args@fn
+jacdac_Device_lookupQuery_inline__P6355_args:
     cmp r4, #1
-    bge jacdac_Device_lookupQuery_inline__P6352_nochk
+    bge jacdac_Device_lookupQuery_inline__P6355_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_Device_lookupQuery_inline__P6352_nochk
+    bl jacdac_Device_lookupQuery_inline__P6355_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_Device_lookupQuery_inline__P6352:
-jacdac_Device_lookupQuery_inline__P6352_nochk:
+jacdac_Device_lookupQuery_inline__P6355:
+jacdac_Device_lookupQuery_inline__P6355_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Device_lookupQuery_inline__P6352_locals:
+jacdac_Device_lookupQuery_inline__P6355_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac_RegQuery__C4146_validate_47
+    bl _inst_jacdac_RegQuery__C4145_validate_47
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     ldr r0, [r5, #4*3]
@@ -10903,7 +10903,7 @@ jacdac_Device_lookupQuery_inline__P6352_locals:
     ldr r0, [sp, #4*0] ; estack
     add sp, #4*1 ; pop locals 1
     ldr r0, [sp, args@0]
-    bl _inst_jacdac_RegQuery__C4146_validate_47
+    bl _inst_jacdac_RegQuery__C4145_validate_47
     ldr r0, [r0, #24]
     push {r0} ; proc-arg
     ldr r0, [r5, #4*4]
@@ -10916,10 +10916,10 @@ jacdac_Device_lookupQuery_inline__P6352_locals:
     add sp, #4*2 ; pop locals 2
 .lazy_0_78:
 ; jmp value (already in r0)
-.ret.6352:
+.ret.6355:
     @stackempty locals
 .final_2_78:
-jacdac_Device_lookupQuery_inline__P6352_end:
+jacdac_Device_lookupQuery_inline__P6355_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -11086,7 +11086,7 @@ _proccall561:
     bl String_::concat
     add sp, #4*2 ; pop locals 2
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall562:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -11127,7 +11127,7 @@ _proccall562:
     movs r0, #1
     str r0, [sp, locals@4]
     @stackempty locals
-.fortop.6412:
+.fortop.6415:
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@3]
@@ -11144,7 +11144,7 @@ _proccall562:
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
     bne .jmpz563
-    b .brk.6412      
+    b .brk.6415      
 .jmpz563:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
@@ -11173,7 +11173,7 @@ _proccall562:
 _proccall565:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .cont.6412      
+    b .cont.6415      
 .else_0_80:
 .afterif_1_80:
     ldr r0, [sp, args@1]
@@ -11252,7 +11252,7 @@ _proccall569:
 .object PUSH
 .balign 4
 _ldlit_117:
- .word jacdac_Device_lookupQuery_inline__P6352_Lit
+ .word jacdac_Device_lookupQuery_inline__P6355_Lit
 _ldlit_118:
  .word _str95
 _ldlit_119:
@@ -11292,13 +11292,13 @@ _proccall571:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
 .afterif_5_80:
-.cont.6412:
+.cont.6415:
     ldr r0, [sp, locals@4]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@4]
-    b .fortop.6412      
-.brk.6412:
+    b .fortop.6415      
+.brk.6415:
     movs r0, #0
     str r0, [sp, locals@3]
     ldr r0, [sp, args@1]
@@ -11336,7 +11336,7 @@ _proccall572:
     movs r0, #9
     str r0, [sp, locals@6]
     @stackempty locals
-.fortop.6457:
+.fortop.6460:
     ldr r0, [sp, locals@6]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -11355,7 +11355,7 @@ _proccall572:
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
     bne .jmpz574
-    b .brk.6457      
+    b .brk.6460      
 .jmpz574:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
@@ -11375,7 +11375,7 @@ _proccall572:
     cmp r0, #0
     beq .else_8_80      
 .jmpz575:
-    b .cont.6457      
+    b .cont.6460      
 .else_8_80:
 .afterif_9_80:
     ldr r0, [sp, args@1]
@@ -11401,7 +11401,7 @@ _proccall572:
     movs r0, #1
     str r0, [sp, locals@10]
     @stackempty locals
-.fortop.6475:
+.fortop.6478:
     ldr r0, [sp, locals@10]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@9]
@@ -11417,7 +11417,7 @@ _proccall572:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.6475      
+    beq .brk.6478      
 .jmpz576:
     ldr r0, [sp, locals@9]
     push {r0} ; proc-arg
@@ -11522,28 +11522,28 @@ _proccall581:
     cmp r0, #0
     beq .else_11_80      
 .jmpz580:
-    b .brk.6475      
+    b .brk.6478      
 .else_11_80:
 .afterif_12_80:
 .else_10_80:
 .afterif_13_80:
-.cont.6475:
+.cont.6478:
     ldr r0, [sp, locals@10]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@10]
-    b .fortop.6475      
-.brk.6475:
+    b .fortop.6478      
+.brk.6478:
     movs r0, #0
     str r0, [sp, locals@9]
-.cont.6457:
+.cont.6460:
     ldr r0, [sp, locals@6]
     movs r1, #9
     bl _numops_adds
     str r0, [sp, locals@6]
     @stackempty locals
-    b .fortop.6457      
-.brk.6457:
+    b .fortop.6460      
+.brk.6460:
 .ret.3471:
     @stackempty locals
     movs r0, #0
@@ -11720,7 +11720,7 @@ _proccall590:
     bl String_::concat
     add sp, #4*2 ; pop locals 2
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall591:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -11738,7 +11738,7 @@ _proccall591:
     @stackempty locals
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Client_handleConnected__P4027_nochk
+    bl jacdac_Client_handleConnected__P4026_nochk
 _proccall592:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -11754,36 +11754,36 @@ jacdac_Client__attach__P3559_end:
     ;
 ; Function jacdac/routing.ts(1182,9): jacdac.Client.handleConnected
     ;
-    .object jacdac_Client_handleConnected__P4027 "jacdac/routing.ts(1182,9): jacdac.Client.handleConnected"
-jacdac_Client_handleConnected__P4027_pre:
+    .object jacdac_Client_handleConnected__P4026 "jacdac/routing.ts(1182,9): jacdac.Client.handleConnected"
+jacdac_Client_handleConnected__P4026_pre:
     .section code
     .balign 4
-jacdac_Client_handleConnected__P4027_args:
+jacdac_Client_handleConnected__P4026_args:
     cmp r4, #1
-    bge jacdac_Client_handleConnected__P4027_nochk
+    bge jacdac_Client_handleConnected__P4026_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_Client_handleConnected__P4027_nochk
+    bl jacdac_Client_handleConnected__P4026_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_Client_handleConnected__P4027:
+jacdac_Client_handleConnected__P4026:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Client__C3540_validate_10
     mov lr, r7
-jacdac_Client_handleConnected__P4027_nochk:
+jacdac_Client_handleConnected__P4026_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Client_handleConnected__P4027_locals:
+jacdac_Client_handleConnected__P4026_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #44]
     push {r0} ; the one arg
-    bl jacdac_ClientPacketQueue_resend__P4139
+    bl jacdac_ClientPacketQueue_resend__P4138
 _proccall593:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -11798,11 +11798,11 @@ _proccall593:
 _proccall594:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.ret.4027:
+.ret.4026:
     @stackempty locals
     movs r0, #0
 .final_0_82:
-jacdac_Client_handleConnected__P4027_end:
+jacdac_Client_handleConnected__P4026_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -11810,26 +11810,26 @@ jacdac_Client_handleConnected__P4027_end:
     ;
 ; Function jacdac/routing.ts(848,9): jacdac.ClientPacketQueue.resend
     ;
-    .object jacdac_ClientPacketQueue_resend__P4139 "jacdac/routing.ts(848,9): jacdac.ClientPacketQueue.resend"
-jacdac_ClientPacketQueue_resend__P4139_pre:
+    .object jacdac_ClientPacketQueue_resend__P4138 "jacdac/routing.ts(848,9): jacdac.ClientPacketQueue.resend"
+jacdac_ClientPacketQueue_resend__P4138_pre:
     .section code
     .balign 4
-jacdac_ClientPacketQueue_resend__P4139_args:
+jacdac_ClientPacketQueue_resend__P4138_args:
     cmp r4, #1
-    bge jacdac_ClientPacketQueue_resend__P4139_nochk
+    bge jacdac_ClientPacketQueue_resend__P4138_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_ClientPacketQueue_resend__P4139_nochk
+    bl jacdac_ClientPacketQueue_resend__P4138_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_ClientPacketQueue_resend__P4139:
+jacdac_ClientPacketQueue_resend__P4138:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac_ClientPacketQueue__C4135_validate_52
+    bl _inst_jacdac_ClientPacketQueue__C4134_validate_52
     mov lr, r7
-jacdac_ClientPacketQueue_resend__P4139_nochk:
+jacdac_ClientPacketQueue_resend__P4138_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -11841,7 +11841,7 @@ jacdac_ClientPacketQueue_resend__P4139_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_ClientPacketQueue_resend__P4139_locals:
+jacdac_ClientPacketQueue_resend__P4138_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #8]
     bl _inst_jacdac_Client__C3540_validate_10
@@ -11893,7 +11893,7 @@ jacdac_ClientPacketQueue_resend__P4139_locals:
     cmp r0, #0
     beq .else_0_83      
 .jmpz596:
-    b .ret.4139      
+    b .ret.4138      
     b .afterif_3_83      
 .object PUSH
 .balign 4
@@ -11922,7 +11922,7 @@ _ldlit_126:
     movs r0, #1
     str r0, [sp, locals@4]
     @stackempty locals
-.fortop.6581:
+.fortop.6584:
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@3]
@@ -11938,7 +11938,7 @@ _ldlit_126:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.6581      
+    beq .brk.6584      
 .jmpz597:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
@@ -11986,13 +11986,13 @@ _proccall599:
 _proccall600:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.6581:
+.cont.6584:
     ldr r0, [sp, locals@4]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@4]
-    b .fortop.6581      
-.brk.6581:
+    b .fortop.6584      
+.brk.6584:
     movs r0, #0
     str r0, [sp, locals@3]
     ldr r0, [sp, locals@1]
@@ -12007,7 +12007,7 @@ _proccall600:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #4]
     mov r3, r0
-    ldr r0, _ldlit_128 ; jacdac_ClientPacketQueue_resend_inline__P6600_Lit      
+    ldr r0, _ldlit_128 ; jacdac_ClientPacketQueue_resend_inline__P6603_Lit      
     push {r0} ; proc-arg
     push {r3} ; the one arg
     bl helpers_arrayFilter__P2002
@@ -12021,12 +12021,12 @@ _proccall602:
     @stackempty locals
 .else_6_83:
 .afterif_7_83:
-.ret.4139:
+.ret.4138:
     @stackempty locals
     movs r0, #0
 .final_8_83:
     add sp, #4*5 ; pop locals 5
-jacdac_ClientPacketQueue_resend__P4139_end:
+jacdac_ClientPacketQueue_resend__P4138_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -12034,32 +12034,32 @@ jacdac_ClientPacketQueue_resend__P4139_end:
     ;
 ; Function jacdac/routing.ts(859,21): jacdac.ClientPacketQueue.resend.inline
     ;
-    .object jacdac_ClientPacketQueue_resend_inline__P6600 "jacdac/routing.ts(859,21): jacdac.ClientPacketQueue.resend.inline"
-jacdac_ClientPacketQueue_resend_inline__P6600_pre:
+    .object jacdac_ClientPacketQueue_resend_inline__P6603 "jacdac/routing.ts(859,21): jacdac.ClientPacketQueue.resend.inline"
+jacdac_ClientPacketQueue_resend_inline__P6603_pre:
     .section code
     .balign 4
-jacdac_ClientPacketQueue_resend_inline__P6600_Lit:
+jacdac_ClientPacketQueue_resend_inline__P6603_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_ClientPacketQueue_resend_inline__P6600_args@fn
-jacdac_ClientPacketQueue_resend_inline__P6600_args:
+    .word jacdac_ClientPacketQueue_resend_inline__P6603_args@fn
+jacdac_ClientPacketQueue_resend_inline__P6603_args:
     cmp r4, #1
-    bge jacdac_ClientPacketQueue_resend_inline__P6600_nochk
+    bge jacdac_ClientPacketQueue_resend_inline__P6603_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_ClientPacketQueue_resend_inline__P6600_nochk
+    bl jacdac_ClientPacketQueue_resend_inline__P6603_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_ClientPacketQueue_resend_inline__P6600:
-jacdac_ClientPacketQueue_resend_inline__P6600_nochk:
+jacdac_ClientPacketQueue_resend_inline__P6603:
+jacdac_ClientPacketQueue_resend_inline__P6603_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_ClientPacketQueue_resend_inline__P6600_locals:
+jacdac_ClientPacketQueue_resend_inline__P6603_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     movs r1, #7
@@ -12075,10 +12075,10 @@ jacdac_ClientPacketQueue_resend_inline__P6600_locals:
     str r7, [r6, #4]
     bl numops::eq
     add sp, #4*1 ; pop locals 1
-.ret.6600:
+.ret.6603:
     @stackempty locals
 .final_0_84:
-jacdac_ClientPacketQueue_resend_inline__P6600_end:
+jacdac_ClientPacketQueue_resend_inline__P6603_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -12116,7 +12116,7 @@ jacdac_JDPacket_fromFrameless__P2916_locals:
     bl pxt::mkClassInstance
     push {r0}; tmpstore @1
     push {r0} ; proc-arg
-    bl jacdac_JDPacket_constructor__P3984
+    bl jacdac_JDPacket_constructor__P3983
 _proccall603:
     add sp, #4*1 ; pop locals 1
     pop {r0} ; tmpref @1
@@ -12180,23 +12180,23 @@ jacdac_JDPacket_fromFrameless__P2916_end:
     ;
 ; Function jacdac/packet.ts(46,9): jacdac.JDPacket.constructor
     ;
-    .object jacdac_JDPacket_constructor__P3984 "jacdac/packet.ts(46,9): jacdac.JDPacket.constructor"
-jacdac_JDPacket_constructor__P3984_pre:
+    .object jacdac_JDPacket_constructor__P3983 "jacdac/packet.ts(46,9): jacdac.JDPacket.constructor"
+jacdac_JDPacket_constructor__P3983_pre:
     .section code
     .balign 4
     .section code
-jacdac_JDPacket_constructor__P3984:
+jacdac_JDPacket_constructor__P3983:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_JDPacket__C2908_validate_42
     mov lr, r7
-jacdac_JDPacket_constructor__P3984_nochk:
+jacdac_JDPacket_constructor__P3983_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_JDPacket_constructor__P3984_locals:
+jacdac_JDPacket_constructor__P3983_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     mov r7, sp
@@ -12210,10 +12210,10 @@ jacdac_JDPacket_constructor__P3984_locals:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
     movs r0, #0
-.ret.3984:
+.ret.3983:
     @stackempty locals
 .final_0_86:
-jacdac_JDPacket_constructor__P3984_end:
+jacdac_JDPacket_constructor__P3983_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -12542,7 +12542,7 @@ jacdac_Bus_startClient__P3469_args:
 .object PUSH
 .balign 4
 _ldlit_128:
- .word jacdac_ClientPacketQueue_resend_inline__P6600_Lit
+ .word jacdac_ClientPacketQueue_resend_inline__P6603_Lit
 _ldlit_129:
  .word jacdac_JDPacket__C2908_VT
 .object POP
@@ -12638,7 +12638,7 @@ jacdac_Bus_clearAttachCache__P3464_locals:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.6694:
+.fortop.6697:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
@@ -12654,7 +12654,7 @@ jacdac_Bus_clearAttachCache__P3464_locals:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.6694      
+    beq .brk.6697      
 .jmpz617:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
@@ -12710,13 +12710,13 @@ _proccall619:
     @stackempty locals
 .else_0_92:
 .afterif_1_92:
-.cont.6694:
+.cont.6697:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
-    b .fortop.6694      
-.brk.6694:
+    b .fortop.6697      
+.brk.6697:
     movs r0, #0
     str r0, [sp, locals@1]
 .ret.3464:
@@ -12911,7 +12911,7 @@ jacdac_Client_device__P3551_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #48]
     mov r3, r0
-    ldr r0, _ldlit_131 ; jacdac_Client_device_inline__P6745_Lit      
+    ldr r0, _ldlit_131 ; jacdac_Client_device_inline__P6748_Lit      
     push {r0} ; proc-arg
     push {r3} ; the one arg
     bl helpers_arrayForEach__P2001
@@ -12932,42 +12932,42 @@ jacdac_Client_device__P3551_end:
     ;
 ; Function jacdac/routing.ts(1073,40): jacdac.Client.device.inline
     ;
-    .object jacdac_Client_device_inline__P6745 "jacdac/routing.ts(1073,40): jacdac.Client.device.inline"
-jacdac_Client_device_inline__P6745_pre:
+    .object jacdac_Client_device_inline__P6748 "jacdac/routing.ts(1073,40): jacdac.Client.device.inline"
+jacdac_Client_device_inline__P6748_pre:
     .section code
     .balign 4
-jacdac_Client_device_inline__P6745_Lit:
+jacdac_Client_device_inline__P6748_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_Client_device_inline__P6745_args@fn
-jacdac_Client_device_inline__P6745_args:
+    .word jacdac_Client_device_inline__P6748_args@fn
+jacdac_Client_device_inline__P6748_args:
     cmp r4, #1
-    bge jacdac_Client_device_inline__P6745_nochk
+    bge jacdac_Client_device_inline__P6748_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_Client_device_inline__P6745_nochk
+    bl jacdac_Client_device_inline__P6748_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_Client_device_inline__P6745:
-jacdac_Client_device_inline__P6745_nochk:
+jacdac_Client_device_inline__P6748:
+jacdac_Client_device_inline__P6748_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Client_device_inline__P6745_locals:
+jacdac_Client_device_inline__P6748_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     bl jacdac_RegisterClient_reset__P3521
 _proccall622:
     add sp, #4*1 ; pop locals 1
-.ret.6745:
+.ret.6748:
     @stackempty locals
     movs r0, #0
 .final_0_96:
-jacdac_Client_device_inline__P6745_end:
+jacdac_Client_device_inline__P6748_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -13087,7 +13087,7 @@ jacdac_Device_matchesRoleAt__P3582_locals:
     bl String_::concat
     add sp, #4*1 ; pop locals 1
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall626:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -13204,7 +13204,7 @@ _proccall629:
     bl String_::concat
     add sp, #4*1 ; pop locals 1
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall633:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -13246,7 +13246,7 @@ _proccall633:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Device_serviceOffsetAt__P4150_nochk
+    bl jacdac_Device_serviceOffsetAt__P4149_nochk
 _proccall635:
     add sp, #4*3 ; pop locals 3
     push {r0} ; proc-arg
@@ -13280,7 +13280,7 @@ _proccall635:
     bl String_::concat
     add sp, #4*1 ; pop locals 1
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall637:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -13323,7 +13323,7 @@ _proccall637:
 .object PUSH
 .balign 4
 _ldlit_131:
- .word jacdac_Client_device_inline__P6745_Lit
+ .word jacdac_Client_device_inline__P6748_Lit
 _ldlit_132:
  .word _str66
 _ldlit_133:
@@ -13361,7 +13361,7 @@ _ldlit_137:
     bl String_::concat
     add sp, #4*1 ; pop locals 1
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall640:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -13523,26 +13523,26 @@ settings_readString__P2828_end:
     ;
 ; Function jacdac/routing.ts(1425,9): jacdac.Device.serviceOffsetAt
     ;
-    .object jacdac_Device_serviceOffsetAt__P4150 "jacdac/routing.ts(1425,9): jacdac.Device.serviceOffsetAt"
-jacdac_Device_serviceOffsetAt__P4150_pre:
+    .object jacdac_Device_serviceOffsetAt__P4149 "jacdac/routing.ts(1425,9): jacdac.Device.serviceOffsetAt"
+jacdac_Device_serviceOffsetAt__P4149_pre:
     .section code
     .balign 4
-jacdac_Device_serviceOffsetAt__P4150_args:
+jacdac_Device_serviceOffsetAt__P4149_args:
     cmp r4, #3
-    bge jacdac_Device_serviceOffsetAt__P4150_nochk
+    bge jacdac_Device_serviceOffsetAt__P4149_nochk
     push {lr}
     bl _expand_args_3_24
-    bl jacdac_Device_serviceOffsetAt__P4150_nochk
+    bl jacdac_Device_serviceOffsetAt__P4149_nochk
     @dummystack 3
     add sp, #4*3
     pop {pc}
     .section code
-jacdac_Device_serviceOffsetAt__P4150:
+jacdac_Device_serviceOffsetAt__P4149:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Device__C3569_validate_14
     mov lr, r7
-jacdac_Device_serviceOffsetAt__P4150_nochk:
+jacdac_Device_serviceOffsetAt__P4149_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -13552,7 +13552,7 @@ jacdac_Device_serviceOffsetAt__P4150_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_Device_serviceOffsetAt__P4150_locals:
+jacdac_Device_serviceOffsetAt__P4149_locals:
     movs r0, #1
     negs r0, r0
     str r0, [sp, locals@0]
@@ -13567,11 +13567,11 @@ _proccall644:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.6898:
+.fortop.6901:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, locals@1]
     bl _cmp_lt
-    beq .brk.6898      
+    beq .brk.6901      
 .jmpz645:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
@@ -13595,26 +13595,26 @@ _proccall647:
     beq .else_1_101      
 .jmpz648:
     ldr r0, [sp, locals@0]
-    b .ret.4150      
+    b .ret.4149      
 .else_1_101:
 .afterif_2_101:
 .else_0_101:
 .afterif_3_101:
-.cont.6898:
+.cont.6901:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.6898      
-.brk.6898:
+    b .fortop.6901      
+.brk.6901:
     movs r0, #1
     negs r0, r0
-.ret.4150:
+.ret.4149:
     @stackempty locals
 .final_4_101:
     add sp, #4*3 ; pop locals 3
-jacdac_Device_serviceOffsetAt__P4150_end:
+jacdac_Device_serviceOffsetAt__P4149_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -13711,7 +13711,7 @@ _proccall649:
     bl String_::concat
     add sp, #4*1 ; pop locals 1
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall650:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -14083,19 +14083,19 @@ jacdac_Device_toString__P3581_end:
     ;
 ; Function jacdac/routing.ts(1876,5): jacdac.resetToProxy
     ;
-    .object jacdac_resetToProxy__P4181 "jacdac/routing.ts(1876,5): jacdac.resetToProxy"
-jacdac_resetToProxy__P4181_pre:
+    .object jacdac_resetToProxy__P4180 "jacdac/routing.ts(1876,5): jacdac.resetToProxy"
+jacdac_resetToProxy__P4180_pre:
     .section code
     .balign 4
     .section code
-jacdac_resetToProxy__P4181:
-jacdac_resetToProxy__P4181_nochk:
+jacdac_resetToProxy__P4180:
+jacdac_resetToProxy__P4180_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_resetToProxy__P4181_locals:
+jacdac_resetToProxy__P4180_locals:
     ldr r0, _ldlit_146 ; _str137      
     mov r7, sp
     str r7, [r6, #4]
@@ -14114,11 +14114,11 @@ _proccall664:
     str r7, [r6, #4]
     bl control::reset
     @stackempty locals
-.ret.4181:
+.ret.4180:
     @stackempty locals
     movs r0, #0
 .final_0_108:
-jacdac_resetToProxy__P4181_end:
+jacdac_resetToProxy__P4180_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -14214,7 +14214,7 @@ msgpack_packNumberArray__P2623_locals:
     movs r0, #1
     str r0, [sp, locals@3]
     @stackempty locals
-.fortop.7009:
+.fortop.7012:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
@@ -14230,7 +14230,7 @@ msgpack_packNumberArray__P2623_locals:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.7009      
+    beq .brk.7012      
 .jmpz667:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
@@ -14252,7 +14252,7 @@ msgpack_packNumberArray__P2623_locals:
     push {r0} ; proc-arg
     movs r0, #6
     push {r0} ; proc-arg
-    bl msgpack_packNumberCore__P3872
+    bl msgpack_packNumberCore__P3871
 _proccall668:
     add sp, #4*3 ; pop locals 3
     push {r0} ; proc-arg
@@ -14262,13 +14262,13 @@ _proccall668:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@0]
     @stackempty locals
-.cont.7009:
+.cont.7012:
     ldr r0, [sp, locals@3]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@3]
-    b .fortop.7009      
-.brk.7009:
+    b .fortop.7012      
+.brk.7012:
     movs r0, #0
     str r0, [sp, locals@2]
     ldr r0, [sp, locals@0]
@@ -14291,7 +14291,7 @@ _proccall668:
     movs r0, #1
     str r0, [sp, locals@7]
     @stackempty locals
-.fortop.7025:
+.fortop.7028:
     ldr r0, [sp, locals@7]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@6]
@@ -14307,7 +14307,7 @@ _proccall668:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.7025      
+    beq .brk.7028      
 .jmpz669:
     ldr r0, [sp, locals@6]
     push {r0} ; proc-arg
@@ -14329,7 +14329,7 @@ _proccall668:
     push {r0} ; proc-arg
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
-    bl msgpack_packNumberCore__P3872
+    bl msgpack_packNumberCore__P3871
 _proccall670:
     add sp, #4*3 ; pop locals 3
     push {r0} ; proc-arg
@@ -14339,13 +14339,13 @@ _proccall670:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@0]
     @stackempty locals
-.cont.7025:
+.cont.7028:
     ldr r0, [sp, locals@7]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@7]
-    b .fortop.7025      
-.brk.7025:
+    b .fortop.7028      
+.brk.7028:
     movs r0, #0
     str r0, [sp, locals@6]
     ldr r0, [sp, locals@4]
@@ -14361,13 +14361,13 @@ msgpack_packNumberArray__P2623_end:
     ;
 ; Function core/buffer.ts(57,5): msgpack.packNumberCore
     ;
-    .object msgpack_packNumberCore__P3872 "core/buffer.ts(57,5): msgpack.packNumberCore"
-msgpack_packNumberCore__P3872_pre:
+    .object msgpack_packNumberCore__P3871 "core/buffer.ts(57,5): msgpack.packNumberCore"
+msgpack_packNumberCore__P3871_pre:
     .section code
     .balign 4
     .section code
-msgpack_packNumberCore__P3872:
-msgpack_packNumberCore__P3872_nochk:
+msgpack_packNumberCore__P3871:
+msgpack_packNumberCore__P3871_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -14376,7 +14376,7 @@ msgpack_packNumberCore__P3872_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-msgpack_packNumberCore__P3872_locals:
+msgpack_packNumberCore__P3871_locals:
     movs r0, #1
     lsls r0, r0, #8
     adds r0, #151
@@ -14500,7 +14500,7 @@ _ldlit_146:
 .else_6_111:
 .afterif_7_111:
     movs r0, #3
-    b .ret.3872      
+    b .ret.3871      
     b .afterif_8_111      
 .else_3_111:
     movs r0, #1
@@ -14581,7 +14581,7 @@ _ldlit_146:
 .afterif_19_111:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
-    bl msgpack_tagFormat__P3871
+    bl msgpack_tagFormat__P3870
 _proccall681:
     add sp, #4*1 ; pop locals 1
     str r0, [sp, locals@1]
@@ -14628,11 +14628,11 @@ _proccall683:
     add sp, #4*1 ; pop locals 1
     movs r1, #3
     bl _numops_adds
-.ret.3872:
+.ret.3871:
     @stackempty locals
 .final_22_111:
     add sp, #4*2 ; pop locals 2
-msgpack_packNumberCore__P3872_end:
+msgpack_packNumberCore__P3871_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -14861,7 +14861,7 @@ Buffer_sizeOfNumberFormat__P2654_locals:
     b .switch_15_113      
 .jmpz700:
     pop {r0} ; tmpref @1
-    b .brk.7100      
+    b .brk.7103      
 .switch_0_113:
 .switch_1_113:
 .switch_2_113:
@@ -14886,7 +14886,7 @@ Buffer_sizeOfNumberFormat__P2654_locals:
 .switch_15_113:
     movs r0, #17
     b .ret.2654      
-.brk.7100:
+.brk.7103:
     movs r0, #1
 .ret.2654:
     @stackempty locals
@@ -14899,19 +14899,19 @@ Buffer_sizeOfNumberFormat__P2654_end:
     ;
 ; Function core/buffer.ts(43,5): msgpack.tagFormat
     ;
-    .object msgpack_tagFormat__P3871 "core/buffer.ts(43,5): msgpack.tagFormat"
-msgpack_tagFormat__P3871_pre:
+    .object msgpack_tagFormat__P3870 "core/buffer.ts(43,5): msgpack.tagFormat"
+msgpack_tagFormat__P3870_pre:
     .section code
     .balign 4
     .section code
-msgpack_tagFormat__P3871:
-msgpack_tagFormat__P3871_nochk:
+msgpack_tagFormat__P3870:
+msgpack_tagFormat__P3870_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-msgpack_tagFormat__P3871_locals:
+msgpack_tagFormat__P3870_locals:
     ldr r0, [sp, args@0]
     push {r0}; tmpstore @1
     mov r1, r0
@@ -15009,34 +15009,34 @@ msgpack_tagFormat__P3871_locals:
     b .switch_7_114      
 .switch_0_114:
     movs r0, #33
-    b .ret.3871      
+    b .ret.3870      
 .switch_1_114:
     movs r0, #15
-    b .ret.3871      
+    b .ret.3870      
 .switch_2_114:
     movs r0, #19
-    b .ret.3871      
+    b .ret.3870      
 .switch_3_114:
     movs r0, #25
-    b .ret.3871      
+    b .ret.3870      
 .switch_4_114:
     movs r0, #13
-    b .ret.3871      
+    b .ret.3870      
 .switch_5_114:
     movs r0, #17
-    b .ret.3871      
+    b .ret.3870      
 .switch_6_114:
     movs r0, #21
-    b .ret.3871      
+    b .ret.3870      
 .switch_7_114:
     movs r0, #6
-    b .ret.3871      
-.brk.7119:
+    b .ret.3870      
+.brk.7122:
     movs r0, #0
-.ret.3871:
+.ret.3870:
     @stackempty locals
 .final_8_114:
-msgpack_tagFormat__P3871_end:
+msgpack_tagFormat__P3870_end:
     pop {pc}
 .object PUSH
 .balign 4
@@ -15263,11 +15263,11 @@ _proccall712:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.7161:
+.fortop.7164:
     ldr r0, [sp, locals@1]
     ldr r1, [sp, locals@0]
     bl _cmp_lt
-    beq .brk.7161      
+    beq .brk.7164      
 .jmpz713:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
@@ -15284,14 +15284,14 @@ _proccall715:
     b .ret.3590      
 .else_0_119:
 .afterif_1_119:
-.cont.7161:
+.cont.7164:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.7161      
-.brk.7161:
+    b .fortop.7164      
+.brk.7164:
     movs r0, #10
 .ret.3590:
     @stackempty locals
@@ -15305,13 +15305,13 @@ jacdac_Device_hasService__P3590_end:
     ;
 ; Function jacdac/routing.ts(1728,5): jacdac.serviceMatches
     ;
-    .object jacdac_serviceMatches__P4160 "jacdac/routing.ts(1728,5): jacdac.serviceMatches"
-jacdac_serviceMatches__P4160_pre:
+    .object jacdac_serviceMatches__P4159 "jacdac/routing.ts(1728,5): jacdac.serviceMatches"
+jacdac_serviceMatches__P4159_pre:
     .section code
     .balign 4
     .section code
-jacdac_serviceMatches__P4160:
-jacdac_serviceMatches__P4160_nochk:
+jacdac_serviceMatches__P4159:
+jacdac_serviceMatches__P4159_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -15320,7 +15320,7 @@ jacdac_serviceMatches__P4160_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_serviceMatches__P4160_locals:
+jacdac_serviceMatches__P4159_locals:
     ldr r0, [sp, args@0]
     bl _inst_jacdac_Device__C3569_validate_14
     ldr r0, [r0, #36]
@@ -15384,13 +15384,13 @@ jacdac_serviceMatches__P4160_locals:
     beq .else_0_120      
 .jmpz717:
     movs r0, #10
-    b .ret.4160      
+    b .ret.4159      
 .else_0_120:
 .afterif_3_120:
     movs r0, #9
     str r0, [sp, locals@1]
     @stackempty locals
-.fortop.7184:
+.fortop.7187:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -15406,7 +15406,7 @@ jacdac_serviceMatches__P4160_locals:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.7184      
+    beq .brk.7187      
 .jmpz718:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
@@ -15433,23 +15433,23 @@ jacdac_serviceMatches__P4160_locals:
     beq .else_4_120      
 .jmpz719:
     movs r0, #10
-    b .ret.4160      
+    b .ret.4159      
 .else_4_120:
 .afterif_5_120:
-.cont.7184:
+.cont.7187:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .fortop.7184      
-.brk.7184:
+    b .fortop.7187      
+.brk.7187:
     movs r0, #66
-.ret.4160:
+.ret.4159:
     @stackempty locals
 .final_6_120:
     add sp, #4*2 ; pop locals 2
-jacdac_serviceMatches__P4160_end:
+jacdac_serviceMatches__P4159_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -15613,7 +15613,7 @@ _proccall721:
     bl String_::concat
     add sp, #4*1 ; pop locals 1
     push {r0} ; the one arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall722:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -15626,7 +15626,7 @@ _proccall722:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.7215:
+.fortop.7218:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
@@ -15643,7 +15643,7 @@ _proccall722:
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
     bne .jmpz723
-    b .brk.7215      
+    b .brk.7218      
 .object PUSH
 .balign 4
 _ldlit_151:
@@ -15676,13 +15676,13 @@ _ldlit_155:
 _proccall724:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.cont.7215:
+.cont.7218:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
-    b .fortop.7215      
-.brk.7215:
+    b .fortop.7218      
+.brk.7218:
     movs r0, #0
     str r0, [sp, locals@1]
     ldr r0, [sp, args@0]
@@ -16045,13 +16045,13 @@ _proccall728:
     b .switch_7_128      
 .jmpz736:
     pop {r0} ; tmpref @1
-    b .brk.7252      
+    b .brk.7255      
 .switch_0_128:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_handleStatusCode__P4034_nochk
+    bl jacdac_Server_handleStatusCode__P4033_nochk
 _proccall737:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -16061,7 +16061,7 @@ _proccall737:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_handleInstanceName__P4035_nochk
+    bl jacdac_Server_handleInstanceName__P4034_nochk
 _proccall738:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -16071,7 +16071,7 @@ _proccall738:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_handleVariant__P4036_nochk
+    bl jacdac_Server_handleVariant__P4035_nochk
 _proccall739:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -16095,14 +16095,14 @@ _proccall739:
     cmp r0, #0
     beq .else_8_128      
 .jmpz740:
-    b .brk.7252      
+    b .brk.7255      
 .else_8_128:
 .afterif_9_128:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_handleValue__P4037_nochk
+    bl jacdac_Server_handleValue__P4036_nochk
 _proccall741:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -16126,14 +16126,14 @@ _proccall741:
     cmp r0, #0
     beq .else_10_128      
 .jmpz742:
-    b .brk.7252      
+    b .brk.7255      
 .else_10_128:
 .afterif_11_128:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_handleIntensity__P4038_nochk
+    bl jacdac_Server_handleIntensity__P4037_nochk
 _proccall743:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -16143,12 +16143,12 @@ _proccall743:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_handleCalibrateCommand__P4039_nochk
+    bl jacdac_Server_handleCalibrateCommand__P4038_nochk
 _proccall744:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
     b .ret.3506      
-.brk.7252:
+.brk.7255:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #24]
     mov r7, sp
@@ -16179,7 +16179,7 @@ _proccall748:
     str r0, [sp, locals@2]
     @stackempty locals
     movs r0, #1
-    ldr r1, _ldlit_157 ; constant_inline__P7312_Lit      
+    ldr r1, _ldlit_157 ; constant_inline__P7315_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -16246,7 +16246,7 @@ _proccall752:
     ldr r0, [sp, #4*8] ; estack
     push {r0} ; re-push
     str r7, [sp, #4*9] ; estack
-    bl jacdac_Server_handleRegValue__P4042_nochk
+    bl jacdac_Server_handleRegValue__P4041_nochk
 _proccall753:
     add sp, #4*10 ; pop locals 10
     @stackempty locals
@@ -16283,32 +16283,32 @@ jacdac_Server_handlePacketOuter__P3506_end:
     ;
 ; Function jacdac/routing.ts(548,25): constant.inline
     ;
-    .object constant_inline__P7312 "jacdac/routing.ts(548,25): constant.inline"
-constant_inline__P7312_pre:
+    .object constant_inline__P7315 "jacdac/routing.ts(548,25): constant.inline"
+constant_inline__P7315_pre:
     .section code
     .balign 4
-constant_inline__P7312_Lit:
+constant_inline__P7315_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word constant_inline__P7312_args@fn
-constant_inline__P7312_args:
+    .word constant_inline__P7315_args@fn
+constant_inline__P7315_args:
     cmp r4, #1
-    bge constant_inline__P7312_nochk
+    bge constant_inline__P7315_nochk
     push {lr}
     bl _expand_args_1_9
-    bl constant_inline__P7312_nochk
+    bl constant_inline__P7315_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-constant_inline__P7312:
-constant_inline__P7312_nochk:
+constant_inline__P7315:
+constant_inline__P7315_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-constant_inline__P7312_locals:
+constant_inline__P7315_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     movs r1, #49
@@ -16324,10 +16324,10 @@ _proccall755:
     str r7, [r6, #4]
     bl numops::eqq
     add sp, #4*2 ; pop locals 2
-.ret.7312:
+.ret.7315:
     @stackempty locals
 .final_0_129:
-constant_inline__P7312_end:
+constant_inline__P7315_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -16373,26 +16373,26 @@ jacdac_Server_handlePacket__P3507_end:
     ;
 ; Function jacdac/routing.ts(688,9): jacdac.Server.handleRegValue
     ;
-    .object jacdac_Server_handleRegValue__P4042 "jacdac/routing.ts(688,9): jacdac.Server.handleRegValue"
-jacdac_Server_handleRegValue__P4042_pre:
+    .object jacdac_Server_handleRegValue__P4041 "jacdac/routing.ts(688,9): jacdac.Server.handleRegValue"
+jacdac_Server_handleRegValue__P4041_pre:
     .section code
     .balign 4
-jacdac_Server_handleRegValue__P4042_args:
+jacdac_Server_handleRegValue__P4041_args:
     cmp r4, #5
-    bge jacdac_Server_handleRegValue__P4042_nochk
+    bge jacdac_Server_handleRegValue__P4041_nochk
     push {lr}
     bl _expand_args_5_58
-    bl jacdac_Server_handleRegValue__P4042_nochk
+    bl jacdac_Server_handleRegValue__P4041_nochk
     @dummystack 5
     add sp, #4*5
     pop {pc}
     .section code
-jacdac_Server_handleRegValue__P4042:
+jacdac_Server_handleRegValue__P4041:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleRegValue__P4042_nochk:
+jacdac_Server_handleRegValue__P4041_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -16402,7 +16402,7 @@ jacdac_Server_handleRegValue__P4042_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_Server_handleRegValue__P4042_locals:
+jacdac_Server_handleRegValue__P4041_locals:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     bl jacdac_JDPacket_serviceCommand__P2932
@@ -16452,7 +16452,7 @@ _proccall756:
     beq .else_0_131      
 .jmpz758:
     ldr r0, [sp, args@4]
-    b .ret.4042      
+    b .ret.4041      
 .else_0_131:
 .afterif_3_131:
     ldr r0, [sp, args@1]
@@ -16472,7 +16472,7 @@ _proccall759:
     beq .else_4_131      
 .jmpz760:
     ldr r0, [sp, args@4]
-    b .ret.4042      
+    b .ret.4041      
 .else_4_131:
 .afterif_5_131:
     ldr r0, [sp, args@1]
@@ -16558,7 +16558,7 @@ _proccall766:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall767:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
@@ -16576,7 +16576,7 @@ _proccall767:
     beq .else_12_131      
 .jmpz768:
     ldr r0, [sp, args@4]
-    b .ret.4042      
+    b .ret.4041      
 .else_12_131:
 .afterif_13_131:
     ldr r0, [sp, args@3]
@@ -16612,11 +16612,11 @@ _proccall769:
 .afterif_15_131:
 .afterif_11_131:
     ldr r0, [sp, args@4]
-.ret.4042:
+.ret.4041:
     @stackempty locals
 .final_16_131:
     add sp, #4*3 ; pop locals 3
-jacdac_Server_handleRegValue__P4042_end:
+jacdac_Server_handleRegValue__P4041_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -16640,7 +16640,7 @@ jacdac_JDPacket_jdunpack__P2945_args:
 .object PUSH
 .balign 4
 _ldlit_157:
- .word constant_inline__P7312_Lit
+ .word constant_inline__P7315_Lit
 .object POP
     .section code
 jacdac_JDPacket_jdunpack__P2945:
@@ -16802,7 +16802,7 @@ jacdac_jdunpack__P2964_locals:
     b .ret.2964      
 .else_0_133:
 .afterif_3_133:
-    ldr r0, _ldlit_159 ; _catch_7410      
+    ldr r0, _ldlit_159 ; _catch_7413      
     bl _pxt_save_exception_state
     @stackempty locals
     mov r7, sp
@@ -16814,7 +16814,7 @@ jacdac_jdunpack__P2964_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_jdunpackCore__P4019
+    bl jacdac_jdunpackCore__P4018
 _proccall777:
     add sp, #4*3 ; pop locals 3
     b .ret.2964      
@@ -16823,7 +16823,7 @@ _proccall777:
     str r7, [r6, #4]
     bl pxt::endTry
     b .catchend_6_133      
-_catch_7410:
+_catch_7413:
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::getThrownValue
@@ -16885,13 +16885,13 @@ console_error__P2382_end:
     ;
 ; Function jacdac/pack.ts(142,5): jacdac.jdunpackCore
     ;
-    .object jacdac_jdunpackCore__P4019 "jacdac/pack.ts(142,5): jacdac.jdunpackCore"
-jacdac_jdunpackCore__P4019_pre:
+    .object jacdac_jdunpackCore__P4018 "jacdac/pack.ts(142,5): jacdac.jdunpackCore"
+jacdac_jdunpackCore__P4018_pre:
     .section code
     .balign 4
     .section code
-jacdac_jdunpackCore__P4019:
-jacdac_jdunpackCore__P4019_nochk:
+jacdac_jdunpackCore__P4018:
+jacdac_jdunpackCore__P4018_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -16910,7 +16910,7 @@ jacdac_jdunpackCore__P4019_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_jdunpackCore__P4019_locals:
+jacdac_jdunpackCore__P4018_locals:
     ldr r0, [sp, args@2]
     mov r7, sp
     str r7, [r6, #4]
@@ -16939,7 +16939,7 @@ jacdac_jdunpackCore__P4019_locals:
     movs r0, #1
     str r0, [sp, locals@3]
     @stackempty locals
-    ldr r0, _ldlit_160 ; jacdac_TokenParser__C4016_VT      
+    ldr r0, _ldlit_160 ; jacdac_TokenParser__C4015_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
@@ -16948,7 +16948,7 @@ jacdac_jdunpackCore__P4019_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; tmpref @1
     push {r0} ; proc-arg
-    bl jacdac_TokenParser_constructor__P4018
+    bl jacdac_TokenParser_constructor__P4017
 _proccall781:
     add sp, #4*2 ; pop locals 2
     pop {r0} ; tmpref @1
@@ -16995,13 +16995,13 @@ _proccall781:
     mov r7, sp
     str r7, [r6, #4]
     bl Array_::mk
-    b .ret.4019      
+    b .ret.4018      
 .else_2_135:
 .afterif_5_135:
-.cont.7444:
+.cont.7447:
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
-    bl jacdac_TokenParser_parse__P4017
+    bl jacdac_TokenParser_parse__P4016
 _proccall785:
     add sp, #4*1 ; pop locals 1
     mov r7, sp
@@ -17009,10 +17009,10 @@ _proccall785:
     bl numops::toBoolDecr
     cmp r0, #0
     bne .jmpz784
-    b .brk.7444      
+    b .brk.7447      
 .jmpz784:
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #32]
     push {r0}; tmpstore @1
     mov r7, sp
@@ -17066,7 +17066,7 @@ _proccall785:
     push {r1}
     push {r2}
     push {r3}
-    bl jacdac_bufferSlice__P4015
+    bl jacdac_bufferSlice__P4014
 _proccall788:
     add sp, #4*3 ; pop locals 3
     push {r0} ; proc-arg
@@ -17085,7 +17085,7 @@ _proccall789:
     push {r0} ; proc-arg
     push {r1}
     push {r2}
-    bl jacdac_jdunpackCore__P4019
+    bl jacdac_jdunpackCore__P4018
 _proccall790:
     add sp, #4*3 ; pop locals 3
     push {r0} ; proc-arg
@@ -17096,21 +17096,21 @@ _proccall790:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
     ldr r0, [sp, locals@1]
-    b .ret.4019      
+    b .ret.4018      
 .else_6_135:
 .afterif_9_135:
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #16]
     str r0, [sp, locals@3]
     @stackempty locals
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #8]
     str r0, [sp, locals@5]
     @stackempty locals
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #4]
     str r0, [sp, locals@6]
     @stackempty locals
@@ -17122,7 +17122,7 @@ _proccall790:
     ldr r0, [sp, locals@2]
     str r0, [sp, locals@7]
     @stackempty locals
-.cont.7484:
+.cont.7487:
     ldr r0, [sp, locals@7]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -17175,15 +17175,15 @@ _proccall790:
     str r7, [r6, #4]
     bl numops::toBoolDecr
     cmp r0, #0
-    beq .brk.7484      
+    beq .brk.7487      
 .jmpz793:
     ldr r0, [sp, locals@7]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@7]
     @stackempty locals
-    b .cont.7484      
-.brk.7484:
+    b .cont.7487      
+.brk.7487:
     ldr r0, [sp, locals@7]
     ldr r1, [sp, locals@2]
     bl _numops_subs
@@ -17212,7 +17212,7 @@ _proccall790:
 .afterif_15_135:
 .afterif_13_135:
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     movs r1, #6
     bl _cmp_neqq
@@ -17220,7 +17220,7 @@ _proccall790:
     b .else_16_135      
 .jmpz795:
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #24]
     mov r7, sp
     str r7, [r6, #4]
@@ -17232,15 +17232,15 @@ _proccall790:
     b .condexprfin_18_135      
 .condexprz_17_135:
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     b .condexprfin_18_135      
 .object PUSH
 .balign 4
 _ldlit_159:
- .word _catch_7410
+ .word _catch_7413
 _ldlit_160:
- .word jacdac_TokenParser__C4016_VT
+ .word jacdac_TokenParser__C4015_VT
 .object POP
 .condexprfin_18_135:
 ; jmp value (already in r0)
@@ -17260,7 +17260,7 @@ _ldlit_160:
     str r0, [sp, locals@9]
     @stackempty locals
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #24]
     mov r7, sp
     str r7, [r6, #4]
@@ -17273,7 +17273,7 @@ _ldlit_160:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
@@ -17301,7 +17301,7 @@ _ldlit_160:
 .else_19_135:
 .afterif_20_135:
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #12]
     movs r1, #3
     bl _cmp_neq
@@ -17310,7 +17310,7 @@ _ldlit_160:
     ldr r0, [sp, locals@9]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
@@ -17336,7 +17336,7 @@ _ldlit_160:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
@@ -17359,7 +17359,7 @@ _ldlit_160:
     push {r1}
     push {r2}
     push {r3}
-    bl jacdac_bufferSlice__P4015
+    bl jacdac_bufferSlice__P4014
 _proccall799:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@10]
@@ -17404,7 +17404,7 @@ _proccall799:
     movs r0, #1
     str r0, [sp, locals@11]
     @stackempty locals
-.cont.7571:
+.cont.7574:
     ldr r0, [sp, locals@11]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@10]
@@ -17457,15 +17457,15 @@ _proccall799:
     str r7, [r6, #4]
     bl numops::toBoolDecr
     cmp r0, #0
-    beq .brk.7571      
+    beq .brk.7574      
 .jmpz803:
     ldr r0, [sp, locals@11]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@11]
     @stackempty locals
-    b .cont.7571      
-.brk.7571:
+    b .cont.7574      
+.brk.7574:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@11]
@@ -17474,7 +17474,7 @@ _proccall799:
     push {r0} ; proc-arg
     ldr r0, [sp, locals@10]
     push {r0} ; proc-arg
-    bl jacdac_bufferSlice__P4015
+    bl jacdac_bufferSlice__P4014
 _proccall804:
     add sp, #4*3 ; pop locals 3
     push {r0} ; proc-arg
@@ -17540,7 +17540,7 @@ _proccall808:
     push {r0} ; proc-arg
     push {r1}
     push {r2}
-    bl jacdac_jdunpackCore__P4019
+    bl jacdac_jdunpackCore__P4018
 _proccall809:
     add sp, #4*3 ; pop locals 3
     push {r0} ; proc-arg
@@ -17550,7 +17550,7 @@ _proccall809:
     bl Array_::push
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-    b .brk.7444      
+    b .brk.7447      
     b .afterif_35_135      
 .else_34_135:
     ldr r0, _ldlit_163 ; _str51      
@@ -17608,7 +17608,7 @@ _proccall809:
     ldr r0, [sp, #4*0] ; estack
     add sp, #4*1 ; pop locals 1
     ldr r0, [sp, locals@4]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -17636,7 +17636,7 @@ _proccall809:
 .jmpz812:
     ldr r0, [sp, locals@4]
     movs r1, #1
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     str r1, [r0, #16]
     @stackempty locals
     ldr r0, [sp, args@2]
@@ -17686,13 +17686,13 @@ _ldlit_163:
     add sp, #4*2 ; pop locals 2
     beq .else_43_135      
 .jmpz814:
-    b .brk.7444      
+    b .brk.7447      
 .else_43_135:
 .afterif_44_135:
 .else_38_135:
 .afterif_45_135:
-    b .cont.7444      
-.brk.7444:
+    b .cont.7447      
+.brk.7447:
     ldr r0, [sp, args@2]
     movs r1, #5
     bl _cmp_eq
@@ -17725,18 +17725,18 @@ _ldlit_163:
 .else_47_135:
 .afterif_48_135:
     ldr r0, [sp, locals@0]
-    b .ret.4019      
+    b .ret.4018      
     b .afterif_49_135      
 .else_46_135:
     ldr r0, [sp, locals@1]
-    b .ret.4019      
+    b .ret.4018      
 .afterif_49_135:
     movs r0, #0
-.ret.4019:
+.ret.4018:
     @stackempty locals
 .final_50_135:
     add sp, #4*12 ; pop locals 12
-jacdac_jdunpackCore__P4019_end:
+jacdac_jdunpackCore__P4018_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -17744,19 +17744,19 @@ jacdac_jdunpackCore__P4019_end:
     ;
 ; Function jacdac/pack.ts(52,5): jacdac.bufferSlice
     ;
-    .object jacdac_bufferSlice__P4015 "jacdac/pack.ts(52,5): jacdac.bufferSlice"
-jacdac_bufferSlice__P4015_pre:
+    .object jacdac_bufferSlice__P4014 "jacdac/pack.ts(52,5): jacdac.bufferSlice"
+jacdac_bufferSlice__P4014_pre:
     .section code
     .balign 4
     .section code
-jacdac_bufferSlice__P4015:
-jacdac_bufferSlice__P4015_nochk:
+jacdac_bufferSlice__P4014:
+jacdac_bufferSlice__P4014_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_bufferSlice__P4015_locals:
+jacdac_bufferSlice__P4014_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -17770,10 +17770,10 @@ jacdac_bufferSlice__P4015_locals:
     str r7, [r6, #4]
     bl BufferMethods::slice
     add sp, #4*3 ; pop locals 3
-.ret.4015:
+.ret.4014:
     @stackempty locals
 .final_0_137:
-jacdac_bufferSlice__P4015_end:
+jacdac_bufferSlice__P4014_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -17781,26 +17781,26 @@ jacdac_bufferSlice__P4015_end:
     ;
 ; Function jacdac/pack.ts(68,9): jacdac.TokenParser.parse
     ;
-    .object jacdac_TokenParser_parse__P4017 "jacdac/pack.ts(68,9): jacdac.TokenParser.parse"
-jacdac_TokenParser_parse__P4017_pre:
+    .object jacdac_TokenParser_parse__P4016 "jacdac/pack.ts(68,9): jacdac.TokenParser.parse"
+jacdac_TokenParser_parse__P4016_pre:
     .section code
     .balign 4
-jacdac_TokenParser_parse__P4017_args:
+jacdac_TokenParser_parse__P4016_args:
     cmp r4, #1
-    bge jacdac_TokenParser_parse__P4017_nochk
+    bge jacdac_TokenParser_parse__P4016_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_TokenParser_parse__P4017_nochk
+    bl jacdac_TokenParser_parse__P4016_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_TokenParser_parse__P4017:
+jacdac_TokenParser_parse__P4016:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     mov lr, r7
-jacdac_TokenParser_parse__P4017_nochk:
+jacdac_TokenParser_parse__P4016_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -17815,7 +17815,7 @@ jacdac_TokenParser_parse__P4017_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_TokenParser_parse__P4017_locals:
+jacdac_TokenParser_parse__P4016_locals:
     ldr r0, [sp, args@0]
     movs r1, #3
     str r1, [r0, #12]
@@ -17828,7 +17828,7 @@ jacdac_TokenParser_parse__P4017_locals:
     ldr r0, [r0, #36]
     str r0, [sp, locals@0]
     @stackempty locals
-.cont.7671:
+.cont.7674:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
@@ -17846,13 +17846,13 @@ jacdac_TokenParser_parse__P4017_locals:
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
     bne .jmpz817
-    b .brk.7671      
+    b .brk.7674      
 .jmpz817:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #16]
     str r0, [sp, locals@1]
     @stackempty locals
-.cont.7679:
+.cont.7682:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@0]
@@ -17906,15 +17906,15 @@ jacdac_TokenParser_parse__P4017_locals:
     str r7, [r6, #4]
     bl numops::toBoolDecr
     cmp r0, #0
-    beq .brk.7679      
+    beq .brk.7682      
 .jmpz819:
     ldr r0, [sp, locals@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .cont.7679      
-.brk.7679:
+    b .cont.7682      
+.brk.7682:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -17957,7 +17957,7 @@ _proccall820:
     cmp r0, #0
     beq .else_2_138      
 .jmpz821:
-    b .cont.7671      
+    b .cont.7674      
 .else_2_138:
 .afterif_3_138:
     ldr r0, [sp, locals@2]
@@ -18264,7 +18264,7 @@ _proccall834:
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
-    bl jacdac_numberFormatOfType__P4012
+    bl jacdac_numberFormatOfType__P4011
 _proccall835:
     add sp, #4*1 ; pop locals 1
     push {r0} ; proc-arg
@@ -18561,15 +18561,15 @@ _proccall850:
     @stackempty locals
 .afterif_43_138:
     movs r0, #66
-    b .ret.4017      
-    b .cont.7671      
-.brk.7671:
+    b .ret.4016      
+    b .cont.7674      
+.brk.7674:
     movs r0, #10
-.ret.4017:
+.ret.4016:
     @stackempty locals
 .final_46_138:
     add sp, #4*8 ; pop locals 8
-jacdac_TokenParser_parse__P4017_end:
+jacdac_TokenParser_parse__P4016_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -18577,19 +18577,19 @@ jacdac_TokenParser_parse__P4017_end:
     ;
 ; Function jacdac/pack.ts(19,5): jacdac.numberFormatOfType
     ;
-    .object jacdac_numberFormatOfType__P4012 "jacdac/pack.ts(19,5): jacdac.numberFormatOfType"
-jacdac_numberFormatOfType__P4012_pre:
+    .object jacdac_numberFormatOfType__P4011 "jacdac/pack.ts(19,5): jacdac.numberFormatOfType"
+jacdac_numberFormatOfType__P4011_pre:
     .section code
     .balign 4
     .section code
-jacdac_numberFormatOfType__P4012:
-jacdac_numberFormatOfType__P4012_nochk:
+jacdac_numberFormatOfType__P4011:
+jacdac_numberFormatOfType__P4011_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_numberFormatOfType__P4012_locals:
+jacdac_numberFormatOfType__P4011_locals:
     ldr r0, [sp, args@0]
     push {r0}; tmpstore @1
     mov r1, r0
@@ -18684,37 +18684,37 @@ jacdac_numberFormatOfType__P4012_locals:
     b .switch_8_139      
 .switch_0_139:
     movs r0, #5
-    b .ret.4012      
+    b .ret.4011      
 .switch_1_139:
     movs r0, #9
-    b .ret.4012      
+    b .ret.4011      
 .switch_2_139:
     movs r0, #23
-    b .ret.4012      
+    b .ret.4011      
 .switch_3_139:
     movs r0, #3
-    b .ret.4012      
+    b .ret.4011      
 .switch_4_139:
     movs r0, #7
-    b .ret.4012      
+    b .ret.4011      
 .switch_5_139:
     movs r0, #11
-    b .ret.4012      
+    b .ret.4011      
 .switch_6_139:
     movs r0, #27
-    b .ret.4012      
+    b .ret.4011      
 .switch_7_139:
     movs r0, #29
-    b .ret.4012      
+    b .ret.4011      
 .switch_8_139:
     movs r0, #6
-    b .ret.4012      
-.brk.7889:
+    b .ret.4011      
+.brk.7892:
     movs r0, #0
-.ret.4012:
+.ret.4011:
     @stackempty locals
 .final_9_139:
-jacdac_numberFormatOfType__P4012_end:
+jacdac_numberFormatOfType__P4011_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -18838,7 +18838,7 @@ parseInt__P1989_locals:
     movs r0, #1
     str r0, [sp, locals@0]
     @stackempty locals
-.cont.7916:
+.cont.7919:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -18890,15 +18890,15 @@ _proccall865:
     str r7, [r6, #4]
     bl numops::toBoolDecr
     cmp r0, #0
-    beq .brk.7916      
+    beq .brk.7919      
 .jmpz866:
     ldr r0, [sp, locals@0]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@0]
     @stackempty locals
-    b .cont.7916      
-.brk.7916:
+    b .cont.7919      
+.brk.7919:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -18979,7 +18979,7 @@ _ldlit_178:
     b .switch_13_140      
 .jmpz869:
     pop {r0} ; tmpref @1
-    b .brk.7945      
+    b .brk.7948      
 .switch_12_140:
     movs r0, #1
     negs r0, r0
@@ -18991,7 +18991,7 @@ _ldlit_178:
     bl _numops_adds
     str r0, [sp, locals@0]
     @stackempty locals
-.brk.7945:
+.brk.7948:
     ldr r0, [sp, args@1]
     mov r7, sp
     str r7, [r6, #4]
@@ -19176,7 +19176,7 @@ _ldlit_178:
     ldr r0, [sp, locals@0]
     str r0, [sp, locals@4]
     @stackempty locals
-.fortop.7993:
+.fortop.7996:
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -19193,7 +19193,7 @@ _ldlit_178:
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
     bne .jmpz876
-    b .brk.7993      
+    b .brk.7996      
 .jmpz876:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -19374,7 +19374,7 @@ _ldlit_183:
     b .ret.1989      
 .else_37_140:
 .afterif_38_140:
-    b .brk.7993      
+    b .brk.7996      
 .else_34_140:
 .afterif_39_140:
     movs r0, #66
@@ -19394,14 +19394,14 @@ _ldlit_183:
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-.cont.7993:
+.cont.7996:
     ldr r0, [sp, locals@4]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@4]
     @stackempty locals
-    b .fortop.7993      
-.brk.7993:
+    b .fortop.7996      
+.brk.7996:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
@@ -19572,7 +19572,7 @@ helpers_isWhitespace__P2016_locals:
 .switch_10_141:
     movs r0, #10
     b .ret.2016      
-.brk.8058:
+.brk.8061:
     movs r0, #0
 .ret.2016:
     @stackempty locals
@@ -19585,23 +19585,23 @@ helpers_isWhitespace__P2016_end:
     ;
 ; Function jacdac/pack.ts(66,9): jacdac.TokenParser.constructor
     ;
-    .object jacdac_TokenParser_constructor__P4018 "jacdac/pack.ts(66,9): jacdac.TokenParser.constructor"
-jacdac_TokenParser_constructor__P4018_pre:
+    .object jacdac_TokenParser_constructor__P4017 "jacdac/pack.ts(66,9): jacdac.TokenParser.constructor"
+jacdac_TokenParser_constructor__P4017_pre:
     .section code
     .balign 4
     .section code
-jacdac_TokenParser_constructor__P4018:
+jacdac_TokenParser_constructor__P4017:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     mov lr, r7
-jacdac_TokenParser_constructor__P4018_nochk:
+jacdac_TokenParser_constructor__P4017_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_TokenParser_constructor__P4018_locals:
+jacdac_TokenParser_constructor__P4017_locals:
     ldr r0, [sp, args@0]
     ldr r1, [sp, args@1]
     str r1, [r0, #36]
@@ -19609,10 +19609,10 @@ jacdac_TokenParser_constructor__P4018_locals:
     movs r1, #1
     str r1, [r0, #16]
     movs r0, #0
-.ret.4018:
+.ret.4017:
     @stackempty locals
 .final_0_142:
-jacdac_TokenParser_constructor__P4018_end:
+jacdac_TokenParser_constructor__P4017_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -19733,7 +19733,7 @@ jacdac_jdpack__P2965_locals:
     b .ret.2965      
 .else_0_144:
 .afterif_3_144:
-    ldr r0, _ldlit_186 ; _catch_8077      
+    ldr r0, _ldlit_186 ; _catch_8080      
     bl _pxt_save_exception_state
     @stackempty locals
     movs r0, #1
@@ -19744,7 +19744,7 @@ jacdac_jdpack__P2965_locals:
     push {r0} ; proc-arg
     movs r0, #6
     push {r0} ; proc-arg
-    bl jacdac_jdpackCore__P4020
+    bl jacdac_jdpackCore__P4019
 _proccall898:
     add sp, #4*4 ; pop locals 4
     str r0, [sp, locals@0]
@@ -19766,7 +19766,7 @@ _proccall898:
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
-    bl jacdac_jdpackCore__P4020
+    bl jacdac_jdpackCore__P4019
 _proccall899:
     add sp, #4*4 ; pop locals 4
     @stackempty locals
@@ -19780,7 +19780,7 @@ _proccall899:
     str r7, [r6, #4]
     bl pxt::endTry
     b .catchend_6_144      
-_catch_8077:
+_catch_8080:
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::getThrownValue
@@ -19807,13 +19807,13 @@ jacdac_jdpack__P2965_end:
     ;
 ; Function jacdac/pack.ts(233,5): jacdac.jdpackCore
     ;
-    .object jacdac_jdpackCore__P4020 "jacdac/pack.ts(233,5): jacdac.jdpackCore"
-jacdac_jdpackCore__P4020_pre:
+    .object jacdac_jdpackCore__P4019 "jacdac/pack.ts(233,5): jacdac.jdpackCore"
+jacdac_jdpackCore__P4019_pre:
     .section code
     .balign 4
     .section code
-jacdac_jdpackCore__P4020:
-jacdac_jdpackCore__P4020_nochk:
+jacdac_jdpackCore__P4019:
+jacdac_jdpackCore__P4019_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -19836,11 +19836,11 @@ jacdac_jdpackCore__P4020_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_jdpackCore__P4020_locals:
+jacdac_jdpackCore__P4019_locals:
     movs r0, #1
     str r0, [sp, locals@0]
     @stackempty locals
-    ldr r0, _ldlit_187 ; jacdac_TokenParser__C4016_VT      
+    ldr r0, _ldlit_187 ; jacdac_TokenParser__C4015_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
@@ -19849,16 +19849,16 @@ jacdac_jdpackCore__P4020_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; tmpref @1
     push {r0} ; proc-arg
-    bl jacdac_TokenParser_constructor__P4018
+    bl jacdac_TokenParser_constructor__P4017
 _proccall901:
     add sp, #4*2 ; pop locals 2
     pop {r0} ; tmpref @1
     str r0, [sp, locals@1]
     @stackempty locals
-.cont.8106:
+.cont.8109:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
-    bl jacdac_TokenParser_parse__P4017
+    bl jacdac_TokenParser_parse__P4016
 _proccall903:
     add sp, #4*1 ; pop locals 1
     mov r7, sp
@@ -19866,10 +19866,10 @@ _proccall903:
     bl numops::toBoolDecr
     cmp r0, #0
     bne .jmpz902
-    b .brk.8106      
+    b .brk.8109      
 .jmpz902:
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #4]
     str r0, [sp, locals@2]
     @stackempty locals
@@ -19881,7 +19881,7 @@ _proccall903:
     ldr r0, [sp, args@3]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
@@ -19890,7 +19890,7 @@ _proccall903:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, args@3]
     @stackempty locals
-    b .cont.8106      
+    b .cont.8109      
 .else_0_145:
 .afterif_1_145:
     ldr r0, [sp, locals@0]
@@ -19916,7 +19916,7 @@ _proccall903:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
     pop {r1, r2}
@@ -19937,7 +19937,7 @@ _proccall906:
     movs r0, #1
     str r0, [sp, locals@7]
     @stackempty locals
-.fortop.8136:
+.fortop.8139:
     ldr r0, [sp, locals@7]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@6]
@@ -19953,7 +19953,7 @@ _proccall906:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.8136      
+    beq .brk.8139      
 .jmpz907:
     ldr r0, [sp, locals@6]
     push {r0} ; proc-arg
@@ -19975,30 +19975,30 @@ _proccall906:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_jdpackCore__P4020
+    bl jacdac_jdpackCore__P4019
 _proccall908:
     add sp, #4*4 ; pop locals 4
     str r0, [sp, args@3]
     @stackempty locals
-.cont.8136:
+.cont.8139:
     ldr r0, [sp, locals@7]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@7]
-    b .fortop.8136      
-.brk.8136:
+    b .fortop.8139      
+.brk.8139:
     movs r0, #0
     str r0, [sp, locals@6]
-    b .brk.8106      
+    b .brk.8109      
     b .afterif_3_145      
 .object PUSH
 .balign 4
 _ldlit_185:
  .word 130559
 _ldlit_186:
- .word _catch_8077
+ .word _catch_8080
 _ldlit_187:
- .word jacdac_TokenParser__C4016_VT
+ .word jacdac_TokenParser__C4015_VT
 .object POP
 .else_2_145:
 .afterif_3_145:
@@ -20006,7 +20006,7 @@ _ldlit_187:
     str r0, [sp, locals@8]
     @stackempty locals
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #32]
     mov r7, sp
     str r7, [r6, #4]
@@ -20044,7 +20044,7 @@ _ldlit_187:
     movs r0, #1
     str r0, [sp, locals@11]
     @stackempty locals
-.fortop.8153:
+.fortop.8156:
     ldr r0, [sp, locals@11]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@10]
@@ -20061,7 +20061,7 @@ _ldlit_187:
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
     bne .jmpz910
-    b .brk.8153      
+    b .brk.8156      
 .jmpz910:
     ldr r0, [sp, locals@10]
     push {r0} ; proc-arg
@@ -20076,7 +20076,7 @@ _ldlit_187:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@9]
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     movs r1, #6
     bl _cmp_neqq
@@ -20124,7 +20124,7 @@ _ldlit_187:
     ldr r0, [sp, locals@9]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
@@ -20136,7 +20136,7 @@ _ldlit_187:
     str r0, [sp, locals@12]
     @stackempty locals
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #24]
     mov r7, sp
     str r7, [r6, #4]
@@ -20161,7 +20161,7 @@ _ldlit_187:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     ldr r0, [sp, args@3]
@@ -20179,7 +20179,7 @@ _ldlit_187:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     ldr r0, [sp, args@3]
@@ -20197,7 +20197,7 @@ _ldlit_187:
     b .afterif_11_145      
 .else_10_145:
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #12]
     push {r0} ; proc-arg
     movs r1, #3
@@ -20221,7 +20221,7 @@ _ldlit_187:
     ldr r0, [sp, #4*0] ; estack
     add sp, #4*1 ; pop locals 1
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     movs r1, #23
@@ -20245,7 +20245,7 @@ _ldlit_187:
     ldr r0, [sp, #4*0] ; estack
     add sp, #4*1 ; pop locals 1
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     movs r1, #11
@@ -20266,7 +20266,7 @@ _ldlit_187:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     ldr r0, [sp, args@3]
@@ -20286,7 +20286,7 @@ _ldlit_187:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     ldr r0, [sp, args@3]
@@ -20294,13 +20294,13 @@ _ldlit_187:
     ldr r0, [sp, locals@12]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #20]
     push {r0} ; proc-arg
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_clampWithNumberFormat__P4021
+    bl jacdac_clampWithNumberFormat__P4020
 _proccall918:
     add sp, #4*2 ; pop locals 2
     push {r0} ; proc-arg
@@ -20317,7 +20317,7 @@ _proccall918:
     ldr r0, [sp, args@3]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
@@ -20497,7 +20497,7 @@ _ldlit_195:
 .afterif_33_145:
 .afterif_25_145:
     ldr r0, [sp, locals@1]
-    bl _inst_jacdac_TokenParser__C4016_validate_59
+    bl _inst_jacdac_TokenParser__C4015_validate_59
     ldr r0, [r0, #8]
     str r0, [sp, locals@15]
     @stackempty locals
@@ -20524,7 +20524,7 @@ _ldlit_195:
     push {r0} ; proc-arg
     ldr r0, [sp, locals@14]
     push {r0} ; proc-arg
-    bl jacdac_bufferSlice__P4015
+    bl jacdac_bufferSlice__P4014
 _proccall928:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@14]
@@ -20571,17 +20571,17 @@ _proccall928:
     str r0, [sp, args@3]
     @stackempty locals
 .afterif_19_145:
-.cont.8153:
+.cont.8156:
     ldr r0, [sp, locals@11]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@11]
-    b .fortop.8153      
-.brk.8153:
+    b .fortop.8156      
+.brk.8156:
     movs r0, #0
     str r0, [sp, locals@10]
-    b .cont.8106      
-.brk.8106:
+    b .cont.8109      
+.brk.8109:
     ldr r0, [sp, args@2]
     push {r0} ; proc-arg
     bl _conv_13
@@ -20601,11 +20601,11 @@ _proccall928:
 .else_40_145:
 .afterif_41_145:
     ldr r0, [sp, args@3]
-.ret.4020:
+.ret.4019:
     @stackempty locals
 .final_42_145:
     add sp, #4*16 ; pop locals 16
-jacdac_jdpackCore__P4020_end:
+jacdac_jdpackCore__P4019_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -20613,19 +20613,19 @@ jacdac_jdpackCore__P4020_end:
     ;
 ; Function jacdac/pack.ts(315,5): jacdac.clampWithNumberFormat
     ;
-    .object jacdac_clampWithNumberFormat__P4021 "jacdac/pack.ts(315,5): jacdac.clampWithNumberFormat"
-jacdac_clampWithNumberFormat__P4021_pre:
+    .object jacdac_clampWithNumberFormat__P4020 "jacdac/pack.ts(315,5): jacdac.clampWithNumberFormat"
+jacdac_clampWithNumberFormat__P4020_pre:
     .section code
     .balign 4
     .section code
-jacdac_clampWithNumberFormat__P4021:
-jacdac_clampWithNumberFormat__P4021_nochk:
+jacdac_clampWithNumberFormat__P4020:
+jacdac_clampWithNumberFormat__P4020_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_clampWithNumberFormat__P4021_locals:
+jacdac_clampWithNumberFormat__P4020_locals:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     movs r1, #27
@@ -20664,7 +20664,7 @@ jacdac_clampWithNumberFormat__P4021_locals:
     beq .else_0_147      
 .jmpz932:
     ldr r0, [sp, args@0]
-    b .ret.4021      
+    b .ret.4020      
 .else_0_147:
 .afterif_3_147:
     ldr r0, [sp, args@0]
@@ -20679,7 +20679,7 @@ _proccall934:
     beq .else_4_147      
 .jmpz933:
     movs r0, #1
-    b .ret.4021      
+    b .ret.4020      
 .else_4_147:
 .afterif_5_147:
     ldr r0, [sp, args@1]
@@ -20693,7 +20693,7 @@ _proccall934:
     beq .else_7_147      
 .jmpz936:
     movs r0, #1
-    b .ret.4021      
+    b .ret.4020      
 .else_7_147:
 .afterif_8_147:
     ldr r0, [sp, args@0]
@@ -20702,7 +20702,7 @@ _proccall934:
     beq .else_9_147      
 .jmpz937:
     ldr r0, _ldlit_200 ; _dbl59      
-    b .ret.4021      
+    b .ret.4020      
 .else_9_147:
 .afterif_10_147:
     ldr r0, [sp, args@0]
@@ -20710,7 +20710,7 @@ _proccall934:
     movs r1, #1
     bl _numops_lsrs
     add sp, #4*1 ; pop locals 1
-    b .ret.4021      
+    b .ret.4020      
 .else_6_147:
 .afterif_11_147:
     ldr r0, [sp, args@0]
@@ -20776,11 +20776,11 @@ _proccall934:
     b .switch_17_147      
 .jmpz943:
     pop {r0} ; tmpref @1
-    b .brk.8314      
+    b .brk.8317      
 .switch_13_147:
 .switch_14_147:
     movs r0, #1
-    b .ret.4021      
+    b .ret.4020      
 .switch_15_147:
     ldr r0, [sp, args@0]
     movs r1, #255
@@ -20790,10 +20790,10 @@ _proccall934:
 .jmpz944:
     movs r0, #255
     negs r0, r0
-    b .ret.4021      
+    b .ret.4020      
 .else_18_147:
 .afterif_19_147:
-    b .brk.8314      
+    b .brk.8317      
 .switch_16_147:
     ldr r0, [sp, args@0]
     ldr r1, _ldlit_201 ; -65535      
@@ -20801,10 +20801,10 @@ _proccall934:
     beq .else_20_147      
 .jmpz945:
     ldr r0, _ldlit_201 ; -65535      
-    b .ret.4021      
+    b .ret.4020      
 .else_20_147:
 .afterif_21_147:
-    b .brk.8314      
+    b .brk.8317      
 .switch_17_147:
     ldr r0, [sp, args@0]
     ldr r1, _ldlit_202 ; _dbl60      
@@ -20812,10 +20812,10 @@ _proccall934:
     beq .else_22_147      
 .jmpz946:
     ldr r0, _ldlit_202 ; _dbl60      
-    b .ret.4021      
+    b .ret.4020      
 .else_22_147:
 .afterif_23_147:
-.brk.8314:
+.brk.8317:
     b .afterif_24_147      
 .else_12_147:
     ldr r0, [sp, args@1]
@@ -20876,7 +20876,7 @@ _proccall934:
     b .switch_29_147      
 .jmpz951:
     pop {r0} ; tmpref @1
-    b .brk.8336      
+    b .brk.8339      
 .switch_25_147:
     ldr r0, [sp, args@0]
     movs r1, #1
@@ -20888,10 +20888,10 @@ _proccall934:
     movs r0, #1
     lsls r0, r0, #8
     adds r0, #255
-    b .ret.4021      
+    b .ret.4020      
 .else_30_147:
 .afterif_31_147:
-    b .brk.8336      
+    b .brk.8339      
 .object PUSH
 .balign 4
 _ldlit_197:
@@ -20914,10 +20914,10 @@ _ldlit_202:
     beq .else_32_147      
 .jmpz953:
     ldr r0, _ldlit_204 ; 131071      
-    b .ret.4021      
+    b .ret.4020      
 .else_32_147:
 .afterif_33_147:
-    b .brk.8336      
+    b .brk.8339      
 .switch_27_147:
     ldr r0, [sp, args@0]
     movs r1, #255
@@ -20925,10 +20925,10 @@ _ldlit_202:
     beq .else_34_147      
 .jmpz954:
     movs r0, #255
-    b .ret.4021      
+    b .ret.4020      
 .else_34_147:
 .afterif_35_147:
-    b .brk.8336      
+    b .brk.8339      
 .switch_28_147:
     ldr r0, [sp, args@0]
     movs r1, #255
@@ -20940,10 +20940,10 @@ _ldlit_202:
     movs r0, #255
     lsls r0, r0, #8
     adds r0, #255
-    b .ret.4021      
+    b .ret.4020      
 .else_36_147:
 .afterif_37_147:
-    b .brk.8336      
+    b .brk.8339      
 .switch_29_147:
     ldr r0, [sp, args@0]
     ldr r1, _ldlit_205 ; _dbl22      
@@ -20951,18 +20951,18 @@ _ldlit_202:
     beq .else_38_147      
 .jmpz956:
     ldr r0, _ldlit_205 ; _dbl22      
-    b .ret.4021      
+    b .ret.4020      
 .else_38_147:
 .afterif_39_147:
-.brk.8336:
+.brk.8339:
 .afterif_24_147:
     ldr r0, [sp, args@0]
     movs r1, #1
     bl _numops_orrs
-.ret.4021:
+.ret.4020:
     @stackempty locals
 .final_40_147:
-jacdac_clampWithNumberFormat__P4021_end:
+jacdac_clampWithNumberFormat__P4020_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -21012,39 +21012,39 @@ jacdac_JDPacket_markHandled__P2920_end:
     ;
 ; Function jacdac/routing.ts(643,9): jacdac.Server.handleCalibrateCommand
     ;
-    .object jacdac_Server_handleCalibrateCommand__P4039 "jacdac/routing.ts(643,9): jacdac.Server.handleCalibrateCommand"
-jacdac_Server_handleCalibrateCommand__P4039_pre:
+    .object jacdac_Server_handleCalibrateCommand__P4038 "jacdac/routing.ts(643,9): jacdac.Server.handleCalibrateCommand"
+jacdac_Server_handleCalibrateCommand__P4038_pre:
     .section code
     .balign 4
-jacdac_Server_handleCalibrateCommand__P4039_args:
+jacdac_Server_handleCalibrateCommand__P4038_args:
     cmp r4, #2
-    bge jacdac_Server_handleCalibrateCommand__P4039_nochk
+    bge jacdac_Server_handleCalibrateCommand__P4038_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Server_handleCalibrateCommand__P4039_nochk
+    bl jacdac_Server_handleCalibrateCommand__P4038_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Server_handleCalibrateCommand__P4039:
+jacdac_Server_handleCalibrateCommand__P4038:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleCalibrateCommand__P4039_nochk:
+jacdac_Server_handleCalibrateCommand__P4038_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Server_handleCalibrateCommand__P4039_locals:
+jacdac_Server_handleCalibrateCommand__P4038_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #44]
     movs r1, #5
     bl _cmp_eqq
     beq .else_0_149      
 .jmpz957:
-    b .ret.4039      
+    b .ret.4038      
 .else_0_149:
 .afterif_1_149:
     ldr r0, [sp, args@0]
@@ -21064,7 +21064,7 @@ _proccall959:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
     movs r0, #1
-    ldr r1, _ldlit_206 ; jacdac_Server_handleCalibrateCommand_inline__P8364_Lit      
+    ldr r1, _ldlit_206 ; jacdac_Server_handleCalibrateCommand_inline__P8367_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -21088,11 +21088,11 @@ _proccall961:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
 .afterif_3_149:
-.ret.4039:
+.ret.4038:
     @stackempty locals
     movs r0, #0
 .final_4_149:
-jacdac_Server_handleCalibrateCommand__P4039_end:
+jacdac_Server_handleCalibrateCommand__P4038_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -21100,34 +21100,34 @@ jacdac_Server_handleCalibrateCommand__P4039_end:
     ;
 ; Function jacdac/routing.ts(648,41): jacdac.Server.handleCalibrateCommand.inline
     ;
-    .object jacdac_Server_handleCalibrateCommand_inline__P8364 "jacdac/routing.ts(648,41): jacdac.Server.handleCalibrateCommand.inline"
-jacdac_Server_handleCalibrateCommand_inline__P8364_pre:
+    .object jacdac_Server_handleCalibrateCommand_inline__P8367 "jacdac/routing.ts(648,41): jacdac.Server.handleCalibrateCommand.inline"
+jacdac_Server_handleCalibrateCommand_inline__P8367_pre:
     .section code
     .balign 4
-jacdac_Server_handleCalibrateCommand_inline__P8364_Lit:
+jacdac_Server_handleCalibrateCommand_inline__P8367_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_Server_handleCalibrateCommand_inline__P8364_args@fn
-jacdac_Server_handleCalibrateCommand_inline__P8364_args:
+    .word jacdac_Server_handleCalibrateCommand_inline__P8367_args@fn
+jacdac_Server_handleCalibrateCommand_inline__P8367_args:
     .section code
-jacdac_Server_handleCalibrateCommand_inline__P8364:
-jacdac_Server_handleCalibrateCommand_inline__P8364_nochk:
+jacdac_Server_handleCalibrateCommand_inline__P8367:
+jacdac_Server_handleCalibrateCommand_inline__P8367_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Server_handleCalibrateCommand_inline__P8364_locals:
+jacdac_Server_handleCalibrateCommand_inline__P8367_locals:
     ldr r0, [r5, #4*3]
     push {r0} ; proc-arg
-    bl jacdac_Server_doCalibrate__P4040_nochk
+    bl jacdac_Server_doCalibrate__P4039_nochk
 _proccall962:
     add sp, #4*1 ; pop locals 1
-.ret.8364:
+.ret.8367:
     @stackempty locals
     movs r0, #0
 .final_0_150:
-jacdac_Server_handleCalibrateCommand_inline__P8364_end:
+jacdac_Server_handleCalibrateCommand_inline__P8367_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -21349,26 +21349,26 @@ jacdac_JDPacket_handled__P2919_end:
     ;
 ; Function jacdac/routing.ts(652,9): jacdac.Server.doCalibrate
     ;
-    .object jacdac_Server_doCalibrate__P4040 "jacdac/routing.ts(652,9): jacdac.Server.doCalibrate"
-jacdac_Server_doCalibrate__P4040_pre:
+    .object jacdac_Server_doCalibrate__P4039 "jacdac/routing.ts(652,9): jacdac.Server.doCalibrate"
+jacdac_Server_doCalibrate__P4039_pre:
     .section code
     .balign 4
-jacdac_Server_doCalibrate__P4040_args:
+jacdac_Server_doCalibrate__P4039_args:
     cmp r4, #1
-    bge jacdac_Server_doCalibrate__P4040_nochk
+    bge jacdac_Server_doCalibrate__P4039_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_Server_doCalibrate__P4040_nochk
+    bl jacdac_Server_doCalibrate__P4039_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_Server_doCalibrate__P4040:
+jacdac_Server_doCalibrate__P4039:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_doCalibrate__P4040_nochk:
+jacdac_Server_doCalibrate__P4039_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -21376,8 +21376,8 @@ jacdac_Server_doCalibrate__P4040_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_Server_doCalibrate__P4040_locals:
-    ldr r0, _ldlit_207 ; _catch_8397      
+jacdac_Server_doCalibrate__P4039_locals:
+    ldr r0, _ldlit_207 ; _catch_8400      
     bl _pxt_save_exception_state
     @stackempty locals
     ldr r0, [sp, args@0]
@@ -21399,7 +21399,7 @@ _proccall975:
     str r7, [r6, #4]
     bl pxt::endTry
     b .catchend_2_153      
-_catch_8397:
+_catch_8400:
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::getThrownValue
@@ -21413,12 +21413,12 @@ _proccall976:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
 .catchend_2_153:
-.ret.4040:
+.ret.4039:
     @stackempty locals
     movs r0, #0
 .final_3_153:
     add sp, #4*1 ; pop locals 1
-jacdac_Server_doCalibrate__P4040_end:
+jacdac_Server_doCalibrate__P4039_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -21460,9 +21460,9 @@ _ldlit_204:
 _ldlit_205:
  .word _dbl22
 _ldlit_206:
- .word jacdac_Server_handleCalibrateCommand_inline__P8364_Lit
+ .word jacdac_Server_handleCalibrateCommand_inline__P8367_Lit
 _ldlit_207:
- .word _catch_8397
+ .word _catch_8400
 .object POP
     @stackempty func
     @stackempty args
@@ -21578,26 +21578,26 @@ jacdac_Server_statusCode__P3496_end:
     ;
 ; Function jacdac/routing.ts(632,9): jacdac.Server.handleIntensity
     ;
-    .object jacdac_Server_handleIntensity__P4038 "jacdac/routing.ts(632,9): jacdac.Server.handleIntensity"
-jacdac_Server_handleIntensity__P4038_pre:
+    .object jacdac_Server_handleIntensity__P4037 "jacdac/routing.ts(632,9): jacdac.Server.handleIntensity"
+jacdac_Server_handleIntensity__P4037_pre:
     .section code
     .balign 4
-jacdac_Server_handleIntensity__P4038_args:
+jacdac_Server_handleIntensity__P4037_args:
     cmp r4, #2
-    bge jacdac_Server_handleIntensity__P4038_nochk
+    bge jacdac_Server_handleIntensity__P4037_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Server_handleIntensity__P4038_nochk
+    bl jacdac_Server_handleIntensity__P4037_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Server_handleIntensity__P4038:
+jacdac_Server_handleIntensity__P4037:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleIntensity__P4038_nochk:
+jacdac_Server_handleIntensity__P4037_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -21605,7 +21605,7 @@ jacdac_Server_handleIntensity__P4038_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_Server_handleIntensity__P4038_locals:
+jacdac_Server_handleIntensity__P4037_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -21623,7 +21623,7 @@ jacdac_Server_handleIntensity__P4038_locals:
     push {r0} ; proc-arg
     push {r3}
     push {r4}
-    bl jacdac_Server_handleRegValue__P4042_nochk
+    bl jacdac_Server_handleRegValue__P4041_nochk
 _proccall979:
     add sp, #4*5 ; pop locals 5
     str r0, [sp, locals@0]
@@ -21636,12 +21636,12 @@ _proccall979:
 _proccall980:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.ret.4038:
+.ret.4037:
     @stackempty locals
     movs r0, #0
 .final_0_157:
     add sp, #4*1 ; pop locals 1
-jacdac_Server_handleIntensity__P4038_end:
+jacdac_Server_handleIntensity__P4037_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -21774,26 +21774,26 @@ jacdac_Server_intensity__P3500_end:
     ;
 ; Function jacdac/routing.ts(622,9): jacdac.Server.handleValue
     ;
-    .object jacdac_Server_handleValue__P4037 "jacdac/routing.ts(622,9): jacdac.Server.handleValue"
-jacdac_Server_handleValue__P4037_pre:
+    .object jacdac_Server_handleValue__P4036 "jacdac/routing.ts(622,9): jacdac.Server.handleValue"
+jacdac_Server_handleValue__P4036_pre:
     .section code
     .balign 4
-jacdac_Server_handleValue__P4037_args:
+jacdac_Server_handleValue__P4036_args:
     cmp r4, #2
-    bge jacdac_Server_handleValue__P4037_nochk
+    bge jacdac_Server_handleValue__P4036_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Server_handleValue__P4037_nochk
+    bl jacdac_Server_handleValue__P4036_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Server_handleValue__P4037:
+jacdac_Server_handleValue__P4036:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleValue__P4037_nochk:
+jacdac_Server_handleValue__P4036_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -21801,7 +21801,7 @@ jacdac_Server_handleValue__P4037_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_Server_handleValue__P4037_locals:
+jacdac_Server_handleValue__P4036_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -21819,7 +21819,7 @@ jacdac_Server_handleValue__P4037_locals:
     push {r0} ; proc-arg
     push {r3}
     push {r4}
-    bl jacdac_Server_handleRegValue__P4042_nochk
+    bl jacdac_Server_handleRegValue__P4041_nochk
 _proccall985:
     add sp, #4*5 ; pop locals 5
     str r0, [sp, locals@0]
@@ -21832,12 +21832,12 @@ _proccall985:
 _proccall986:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.ret.4037:
+.ret.4036:
     @stackempty locals
     movs r0, #0
 .final_0_160:
     add sp, #4*1 ; pop locals 1
-jacdac_Server_handleValue__P4037_end:
+jacdac_Server_handleValue__P4036_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -21970,32 +21970,32 @@ jacdac_Server_value__P3502_end:
     ;
 ; Function jacdac/routing.ts(616,9): jacdac.Server.handleVariant
     ;
-    .object jacdac_Server_handleVariant__P4036 "jacdac/routing.ts(616,9): jacdac.Server.handleVariant"
-jacdac_Server_handleVariant__P4036_pre:
+    .object jacdac_Server_handleVariant__P4035 "jacdac/routing.ts(616,9): jacdac.Server.handleVariant"
+jacdac_Server_handleVariant__P4035_pre:
     .section code
     .balign 4
-jacdac_Server_handleVariant__P4036_args:
+jacdac_Server_handleVariant__P4035_args:
     cmp r4, #2
-    bge jacdac_Server_handleVariant__P4036_nochk
+    bge jacdac_Server_handleVariant__P4035_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Server_handleVariant__P4036_nochk
+    bl jacdac_Server_handleVariant__P4035_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Server_handleVariant__P4036:
+jacdac_Server_handleVariant__P4035:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleVariant__P4036_nochk:
+jacdac_Server_handleVariant__P4035_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Server_handleVariant__P4036_locals:
+jacdac_Server_handleVariant__P4035_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #60]
     movs r1, #0
@@ -22019,7 +22019,7 @@ jacdac_Server_handleVariant__P4036_locals:
     push {r0} ; proc-arg
     push {r2}
     push {r3}
-    bl jacdac_Server_handleRegValue__P4042_nochk
+    bl jacdac_Server_handleRegValue__P4041_nochk
 _proccall992:
     add sp, #4*5 ; pop locals 5
     @stackempty locals
@@ -22032,11 +22032,11 @@ _proccall993:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
 .afterif_1_163:
-.ret.4036:
+.ret.4035:
     @stackempty locals
     movs r0, #0
 .final_2_163:
-jacdac_Server_handleVariant__P4036_end:
+jacdac_Server_handleVariant__P4035_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -22044,32 +22044,32 @@ jacdac_Server_handleVariant__P4036_end:
     ;
 ; Function jacdac/routing.ts(605,9): jacdac.Server.handleInstanceName
     ;
-    .object jacdac_Server_handleInstanceName__P4035 "jacdac/routing.ts(605,9): jacdac.Server.handleInstanceName"
-jacdac_Server_handleInstanceName__P4035_pre:
+    .object jacdac_Server_handleInstanceName__P4034 "jacdac/routing.ts(605,9): jacdac.Server.handleInstanceName"
+jacdac_Server_handleInstanceName__P4034_pre:
     .section code
     .balign 4
-jacdac_Server_handleInstanceName__P4035_args:
+jacdac_Server_handleInstanceName__P4034_args:
     cmp r4, #2
-    bge jacdac_Server_handleInstanceName__P4035_nochk
+    bge jacdac_Server_handleInstanceName__P4034_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Server_handleInstanceName__P4035_nochk
+    bl jacdac_Server_handleInstanceName__P4034_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Server_handleInstanceName__P4035:
+jacdac_Server_handleInstanceName__P4034:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleInstanceName__P4035_nochk:
+jacdac_Server_handleInstanceName__P4034_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Server_handleInstanceName__P4035_locals:
+jacdac_Server_handleInstanceName__P4034_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #8]
     mov r7, sp
@@ -22097,7 +22097,7 @@ jacdac_Server_handleInstanceName__P4035_locals:
     push {r0} ; proc-arg
     push {r3}
     push {r4}
-    bl jacdac_Server_handleRegValue__P4042_nochk
+    bl jacdac_Server_handleRegValue__P4041_nochk
 _proccall995:
     add sp, #4*5 ; pop locals 5
     @stackempty locals
@@ -22121,11 +22121,11 @@ _proccall996:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
 .afterif_1_164:
-.ret.4035:
+.ret.4034:
     @stackempty locals
     movs r0, #0
 .final_2_164:
-jacdac_Server_handleInstanceName__P4035_end:
+jacdac_Server_handleInstanceName__P4034_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -22133,32 +22133,32 @@ jacdac_Server_handleInstanceName__P4035_end:
     ;
 ; Function jacdac/routing.ts(596,9): jacdac.Server.handleStatusCode
     ;
-    .object jacdac_Server_handleStatusCode__P4034 "jacdac/routing.ts(596,9): jacdac.Server.handleStatusCode"
-jacdac_Server_handleStatusCode__P4034_pre:
+    .object jacdac_Server_handleStatusCode__P4033 "jacdac/routing.ts(596,9): jacdac.Server.handleStatusCode"
+jacdac_Server_handleStatusCode__P4033_pre:
     .section code
     .balign 4
-jacdac_Server_handleStatusCode__P4034_args:
+jacdac_Server_handleStatusCode__P4033_args:
     cmp r4, #2
-    bge jacdac_Server_handleStatusCode__P4034_nochk
+    bge jacdac_Server_handleStatusCode__P4033_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Server_handleStatusCode__P4034_nochk
+    bl jacdac_Server_handleStatusCode__P4033_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Server_handleStatusCode__P4034:
+jacdac_Server_handleStatusCode__P4033:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleStatusCode__P4034_nochk:
+jacdac_Server_handleStatusCode__P4033_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Server_handleStatusCode__P4034_locals:
+jacdac_Server_handleStatusCode__P4033_locals:
     mov r7, sp
     str r7, [r6, #4]
     bl Array_::mk
@@ -22194,15 +22194,15 @@ jacdac_Server_handleStatusCode__P4034_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_handleRegFormat__P4041_nochk
+    bl jacdac_Server_handleRegFormat__P4040_nochk
 _proccall997:
     add sp, #4*5 ; pop locals 5
     @stackempty locals
-.ret.4034:
+.ret.4033:
     @stackempty locals
     movs r0, #0
 .final_0_165:
-jacdac_Server_handleStatusCode__P4034_end:
+jacdac_Server_handleStatusCode__P4033_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -22210,26 +22210,26 @@ jacdac_Server_handleStatusCode__P4034_end:
     ;
 ; Function jacdac/routing.ts(661,9): jacdac.Server.handleRegFormat
     ;
-    .object jacdac_Server_handleRegFormat__P4041 "jacdac/routing.ts(661,9): jacdac.Server.handleRegFormat"
-jacdac_Server_handleRegFormat__P4041_pre:
+    .object jacdac_Server_handleRegFormat__P4040 "jacdac/routing.ts(661,9): jacdac.Server.handleRegFormat"
+jacdac_Server_handleRegFormat__P4040_pre:
     .section code
     .balign 4
-jacdac_Server_handleRegFormat__P4041_args:
+jacdac_Server_handleRegFormat__P4040_args:
     cmp r4, #5
-    bge jacdac_Server_handleRegFormat__P4041_nochk
+    bge jacdac_Server_handleRegFormat__P4040_nochk
     push {lr}
     bl _expand_args_5_58
-    bl jacdac_Server_handleRegFormat__P4041_nochk
+    bl jacdac_Server_handleRegFormat__P4040_nochk
     @dummystack 5
     add sp, #4*5
     pop {pc}
     .section code
-jacdac_Server_handleRegFormat__P4041:
+jacdac_Server_handleRegFormat__P4040:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleRegFormat__P4041_nochk:
+jacdac_Server_handleRegFormat__P4040_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -22239,7 +22239,7 @@ jacdac_Server_handleRegFormat__P4041_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_Server_handleRegFormat__P4041_locals:
+jacdac_Server_handleRegFormat__P4040_locals:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     bl jacdac_JDPacket_serviceCommand__P2932
@@ -22289,7 +22289,7 @@ _proccall998:
     beq .else_0_166      
 .jmpz1000:
     ldr r0, [sp, args@4]
-    b .ret.4041      
+    b .ret.4040      
 .else_0_166:
 .afterif_3_166:
     ldr r0, [sp, args@1]
@@ -22309,7 +22309,7 @@ _proccall1001:
     beq .else_4_166      
 .jmpz1002:
     ldr r0, [sp, args@4]
-    b .ret.4041      
+    b .ret.4040      
 .else_4_166:
 .afterif_5_166:
     ldr r0, [sp, args@1]
@@ -22343,7 +22343,7 @@ _proccall1006:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall1007:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -22359,7 +22359,7 @@ _proccall1007:
     beq .else_8_166      
 .jmpz1008:
     ldr r0, [sp, args@4]
-    b .ret.4041      
+    b .ret.4040      
 .else_8_166:
 .afterif_9_166:
     ldr r0, [sp, args@3]
@@ -22406,11 +22406,11 @@ _proccall1011:
 .afterif_11_166:
 .afterif_7_166:
     ldr r0, [sp, args@4]
-.ret.4041:
+.ret.4040:
     @stackempty locals
 .final_12_166:
     add sp, #4*3 ; pop locals 3
-jacdac_Server_handleRegFormat__P4041_end:
+jacdac_Server_handleRegFormat__P4040_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -23263,39 +23263,39 @@ helpers_arrayShift__P1994_end:
     ;
 ; Function jacdac/routing.ts(573,9): jacdac.Server.sendReport
     ;
-    .object jacdac_Server_sendReport__P4033 "jacdac/routing.ts(573,9): jacdac.Server.sendReport"
-jacdac_Server_sendReport__P4033_pre:
+    .object jacdac_Server_sendReport__P4032 "jacdac/routing.ts(573,9): jacdac.Server.sendReport"
+jacdac_Server_sendReport__P4032_pre:
     .section code
     .balign 4
-jacdac_Server_sendReport__P4033_args:
+jacdac_Server_sendReport__P4032_args:
     cmp r4, #2
-    bge jacdac_Server_sendReport__P4033_nochk
+    bge jacdac_Server_sendReport__P4032_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Server_sendReport__P4033:
+jacdac_Server_sendReport__P4032:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_sendReport__P4033_nochk:
+jacdac_Server_sendReport__P4032_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_Server_sendReport__P4033_locals:
+jacdac_Server_sendReport__P4032_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #36]
     movs r1, #6
     bl _cmp_eq
     beq .else_0_181      
 .jmpz1030:
-    b .ret.4033      
+    b .ret.4032      
 .else_0_181:
 .afterif_1_181:
     ldr r0, [sp, args@1]
@@ -23326,11 +23326,11 @@ _proccall1032:
 _proccall1033:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.ret.4033:
+.ret.4032:
     @stackempty locals
     movs r0, #0
 .final_2_181:
-jacdac_Server_sendReport__P4033_end:
+jacdac_Server_sendReport__P4032_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -23477,7 +23477,7 @@ jacdac_JDPacket_from__P2914_locals:
     bl pxt::mkClassInstance
     push {r0}; tmpstore @1
     push {r0} ; proc-arg
-    bl jacdac_JDPacket_constructor__P3984
+    bl jacdac_JDPacket_constructor__P3983
 _proccall1037:
     add sp, #4*1 ; pop locals 1
     pop {r0} ; tmpref @1
@@ -23679,26 +23679,26 @@ jacdac_JDPacket_data__P2941_end:
     ;
 ; Function jacdac/routing.ts(804,9): jacdac.Server.log
     ;
-    .object jacdac_Server_log__P4047 "jacdac/routing.ts(804,9): jacdac.Server.log"
-jacdac_Server_log__P4047_pre:
+    .object jacdac_Server_log__P4046 "jacdac/routing.ts(804,9): jacdac.Server.log"
+jacdac_Server_log__P4046_pre:
     .section code
     .balign 4
-jacdac_Server_log__P4047_args:
+jacdac_Server_log__P4046_args:
     cmp r4, #2
-    bge jacdac_Server_log__P4047_nochk
+    bge jacdac_Server_log__P4046_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_Server_log__P4047_nochk
+    bl jacdac_Server_log__P4046_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_Server_log__P4047:
+jacdac_Server_log__P4046:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_log__P4047_nochk:
+jacdac_Server_log__P4046_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -23706,7 +23706,7 @@ jacdac_Server_log__P4047_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_Server_log__P4047_locals:
+jacdac_Server_log__P4046_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #28]
     mov r7, sp
@@ -23715,7 +23715,7 @@ jacdac_Server_log__P4047_locals:
     cmp r0, #0
     beq .else_0_186      
 .jmpz1042:
-    b .ret.4047      
+    b .ret.4046      
 .else_0_186:
 .afterif_1_186:
     ldr r7, [r6, #0]
@@ -23725,7 +23725,7 @@ jacdac_Server_log__P4047_locals:
     bl _cmp_lt
     beq .else_2_186      
 .jmpz1043:
-    b .ret.4047      
+    b .ret.4046      
 .else_2_186:
 .afterif_3_186:
     ldr r7, [r6, #0]
@@ -23825,12 +23825,12 @@ _proccall1045:
 _proccall1047:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.ret.4047:
+.ret.4046:
     @stackempty locals
     movs r0, #0
 .final_6_186:
     add sp, #4*1 ; pop locals 1
-jacdac_Server_log__P4047_end:
+jacdac_Server_log__P4046_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -23838,26 +23838,26 @@ jacdac_Server_log__P4047_end:
     ;
 ; Function jacdac/rolemgr.ts(204,9): jacdac._rolemgr.RoleManagerServer.bindingHash
     ;
-    .object jacdac__rolemgr_RoleManagerServer_bindingHash__P4116 "jacdac/rolemgr.ts(204,9): jacdac._rolemgr.RoleManagerServer.bindingHash"
-jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_pre:
+    .object jacdac__rolemgr_RoleManagerServer_bindingHash__P4115 "jacdac/rolemgr.ts(204,9): jacdac._rolemgr.RoleManagerServer.bindingHash"
+jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_pre:
     .section code
     .balign 4
-jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_args:
+jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_args:
     cmp r4, #1
-    bge jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_nochk
+    bge jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_nochk
+    bl jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__rolemgr_RoleManagerServer_bindingHash__P4116:
+jacdac__rolemgr_RoleManagerServer_bindingHash__P4115:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac__rolemgr_RoleManagerServer__C3328_validate_6
     mov lr, r7
-jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_nochk:
+jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -23869,7 +23869,7 @@ jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_locals:
+jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_locals:
     mov r7, sp
     str r7, [r6, #4]
     bl String_::mkEmpty
@@ -23891,12 +23891,12 @@ jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_locals:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.8834:
+.fortop.8837:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, locals@1]
     bl _cmp_lt
     bne .jmpz1048
-    b .brk.8834      
+    b .brk.8837      
 .object PUSH
 .balign 4
 _ldlit_216:
@@ -24074,14 +24074,14 @@ _ldlit_223:
     add sp, #4*4 ; pop locals 4
     str r0, [sp, locals@0]
     @stackempty locals
-.cont.8834:
+.cont.8837:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.8834      
-.brk.8834:
+    b .fortop.8837      
+.brk.8837:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
     bl _conv_8
@@ -24100,11 +24100,11 @@ _ldlit_223:
     bl BufferMethods::hash
     add sp, #4*1 ; pop locals 1
     bl _numops_fromInt
-.ret.4116:
+.ret.4115:
     @stackempty locals
 .final_8_187:
     add sp, #4*5 ; pop locals 5
-jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_end:
+jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -24585,11 +24585,11 @@ helpers_arrayFilter__P2002_locals:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.8994:
+.fortop.8997:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, locals@1]
     bl _cmp_lt
-    beq .brk.8994      
+    beq .brk.8997      
 .jmpz1064:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -24628,14 +24628,14 @@ helpers_arrayFilter__P2002_locals:
     @stackempty locals
 .else_0_193:
 .afterif_1_193:
-.cont.8994:
+.cont.8997:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.8994      
-.brk.8994:
+    b .fortop.8997      
+.brk.8997:
     ldr r0, [sp, locals@0]
 .ret.2002:
     @stackempty locals
@@ -24826,7 +24826,7 @@ _proccall1073:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.9051:
+.fortop.9054:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
@@ -24843,7 +24843,7 @@ _proccall1073:
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
     bne .jmpz1074
-    b .brk.9051      
+    b .brk.9054      
 .jmpz1074:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
@@ -24874,7 +24874,7 @@ _proccall1073:
     bl _cmp_lt
     beq .else_1_195      
 .jmpz1075:
-    b .cont.9051      
+    b .cont.9054      
 .else_1_195:
 .afterif_2_195:
     ldr r0, [sp, locals@3]
@@ -24940,13 +24940,13 @@ _proccall1077:
     b .switch_5_195      
 .jmpz1080:
     pop {r0} ; tmpref @1
-    b .brk.9072      
+    b .brk.9075      
 .switch_3_195:
     ldr r0, [sp, args@0]
     ldr r1, [sp, locals@5]
     str r1, [r0, #8]
     @stackempty locals
-    b .brk.9072      
+    b .brk.9075      
 .switch_4_195:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -24963,7 +24963,7 @@ _proccall1081:
     str r1, [r0, #12]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-    b .brk.9072      
+    b .brk.9075      
 .switch_5_195:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -24980,14 +24980,14 @@ _proccall1082:
     str r1, [r0, #16]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.brk.9072:
-.cont.9051:
+.brk.9075:
+.cont.9054:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
-    b .fortop.9051      
-.brk.9051:
+    b .fortop.9054      
+.brk.9054:
     movs r0, #0
     str r0, [sp, locals@1]
 .else_0_195:
@@ -25120,7 +25120,7 @@ helpers_stringSplit__P2014_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl helpers_splitMatch__P3776
+    bl helpers_splitMatch__P3775
 _proccall1088:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@5]
@@ -25171,11 +25171,11 @@ _ldlit_239:
     ldr r0, [sp, locals@3]
     str r0, [sp, locals@7]
     @stackempty locals
-.cont.9136:
+.cont.9139:
     ldr r0, [sp, locals@7]
     ldr r1, [sp, locals@2]
     bl _cmp_neq
-    beq .brk.9136      
+    beq .brk.9139      
 .jmpz1090:
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
@@ -25183,7 +25183,7 @@ _ldlit_239:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl helpers_splitMatch__P3776
+    bl helpers_splitMatch__P3775
 _proccall1091:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@8]
@@ -25257,8 +25257,8 @@ _proccall1094:
     @stackempty locals
 .afterif_15_196:
 .afterif_13_196:
-    b .cont.9136      
-.brk.9136:
+    b .cont.9139      
+.brk.9139:
     ldr r0, [sp, locals@7]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@3]
@@ -25293,13 +25293,13 @@ helpers_stringSplit__P2014_end:
     ;
 ; Function core/pxt-helpers.ts(481,5): helpers.splitMatch
     ;
-    .object helpers_splitMatch__P3776 "core/pxt-helpers.ts(481,5): helpers.splitMatch"
-helpers_splitMatch__P3776_pre:
+    .object helpers_splitMatch__P3775 "core/pxt-helpers.ts(481,5): helpers.splitMatch"
+helpers_splitMatch__P3775_pre:
     .section code
     .balign 4
     .section code
-helpers_splitMatch__P3776:
-helpers_splitMatch__P3776_nochk:
+helpers_splitMatch__P3775:
+helpers_splitMatch__P3775_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -25309,7 +25309,7 @@ helpers_splitMatch__P3776_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-helpers_splitMatch__P3776_locals:
+helpers_splitMatch__P3775_locals:
     ldr r0, [sp, args@2]
     push {r0} ; proc-arg
     bl _conv_8
@@ -25339,17 +25339,17 @@ helpers_splitMatch__P3776_locals:
 .jmpz1097:
     movs r0, #1
     negs r0, r0
-    b .ret.3776      
+    b .ret.3775      
 .else_0_197:
 .afterif_1_197:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.9194:
+.fortop.9197:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, locals@0]
     bl _cmp_lt
-    beq .brk.9194      
+    beq .brk.9197      
 .jmpz1098:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -25381,25 +25381,25 @@ helpers_splitMatch__P3776_locals:
 .jmpz1099:
     movs r0, #1
     negs r0, r0
-    b .ret.3776      
+    b .ret.3775      
 .else_2_197:
 .afterif_3_197:
-.cont.9194:
+.cont.9197:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.9194      
-.brk.9194:
+    b .fortop.9197      
+.brk.9197:
     ldr r0, [sp, args@1]
     ldr r1, [sp, locals@0]
     bl _numops_adds
-.ret.3776:
+.ret.3775:
     @stackempty locals
 .final_4_197:
     add sp, #4*3 ; pop locals 3
-helpers_splitMatch__P3776_end:
+helpers_splitMatch__P3775_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -25570,7 +25570,7 @@ jacdac_Bus_queueAnnounce__P3466_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #8]
     mov r3, r0
-    ldr r0, _ldlit_241 ; ids_inline__P9228_Lit      
+    ldr r0, _ldlit_241 ; ids_inline__P9231_Lit      
     push {r0} ; proc-arg
     push {r3} ; the one arg
     bl helpers_arrayMap__P1998
@@ -25668,7 +25668,7 @@ _proccall1102:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.9265:
+.fortop.9268:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@0]
@@ -25684,7 +25684,7 @@ _proccall1102:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.9265      
+    beq .brk.9268      
 .jmpz1105:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
@@ -25712,14 +25712,14 @@ _proccall1102:
     bl BufferMethods::setNumber
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.cont.9265:
+.cont.9268:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.9265      
-.brk.9265:
+    b .fortop.9268      
+.brk.9268:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     movs r0, #1
@@ -25761,7 +25761,7 @@ _proccall1109:
     movs r0, #1
     str r0, [sp, locals@5]
     @stackempty locals
-.fortop.9293:
+.fortop.9296:
     ldr r0, [sp, locals@5]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@4]
@@ -25777,7 +25777,7 @@ _proccall1109:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.9293      
+    beq .brk.9296      
 .jmpz1110:
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
@@ -25798,18 +25798,18 @@ _proccall1109:
 _proccall1111:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.cont.9293:
+.cont.9296:
     ldr r0, [sp, locals@5]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@5]
-    b .fortop.9293      
-.brk.9293:
+    b .fortop.9296      
+.brk.9296:
     movs r0, #0
     str r0, [sp, locals@4]
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Bus_gcDevices__P4128_nochk
+    bl jacdac_Bus_gcDevices__P4127_nochk
 _proccall1112:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -25958,32 +25958,32 @@ jacdac_Bus_queueAnnounce__P3466_end:
     ;
 ; Function jacdac/routing.ts(139,42): ids.inline
     ;
-    .object ids_inline__P9228 "jacdac/routing.ts(139,42): ids.inline"
-ids_inline__P9228_pre:
+    .object ids_inline__P9231 "jacdac/routing.ts(139,42): ids.inline"
+ids_inline__P9231_pre:
     .section code
     .balign 4
-ids_inline__P9228_Lit:
+ids_inline__P9231_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word ids_inline__P9228_args@fn
-ids_inline__P9228_args:
+    .word ids_inline__P9231_args@fn
+ids_inline__P9231_args:
     cmp r4, #1
-    bge ids_inline__P9228_nochk
+    bge ids_inline__P9231_nochk
     push {lr}
     bl _expand_args_1_9
-    bl ids_inline__P9228_nochk
+    bl ids_inline__P9231_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-ids_inline__P9228:
-ids_inline__P9228_nochk:
+ids_inline__P9231:
+ids_inline__P9231_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-ids_inline__P9228_locals:
+ids_inline__P9231_locals:
     ldr r0, [sp, args@0]
     bl _inst_jacdac_Server__C3491_validate_15
     ldr r0, [r0, #32]
@@ -26000,7 +26000,7 @@ ids_inline__P9228_locals:
 .object PUSH
 .balign 4
 _ldlit_241:
- .word ids_inline__P9228_Lit
+ .word ids_inline__P9231_Lit
 _ldlit_242:
  .word _str40
 .object POP
@@ -26009,10 +26009,10 @@ _ldlit_242:
     negs r0, r0
 .condexprfin_1_202:
 ; jmp value (already in r0)
-.ret.9228:
+.ret.9231:
     @stackempty locals
 .final_2_202:
-ids_inline__P9228_end:
+ids_inline__P9231_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -26116,26 +26116,26 @@ jacdac_JDPacket_sendAsMultiCommand__P2958_end:
     ;
 ; Function jacdac/routing.ts(80,9): jacdac.Bus.gcDevices
     ;
-    .object jacdac_Bus_gcDevices__P4128 "jacdac/routing.ts(80,9): jacdac.Bus.gcDevices"
-jacdac_Bus_gcDevices__P4128_pre:
+    .object jacdac_Bus_gcDevices__P4127 "jacdac/routing.ts(80,9): jacdac.Bus.gcDevices"
+jacdac_Bus_gcDevices__P4127_pre:
     .section code
     .balign 4
-jacdac_Bus_gcDevices__P4128_args:
+jacdac_Bus_gcDevices__P4127_args:
     cmp r4, #1
-    bge jacdac_Bus_gcDevices__P4128_nochk
+    bge jacdac_Bus_gcDevices__P4127_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_Bus_gcDevices__P4128_nochk
+    bl jacdac_Bus_gcDevices__P4127_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_Bus_gcDevices__P4128:
+jacdac_Bus_gcDevices__P4127:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Bus__C3452_validate_3
     mov lr, r7
-jacdac_Bus_gcDevices__P4128_nochk:
+jacdac_Bus_gcDevices__P4127_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -26147,7 +26147,7 @@ jacdac_Bus_gcDevices__P4128_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_Bus_gcDevices__P4128_locals:
+jacdac_Bus_gcDevices__P4127_locals:
     mov r7, sp
     str r7, [r6, #4]
     bl control::millis
@@ -26176,7 +26176,7 @@ _proccall1125:
     movs r0, #1
     str r0, [sp, locals@3]
     @stackempty locals
-.fortop.9364:
+.fortop.9367:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -26193,7 +26193,7 @@ _proccall1125:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.9364      
+    beq .brk.9367      
 .jmpz1126:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #12]
@@ -26243,14 +26243,14 @@ _proccall1129:
     @stackempty locals
 .else_0_204:
 .afterif_1_204:
-.cont.9364:
+.cont.9367:
     ldr r0, [sp, locals@3]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@3]
     @stackempty locals
-    b .fortop.9364      
-.brk.9364:
+    b .fortop.9367      
+.brk.9367:
     ldr r0, [sp, locals@2]
     mov r7, sp
     str r7, [r6, #4]
@@ -26283,12 +26283,12 @@ _proccall1132:
     @stackempty locals
 .else_2_204:
 .afterif_3_204:
-.ret.4128:
+.ret.4127:
     @stackempty locals
     movs r0, #0
 .final_4_204:
     add sp, #4*5 ; pop locals 5
-jacdac_Bus_gcDevices__P4128_end:
+jacdac_Bus_gcDevices__P4127_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -26375,18 +26375,18 @@ jacdac_Bus_isClient__P3465_end:
     ;
 ; Function jacdac/routing.ts(1882,5): jacdac.consumePackets
     ;
-    .object jacdac_consumePackets__P4182 "jacdac/routing.ts(1882,5): jacdac.consumePackets"
-jacdac_consumePackets__P4182_pre:
+    .object jacdac_consumePackets__P4181 "jacdac/routing.ts(1882,5): jacdac.consumePackets"
+jacdac_consumePackets__P4181_pre:
     .section code
     .balign 4
-jacdac_consumePackets__P4182_Lit:
+jacdac_consumePackets__P4181_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_consumePackets__P4182_args@fn
-jacdac_consumePackets__P4182_args:
+    .word jacdac_consumePackets__P4181_args@fn
+jacdac_consumePackets__P4181_args:
     .section code
-jacdac_consumePackets__P4182:
-jacdac_consumePackets__P4182_nochk:
+jacdac_consumePackets__P4181:
+jacdac_consumePackets__P4181_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -26395,8 +26395,8 @@ jacdac_consumePackets__P4182_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_consumePackets__P4182_locals:
-.cont.9403:
+jacdac_consumePackets__P4181_locals:
+.cont.9406:
     mov r7, sp
     str r7, [r6, #4]
     bl jacdac::__physGetPacket
@@ -26405,7 +26405,7 @@ jacdac_consumePackets__P4182_locals:
     movs r0, #6
     pop {r1} ; tmpref @1
     bl _cmp_neq
-    beq .brk.9403      
+    beq .brk.9406      
 .jmpz1133:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
@@ -26436,14 +26436,14 @@ _proccall1134:
 _proccall1135:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-    b .cont.9403      
-.brk.9403:
-.ret.4182:
+    b .cont.9406      
+.brk.9406:
+.ret.4181:
     @stackempty locals
     movs r0, #0
 .final_0_207:
     add sp, #4*2 ; pop locals 2
-jacdac_consumePackets__P4182_end:
+jacdac_consumePackets__P4181_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -26481,7 +26481,7 @@ jacdac_JDPacket_fromBinary__P2913_locals:
     bl pxt::mkClassInstance
     push {r0}; tmpstore @1
     push {r0} ; proc-arg
-    bl jacdac_JDPacket_constructor__P3984
+    bl jacdac_JDPacket_constructor__P3983
 _proccall1136:
     add sp, #4*1 ; pop locals 1
     pop {r0} ; tmpref @1
@@ -27181,7 +27181,7 @@ _proccall1164:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.9549:
+.fortop.9552:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@1]
@@ -27197,7 +27197,7 @@ _proccall1164:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.9549      
+    beq .brk.9552      
 .jmpz1165:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
@@ -27229,17 +27229,17 @@ _proccall1166:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall1167:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.9549:
+.cont.9552:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
-    b .fortop.9549      
-.brk.9549:
+    b .fortop.9552      
+.brk.9552:
     movs r0, #0
     str r0, [sp, locals@1]
 .ret.3213:
@@ -27291,7 +27291,7 @@ Buffer_chunkedFromUTF8__P2648_locals:
     movs r0, #1
     str r0, [sp, locals@1]
     @stackempty locals
-.cont.9562:
+.cont.9565:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -27307,7 +27307,7 @@ Buffer_chunkedFromUTF8__P2648_locals:
     ldr r1, [sp, #4*0] ; estack
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
-    beq .brk.9562      
+    beq .brk.9565      
 .jmpz1169:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -27315,7 +27315,7 @@ Buffer_chunkedFromUTF8__P2648_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl Buffer_chunkLen__P3875
+    bl Buffer_chunkLen__P3874
 _proccall1170:
     add sp, #4*3 ; pop locals 3
     str r0, [sp, locals@2]
@@ -27355,8 +27355,8 @@ _proccall1171:
     bl _numops_adds
     str r0, [sp, locals@1]
     @stackempty locals
-    b .cont.9562      
-.brk.9562:
+    b .cont.9565      
+.brk.9565:
     ldr r0, [sp, locals@0]
 .ret.2648:
     @stackempty locals
@@ -27370,13 +27370,13 @@ Buffer_chunkedFromUTF8__P2648_end:
     ;
 ; Function core/buffer.ts(359,5): Buffer.chunkLen
     ;
-    .object Buffer_chunkLen__P3875 "core/buffer.ts(359,5): Buffer.chunkLen"
-Buffer_chunkLen__P3875_pre:
+    .object Buffer_chunkLen__P3874 "core/buffer.ts(359,5): Buffer.chunkLen"
+Buffer_chunkLen__P3874_pre:
     .section code
     .balign 4
     .section code
-Buffer_chunkLen__P3875:
-Buffer_chunkLen__P3875_nochk:
+Buffer_chunkLen__P3874:
+Buffer_chunkLen__P3874_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -27387,7 +27387,7 @@ Buffer_chunkLen__P3875_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-Buffer_chunkLen__P3875_locals:
+Buffer_chunkLen__P3874_locals:
     ldr r0, [sp, args@2]
     push {r0} ; proc-arg
     bl _conv_29
@@ -27435,14 +27435,14 @@ _proccall1173:
     beq .else_0_214      
 .jmpz1172:
     ldr r0, [sp, locals@1]
-    b .ret.3875      
+    b .ret.3874      
 .else_0_214:
 .afterif_1_214:
-.cont.9610:
+.cont.9613:
     ldr r0, [sp, locals@0]
     ldr r1, [sp, locals@1]
     bl _cmp_lt
-    beq .brk.9610      
+    beq .brk.9613      
 .jmpz1174:
     ldr r0, [sp, locals@0]
     ldr r1, [sp, locals@1]
@@ -27458,7 +27458,7 @@ _proccall1173:
     bl _cmp_eq
     beq .else_2_214      
 .jmpz1175:
-    b .brk.9610      
+    b .brk.9613      
 .else_2_214:
 .afterif_3_214:
     ldr r0, [sp, args@0]
@@ -27505,14 +27505,14 @@ _proccall1176:
     str r0, [sp, locals@1]
     @stackempty locals
 .afterif_5_214:
-    b .cont.9610      
-.brk.9610:
+    b .cont.9613      
+.brk.9613:
     ldr r0, [sp, locals@0]
-.ret.3875:
+.ret.3874:
     @stackempty locals
 .final_6_214:
     add sp, #4*4 ; pop locals 4
-Buffer_chunkLen__P3875_end:
+Buffer_chunkLen__P3874_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -27636,23 +27636,23 @@ console_addListener__P2386_end:
     ;
 ; Function jacdac/routing.ts(1591,9): jacdac.ProxyServer.constructor
     ;
-    .object jacdac_ProxyServer_constructor__P4154 "jacdac/routing.ts(1591,9): jacdac.ProxyServer.constructor"
-jacdac_ProxyServer_constructor__P4154_pre:
+    .object jacdac_ProxyServer_constructor__P4153 "jacdac/routing.ts(1591,9): jacdac.ProxyServer.constructor"
+jacdac_ProxyServer_constructor__P4153_pre:
     .section code
     .balign 4
     .section code
-jacdac_ProxyServer_constructor__P4154:
+jacdac_ProxyServer_constructor__P4153:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac_ProxyServer__C4152_validate_66
+    bl _inst_jacdac_ProxyServer__C4151_validate_66
     mov lr, r7
-jacdac_ProxyServer_constructor__P4154_nochk:
+jacdac_ProxyServer_constructor__P4153_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_ProxyServer_constructor__P4154_locals:
+jacdac_ProxyServer_constructor__P4153_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     mov r7, sp
@@ -27680,10 +27680,10 @@ _proccall1181:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
     movs r0, #0
-.ret.4154:
+.ret.4153:
     @stackempty locals
 .final_0_216:
-jacdac_ProxyServer_constructor__P4154_end:
+jacdac_ProxyServer_constructor__P4153_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -27691,23 +27691,23 @@ jacdac_ProxyServer_constructor__P4154_end:
     ;
 ; Function jacdac/routing.ts(1597,9): jacdac.BrainServer.constructor
     ;
-    .object jacdac_BrainServer_constructor__P4157 "jacdac/routing.ts(1597,9): jacdac.BrainServer.constructor"
-jacdac_BrainServer_constructor__P4157_pre:
+    .object jacdac_BrainServer_constructor__P4156 "jacdac/routing.ts(1597,9): jacdac.BrainServer.constructor"
+jacdac_BrainServer_constructor__P4156_pre:
     .section code
     .balign 4
     .section code
-jacdac_BrainServer_constructor__P4157:
+jacdac_BrainServer_constructor__P4156:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac_BrainServer__C4155_validate_67
+    bl _inst_jacdac_BrainServer__C4154_validate_67
     mov lr, r7
-jacdac_BrainServer_constructor__P4157_nochk:
+jacdac_BrainServer_constructor__P4156_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_BrainServer_constructor__P4157_locals:
+jacdac_BrainServer_constructor__P4156_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     mov r7, sp
@@ -27735,10 +27735,10 @@ _proccall1182:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
     movs r0, #0
-.ret.4157:
+.ret.4156:
     @stackempty locals
 .final_0_217:
-jacdac_BrainServer_constructor__P4157_end:
+jacdac_BrainServer_constructor__P4156_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -27899,19 +27899,19 @@ jacdac_Bus_addServer__P3461_end:
     ;
 ; Function jacdac/routing.ts(1782,5): jacdac.enableIdentityLED
     ;
-    .object jacdac_enableIdentityLED__P4178 "jacdac/routing.ts(1782,5): jacdac.enableIdentityLED"
-jacdac_enableIdentityLED__P4178_pre:
+    .object jacdac_enableIdentityLED__P4177 "jacdac/routing.ts(1782,5): jacdac.enableIdentityLED"
+jacdac_enableIdentityLED__P4177_pre:
     .section code
     .balign 4
     .section code
-jacdac_enableIdentityLED__P4178:
-jacdac_enableIdentityLED__P4178_nochk:
+jacdac_enableIdentityLED__P4177:
+jacdac_enableIdentityLED__P4177_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_enableIdentityLED__P4178_locals:
+jacdac_enableIdentityLED__P4177_locals:
     movs r0, #6
     mov r7, sp
     str r7, [r6, #4]
@@ -27921,11 +27921,11 @@ jacdac_enableIdentityLED__P4178_locals:
 .jmpz1187:
     ldr r0, _ldlit_256 ; _str131      
     push {r0} ; proc-arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall1188:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    ldr r0, _ldlit_257 ; jacdac_enableIdentityLED_inline__P9696_Lit      
+    ldr r0, _ldlit_257 ; jacdac_enableIdentityLED_inline__P9699_Lit      
     push {r0} ; proc-arg
     movs r0, #132
     ldr r7, [r6, #0]
@@ -27940,11 +27940,11 @@ _proccall1189:
     @stackempty locals
 .else_0_220:
 .afterif_1_220:
-.ret.4178:
+.ret.4177:
     @stackempty locals
     movs r0, #0
 .final_2_220:
-jacdac_enableIdentityLED__P4178_end:
+jacdac_enableIdentityLED__P4177_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -27952,34 +27952,34 @@ jacdac_enableIdentityLED__P4178_end:
     ;
 ; Function jacdac/routing.ts(1785,30): jacdac.enableIdentityLED.inline
     ;
-    .object jacdac_enableIdentityLED_inline__P9696 "jacdac/routing.ts(1785,30): jacdac.enableIdentityLED.inline"
-jacdac_enableIdentityLED_inline__P9696_pre:
+    .object jacdac_enableIdentityLED_inline__P9699 "jacdac/routing.ts(1785,30): jacdac.enableIdentityLED.inline"
+jacdac_enableIdentityLED_inline__P9699_pre:
     .section code
     .balign 4
-jacdac_enableIdentityLED_inline__P9696_Lit:
+jacdac_enableIdentityLED_inline__P9699_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_enableIdentityLED_inline__P9696_args@fn
-jacdac_enableIdentityLED_inline__P9696_args:
+    .word jacdac_enableIdentityLED_inline__P9699_args@fn
+jacdac_enableIdentityLED_inline__P9699_args:
     .section code
-jacdac_enableIdentityLED_inline__P9696:
-jacdac_enableIdentityLED_inline__P9696_nochk:
+jacdac_enableIdentityLED_inline__P9699:
+jacdac_enableIdentityLED_inline__P9699_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_enableIdentityLED_inline__P9696_locals:
-    ldr r0, _ldlit_258 ; jacdac_enableIdentityLED_inline__P9698_Lit      
+jacdac_enableIdentityLED_inline__P9699_locals:
+    ldr r0, _ldlit_258 ; jacdac_enableIdentityLED_inline__P9701_Lit      
     push {r0} ; proc-arg
     bl control_runInBackground__P2298
 _proccall1190:
     add sp, #4*1 ; pop locals 1
-.ret.9696:
+.ret.9699:
     @stackempty locals
     movs r0, #0
 .final_0_221:
-jacdac_enableIdentityLED_inline__P9696_end:
+jacdac_enableIdentityLED_inline__P9699_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -27987,18 +27987,18 @@ jacdac_enableIdentityLED_inline__P9696_end:
     ;
 ; Function jacdac/routing.ts(1786,41): jacdac.enableIdentityLED.inline
     ;
-    .object jacdac_enableIdentityLED_inline__P9698 "jacdac/routing.ts(1786,41): jacdac.enableIdentityLED.inline"
-jacdac_enableIdentityLED_inline__P9698_pre:
+    .object jacdac_enableIdentityLED_inline__P9701 "jacdac/routing.ts(1786,41): jacdac.enableIdentityLED.inline"
+jacdac_enableIdentityLED_inline__P9701_pre:
     .section code
     .balign 4
-jacdac_enableIdentityLED_inline__P9698_Lit:
+jacdac_enableIdentityLED_inline__P9701_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_enableIdentityLED_inline__P9698_args@fn
-jacdac_enableIdentityLED_inline__P9698_args:
+    .word jacdac_enableIdentityLED_inline__P9701_args@fn
+jacdac_enableIdentityLED_inline__P9701_args:
     .section code
-jacdac_enableIdentityLED_inline__P9698:
-jacdac_enableIdentityLED_inline__P9698_nochk:
+jacdac_enableIdentityLED_inline__P9701:
+jacdac_enableIdentityLED_inline__P9701_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -28006,21 +28006,21 @@ jacdac_enableIdentityLED_inline__P9698_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_enableIdentityLED_inline__P9698_locals:
+jacdac_enableIdentityLED_inline__P9701_locals:
     movs r0, #1
     str r0, [sp, locals@0]
     @stackempty locals
-.fortop.9700:
+.fortop.9703:
     ldr r0, [sp, locals@0]
     movs r1, #15
     bl _cmp_lt
-    beq .brk.9700      
+    beq .brk.9703      
 .jmpz1191:
     movs r0, #66
     push {r0} ; proc-arg
     movs r0, #27
     push {r0} ; proc-arg
-    bl jacdac_setPinByCfg__P4175
+    bl jacdac_setPinByCfg__P4174
 _proccall1192:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -28034,7 +28034,7 @@ _proccall1193:
     push {r0} ; proc-arg
     movs r0, #27
     push {r0} ; proc-arg
-    bl jacdac_setPinByCfg__P4175
+    bl jacdac_setPinByCfg__P4174
 _proccall1194:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -28046,20 +28046,20 @@ _proccall1194:
 _proccall1195:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.cont.9700:
+.cont.9703:
     ldr r0, [sp, locals@0]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@0]
     @stackempty locals
-    b .fortop.9700      
-.brk.9700:
-.ret.9698:
+    b .fortop.9703      
+.brk.9703:
+.ret.9701:
     @stackempty locals
     movs r0, #0
 .final_0_222:
     add sp, #4*1 ; pop locals 1
-jacdac_enableIdentityLED_inline__P9698_end:
+jacdac_enableIdentityLED_inline__P9701_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28067,13 +28067,13 @@ jacdac_enableIdentityLED_inline__P9698_end:
     ;
 ; Function jacdac/routing.ts(1745,5): jacdac.setPinByCfg
     ;
-    .object jacdac_setPinByCfg__P4175 "jacdac/routing.ts(1745,5): jacdac.setPinByCfg"
-jacdac_setPinByCfg__P4175_pre:
+    .object jacdac_setPinByCfg__P4174 "jacdac/routing.ts(1745,5): jacdac.setPinByCfg"
+jacdac_setPinByCfg__P4174_pre:
     .section code
     .balign 4
     .section code
-jacdac_setPinByCfg__P4175:
-jacdac_setPinByCfg__P4175_nochk:
+jacdac_setPinByCfg__P4174:
+jacdac_setPinByCfg__P4174_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -28081,7 +28081,7 @@ jacdac_setPinByCfg__P4175_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_setPinByCfg__P4175_locals:
+jacdac_setPinByCfg__P4174_locals:
     movs r0, #6
     str r0, [sp, locals@0]
     @stackempty locals
@@ -28101,7 +28101,7 @@ jacdac_setPinByCfg__P4175_locals:
     cmp r0, #0
     beq .else_0_223      
 .jmpz1196:
-    b .ret.4175      
+    b .ret.4174      
 .else_0_223:
 .afterif_1_223:
     movs r0, #1
@@ -28136,12 +28136,12 @@ jacdac_setPinByCfg__P4175_locals:
 _proccall1198:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.ret.4175:
+.ret.4174:
     @stackempty locals
     movs r0, #0
 .final_4_223:
     add sp, #4*1 ; pop locals 1
-jacdac_setPinByCfg__P4175_end:
+jacdac_setPinByCfg__P4174_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28181,7 +28181,7 @@ jacdac_EventSource_on__P3620_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_EventSource_addListenerInternal__P4024_nochk
+    bl jacdac_EventSource_addListenerInternal__P4023_nochk
 _proccall1199:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
@@ -28197,26 +28197,26 @@ jacdac_EventSource_on__P3620_end:
     ;
 ; Function jacdac/eventsource.ts(32,9): jacdac.EventSource.addListenerInternal
     ;
-    .object jacdac_EventSource_addListenerInternal__P4024 "jacdac/eventsource.ts(32,9): jacdac.EventSource.addListenerInternal"
-jacdac_EventSource_addListenerInternal__P4024_pre:
+    .object jacdac_EventSource_addListenerInternal__P4023 "jacdac/eventsource.ts(32,9): jacdac.EventSource.addListenerInternal"
+jacdac_EventSource_addListenerInternal__P4023_pre:
     .section code
     .balign 4
-jacdac_EventSource_addListenerInternal__P4024_args:
+jacdac_EventSource_addListenerInternal__P4023_args:
     cmp r4, #3
-    bge jacdac_EventSource_addListenerInternal__P4024_nochk
+    bge jacdac_EventSource_addListenerInternal__P4023_nochk
     push {lr}
     bl _expand_args_3_24
-    bl jacdac_EventSource_addListenerInternal__P4024_nochk
+    bl jacdac_EventSource_addListenerInternal__P4023_nochk
     @dummystack 3
     add sp, #4*3
     pop {pc}
     .section code
-jacdac_EventSource_addListenerInternal__P4024:
+jacdac_EventSource_addListenerInternal__P4023:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_EventSource__C3618_validate_37
     mov lr, r7
-jacdac_EventSource_addListenerInternal__P4024_nochk:
+jacdac_EventSource_addListenerInternal__P4023_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -28225,7 +28225,7 @@ jacdac_EventSource_addListenerInternal__P4024_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_EventSource_addListenerInternal__P4024_locals:
+jacdac_EventSource_addListenerInternal__P4023_locals:
     ldr r0, [sp, args@1]
     mov r7, sp
     str r7, [r6, #4]
@@ -28269,11 +28269,11 @@ jacdac_EventSource_addListenerInternal__P4024_locals:
     cmp r0, #0
     beq .else_0_225      
 .jmpz1201:
-    b .ret.4024      
+    b .ret.4023      
 .else_0_225:
 .afterif_3_225:
     movs r0, #2
-    ldr r1, _ldlit_260 ; previous_inline__P9746_Lit      
+    ldr r1, _ldlit_260 ; previous_inline__P9749_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -28306,7 +28306,7 @@ _proccall1202:
     cmp r0, #0
     beq .else_4_225      
 .jmpz1203:
-    b .ret.4024      
+    b .ret.4023      
 .else_4_225:
 .afterif_5_225:
     ldr r0, _ldlit_261 ; jacdac_EventListener__C3615_VT      
@@ -28337,12 +28337,12 @@ _proccall1204:
     bl Array_::push
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.ret.4024:
+.ret.4023:
     @stackempty locals
     movs r0, #0
 .final_6_225:
     add sp, #4*2 ; pop locals 2
-jacdac_EventSource_addListenerInternal__P4024_end:
+jacdac_EventSource_addListenerInternal__P4023_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28350,20 +28350,20 @@ jacdac_EventSource_addListenerInternal__P4024_end:
     ;
 ; Function jacdac/eventsource.ts(39,17): previous.inline
     ;
-    .object previous_inline__P9746 "jacdac/eventsource.ts(39,17): previous.inline"
-previous_inline__P9746_pre:
+    .object previous_inline__P9749 "jacdac/eventsource.ts(39,17): previous.inline"
+previous_inline__P9749_pre:
     .section code
     .balign 4
-previous_inline__P9746_Lit:
+previous_inline__P9749_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word previous_inline__P9746_args@fn
-previous_inline__P9746_args:
+    .word previous_inline__P9749_args@fn
+previous_inline__P9749_args:
     cmp r4, #1
-    bge previous_inline__P9746_nochk
+    bge previous_inline__P9749_nochk
     push {lr}
     bl _expand_args_1_9
-    bl previous_inline__P9746_nochk
+    bl previous_inline__P9749_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
@@ -28374,25 +28374,25 @@ _ldlit_255:
 _ldlit_256:
  .word _str131
 _ldlit_257:
- .word jacdac_enableIdentityLED_inline__P9696_Lit
+ .word jacdac_enableIdentityLED_inline__P9699_Lit
 _ldlit_258:
- .word jacdac_enableIdentityLED_inline__P9698_Lit
+ .word jacdac_enableIdentityLED_inline__P9701_Lit
 _ldlit_259:
  .word 131073
 _ldlit_260:
- .word previous_inline__P9746_Lit
+ .word previous_inline__P9749_Lit
 _ldlit_261:
  .word jacdac_EventListener__C3615_VT
 .object POP
     .section code
-previous_inline__P9746:
-previous_inline__P9746_nochk:
+previous_inline__P9749:
+previous_inline__P9749_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-previous_inline__P9746_locals:
+previous_inline__P9749_locals:
     ldr r0, [sp, args@0]
     bl _inst_jacdac_EventListener__C3615_validate_38
     ldr r0, [r0, #4]
@@ -28434,10 +28434,10 @@ previous_inline__P9746_locals:
     add sp, #4*2 ; pop locals 2
 .lazy_0_226:
 ; jmp value (already in r0)
-.ret.9746:
+.ret.9749:
     @stackempty locals
 .final_2_226:
-previous_inline__P9746_end:
+previous_inline__P9749_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28480,13 +28480,13 @@ jacdac_EventListener_constructor__P3616_end:
     ;
 ; Function jacdac/routing.ts(1759,5): jacdac.enablePowerFaultPin
     ;
-    .object jacdac_enablePowerFaultPin__P4177 "jacdac/routing.ts(1759,5): jacdac.enablePowerFaultPin"
-jacdac_enablePowerFaultPin__P4177_pre:
+    .object jacdac_enablePowerFaultPin__P4176 "jacdac/routing.ts(1759,5): jacdac.enablePowerFaultPin"
+jacdac_enablePowerFaultPin__P4176_pre:
     .section code
     .balign 4
     .section code
-jacdac_enablePowerFaultPin__P4177:
-jacdac_enablePowerFaultPin__P4177_nochk:
+jacdac_enablePowerFaultPin__P4176:
+jacdac_enablePowerFaultPin__P4176_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -28494,7 +28494,7 @@ jacdac_enablePowerFaultPin__P4177_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_enablePowerFaultPin__P4177_locals:
+jacdac_enablePowerFaultPin__P4176_locals:
     movs r0, #6
     str r0, [sp, locals@0]
     @stackempty locals
@@ -28507,7 +28507,7 @@ jacdac_enablePowerFaultPin__P4177_locals:
 .jmpz1206:
     ldr r0, _ldlit_263 ; _str129      
     push {r0} ; proc-arg
-    bl jacdac_log__P4134
+    bl jacdac_log__P4133
 _proccall1207:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -28528,7 +28528,7 @@ _proccall1209:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
     movs r0, #1
-    ldr r1, _ldlit_264 ; jacdac_enablePowerFaultPin_inline__P9788_Lit      
+    ldr r1, _ldlit_264 ; jacdac_enablePowerFaultPin_inline__P9791_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -28551,12 +28551,12 @@ _proccall1210:
     @stackempty locals
 .else_0_229:
 .afterif_1_229:
-.ret.4177:
+.ret.4176:
     @stackempty locals
     movs r0, #0
 .final_2_229:
     add sp, #4*1 ; pop locals 1
-jacdac_enablePowerFaultPin__P4177_end:
+jacdac_enablePowerFaultPin__P4176_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28564,24 +28564,24 @@ jacdac_enablePowerFaultPin__P4177_end:
     ;
 ; Function jacdac/routing.ts(1767,42): jacdac.enablePowerFaultPin.inline
     ;
-    .object jacdac_enablePowerFaultPin_inline__P9788 "jacdac/routing.ts(1767,42): jacdac.enablePowerFaultPin.inline"
-jacdac_enablePowerFaultPin_inline__P9788_pre:
+    .object jacdac_enablePowerFaultPin_inline__P9791 "jacdac/routing.ts(1767,42): jacdac.enablePowerFaultPin.inline"
+jacdac_enablePowerFaultPin_inline__P9791_pre:
     .section code
     .balign 4
-jacdac_enablePowerFaultPin_inline__P9788_Lit:
+jacdac_enablePowerFaultPin_inline__P9791_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_enablePowerFaultPin_inline__P9788_args@fn
-jacdac_enablePowerFaultPin_inline__P9788_args:
+    .word jacdac_enablePowerFaultPin_inline__P9791_args@fn
+jacdac_enablePowerFaultPin_inline__P9791_args:
     .section code
-jacdac_enablePowerFaultPin_inline__P9788:
-jacdac_enablePowerFaultPin_inline__P9788_nochk:
+jacdac_enablePowerFaultPin_inline__P9791:
+jacdac_enablePowerFaultPin_inline__P9791_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_enablePowerFaultPin_inline__P9788_locals:
+jacdac_enablePowerFaultPin_inline__P9791_locals:
     ldr r0, [r5, #4*3]
     push {r0} ; proc-arg
     movs r1, #60
@@ -28592,7 +28592,7 @@ _proccall1212:
     bl _cmp_eq
     beq .else_0_230      
 .jmpz1211:
-    ldr r0, _ldlit_265 ; jacdac_enablePowerFaultPin_inline__P9792_Lit      
+    ldr r0, _ldlit_265 ; jacdac_enablePowerFaultPin_inline__P9795_Lit      
     push {r0} ; proc-arg
     bl control_runInParallel__P2297
 _proccall1213:
@@ -28600,11 +28600,11 @@ _proccall1213:
     @stackempty locals
 .else_0_230:
 .afterif_1_230:
-.ret.9788:
+.ret.9791:
     @stackempty locals
     movs r0, #0
 .final_2_230:
-jacdac_enablePowerFaultPin_inline__P9788_end:
+jacdac_enablePowerFaultPin_inline__P9791_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28612,24 +28612,24 @@ jacdac_enablePowerFaultPin_inline__P9788_end:
     ;
 ; Function jacdac/routing.ts(1769,43): jacdac.enablePowerFaultPin.inline
     ;
-    .object jacdac_enablePowerFaultPin_inline__P9792 "jacdac/routing.ts(1769,43): jacdac.enablePowerFaultPin.inline"
-jacdac_enablePowerFaultPin_inline__P9792_pre:
+    .object jacdac_enablePowerFaultPin_inline__P9795 "jacdac/routing.ts(1769,43): jacdac.enablePowerFaultPin.inline"
+jacdac_enablePowerFaultPin_inline__P9795_pre:
     .section code
     .balign 4
-jacdac_enablePowerFaultPin_inline__P9792_Lit:
+jacdac_enablePowerFaultPin_inline__P9795_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_enablePowerFaultPin_inline__P9792_args@fn
-jacdac_enablePowerFaultPin_inline__P9792_args:
+    .word jacdac_enablePowerFaultPin_inline__P9795_args@fn
+jacdac_enablePowerFaultPin_inline__P9795_args:
     .section code
-jacdac_enablePowerFaultPin_inline__P9792:
-jacdac_enablePowerFaultPin_inline__P9792_nochk:
+jacdac_enablePowerFaultPin_inline__P9795:
+jacdac_enablePowerFaultPin_inline__P9795_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_enablePowerFaultPin_inline__P9792_locals:
+jacdac_enablePowerFaultPin_inline__P9795_locals:
     ldr r0, _ldlit_266 ; _str130      
     mov r7, sp
     str r7, [r6, #4]
@@ -28637,7 +28637,7 @@ jacdac_enablePowerFaultPin_inline__P9792_locals:
     @stackempty locals
     movs r0, #10
     push {r0} ; proc-arg
-    bl jacdac_enablePower__P4176
+    bl jacdac_enablePower__P4175
 _proccall1214:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
@@ -28647,7 +28647,7 @@ _proccall1214:
     lsls r0, r0, #8
     adds r0, #159
     push {r0} ; proc-arg
-    bl jacdac_setPinByCfg__P4175
+    bl jacdac_setPinByCfg__P4174
 _proccall1215:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -28665,21 +28665,21 @@ _proccall1216:
     lsls r0, r0, #8
     adds r0, #159
     push {r0} ; proc-arg
-    bl jacdac_setPinByCfg__P4175
+    bl jacdac_setPinByCfg__P4174
 _proccall1217:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
     movs r0, #66
     push {r0} ; proc-arg
-    bl jacdac_enablePower__P4176
+    bl jacdac_enablePower__P4175
 _proccall1218:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.ret.9792:
+.ret.9795:
     @stackempty locals
     movs r0, #0
 .final_0_231:
-jacdac_enablePowerFaultPin_inline__P9792_end:
+jacdac_enablePowerFaultPin_inline__P9795_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28687,34 +28687,34 @@ jacdac_enablePowerFaultPin_inline__P9792_end:
     ;
 ; Function jacdac/routing.ts(1753,5): jacdac.enablePower
     ;
-    .object jacdac_enablePower__P4176 "jacdac/routing.ts(1753,5): jacdac.enablePower"
-jacdac_enablePower__P4176_pre:
+    .object jacdac_enablePower__P4175 "jacdac/routing.ts(1753,5): jacdac.enablePower"
+jacdac_enablePower__P4175_pre:
     .section code
     .balign 4
     .section code
-jacdac_enablePower__P4176:
-jacdac_enablePower__P4176_nochk:
+jacdac_enablePower__P4175:
+jacdac_enablePower__P4175_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_enablePower__P4176_locals:
+jacdac_enablePower__P4175_locals:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     movs r0, #8
     lsls r0, r0, #8
     adds r0, #161
     push {r0} ; proc-arg
-    bl jacdac_setPinByCfg__P4175
+    bl jacdac_setPinByCfg__P4174
 _proccall1219:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.ret.4176:
+.ret.4175:
     @stackempty locals
     movs r0, #0
 .final_0_232:
-jacdac_enablePower__P4176_end:
+jacdac_enablePower__P4175_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28722,19 +28722,19 @@ jacdac_enablePower__P4176_end:
     ;
 ; Function jacdac/routing.ts(384,5): jacdac.log
     ;
-    .object jacdac_log__P4134 "jacdac/routing.ts(384,5): jacdac.log"
-jacdac_log__P4134_pre:
+    .object jacdac_log__P4133 "jacdac/routing.ts(384,5): jacdac.log"
+jacdac_log__P4133_pre:
     .section code
     .balign 4
     .section code
-jacdac_log__P4134:
-jacdac_log__P4134_nochk:
+jacdac_log__P4133:
+jacdac_log__P4133_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_log__P4134_locals:
+jacdac_log__P4133_locals:
     ldr r7, [r6, #0]
     ldr r0, [r7, #32]
     push {r0} ; proc-arg
@@ -28754,11 +28754,11 @@ jacdac_log__P4134_locals:
 _proccall1220:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.ret.4134:
+.ret.4133:
     @stackempty locals
     movs r0, #0
 .final_0_233:
-jacdac_log__P4134_end:
+jacdac_log__P4133_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -28983,13 +28983,13 @@ control_runInParallel__P2297_end:
     ;
 ; Function jacdac/routing.ts(1855,5): jacdac.startProxy
     ;
-    .object jacdac_startProxy__P4180 "jacdac/routing.ts(1855,5): jacdac.startProxy"
-jacdac_startProxy__P4180_pre:
+    .object jacdac_startProxy__P4179 "jacdac/routing.ts(1855,5): jacdac.startProxy"
+jacdac_startProxy__P4179_pre:
     .section code
     .balign 4
     .section code
-jacdac_startProxy__P4180:
-jacdac_startProxy__P4180_nochk:
+jacdac_startProxy__P4179:
+jacdac_startProxy__P4179_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -28997,7 +28997,7 @@ jacdac_startProxy__P4180_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_startProxy__P4180_locals:
+jacdac_startProxy__P4179_locals:
     movs r0, #136
     ldr r7, [r6, #0]
     ldr r0, [r7, r0]
@@ -29045,7 +29045,7 @@ _proccall1230:
     cmp r0, #0
     beq .else_2_239      
 .jmpz1229:
-    b .ret.4180      
+    b .ret.4179      
 .else_2_239:
 .afterif_3_239:
     ldr r0, [sp, locals@0]
@@ -29065,9 +29065,9 @@ _proccall1230:
 _ldlit_263:
  .word _str129
 _ldlit_264:
- .word jacdac_enablePowerFaultPin_inline__P9788_Lit
+ .word jacdac_enablePowerFaultPin_inline__P9791_Lit
 _ldlit_265:
- .word jacdac_enablePowerFaultPin_inline__P9792_Lit
+ .word jacdac_enablePowerFaultPin_inline__P9795_Lit
 _ldlit_266:
  .word _str130
 _ldlit_267:
@@ -29157,17 +29157,17 @@ _proccall1233:
     cmp r0, #0
     beq .else_6_239      
 .jmpz1234:
-    bl jacdac_proxyLoop__P4179
+    bl jacdac_proxyLoop__P4178
 _proccall1235:
     @stackempty locals
 .else_6_239:
 .afterif_7_239:
-.ret.4180:
+.ret.4179:
     @stackempty locals
     movs r0, #0
 .final_8_239:
     add sp, #4*1 ; pop locals 1
-jacdac_startProxy__P4180_end:
+jacdac_startProxy__P4179_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -29175,13 +29175,13 @@ jacdac_startProxy__P4180_end:
     ;
 ; Function jacdac/routing.ts(1803,5): jacdac.proxyLoop
     ;
-    .object jacdac_proxyLoop__P4179 "jacdac/routing.ts(1803,5): jacdac.proxyLoop"
-jacdac_proxyLoop__P4179_pre:
+    .object jacdac_proxyLoop__P4178 "jacdac/routing.ts(1803,5): jacdac.proxyLoop"
+jacdac_proxyLoop__P4178_pre:
     .section code
     .balign 4
     .section code
-jacdac_proxyLoop__P4179:
-jacdac_proxyLoop__P4179_nochk:
+jacdac_proxyLoop__P4178:
+jacdac_proxyLoop__P4178_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -29194,8 +29194,8 @@ jacdac_proxyLoop__P4179_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_proxyLoop__P4179_locals:
-    ldr r0, _ldlit_274 ; jacdac_proxyLoop_inline__P9871_Lit      
+jacdac_proxyLoop__P4178_locals:
+    ldr r0, _ldlit_274 ; jacdac_proxyLoop_inline__P9874_Lit      
     push {r0} ; proc-arg
     ldr r7, [r6, #0]
     ldr r0, [r7, #56]
@@ -29229,13 +29229,13 @@ _proccall1237:
 _proccall1238:
     str r0, [sp, locals@1]
     @stackempty locals
-.cont.9885:
+.cont.9888:
     movs r0, #66
     mov r7, sp
     str r7, [r6, #4]
     bl numops::toBoolDecr
     cmp r0, #0
-    beq .brk.9885      
+    beq .brk.9888      
 .jmpz1239:
     ldr r0, [sp, locals@0]
     movs r1, #3
@@ -29367,14 +29367,14 @@ _proccall1244:
 _proccall1245:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .cont.9885      
-.brk.9885:
-.ret.4179:
+    b .cont.9888      
+.brk.9888:
+.ret.4178:
     @stackempty locals
     movs r0, #0
 .final_6_240:
     add sp, #4*6 ; pop locals 6
-jacdac_proxyLoop__P4179_end:
+jacdac_proxyLoop__P4178_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -29382,24 +29382,24 @@ jacdac_proxyLoop__P4179_end:
     ;
 ; Function jacdac/routing.ts(1804,39): jacdac.proxyLoop.inline
     ;
-    .object jacdac_proxyLoop_inline__P9871 "jacdac/routing.ts(1804,39): jacdac.proxyLoop.inline"
-jacdac_proxyLoop_inline__P9871_pre:
+    .object jacdac_proxyLoop_inline__P9874 "jacdac/routing.ts(1804,39): jacdac.proxyLoop.inline"
+jacdac_proxyLoop_inline__P9874_pre:
     .section code
     .balign 4
-jacdac_proxyLoop_inline__P9871_Lit:
+jacdac_proxyLoop_inline__P9874_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_proxyLoop_inline__P9871_args@fn
-jacdac_proxyLoop_inline__P9871_args:
+    .word jacdac_proxyLoop_inline__P9874_args@fn
+jacdac_proxyLoop_inline__P9874_args:
     .section code
-jacdac_proxyLoop_inline__P9871:
-jacdac_proxyLoop_inline__P9871_nochk:
+jacdac_proxyLoop_inline__P9874:
+jacdac_proxyLoop_inline__P9874_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_proxyLoop_inline__P9871_locals:
+jacdac_proxyLoop_inline__P9874_locals:
     movs r0, #1
     lsls r0, r0, #8
     adds r0, #147
@@ -29415,11 +29415,11 @@ jacdac_proxyLoop_inline__P9871_locals:
 _proccall1246:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.ret.9871:
+.ret.9874:
     @stackempty locals
     movs r0, #0
 .final_0_241:
-jacdac_proxyLoop_inline__P9871_end:
+jacdac_proxyLoop_inline__P9874_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -29551,7 +29551,7 @@ _ldlit_272:
 _ldlit_273:
  .word _str101
 _ldlit_274:
- .word jacdac_proxyLoop_inline__P9871_Lit
+ .word jacdac_proxyLoop_inline__P9874_Lit
 _ldlit_275:
  .word 122881
 .object POP
@@ -29677,7 +29677,7 @@ initPlatform__P2865_nochk:
 .locals:
     @stackmark locals
 initPlatform__P2865_locals:
-    ldr r0, _ldlit_278 ; initPlatform_inline__P9958_Lit      
+    ldr r0, _ldlit_278 ; initPlatform_inline__P9961_Lit      
     ldr r7, [r6, #0]
     str r0, [r7, #16]
     @stackempty locals
@@ -29693,18 +29693,18 @@ initPlatform__P2865_end:
     ;
 ; Function jacdac/mbcompat.ts(99,30): initPlatform.inline
     ;
-    .object initPlatform_inline__P9958 "jacdac/mbcompat.ts(99,30): initPlatform.inline"
-initPlatform_inline__P9958_pre:
+    .object initPlatform_inline__P9961 "jacdac/mbcompat.ts(99,30): initPlatform.inline"
+initPlatform_inline__P9961_pre:
     .section code
     .balign 4
-initPlatform_inline__P9958_Lit:
+initPlatform_inline__P9961_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word initPlatform_inline__P9958_args@fn
-initPlatform_inline__P9958_args:
+    .word initPlatform_inline__P9961_args@fn
+initPlatform_inline__P9961_args:
     .section code
-initPlatform_inline__P9958:
-initPlatform_inline__P9958_nochk:
+initPlatform_inline__P9961:
+initPlatform_inline__P9961_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -29712,7 +29712,7 @@ initPlatform_inline__P9958_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-initPlatform_inline__P9958_locals:
+initPlatform_inline__P9961_locals:
     ldr r0, _ldlit_279 ; 1709984379      
     ldr r7, [r6, #0]
     str r0, [r7, #20]
@@ -29742,7 +29742,7 @@ _proccall1251:
     cmp r0, #0
     beq .else_0_247      
 .jmpz1250:
-    ldr r0, _ldlit_281 ; reset_inline__P9967_Lit      
+    ldr r0, _ldlit_281 ; reset_inline__P9970_Lit      
     str r0, [sp, locals@0]
     @stackempty locals
     ldr r0, [sp, locals@0]
@@ -29765,12 +29765,12 @@ _proccall1251:
     @stackempty locals
 .else_0_247:
 .afterif_1_247:
-.ret.9958:
+.ret.9961:
     @stackempty locals
     movs r0, #0
 .final_2_247:
     add sp, #4*1 ; pop locals 1
-initPlatform_inline__P9958_end:
+initPlatform_inline__P9961_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -29778,32 +29778,32 @@ initPlatform_inline__P9958_end:
     ;
 ; Function jacdac/mbcompat.ts(103,27): reset.inline
     ;
-    .object reset_inline__P9967 "jacdac/mbcompat.ts(103,27): reset.inline"
-reset_inline__P9967_pre:
+    .object reset_inline__P9970 "jacdac/mbcompat.ts(103,27): reset.inline"
+reset_inline__P9970_pre:
     .section code
     .balign 4
-reset_inline__P9967_Lit:
+reset_inline__P9970_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word reset_inline__P9967_args@fn
-reset_inline__P9967_args:
+    .word reset_inline__P9970_args@fn
+reset_inline__P9970_args:
     .section code
-reset_inline__P9967:
-reset_inline__P9967_nochk:
+reset_inline__P9970:
+reset_inline__P9970_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-reset_inline__P9967_locals:
+reset_inline__P9970_locals:
     mov r7, sp
     str r7, [r6, #4]
     bl control::reset
-.ret.9967:
+.ret.9970:
     @stackempty locals
     movs r0, #0
 .final_0_248:
-reset_inline__P9967_end:
+reset_inline__P9970_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -29879,7 +29879,7 @@ handleStatusEvent__P2864_locals:
     b .switch_2_249      
 .jmpz1254:
     pop {r0} ; tmpref @1
-    b .brk.9981      
+    b .brk.9984      
 .switch_0_249:
     ldr r0, _ldlit_282 ; _str26      
     mov r7, sp
@@ -29894,9 +29894,9 @@ handleStatusEvent__P2864_locals:
     bl proxyAnimation__P2862
 _proccall1255:
     @stackempty locals
-    b .brk.9981      
+    b .brk.9984      
 .switch_1_249:
-    b .brk.9981      
+    b .brk.9984      
 .switch_2_249:
     movs r0, #144
     ldr r7, [r6, #0]
@@ -29921,7 +29921,7 @@ _proccall1257:
     @stackempty locals
 .else_3_249:
 .afterif_4_249:
-.brk.9981:
+.brk.9984:
 .ret.2864:
     @stackempty locals
     movs r0, #0
@@ -29972,7 +29972,7 @@ identifyAnimation__P2861_locals:
     str r0, [sp, locals@0]
     @stackempty locals
     movs r0, #1
-    ldr r1, _ldlit_283 ; identifyAnimation_inline__P10000_Lit      
+    ldr r1, _ldlit_283 ; identifyAnimation_inline__P10003_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -30000,24 +30000,24 @@ identifyAnimation__P2861_end:
     ;
 ; Function jacdac/mbcompat.ts(34,27): identifyAnimation.inline
     ;
-    .object identifyAnimation_inline__P10000 "jacdac/mbcompat.ts(34,27): identifyAnimation.inline"
-identifyAnimation_inline__P10000_pre:
+    .object identifyAnimation_inline__P10003 "jacdac/mbcompat.ts(34,27): identifyAnimation.inline"
+identifyAnimation_inline__P10003_pre:
     .section code
     .balign 4
-identifyAnimation_inline__P10000_Lit:
+identifyAnimation_inline__P10003_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word identifyAnimation_inline__P10000_args@fn
-identifyAnimation_inline__P10000_args:
+    .word identifyAnimation_inline__P10003_args@fn
+identifyAnimation_inline__P10003_args:
     .section code
-identifyAnimation_inline__P10000:
-identifyAnimation_inline__P10000_nochk:
+identifyAnimation_inline__P10003:
+identifyAnimation_inline__P10003_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-identifyAnimation_inline__P10000_locals:
+identifyAnimation_inline__P10003_locals:
     mov r7, sp
     str r7, [r6, #4]
     bl led::stopAnimation
@@ -30042,11 +30042,11 @@ identifyAnimation_inline__P10000_locals:
     ldr r7, [r6, #0]
     str r0, [r7, r1]
     @stackempty locals
-.ret.10000:
+.ret.10003:
     @stackempty locals
     movs r0, #0
 .final_0_251:
-identifyAnimation_inline__P10000_end:
+identifyAnimation_inline__P10003_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -30067,7 +30067,7 @@ proxyAnimation__P2862_nochk:
 .locals:
     @stackmark locals
 proxyAnimation__P2862_locals:
-    ldr r0, _ldlit_285 ; proxyAnimation_inline__P10012_Lit      
+    ldr r0, _ldlit_285 ; proxyAnimation_inline__P10015_Lit      
     push {r0} ; proc-arg
     bl control_runInParallel__P2297
 _proccall1260:
@@ -30085,18 +30085,18 @@ proxyAnimation__P2862_end:
     ;
 ; Function jacdac/mbcompat.ts(49,27): proxyAnimation.inline
     ;
-    .object proxyAnimation_inline__P10012 "jacdac/mbcompat.ts(49,27): proxyAnimation.inline"
-proxyAnimation_inline__P10012_pre:
+    .object proxyAnimation_inline__P10015 "jacdac/mbcompat.ts(49,27): proxyAnimation.inline"
+proxyAnimation_inline__P10015_pre:
     .section code
     .balign 4
-proxyAnimation_inline__P10012_Lit:
+proxyAnimation_inline__P10015_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word proxyAnimation_inline__P10012_args@fn
-proxyAnimation_inline__P10012_args:
+    .word proxyAnimation_inline__P10015_args@fn
+proxyAnimation_inline__P10015_args:
     .section code
-proxyAnimation_inline__P10012:
-proxyAnimation_inline__P10012_nochk:
+proxyAnimation_inline__P10015:
+proxyAnimation_inline__P10015_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -30107,7 +30107,7 @@ proxyAnimation_inline__P10012_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-proxyAnimation_inline__P10012_locals:
+proxyAnimation_inline__P10015_locals:
     mov r7, sp
     str r7, [r6, #4]
     bl led::stopAnimation
@@ -30124,14 +30124,14 @@ proxyAnimation_inline__P10012_locals:
     movs r0, #1
     str r0, [sp, locals@0]
     @stackempty locals
-.cont.10021:
+.cont.10024:
     movs r0, #66
     mov r7, sp
     str r7, [r6, #4]
     bl numops::toBoolDecr
     cmp r0, #0
     bne .jmpz1261
-    b .brk.10021      
+    b .brk.10024      
 .jmpz1261:
     ldr r0, [sp, locals@0]
     movs r1, #3
@@ -30151,7 +30151,7 @@ proxyAnimation_inline__P10012_locals:
     bl Math_::randomRange
     str r0, [sp, locals@1]
     @stackempty locals
-.cont.10031:
+.cont.10034:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
     movs r1, #7
@@ -30188,27 +30188,27 @@ proxyAnimation_inline__P10012_locals:
     bl numops::toBoolDecr
     cmp r0, #0
     bne .jmpz1263
-    b .brk.10031      
+    b .brk.10034      
 .object PUSH
 .balign 4
 _ldlit_277:
  .word 4000001
 _ldlit_278:
- .word initPlatform_inline__P9958_Lit
+ .word initPlatform_inline__P9961_Lit
 _ldlit_279:
  .word 1709984379
 _ldlit_280:
  .word handleStatusEvent__P2864_Lit
 _ldlit_281:
- .word reset_inline__P9967_Lit
+ .word reset_inline__P9970_Lit
 _ldlit_282:
  .word _str26
 _ldlit_283:
- .word identifyAnimation_inline__P10000_Lit
+ .word identifyAnimation_inline__P10003_Lit
 _ldlit_284:
  .word _img25
 _ldlit_285:
- .word proxyAnimation_inline__P10012_Lit
+ .word proxyAnimation_inline__P10015_Lit
 .object POP
 .jmpz1263:
     movs r0, #3
@@ -30218,25 +30218,25 @@ _ldlit_285:
     bl Math_::randomRange
     str r0, [sp, locals@1]
     @stackempty locals
-    b .cont.10031      
-.brk.10031:
+    b .cont.10034      
+.brk.10034:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.10041:
+.fortop.10044:
     ldr r0, [sp, locals@2]
     movs r1, #9
     bl _cmp_lt
-    beq .brk.10041      
+    beq .brk.10044      
 .jmpz1264:
     movs r0, #1
     str r0, [sp, locals@3]
     @stackempty locals
-.fortop.10044:
+.fortop.10047:
     ldr r0, [sp, locals@3]
     movs r1, #11
     bl _cmp_lt
-    beq .brk.10044      
+    beq .brk.10047      
 .jmpz1265:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
@@ -30324,22 +30324,22 @@ _proccall1268:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
 .afterif_5_253:
-.cont.10044:
+.cont.10047:
     ldr r0, [sp, locals@3]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@3]
     @stackempty locals
-    b .fortop.10044      
-.brk.10044:
-.cont.10041:
+    b .fortop.10047      
+.brk.10047:
+.cont.10044:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.10041      
-.brk.10041:
+    b .fortop.10044      
+.brk.10044:
     movs r0, #1
     lsls r0, r0, #8
     adds r0, #1
@@ -30348,14 +30348,14 @@ _proccall1268:
 _proccall1269:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .cont.10021      
-.brk.10021:
+    b .cont.10024      
+.brk.10024:
     movs r0, #0
-.ret.10012:
+.ret.10015:
     @stackempty locals
 .final_6_253:
     add sp, #4*4 ; pop locals 4
-proxyAnimation_inline__P10012_end:
+proxyAnimation_inline__P10015_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -30363,13 +30363,13 @@ proxyAnimation_inline__P10012_end:
     ;
 ; Function settings/settings.ts(42,5): settings.initScopes
     ;
-    .object settings_initScopes__P3945 "settings/settings.ts(42,5): settings.initScopes"
-settings_initScopes__P3945_pre:
+    .object settings_initScopes__P3944 "settings/settings.ts(42,5): settings.initScopes"
+settings_initScopes__P3944_pre:
     .section code
     .balign 4
     .section code
-settings_initScopes__P3945:
-settings_initScopes__P3945_nochk:
+settings_initScopes__P3944:
+settings_initScopes__P3944_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -30377,7 +30377,7 @@ settings_initScopes__P3945_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-settings_initScopes__P3945_locals:
+settings_initScopes__P3944_locals:
     bl settings_runNumber__P2820
 _proccall1270:
     movs r1, #3
@@ -30419,16 +30419,16 @@ _proccall1271:
     str r7, [r6, #4]
     bl pxt::programName
     push {r0} ; the one arg
-    bl settings_setScope__P3944
+    bl settings_setScope__P3943
 _proccall1272:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.ret.3945:
+.ret.3944:
     @stackempty locals
     movs r0, #0
 .final_0_254:
     add sp, #4*1 ; pop locals 1
-settings_initScopes__P3945_end:
+settings_initScopes__P3944_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -30436,13 +30436,13 @@ settings_initScopes__P3945_end:
     ;
 ; Function settings/settings.ts(32,5): settings.setScope
     ;
-    .object settings_setScope__P3944 "settings/settings.ts(32,5): settings.setScope"
-settings_setScope__P3944_pre:
+    .object settings_setScope__P3943 "settings/settings.ts(32,5): settings.setScope"
+settings_setScope__P3943_pre:
     .section code
     .balign 4
     .section code
-settings_setScope__P3944:
-settings_setScope__P3944_nochk:
+settings_setScope__P3943:
+settings_setScope__P3943_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -30450,7 +30450,7 @@ settings_setScope__P3944_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-settings_setScope__P3944_locals:
+settings_setScope__P3943_locals:
     ldr r0, [sp, args@0]
     mov r7, sp
     str r7, [r6, #4]
@@ -30537,12 +30537,12 @@ _proccall1277:
     @stackempty locals
 .else_4_255:
 .afterif_5_255:
-.ret.3944:
+.ret.3943:
     @stackempty locals
     movs r0, #0
 .final_6_255:
     add sp, #4*1 ; pop locals 1
-settings_setScope__P3944_end:
+settings_setScope__P3943_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -30737,7 +30737,7 @@ msgpack_unpackNumberArray__P2622_locals:
     bl Array_::mk
     str r0, [sp, locals@0]
     @stackempty locals
-.cont.10152:
+.cont.10155:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
@@ -30754,7 +30754,7 @@ msgpack_unpackNumberArray__P2622_locals:
     bl _cmp_lt
     add sp, #4*2 ; pop locals 2
     bne .jmpz1284
-    b .brk.10152      
+    b .brk.10155      
 .jmpz1284:
     ldr r0, [sp, args@1]
     push {r0}; tmpstore @1
@@ -30770,7 +30770,7 @@ msgpack_unpackNumberArray__P2622_locals:
     bl _pxt_buffer_get
     add sp, #4*3 ; pop locals 3
     push {r0} ; the one arg
-    bl msgpack_tagFormat__P3871
+    bl msgpack_tagFormat__P3870
 _proccall1285:
     add sp, #4*1 ; pop locals 1
     str r0, [sp, locals@1]
@@ -30890,7 +30890,7 @@ _proccall1289:
     str r0, [sp, args@1]
     @stackempty locals
 .afterif_5_258:
-.cont.10197:
+.cont.10200:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
     ldr r0, [sp, args@1]
@@ -30903,17 +30903,17 @@ _proccall1289:
     lsls r1, r1, #8
     adds r1, #131
     bl _cmp_eqq
-    beq .brk.10197      
+    beq .brk.10200      
 .jmpz1290:
     ldr r0, [sp, args@1]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, args@1]
     @stackempty locals
-    b .cont.10197      
-.brk.10197:
-    b .cont.10152      
-.brk.10152:
+    b .cont.10200      
+.brk.10200:
+    b .cont.10155      
+.brk.10155:
     ldr r0, [sp, locals@0]
 .ret.2622:
     @stackempty locals
@@ -31078,7 +31078,7 @@ _proccall1301:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall1302:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
@@ -31090,7 +31090,7 @@ _proccall1303:
     @stackempty locals
 .else_6_259:
 .afterif_7_259:
-    b .brk.10207      
+    b .brk.10210      
 .switch_2_259:
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
@@ -31104,7 +31104,7 @@ _proccall1304:
 _proccall1305:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .brk.10207      
+    b .brk.10210      
 .switch_3_259:
     movs r0, #164
     ldr r7, [r6, #0]
@@ -31160,7 +31160,7 @@ _proccall1309:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall1310:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
@@ -31172,7 +31172,7 @@ _proccall1311:
     @stackempty locals
 .else_8_259:
 .afterif_9_259:
-    b .brk.10207      
+    b .brk.10210      
 .switch_4_259:
     movs r0, #176
     ldr r7, [r6, #0]
@@ -31243,7 +31243,7 @@ _proccall1315:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall1316:
     add sp, #4*4 ; pop locals 4
     @stackempty locals
@@ -31253,7 +31253,7 @@ _proccall1316:
 _proccall1317:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .brk.10207      
+    b .brk.10210      
 .switch_5_259:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -31261,7 +31261,7 @@ _proccall1317:
 _proccall1318:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.brk.10207:
+.brk.10210:
     b .afterif_12_259      
 .else_0_259:
     ldr r0, [sp, args@1]
@@ -31349,7 +31349,7 @@ _proccall1325:
 _proccall1326:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .brk.10257      
+    b .brk.10260      
 .switch_14_259:
     ldr r0, _ldlit_289 ; _str93      
     push {r0} ; proc-arg
@@ -31394,7 +31394,7 @@ _proccall1329:
 _proccall1330:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .brk.10257      
+    b .brk.10260      
 .switch_15_259:
     ldr r0, _ldlit_290 ; _str127      
     push {r0} ; proc-arg
@@ -31409,7 +31409,7 @@ _proccall1331:
     str r7, [r6, #4]
     bl control::reset
     @stackempty locals
-    b .brk.10257      
+    b .brk.10260      
 .switch_16_259:
     ldr r0, _ldlit_291 ; _str128      
     push {r0} ; proc-arg
@@ -31424,7 +31424,7 @@ _proccall1332:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_ControlServer_handleFloodPing__P4159_nochk
+    bl jacdac_ControlServer_handleFloodPing__P4158_nochk
 _proccall1333:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -31434,7 +31434,7 @@ _proccall1333:
 _proccall1334:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .brk.10257      
+    b .brk.10260      
 .switch_17_259:
     ldr r7, [r6, #0]
     ldr r0, [r7, #12]
@@ -31455,7 +31455,7 @@ _proccall1334:
     cmp r0, #0
     beq .else_19_259      
 .jmpz1335:
-    bl jacdac_resetToProxy__P4181
+    bl jacdac_resetToProxy__P4180
 _proccall1336:
     @stackempty locals
 .else_19_259:
@@ -31466,7 +31466,7 @@ _proccall1336:
 _proccall1337:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .brk.10257      
+    b .brk.10260      
 .switch_18_259:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -31474,7 +31474,7 @@ _proccall1337:
 _proccall1338:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.brk.10257:
+.brk.10260:
 .afterif_12_259:
 .ret.3597:
     @stackempty locals
@@ -31488,26 +31488,26 @@ jacdac_ControlServer_handlePacketOuter__P3597_end:
     ;
 ; Function jacdac/routing.ts(1613,9): jacdac.ControlServer.handleFloodPing
     ;
-    .object jacdac_ControlServer_handleFloodPing__P4159 "jacdac/routing.ts(1613,9): jacdac.ControlServer.handleFloodPing"
-jacdac_ControlServer_handleFloodPing__P4159_pre:
+    .object jacdac_ControlServer_handleFloodPing__P4158 "jacdac/routing.ts(1613,9): jacdac.ControlServer.handleFloodPing"
+jacdac_ControlServer_handleFloodPing__P4158_pre:
     .section code
     .balign 4
-jacdac_ControlServer_handleFloodPing__P4159_args:
+jacdac_ControlServer_handleFloodPing__P4158_args:
     cmp r4, #2
-    bge jacdac_ControlServer_handleFloodPing__P4159_nochk
+    bge jacdac_ControlServer_handleFloodPing__P4158_nochk
     push {lr}
     bl _expand_args_2_7
-    bl jacdac_ControlServer_handleFloodPing__P4159_nochk
+    bl jacdac_ControlServer_handleFloodPing__P4158_nochk
     @dummystack 2
     add sp, #4*2
     pop {pc}
     .section code
-jacdac_ControlServer_handleFloodPing__P4159:
+jacdac_ControlServer_handleFloodPing__P4158:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_ControlServer__C3594_validate_69
     mov lr, r7
-jacdac_ControlServer_handleFloodPing__P4159_nochk:
+jacdac_ControlServer_handleFloodPing__P4158_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -31520,7 +31520,7 @@ jacdac_ControlServer_handleFloodPing__P4159_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_ControlServer_handleFloodPing__P4159_locals:
+jacdac_ControlServer_handleFloodPing__P4158_locals:
     mov r7, sp
     str r7, [r6, #4]
     bl pxtrt::mklocRef
@@ -31594,11 +31594,11 @@ _proccall1339:
     movs r0, #1
     str r0, [sp, locals@4]
     @stackempty locals
-.fortop.10311:
+.fortop.10314:
     ldr r0, [sp, locals@4]
     ldr r1, [sp, locals@2]
     bl _cmp_lt
-    beq .brk.10311      
+    beq .brk.10314      
 .jmpz1340:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
@@ -31612,16 +31612,16 @@ _proccall1339:
     bl _pxt_buffer_set
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-.cont.10311:
+.cont.10314:
     ldr r0, [sp, locals@4]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@4]
     @stackempty locals
-    b .fortop.10311      
-.brk.10311:
+    b .fortop.10314      
+.brk.10314:
     movs r0, #4
-    ldr r1, _ldlit_293 ; queuePing_inline__P10324_Lit      
+    ldr r1, _ldlit_293 ; queuePing_inline__P10327_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -31672,12 +31672,12 @@ _proccall1339:
     bl _lambda_call0_0
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.ret.4159:
+.ret.4158:
     @stackempty locals
     movs r0, #0
 .final_0_260:
     add sp, #4*6 ; pop locals 6
-jacdac_ControlServer_handleFloodPing__P4159_end:
+jacdac_ControlServer_handleFloodPing__P4158_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -31685,24 +31685,24 @@ jacdac_ControlServer_handleFloodPing__P4159_end:
     ;
 ; Function jacdac/routing.ts(1618,31): queuePing.inline
     ;
-    .object queuePing_inline__P10324 "jacdac/routing.ts(1618,31): queuePing.inline"
-queuePing_inline__P10324_pre:
+    .object queuePing_inline__P10327 "jacdac/routing.ts(1618,31): queuePing.inline"
+queuePing_inline__P10327_pre:
     .section code
     .balign 4
-queuePing_inline__P10324_Lit:
+queuePing_inline__P10327_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word queuePing_inline__P10324_args@fn
-queuePing_inline__P10324_args:
+    .word queuePing_inline__P10327_args@fn
+queuePing_inline__P10327_args:
     .section code
-queuePing_inline__P10324:
-queuePing_inline__P10324_nochk:
+queuePing_inline__P10327:
+queuePing_inline__P10327_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-queuePing_inline__P10324_locals:
+queuePing_inline__P10327_locals:
     ldr r0, [r5, #4*3]
     mov r7, sp
     str r7, [r6, #4]
@@ -31716,7 +31716,7 @@ queuePing_inline__P10324_locals:
     bl jacdac::__physId
     bl _numops_fromInt
     push {r0} ; proc-arg
-    ldr r0, _ldlit_294 ; jacdac_doNothing__P4151_Lit      
+    ldr r0, _ldlit_294 ; jacdac_doNothing__P4150_Lit      
     push {r0} ; proc-arg
     bl _conv_5
     movs r1, #101
@@ -31758,7 +31758,7 @@ _proccall1343:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall1344:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -31795,11 +31795,11 @@ _proccall1344:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
 .afterif_1_261:
-.ret.10324:
+.ret.10327:
     @stackempty locals
     movs r0, #0
 .final_2_261:
-queuePing_inline__P10324_end:
+queuePing_inline__P10327_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -31807,29 +31807,29 @@ queuePing_inline__P10324_end:
     ;
 ; Function jacdac/routing.ts(1588,5): jacdac.doNothing
     ;
-    .object jacdac_doNothing__P4151 "jacdac/routing.ts(1588,5): jacdac.doNothing"
-jacdac_doNothing__P4151_pre:
+    .object jacdac_doNothing__P4150 "jacdac/routing.ts(1588,5): jacdac.doNothing"
+jacdac_doNothing__P4150_pre:
     .section code
     .balign 4
-jacdac_doNothing__P4151_Lit:
+jacdac_doNothing__P4150_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_doNothing__P4151_args@fn
-jacdac_doNothing__P4151_args:
+    .word jacdac_doNothing__P4150_args@fn
+jacdac_doNothing__P4150_args:
     .section code
-jacdac_doNothing__P4151:
-jacdac_doNothing__P4151_nochk:
+jacdac_doNothing__P4150:
+jacdac_doNothing__P4150_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_doNothing__P4151_locals:
-.ret.4151:
+jacdac_doNothing__P4150_locals:
+.ret.4150:
     @stackempty locals
     movs r0, #0
 .final_0_262:
-jacdac_doNothing__P4151_end:
+jacdac_doNothing__P4150_end:
     pop {pc}
 .object PUSH
 .balign 4
@@ -31842,9 +31842,9 @@ _ldlit_291:
 _ldlit_292:
  .word _str126
 _ldlit_293:
- .word queuePing_inline__P10324_Lit
+ .word queuePing_inline__P10327_Lit
 _ldlit_294:
- .word jacdac_doNothing__P4151_Lit
+ .word jacdac_doNothing__P4150_Lit
 .object POP
     @stackempty func
     @stackempty args
@@ -31916,7 +31916,7 @@ _proccall1345:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall1346:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
@@ -31933,23 +31933,23 @@ jacdac_ControlServer_sendUptime__P3596_end:
     ;
 ; Function jacdac/routing.ts(825,9): jacdac.ClientPacketQueue.constructor
     ;
-    .object jacdac_ClientPacketQueue_constructor__P4140 "jacdac/routing.ts(825,9): jacdac.ClientPacketQueue.constructor"
-jacdac_ClientPacketQueue_constructor__P4140_pre:
+    .object jacdac_ClientPacketQueue_constructor__P4139 "jacdac/routing.ts(825,9): jacdac.ClientPacketQueue.constructor"
+jacdac_ClientPacketQueue_constructor__P4139_pre:
     .section code
     .balign 4
     .section code
-jacdac_ClientPacketQueue_constructor__P4140:
+jacdac_ClientPacketQueue_constructor__P4139:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac_ClientPacketQueue__C4135_validate_52
+    bl _inst_jacdac_ClientPacketQueue__C4134_validate_52
     mov lr, r7
-jacdac_ClientPacketQueue_constructor__P4140_nochk:
+jacdac_ClientPacketQueue_constructor__P4139_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_ClientPacketQueue_constructor__P4140_locals:
+jacdac_ClientPacketQueue_constructor__P4139_locals:
     ldr r0, [sp, args@0]
     ldr r1, [sp, args@1]
     str r1, [r0, #8]
@@ -31964,10 +31964,10 @@ jacdac_ClientPacketQueue_constructor__P4140_locals:
     str r1, [r0, #4]
     add sp, #4*2 ; pop locals 2
     movs r0, #0
-.ret.4140:
+.ret.4139:
     @stackempty locals
 .final_0_264:
-jacdac_ClientPacketQueue_constructor__P4140_end:
+jacdac_ClientPacketQueue_constructor__P4139_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -32457,11 +32457,11 @@ jacdac_hexNum__P2907_locals:
     movs r0, #1
     str r0, [sp, locals@2]
     @stackempty locals
-.fortop.10482:
+.fortop.10485:
     ldr r0, [sp, locals@2]
     ldr r1, [sp, args@1]
     bl _cmp_lt
-    beq .brk.10482      
+    beq .brk.10485      
 .jmpz1361:
     ldr r0, [sp, locals@1]
     push {r0} ; proc-arg
@@ -32501,14 +32501,14 @@ jacdac_hexNum__P2907_locals:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@1]
     @stackempty locals
-.cont.10482:
+.cont.10485:
     ldr r0, [sp, locals@2]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@2]
     @stackempty locals
-    b .fortop.10482      
-.brk.10482:
+    b .fortop.10485      
+.brk.10485:
     ldr r0, [sp, locals@1]
 .ret.2907:
     @stackempty locals
@@ -32631,7 +32631,7 @@ _proccall1365:
     str r1, [r0, #12]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-    ldr r0, _ldlit_308 ; jacdac_ClientPacketQueue__C4135_VT      
+    ldr r0, _ldlit_308 ; jacdac_ClientPacketQueue__C4134_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
@@ -32640,7 +32640,7 @@ _proccall1365:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; tmpref @1
     push {r0} ; proc-arg
-    bl jacdac_ClientPacketQueue_constructor__P4140
+    bl jacdac_ClientPacketQueue_constructor__P4139
 _proccall1366:
     add sp, #4*2 ; pop locals 2
     ldr r0, [sp, args@0]
@@ -32740,7 +32740,7 @@ jacdac__rolemgr_RoleManagerServer_handlePacket__P3331_locals:
     push {r0} ; proc-arg
     push {r2}
     push {r3}
-    bl jacdac_Server_handleRegBool__P4043_nochk
+    bl jacdac_Server_handleRegBool__P4042_nochk
 _proccall1367:
     add sp, #4*4 ; pop locals 4
     push {r0} ; proc-arg
@@ -32815,7 +32815,7 @@ _proccall1369:
     bl _inst_jacdac_Bus__C3452_validate_3
     ldr r0, [r0, #48]
     mov r3, r0
-    ldr r0, _ldlit_309 ; jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_Lit      
+    ldr r0, _ldlit_309 ; jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_Lit      
     push {r0} ; proc-arg
     push {r3} ; the one arg
     bl helpers_arrayEvery__P2000
@@ -32870,11 +32870,11 @@ _proccall1375:
     pop {r1, r2}
     push {r1}
     push {r2}
-    bl jacdac_Server_sendReport__P4033_nochk
+    bl jacdac_Server_sendReport__P4032_nochk
 _proccall1376:
     add sp, #4*4 ; pop locals 4
     @stackempty locals
-    b .brk.10535      
+    b .brk.10538      
 .switch_1_271:
     ldr r0, [sp, args@1]
     ldr r0, [r0, #8]
@@ -32941,7 +32941,7 @@ _proccall1378:
     @stackempty locals
 .else_7_271:
 .afterif_8_271:
-    b .brk.10535      
+    b .brk.10538      
 .switch_2_271:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -32951,7 +32951,7 @@ _proccall1378:
     ldr r0, [r0, #48]
     push {r0} ; proc-arg
     pop {r1, r2}
-    ldr r0, _ldlit_310 ; packName__P10588_Lit      
+    ldr r0, _ldlit_310 ; packName__P10591_Lit      
     push {r0} ; proc-arg
     push {r1}
     push {r2}
@@ -32959,12 +32959,12 @@ _proccall1378:
 _proccall1379:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
-    b .brk.10535      
+    b .brk.10538      
 .switch_3_271:
     bl jacdac__rolemgr_clearRoles__P3325
 _proccall1380:
     @stackempty locals
-    b .brk.10535      
+    b .brk.10538      
 .switch_4_271:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -32972,7 +32972,7 @@ _proccall1380:
 _proccall1381:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.brk.10535:
+.brk.10538:
 .ret.3331:
     @stackempty locals
     movs r0, #0
@@ -32985,32 +32985,32 @@ jacdac__rolemgr_RoleManagerServer_handlePacket__P3331_end:
     ;
 ; Function jacdac/rolemgr.ts(159,37): jacdac._rolemgr.RoleManagerServer.handlePacket.inline
     ;
-    .object jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555 "jacdac/rolemgr.ts(159,37): jacdac._rolemgr.RoleManagerServer.handlePacket.inline"
-jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_pre:
+    .object jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558 "jacdac/rolemgr.ts(159,37): jacdac._rolemgr.RoleManagerServer.handlePacket.inline"
+jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_pre:
     .section code
     .balign 4
-jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_Lit:
+jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_args@fn
-jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_args:
+    .word jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_args@fn
+jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_args:
     cmp r4, #1
-    bge jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_nochk
+    bge jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_nochk
+    bl jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555:
-jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_nochk:
+jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558:
+jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_locals:
+jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_locals:
     ldr r0, [sp, args@0]
     bl _inst_jacdac_Client__C3540_validate_10
     ldr r0, [r0, #16]
@@ -33051,10 +33051,10 @@ jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_locals:
     bl pxt::fromBool
 .lazy_0_272:
 ; jmp value (already in r0)
-.ret.10555:
+.ret.10558:
     @stackempty locals
 .final_2_272:
-jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_end:
+jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -33062,26 +33062,26 @@ jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_end:
     ;
 ; Function jacdac/rolemgr.ts(190,13): packName
     ;
-    .object packName__P10588 "jacdac/rolemgr.ts(190,13): packName"
-packName__P10588_pre:
+    .object packName__P10591 "jacdac/rolemgr.ts(190,13): packName"
+packName__P10591_pre:
     .section code
     .balign 4
-packName__P10588_Lit:
+packName__P10591_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word packName__P10588_args@fn
-packName__P10588_args:
+    .word packName__P10591_args@fn
+packName__P10591_args:
     cmp r4, #1
-    bge packName__P10588_nochk
+    bge packName__P10591_nochk
     push {lr}
     bl _expand_args_1_9
-    bl packName__P10588_nochk
+    bl packName__P10591_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-packName__P10588:
-packName__P10588_nochk:
+packName__P10591:
+packName__P10591_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -33090,7 +33090,7 @@ packName__P10588_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-packName__P10588_locals:
+packName__P10591_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #8]
     mov r7, sp
@@ -33117,11 +33117,11 @@ _proccall1384:
 .object PUSH
 .balign 4
 _ldlit_308:
- .word jacdac_ClientPacketQueue__C4135_VT
+ .word jacdac_ClientPacketQueue__C4134_VT
 _ldlit_309:
- .word jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10555_Lit
+ .word jacdac__rolemgr_RoleManagerServer_handlePacket_inline__P10558_Lit
 _ldlit_310:
- .word packName__P10588_Lit
+ .word packName__P10591_Lit
 .object POP
 .condexprfin_1_273:
 ; jmp value (already in r0)
@@ -33191,11 +33191,11 @@ _ldlit_310:
     bl jacdac_jdpack__P2965
 _proccall1386:
     add sp, #4*2 ; pop locals 2
-.ret.10588:
+.ret.10591:
     @stackempty locals
 .final_4_273:
     add sp, #4*2 ; pop locals 2
-packName__P10588_end:
+packName__P10591_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -33326,7 +33326,7 @@ jacdac_OutPipe_respondForEach__P2988_nochk:
     @stackmark locals
 jacdac_OutPipe_respondForEach__P2988_locals:
     movs r0, #3
-    ldr r1, _ldlit_314 ; jacdac_OutPipe_respondForEach_inline__P10635_Lit      
+    ldr r1, _ldlit_314 ; jacdac_OutPipe_respondForEach_inline__P10638_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -33365,18 +33365,18 @@ jacdac_OutPipe_respondForEach__P2988_end:
     ;
 ; Function jacdac/pipes.ts(115,35): jacdac.OutPipe.respondForEach.inline
     ;
-    .object jacdac_OutPipe_respondForEach_inline__P10635 "jacdac/pipes.ts(115,35): jacdac.OutPipe.respondForEach.inline"
-jacdac_OutPipe_respondForEach_inline__P10635_pre:
+    .object jacdac_OutPipe_respondForEach_inline__P10638 "jacdac/pipes.ts(115,35): jacdac.OutPipe.respondForEach.inline"
+jacdac_OutPipe_respondForEach_inline__P10638_pre:
     .section code
     .balign 4
-jacdac_OutPipe_respondForEach_inline__P10635_Lit:
+jacdac_OutPipe_respondForEach_inline__P10638_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_OutPipe_respondForEach_inline__P10635_args@fn
-jacdac_OutPipe_respondForEach_inline__P10635_args:
+    .word jacdac_OutPipe_respondForEach_inline__P10638_args@fn
+jacdac_OutPipe_respondForEach_inline__P10638_args:
     .section code
-jacdac_OutPipe_respondForEach_inline__P10635:
-jacdac_OutPipe_respondForEach_inline__P10635_nochk:
+jacdac_OutPipe_respondForEach_inline__P10638:
+jacdac_OutPipe_respondForEach_inline__P10638_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -33388,13 +33388,13 @@ jacdac_OutPipe_respondForEach_inline__P10635_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_OutPipe_respondForEach_inline__P10635_locals:
-    ldr r0, _ldlit_315 ; _catch_10636      
+jacdac_OutPipe_respondForEach_inline__P10638_locals:
+    ldr r0, _ldlit_315 ; _catch_10639      
     bl _pxt_save_exception_state
     @stackempty locals
     ldr r0, [r5, #4*3]
     push {r0} ; proc-arg
-    bl jacdac_OutPipe_from__P4059
+    bl jacdac_OutPipe_from__P4058
 _proccall1392:
     add sp, #4*1 ; pop locals 1
     str r0, [sp, locals@0]
@@ -33407,7 +33407,7 @@ _proccall1392:
     movs r0, #1
     str r0, [sp, locals@3]
     @stackempty locals
-.fortop.10643:
+.fortop.10646:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
@@ -33423,7 +33423,7 @@ _proccall1392:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.10643      
+    beq .brk.10646      
 .jmpz1393:
     ldr r0, [sp, locals@2]
     push {r0} ; proc-arg
@@ -33454,13 +33454,13 @@ _proccall1392:
 _proccall1395:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.10643:
+.cont.10646:
     ldr r0, [sp, locals@3]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@3]
-    b .fortop.10643      
-.brk.10643:
+    b .fortop.10646      
+.brk.10646:
     movs r0, #0
     str r0, [sp, locals@2]
     ldr r0, [sp, locals@0]
@@ -33473,7 +33473,7 @@ _proccall1396:
     str r7, [r6, #4]
     bl pxt::endTry
     b .catchend_2_277      
-_catch_10636:
+_catch_10639:
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::getThrownValue
@@ -33485,12 +33485,12 @@ _proccall1397:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
 .catchend_2_277:
-.ret.10635:
+.ret.10638:
     @stackempty locals
     movs r0, #0
 .final_3_277:
     add sp, #4*5 ; pop locals 5
-jacdac_OutPipe_respondForEach_inline__P10635_end:
+jacdac_OutPipe_respondForEach_inline__P10638_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -33582,7 +33582,7 @@ jacdac_OutPipe_writeAndClose__P2991_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_OutPipe_writeEx__P4060_nochk
+    bl jacdac_OutPipe_writeEx__P4059_nochk
 _proccall1399:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
@@ -33598,26 +33598,26 @@ jacdac_OutPipe_writeAndClose__P2991_end:
     ;
 ; Function jacdac/pipes.ts(130,9): jacdac.OutPipe.writeEx
     ;
-    .object jacdac_OutPipe_writeEx__P4060 "jacdac/pipes.ts(130,9): jacdac.OutPipe.writeEx"
-jacdac_OutPipe_writeEx__P4060_pre:
+    .object jacdac_OutPipe_writeEx__P4059 "jacdac/pipes.ts(130,9): jacdac.OutPipe.writeEx"
+jacdac_OutPipe_writeEx__P4059_pre:
     .section code
     .balign 4
-jacdac_OutPipe_writeEx__P4060_args:
+jacdac_OutPipe_writeEx__P4059_args:
     cmp r4, #3
-    bge jacdac_OutPipe_writeEx__P4060_nochk
+    bge jacdac_OutPipe_writeEx__P4059_nochk
     push {lr}
     bl _expand_args_3_24
-    bl jacdac_OutPipe_writeEx__P4060_nochk
+    bl jacdac_OutPipe_writeEx__P4059_nochk
     @dummystack 3
     add sp, #4*3
     pop {pc}
     .section code
-jacdac_OutPipe_writeEx__P4060:
+jacdac_OutPipe_writeEx__P4059:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_OutPipe__C2986_validate_74
     mov lr, r7
-jacdac_OutPipe_writeEx__P4060_nochk:
+jacdac_OutPipe_writeEx__P4059_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -33625,7 +33625,7 @@ jacdac_OutPipe_writeEx__P4060_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_OutPipe_writeEx__P4060_locals:
+jacdac_OutPipe_writeEx__P4059_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #12]
     mov r7, sp
@@ -33643,7 +33643,7 @@ jacdac_OutPipe_writeEx__P4060_locals:
     cmp r0, #0
     beq .else_0_280      
 .jmpz1400:
-    b .ret.4060      
+    b .ret.4059      
 .else_0_280:
 .afterif_1_280:
     ldr r0, [sp, args@0]
@@ -33742,9 +33742,9 @@ _ldlit_312:
 _ldlit_313:
  .word settings_remove__P2833_Lit
 _ldlit_314:
- .word jacdac_OutPipe_respondForEach_inline__P10635_Lit
+ .word jacdac_OutPipe_respondForEach_inline__P10638_Lit
 _ldlit_315:
- .word _catch_10636
+ .word _catch_10639
 .object POP
 .jmpz1404:
     ldr r0, [sp, args@0]
@@ -33757,12 +33757,12 @@ _ldlit_315:
     bl pxt::throwValue
 .else_4_280:
 .afterif_5_280:
-.ret.4060:
+.ret.4059:
     @stackempty locals
     movs r0, #0
 .final_6_280:
     add sp, #4*1 ; pop locals 1
-jacdac_OutPipe_writeEx__P4060_end:
+jacdac_OutPipe_writeEx__P4059_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -33857,7 +33857,7 @@ _proccall1408:
     ldr r7, [r6, #0]
     str r0, [r7, #68]
     @stackempty locals
-    ldr r0, _ldlit_318 ; jacdac_JDPacket__sendWithAck_inline__P10720_Lit      
+    ldr r0, _ldlit_318 ; jacdac_JDPacket__sendWithAck_inline__P10723_Lit      
     push {r0} ; proc-arg
     bl control_runInParallel__P2297
 _proccall1410:
@@ -33865,7 +33865,7 @@ _proccall1410:
     @stackempty locals
 .else_2_281:
 .afterif_3_281:
-    ldr r0, _ldlit_319 ; jacdac_AckAwaiter__C3985_VT      
+    ldr r0, _ldlit_319 ; jacdac_AckAwaiter__C3984_VT      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkClassInstance
@@ -33876,7 +33876,7 @@ _proccall1410:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*2] ; tmpref @1
     push {r0} ; proc-arg
-    bl jacdac_AckAwaiter_constructor__P3986
+    bl jacdac_AckAwaiter_constructor__P3985
 _proccall1411:
     add sp, #4*3 ; pop locals 3
     pop {r0} ; tmpref @1
@@ -33893,16 +33893,16 @@ _proccall1411:
     bl Array_::push
     add sp, #4*2 ; pop locals 2
     @stackempty locals
-.cont.10734:
+.cont.10737:
     ldr r0, [sp, locals@0]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #4]
     movs r1, #1
     bl _cmp_gt
-    beq .brk.10734      
+    beq .brk.10737      
 .jmpz1412:
     ldr r0, [sp, locals@0]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
     bl _conv_46
@@ -33914,10 +33914,10 @@ _proccall1411:
     bl control::waitForEvent
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    b .cont.10734      
-.brk.10734:
+    b .cont.10737      
+.brk.10737:
     ldr r0, [sp, locals@0]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     movs r1, #1
@@ -33937,31 +33937,31 @@ jacdac_JDPacket__sendWithAck__P2959_end:
     ;
 ; Function jacdac/packet.ts(340,39): jacdac.JDPacket._sendWithAck.inline
     ;
-    .object jacdac_JDPacket__sendWithAck_inline__P10720 "jacdac/packet.ts(340,39): jacdac.JDPacket._sendWithAck.inline"
-jacdac_JDPacket__sendWithAck_inline__P10720_pre:
+    .object jacdac_JDPacket__sendWithAck_inline__P10723 "jacdac/packet.ts(340,39): jacdac.JDPacket._sendWithAck.inline"
+jacdac_JDPacket__sendWithAck_inline__P10723_pre:
     .section code
     .balign 4
-jacdac_JDPacket__sendWithAck_inline__P10720_Lit:
+jacdac_JDPacket__sendWithAck_inline__P10723_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_JDPacket__sendWithAck_inline__P10720_args@fn
-jacdac_JDPacket__sendWithAck_inline__P10720_args:
+    .word jacdac_JDPacket__sendWithAck_inline__P10723_args@fn
+jacdac_JDPacket__sendWithAck_inline__P10723_args:
     .section code
-jacdac_JDPacket__sendWithAck_inline__P10720:
-jacdac_JDPacket__sendWithAck_inline__P10720_nochk:
+jacdac_JDPacket__sendWithAck_inline__P10723:
+jacdac_JDPacket__sendWithAck_inline__P10723_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_JDPacket__sendWithAck_inline__P10720_locals:
-.cont.10721:
+jacdac_JDPacket__sendWithAck_inline__P10723_locals:
+.cont.10724:
     movs r0, #3
     mov r7, sp
     str r7, [r6, #4]
     bl numops::toBoolDecr
     cmp r0, #0
-    beq .brk.10721      
+    beq .brk.10724      
 .jmpz1413:
     movs r0, #41
     movs r1, #101
@@ -33973,16 +33973,16 @@ jacdac_JDPacket__sendWithAck_inline__P10720_locals:
 _proccall1414:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-    bl jacdac_checkAckAwaiters__P3987
+    bl jacdac_checkAckAwaiters__P3986
 _proccall1415:
     @stackempty locals
-    b .cont.10721      
-.brk.10721:
-.ret.10720:
+    b .cont.10724      
+.brk.10724:
+.ret.10723:
     @stackempty locals
     movs r0, #0
 .final_0_282:
-jacdac_JDPacket__sendWithAck_inline__P10720_end:
+jacdac_JDPacket__sendWithAck_inline__P10723_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -33990,23 +33990,23 @@ jacdac_JDPacket__sendWithAck_inline__P10720_end:
     ;
 ; Function jacdac/packet.ts(361,9): jacdac.AckAwaiter.constructor
     ;
-    .object jacdac_AckAwaiter_constructor__P3986 "jacdac/packet.ts(361,9): jacdac.AckAwaiter.constructor"
-jacdac_AckAwaiter_constructor__P3986_pre:
+    .object jacdac_AckAwaiter_constructor__P3985 "jacdac/packet.ts(361,9): jacdac.AckAwaiter.constructor"
+jacdac_AckAwaiter_constructor__P3985_pre:
     .section code
     .balign 4
     .section code
-jacdac_AckAwaiter_constructor__P3986:
+jacdac_AckAwaiter_constructor__P3985:
     mov r7, lr
     ldr r0, [sp, #0]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     mov lr, r7
-jacdac_AckAwaiter_constructor__P3986_nochk:
+jacdac_AckAwaiter_constructor__P3985_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_AckAwaiter_constructor__P3986_locals:
+jacdac_AckAwaiter_constructor__P3985_locals:
     ldr r0, [sp, args@0]
     ldr r1, [sp, args@1]
     str r1, [r0, #20]
@@ -34056,10 +34056,10 @@ _proccall1416:
     add sp, #4*2 ; pop locals 2
     @stackempty locals
     movs r0, #0
-.ret.3986:
+.ret.3985:
     @stackempty locals
 .final_0_283:
-jacdac_AckAwaiter_constructor__P3986_end:
+jacdac_AckAwaiter_constructor__P3985_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -34067,13 +34067,13 @@ jacdac_AckAwaiter_constructor__P3986_end:
     ;
 ; Function jacdac/packet.ts(371,5): jacdac.checkAckAwaiters
     ;
-    .object jacdac_checkAckAwaiters__P3987 "jacdac/packet.ts(371,5): jacdac.checkAckAwaiters"
-jacdac_checkAckAwaiters__P3987_pre:
+    .object jacdac_checkAckAwaiters__P3986 "jacdac/packet.ts(371,5): jacdac.checkAckAwaiters"
+jacdac_checkAckAwaiters__P3986_pre:
     .section code
     .balign 4
     .section code
-jacdac_checkAckAwaiters__P3987:
-jacdac_checkAckAwaiters__P3987_nochk:
+jacdac_checkAckAwaiters__P3986:
+jacdac_checkAckAwaiters__P3986_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -34085,7 +34085,7 @@ jacdac_checkAckAwaiters__P3987_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_checkAckAwaiters__P3987_locals:
+jacdac_checkAckAwaiters__P3986_locals:
     mov r7, sp
     str r7, [r6, #4]
     bl control::millis
@@ -34093,7 +34093,7 @@ jacdac_checkAckAwaiters__P3987_locals:
     str r0, [sp, locals@0]
     @stackempty locals
     movs r0, #1
-    ldr r1, _ldlit_320 ; toRetry_inline__P10769_Lit      
+    ldr r1, _ldlit_320 ; toRetry_inline__P10772_Lit      
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::mkAction
@@ -34135,7 +34135,7 @@ _proccall1417:
     cmp r0, #0
     beq .else_0_284      
 .jmpz1418:
-    b .ret.3987      
+    b .ret.3986      
 .else_0_284:
 .afterif_1_284:
     movs r0, #0
@@ -34146,7 +34146,7 @@ _proccall1417:
     movs r0, #1
     str r0, [sp, locals@4]
     @stackempty locals
-.fortop.10782:
+.fortop.10785:
     ldr r0, [sp, locals@4]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@3]
@@ -34162,7 +34162,7 @@ _proccall1417:
     bl numops::lt_bool
     add sp, #4*2 ; pop locals 2
     cmp r0, #0
-    beq .brk.10782      
+    beq .brk.10785      
 .jmpz1419:
     ldr r0, [sp, locals@3]
     push {r0} ; proc-arg
@@ -34177,17 +34177,17 @@ _proccall1417:
     add sp, #4*2 ; pop locals 2
     str r0, [sp, locals@2]
     ldr r0, [sp, locals@2]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #4]
     movs r1, #1
     bl _cmp_eq
     beq .else_2_284      
 .jmpz1420:
-    b .cont.10782      
+    b .cont.10785      
 .else_2_284:
 .afterif_3_284:
     ldr r0, [sp, locals@2]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #8]
     movs r1, #9
     bl _cmp_ge
@@ -34196,11 +34196,11 @@ _proccall1417:
     ldr r0, [sp, locals@2]
     movs r1, #1
     negs r1, r1
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     str r1, [r0, #4]
     @stackempty locals
     ldr r0, [sp, locals@2]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #16]
     push {r0} ; proc-arg
     bl _conv_46
@@ -34219,25 +34219,25 @@ _proccall1417:
 _ldlit_317:
  .word _str62
 _ldlit_318:
- .word jacdac_JDPacket__sendWithAck_inline__P10720_Lit
+ .word jacdac_JDPacket__sendWithAck_inline__P10723_Lit
 _ldlit_319:
- .word jacdac_AckAwaiter__C3985_VT
+ .word jacdac_AckAwaiter__C3984_VT
 _ldlit_320:
- .word toRetry_inline__P10769_Lit
+ .word toRetry_inline__P10772_Lit
 .object POP
 .else_4_284:
     ldr r0, [sp, locals@2]
     push {r0}; tmpstore @1
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; tmpref @1
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #8]
     movs r1, #3
     bl _numops_adds
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     str r1, [r0, #8]
     add sp, #4*3 ; pop locals 3
     @stackempty locals
@@ -34246,7 +34246,7 @@ _ldlit_320:
     ldr r0, [sp, locals@0]
     push {r0} ; proc-arg
     ldr r0, [sp, locals@2]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #8]
     push {r0} ; proc-arg
     movs r1, #81
@@ -34262,12 +34262,12 @@ _ldlit_320:
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
     ldr r1, [sp, #4*0] ; estack
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     str r1, [r0, #4]
     add sp, #4*2 ; pop locals 2
     @stackempty locals
     ldr r0, [sp, locals@2]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #20]
     push {r0} ; the one arg
     bl jacdac_JDPacket__sendCore__P2954
@@ -34275,16 +34275,16 @@ _proccall1422:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
 .afterif_5_284:
-.cont.10782:
+.cont.10785:
     ldr r0, [sp, locals@4]
     movs r1, #3
     bl _numops_adds
     str r0, [sp, locals@4]
-    b .fortop.10782      
-.brk.10782:
+    b .fortop.10785      
+.brk.10785:
     movs r0, #0
     str r0, [sp, locals@3]
-    ldr r0, _ldlit_322 ; jacdac_checkAckAwaiters_inline__P10815_Lit      
+    ldr r0, _ldlit_322 ; jacdac_checkAckAwaiters_inline__P10818_Lit      
     push {r0} ; proc-arg
     ldr r7, [r6, #0]
     ldr r0, [r7, #68]
@@ -34295,12 +34295,12 @@ _proccall1423:
     ldr r7, [r6, #0]
     str r0, [r7, #68]
     @stackempty locals
-.ret.3987:
+.ret.3986:
     @stackempty locals
     movs r0, #0
 .final_6_284:
     add sp, #4*5 ; pop locals 5
-jacdac_checkAckAwaiters__P3987_end:
+jacdac_checkAckAwaiters__P3986_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -34308,36 +34308,36 @@ jacdac_checkAckAwaiters__P3987_end:
     ;
 ; Function jacdac/packet.ts(373,44): toRetry.inline
     ;
-    .object toRetry_inline__P10769 "jacdac/packet.ts(373,44): toRetry.inline"
-toRetry_inline__P10769_pre:
+    .object toRetry_inline__P10772 "jacdac/packet.ts(373,44): toRetry.inline"
+toRetry_inline__P10772_pre:
     .section code
     .balign 4
-toRetry_inline__P10769_Lit:
+toRetry_inline__P10772_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word toRetry_inline__P10769_args@fn
-toRetry_inline__P10769_args:
+    .word toRetry_inline__P10772_args@fn
+toRetry_inline__P10772_args:
     cmp r4, #1
-    bge toRetry_inline__P10769_nochk
+    bge toRetry_inline__P10772_nochk
     push {lr}
     bl _expand_args_1_9
-    bl toRetry_inline__P10769_nochk
+    bl toRetry_inline__P10772_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-toRetry_inline__P10769:
-toRetry_inline__P10769_nochk:
+toRetry_inline__P10772:
+toRetry_inline__P10772_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-toRetry_inline__P10769_locals:
+toRetry_inline__P10772_locals:
     ldr r0, [r5, #4*3]
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     ldr r0, [sp, #4*1] ; estack
@@ -34346,10 +34346,10 @@ toRetry_inline__P10769_locals:
     str r7, [r6, #4]
     bl numops::gt
     add sp, #4*2 ; pop locals 2
-.ret.10769:
+.ret.10772:
     @stackempty locals
 .final_0_285:
-toRetry_inline__P10769_end:
+toRetry_inline__P10772_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -34357,34 +34357,34 @@ toRetry_inline__P10769_end:
     ;
 ; Function jacdac/packet.ts(386,42): jacdac.checkAckAwaiters.inline
     ;
-    .object jacdac_checkAckAwaiters_inline__P10815 "jacdac/packet.ts(386,42): jacdac.checkAckAwaiters.inline"
-jacdac_checkAckAwaiters_inline__P10815_pre:
+    .object jacdac_checkAckAwaiters_inline__P10818 "jacdac/packet.ts(386,42): jacdac.checkAckAwaiters.inline"
+jacdac_checkAckAwaiters_inline__P10818_pre:
     .section code
     .balign 4
-jacdac_checkAckAwaiters_inline__P10815_Lit:
+jacdac_checkAckAwaiters_inline__P10818_Lit:
     .word pxt::RefAction_vtable
     .short 0, 0 ; no captured vars
-    .word jacdac_checkAckAwaiters_inline__P10815_args@fn
-jacdac_checkAckAwaiters_inline__P10815_args:
+    .word jacdac_checkAckAwaiters_inline__P10818_args@fn
+jacdac_checkAckAwaiters_inline__P10818_args:
     cmp r4, #1
-    bge jacdac_checkAckAwaiters_inline__P10815_nochk
+    bge jacdac_checkAckAwaiters_inline__P10818_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_checkAckAwaiters_inline__P10815_nochk
+    bl jacdac_checkAckAwaiters_inline__P10818_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_checkAckAwaiters_inline__P10815:
-jacdac_checkAckAwaiters_inline__P10815_nochk:
+jacdac_checkAckAwaiters_inline__P10818:
+jacdac_checkAckAwaiters_inline__P10818_nochk:
     @stackmark func
     @stackmark args
     push {lr}
 .locals:
     @stackmark locals
-jacdac_checkAckAwaiters_inline__P10815_locals:
+jacdac_checkAckAwaiters_inline__P10818_locals:
     ldr r0, [sp, args@0]
-    bl _inst_jacdac_AckAwaiter__C3985_validate_45
+    bl _inst_jacdac_AckAwaiter__C3984_validate_45
     ldr r0, [r0, #4]
     push {r0} ; proc-arg
     movs r1, #1
@@ -34392,10 +34392,10 @@ jacdac_checkAckAwaiters_inline__P10815_locals:
     str r7, [r6, #4]
     bl numops::gt
     add sp, #4*1 ; pop locals 1
-.ret.10815:
+.ret.10818:
     @stackempty locals
 .final_0_286:
-jacdac_checkAckAwaiters_inline__P10815_end:
+jacdac_checkAckAwaiters_inline__P10818_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -34435,7 +34435,7 @@ jacdac_OutPipe_write__P2990_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_OutPipe_writeEx__P4060_nochk
+    bl jacdac_OutPipe_writeEx__P4059_nochk
 _proccall1424:
     add sp, #4*3 ; pop locals 3
     @stackempty locals
@@ -34451,22 +34451,22 @@ jacdac_OutPipe_write__P2990_end:
     ;
 ; Function jacdac/pipes.ts(105,9): jacdac.OutPipe.from
     ;
-    .object jacdac_OutPipe_from__P4059 "jacdac/pipes.ts(105,9): jacdac.OutPipe.from"
-jacdac_OutPipe_from__P4059_pre:
+    .object jacdac_OutPipe_from__P4058 "jacdac/pipes.ts(105,9): jacdac.OutPipe.from"
+jacdac_OutPipe_from__P4058_pre:
     .section code
     .balign 4
-jacdac_OutPipe_from__P4059_args:
+jacdac_OutPipe_from__P4058_args:
     cmp r4, #1
-    bge jacdac_OutPipe_from__P4059_nochk
+    bge jacdac_OutPipe_from__P4058_nochk
     push {lr}
     bl _expand_args_1_9
-    bl jacdac_OutPipe_from__P4059_nochk
+    bl jacdac_OutPipe_from__P4058_nochk
     @dummystack 1
     add sp, #4*1
     pop {pc}
     .section code
-jacdac_OutPipe_from__P4059:
-jacdac_OutPipe_from__P4059_nochk:
+jacdac_OutPipe_from__P4058:
+jacdac_OutPipe_from__P4058_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -34476,7 +34476,7 @@ jacdac_OutPipe_from__P4059_nochk:
     push {r0} ;loc
     push {r0} ;loc
     @stackmark locals
-jacdac_OutPipe_from__P4059_locals:
+jacdac_OutPipe_from__P4058_locals:
     ldr r0, [sp, args@0]
     ldr r0, [r0, #8]
     mov r3, r0
@@ -34527,11 +34527,11 @@ _proccall1425:
 _proccall1426:
     add sp, #4*3 ; pop locals 3
     pop {r0} ; tmpref @1
-.ret.4059:
+.ret.4058:
     @stackempty locals
 .final_0_288:
     add sp, #4*3 ; pop locals 3
-jacdac_OutPipe_from__P4059_end:
+jacdac_OutPipe_from__P4058_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -34577,26 +34577,26 @@ jacdac_OutPipe_constructor__P2987_end:
     ;
 ; Function jacdac/routing.ts(722,9): jacdac.Server.handleRegBool
     ;
-    .object jacdac_Server_handleRegBool__P4043 "jacdac/routing.ts(722,9): jacdac.Server.handleRegBool"
-jacdac_Server_handleRegBool__P4043_pre:
+    .object jacdac_Server_handleRegBool__P4042 "jacdac/routing.ts(722,9): jacdac.Server.handleRegBool"
+jacdac_Server_handleRegBool__P4042_pre:
     .section code
     .balign 4
-jacdac_Server_handleRegBool__P4043_args:
+jacdac_Server_handleRegBool__P4042_args:
     cmp r4, #4
-    bge jacdac_Server_handleRegBool__P4043_nochk
+    bge jacdac_Server_handleRegBool__P4042_nochk
     push {lr}
     bl _expand_args_4_51
-    bl jacdac_Server_handleRegBool__P4043_nochk
+    bl jacdac_Server_handleRegBool__P4042_nochk
     @dummystack 4
     add sp, #4*4
     pop {pc}
     .section code
-jacdac_Server_handleRegBool__P4043:
+jacdac_Server_handleRegBool__P4042:
     mov r7, lr
     ldr r0, [sp, #0]
     bl _inst_jacdac_Server__C3491_validate_15
     mov lr, r7
-jacdac_Server_handleRegBool__P4043_nochk:
+jacdac_Server_handleRegBool__P4042_nochk:
     @stackmark func
     @stackmark args
     push {lr}
@@ -34604,7 +34604,7 @@ jacdac_Server_handleRegBool__P4043_nochk:
     movs r0, #0
     push {r0} ;loc
     @stackmark locals
-jacdac_Server_handleRegBool__P4043_locals:
+jacdac_Server_handleRegBool__P4042_locals:
     ldr r0, [sp, args@3]
     mov r7, sp
     str r7, [r6, #4]
@@ -34627,7 +34627,7 @@ jacdac_Server_handleRegBool__P4043_locals:
     push {r0} ; proc-arg
     ldr r0, [sp, args@0]
     push {r0} ; proc-arg
-    bl jacdac_Server_handleRegValue__P4042_nochk
+    bl jacdac_Server_handleRegValue__P4041_nochk
 _proccall1428:
     add sp, #4*5 ; pop locals 5
     str r0, [sp, locals@0]
@@ -34651,11 +34651,11 @@ _proccall1428:
     mov r7, sp
     str r7, [r6, #4]
     bl pxt::fromBool
-.ret.4043:
+.ret.4042:
     @stackempty locals
 .final_2_290:
     add sp, #4*1 ; pop locals 1
-jacdac_Server_handleRegBool__P4043_end:
+jacdac_Server_handleRegBool__P4042_end:
     pop {pc}
     @stackempty func
     @stackempty args
@@ -34760,7 +34760,7 @@ jacdac_LoggerServer_handlePacket__P3208_locals:
     push {r0} ; proc-arg
     push {r2}
     push {r3}
-    bl jacdac_Server_handleRegValue__P4042_nochk
+    bl jacdac_Server_handleRegValue__P4041_nochk
 _proccall1430:
     add sp, #4*5 ; pop locals 5
     push {r0} ; proc-arg
@@ -34846,7 +34846,7 @@ _proccall1433:
 .object PUSH
 .balign 4
 _ldlit_322:
- .word jacdac_checkAckAwaiters_inline__P10815_Lit
+ .word jacdac_checkAckAwaiters_inline__P10818_Lit
 _ldlit_323:
  .word _str61
 _ldlit_324:
@@ -34904,7 +34904,7 @@ _ldlit_325:
     @stackempty locals
 .else_6_292:
 .afterif_7_292:
-    b .brk.10871      
+    b .brk.10874      
 .switch_1_292:
     ldr r0, [sp, args@1]
     push {r0} ; proc-arg
@@ -34912,7 +34912,7 @@ _ldlit_325:
 _proccall1437:
     add sp, #4*1 ; pop locals 1
     @stackempty locals
-.brk.10871:
+.brk.10874:
 .ret.3208:
     @stackempty locals
     movs r0, #0
@@ -36117,8 +36117,8 @@ _inst_jacdac_Server__C3491_validate_15:
     str r7, [r6, #4]
     bl pxt::failedCast
     .section code
-    .object _code_helper__inst_jacdac__rolemgr_RoleBinding__C4106_validate_16
-_inst_jacdac__rolemgr_RoleBinding__C4106_validate_16:
+    .object _code_helper__inst_jacdac__rolemgr_RoleBinding__C4105_validate_16
+_inst_jacdac__rolemgr_RoleBinding__C4105_validate_16:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -36135,8 +36135,8 @@ _inst_jacdac__rolemgr_RoleBinding__C4106_validate_16:
     str r7, [r6, #4]
     bl pxt::failedCast
     .section code
-    .object _code_helper__inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17
-_inst_jacdac__rolemgr_DeviceWrapper__C4104_validate_17:
+    .object _code_helper__inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17
+_inst_jacdac__rolemgr_DeviceWrapper__C4103_validate_17:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -36163,8 +36163,8 @@ _conv_18:
     pop {pc}
     @stackempty args
     .section code
-    .object _code_helper__inst_jacdac__rolemgr_ServerBindings__C4110_validate_19
-_inst_jacdac__rolemgr_ServerBindings__C4110_validate_19:
+    .object _code_helper__inst_jacdac__rolemgr_ServerBindings__C4109_validate_19
+_inst_jacdac__rolemgr_ServerBindings__C4109_validate_19:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -36591,8 +36591,8 @@ _lambda_call1_39:
     str r7, [r6, #4]
     bl pxt::failedCast
     .section code
-    .object _code_helper__inst_jacdac_DelayedPacket__C4062_validate_40
-_inst_jacdac_DelayedPacket__C4062_validate_40:
+    .object _code_helper__inst_jacdac_DelayedPacket__C4061_validate_40
+_inst_jacdac_DelayedPacket__C4061_validate_40:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -36681,8 +36681,8 @@ _classCall_jacdac_Server__C3491_44:
     str r7, [r6, #4]
     bl pxt::failedCast
     .section code
-    .object _code_helper__inst_jacdac_AckAwaiter__C3985_validate_45
-_inst_jacdac_AckAwaiter__C3985_validate_45:
+    .object _code_helper__inst_jacdac_AckAwaiter__C3984_validate_45
+_inst_jacdac_AckAwaiter__C3984_validate_45:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -36713,8 +36713,8 @@ _conv_46:
     pop {pc}
     @stackempty args
     .section code
-    .object _code_helper__inst_jacdac_RegQuery__C4146_validate_47
-_inst_jacdac_RegQuery__C4146_validate_47:
+    .object _code_helper__inst_jacdac_RegQuery__C4145_validate_47
+_inst_jacdac_RegQuery__C4145_validate_47:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -36818,8 +36818,8 @@ _expand_args_4_51:
     push {r0}
     bx lr
     .section code
-    .object _code_helper__inst_jacdac_ClientPacketQueue__C4135_validate_52
-_inst_jacdac_ClientPacketQueue__C4135_validate_52:
+    .object _code_helper__inst_jacdac_ClientPacketQueue__C4134_validate_52
+_inst_jacdac_ClientPacketQueue__C4134_validate_52:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -36957,8 +36957,8 @@ _expand_args_5_58:
     push {r0}
     bx lr
     .section code
-    .object _code_helper__inst_jacdac_TokenParser__C4016_validate_59
-_inst_jacdac_TokenParser__C4016_validate_59:
+    .object _code_helper__inst_jacdac_TokenParser__C4015_validate_59
+_inst_jacdac_TokenParser__C4015_validate_59:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -37156,8 +37156,8 @@ _inst_jacdac_LoggerServer__C3205_validate_65:
     str r7, [r6, #4]
     bl pxt::failedCast
     .section code
-    .object _code_helper__inst_jacdac_ProxyServer__C4152_validate_66
-_inst_jacdac_ProxyServer__C4152_validate_66:
+    .object _code_helper__inst_jacdac_ProxyServer__C4151_validate_66
+_inst_jacdac_ProxyServer__C4151_validate_66:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -37174,8 +37174,8 @@ _inst_jacdac_ProxyServer__C4152_validate_66:
     str r7, [r6, #4]
     bl pxt::failedCast
     .section code
-    .object _code_helper__inst_jacdac_BrainServer__C4155_validate_67
-_inst_jacdac_BrainServer__C4155_validate_67:
+    .object _code_helper__inst_jacdac_BrainServer__C4154_validate_67
+_inst_jacdac_BrainServer__C4154_validate_67:
     lsls r2, r0, #30
     bne .fail
     cmp r0, #0
@@ -37795,7 +37795,7 @@ jacdac_EventSource__C3618_IfaceVT:
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
@@ -37849,7 +37849,7 @@ jacdac_Bus__C3452_IfaceVT:
   .short 29, 2 ; addServer
   .word jacdac_Bus_addServer__P3461_args@fn
   .short 79, 2 ; gcDevices
-  .word jacdac_Bus_gcDevices__P4128_args@fn
+  .word jacdac_Bus_gcDevices__P4127_args@fn
   .short 157, 1 ; selfDevice
   .word jacdac_Bus_selfDevice__P3462_args@fn
   .short 118, 2 ; mkEventCmd
@@ -37873,7 +37873,7 @@ jacdac_Bus__C3452_IfaceVT:
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
@@ -37893,7 +37893,7 @@ jacdac_Server__C3491_VT:
         .word jacdac_Server_toString__P3511_args@fn
         .word jacdac_Server_handlePacketOuter__P3506_nochk@fn
         .word jacdac_Server_handlePacket__P3507_nochk@fn
-        .word jacdac_Server_log__P4047_nochk@fn
+        .word jacdac_Server_log__P4046_nochk@fn
         .balign 4
 jacdac_Server__C3491_IfaceVT:
   .short 264, 262, 260, 258, 256, 270, 252, 250, 272, 246, 244, 538, 240, 438, 236, 466, 352, 318, 228, 234, 224, 222, 220, 218, 216, 214, 212, 210, 208, 518, 204, 202, 200, 198, 308, 418, 192, 190, 460, 378, 184, 182, 180, 178, 272, 310, 172, 170, 168, 166, 164, 162, 160, 230, 156, 154, 152, 438, 204, 146, 144, 390, 180, 138, 416, 134, 132, 130, 128, 126, 124, 154, 384, 118, 116, 114, 112, 110, 108, 106, 232, 102, 100, 354, 96, 94, 92, 274, 296, 86, 300, 82, 80, 78, 76, 74, 400, 70, 68, 402, 64, 62, 364, 58, 56, 54, 100, 50, 152, 46, 196, 42, 40, 214, 36, 34, 352, 270, 28, 106, 24, 22, 84, 18, 16, 182, 12, 10, 8, 6, 4, 2
@@ -37946,50 +37946,50 @@ jacdac_Server__C3491_IfaceVT:
   .short 86, 2 ; handlePacket
   .word jacdac_Server_handlePacket__P3507_args@fn
   .short 162, 2 ; sendReport
-  .word jacdac_Server_sendReport__P4033_args@fn
+  .word jacdac_Server_sendReport__P4032_args@fn
   .short 161, 2 ; sendEvent
   .word jacdac_Server_sendEvent__P3509_args@fn
   .short 159, 2 ; sendChangeEvent
   .word jacdac_Server_sendChangeEvent__P3510_args@fn
   .short 91, 2 ; handleStatusCode
-  .word jacdac_Server_handleStatusCode__P4034_args@fn
+  .word jacdac_Server_handleStatusCode__P4033_args@fn
   .short 84, 2 ; handleInstanceName
-  .word jacdac_Server_handleInstanceName__P4035_args@fn
+  .word jacdac_Server_handleInstanceName__P4034_args@fn
   .short 93, 2 ; handleVariant
-  .word jacdac_Server_handleVariant__P4036_args@fn
+  .word jacdac_Server_handleVariant__P4035_args@fn
   .short 92, 2 ; handleValue
-  .word jacdac_Server_handleValue__P4037_args@fn
+  .word jacdac_Server_handleValue__P4036_args@fn
   .short 85, 2 ; handleIntensity
-  .word jacdac_Server_handleIntensity__P4038_args@fn
+  .word jacdac_Server_handleIntensity__P4037_args@fn
   .short 81, 2 ; handleCalibrateCommand
-  .word jacdac_Server_handleCalibrateCommand__P4039_args@fn
+  .word jacdac_Server_handleCalibrateCommand__P4038_args@fn
   .short 66, 2 ; doCalibrate
-  .word jacdac_Server_doCalibrate__P4040_args@fn
+  .word jacdac_Server_doCalibrate__P4039_args@fn
   .short 89, 2 ; handleRegFormat
-  .word jacdac_Server_handleRegFormat__P4041_args@fn
+  .word jacdac_Server_handleRegFormat__P4040_args@fn
   .short 90, 2 ; handleRegValue
-  .word jacdac_Server_handleRegValue__P4042_args@fn
+  .word jacdac_Server_handleRegValue__P4041_args@fn
   .short 187, 2 ; toString
   .word jacdac_Server_toString__P3511_args@fn
   .short 88, 2 ; handleRegBool
-  .word jacdac_Server_handleRegBool__P4043_args@fn
+  .word jacdac_Server_handleRegBool__P4042_args@fn
   .short 179, 2 ; start
   .word jacdac_Server_start__P3512_args@fn
   .short 113, 2 ; log
-  .word jacdac_Server_log__P4047_args@fn
+  .word jacdac_Server_log__P4046_args@fn
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
-        .object jacdac_BrainServer__C4155_VT
+        .object jacdac_BrainServer__C4154_VT
         .balign 4
-jacdac_BrainServer__C4155_VT:
+jacdac_BrainServer__C4154_VT:
         .short 68  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac_BrainServer__C4155_IfaceVT
+        .word jacdac_BrainServer__C4154_IfaceVT
         .short 19 ; class-id
         .short 0 ; reserved
         .word 883080985 ; hash-mult
@@ -38000,9 +38000,9 @@ jacdac_BrainServer__C4155_VT:
         .word 0
         .word jacdac_Server_handlePacketOuter__P3506_nochk@fn
         .word jacdac_Server_handlePacket__P3507_nochk@fn
-        .word jacdac_Server_log__P4047_nochk@fn
+        .word jacdac_Server_log__P4046_nochk@fn
         .balign 4
-jacdac_BrainServer__C4155_IfaceVT:
+jacdac_BrainServer__C4154_IfaceVT:
   .short 264, 262, 260, 258, 256, 270, 252, 250, 272, 246, 244, 538, 240, 438, 236, 466, 352, 318, 228, 234, 224, 222, 220, 218, 216, 214, 212, 210, 208, 518, 204, 202, 200, 198, 308, 418, 192, 190, 460, 378, 184, 182, 180, 178, 272, 310, 172, 170, 168, 166, 164, 162, 160, 230, 156, 154, 152, 438, 204, 146, 144, 390, 180, 138, 416, 134, 132, 130, 128, 126, 124, 154, 384, 118, 116, 114, 112, 110, 108, 106, 232, 102, 100, 354, 96, 94, 92, 274, 296, 86, 300, 82, 80, 78, 76, 74, 400, 70, 68, 402, 64, 62, 364, 58, 56, 54, 100, 50, 152, 46, 196, 42, 40, 214, 36, 34, 352, 270, 28, 106, 24, 22, 84, 18, 16, 182, 12, 10, 8, 6, 4, 2
   .short 112, 0 ; listeners
   .word 4
@@ -38053,50 +38053,50 @@ jacdac_BrainServer__C4155_IfaceVT:
   .short 86, 2 ; handlePacket
   .word jacdac_Server_handlePacket__P3507_args@fn
   .short 162, 2 ; sendReport
-  .word jacdac_Server_sendReport__P4033_args@fn
+  .word jacdac_Server_sendReport__P4032_args@fn
   .short 161, 2 ; sendEvent
   .word jacdac_Server_sendEvent__P3509_args@fn
   .short 159, 2 ; sendChangeEvent
   .word jacdac_Server_sendChangeEvent__P3510_args@fn
   .short 91, 2 ; handleStatusCode
-  .word jacdac_Server_handleStatusCode__P4034_args@fn
+  .word jacdac_Server_handleStatusCode__P4033_args@fn
   .short 84, 2 ; handleInstanceName
-  .word jacdac_Server_handleInstanceName__P4035_args@fn
+  .word jacdac_Server_handleInstanceName__P4034_args@fn
   .short 93, 2 ; handleVariant
-  .word jacdac_Server_handleVariant__P4036_args@fn
+  .word jacdac_Server_handleVariant__P4035_args@fn
   .short 92, 2 ; handleValue
-  .word jacdac_Server_handleValue__P4037_args@fn
+  .word jacdac_Server_handleValue__P4036_args@fn
   .short 85, 2 ; handleIntensity
-  .word jacdac_Server_handleIntensity__P4038_args@fn
+  .word jacdac_Server_handleIntensity__P4037_args@fn
   .short 81, 2 ; handleCalibrateCommand
-  .word jacdac_Server_handleCalibrateCommand__P4039_args@fn
+  .word jacdac_Server_handleCalibrateCommand__P4038_args@fn
   .short 66, 2 ; doCalibrate
-  .word jacdac_Server_doCalibrate__P4040_args@fn
+  .word jacdac_Server_doCalibrate__P4039_args@fn
   .short 89, 2 ; handleRegFormat
-  .word jacdac_Server_handleRegFormat__P4041_args@fn
+  .word jacdac_Server_handleRegFormat__P4040_args@fn
   .short 90, 2 ; handleRegValue
-  .word jacdac_Server_handleRegValue__P4042_args@fn
+  .word jacdac_Server_handleRegValue__P4041_args@fn
   .short 187, 2 ; toString
   .word jacdac_Server_toString__P3511_args@fn
   .short 88, 2 ; handleRegBool
-  .word jacdac_Server_handleRegBool__P4043_args@fn
+  .word jacdac_Server_handleRegBool__P4042_args@fn
   .short 179, 2 ; start
   .word jacdac_Server_start__P3512_args@fn
   .short 113, 2 ; log
-  .word jacdac_Server_log__P4047_args@fn
+  .word jacdac_Server_log__P4046_args@fn
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
-        .object jacdac_ProxyServer__C4152_VT
+        .object jacdac_ProxyServer__C4151_VT
         .balign 4
-jacdac_ProxyServer__C4152_VT:
+jacdac_ProxyServer__C4151_VT:
         .short 68  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac_ProxyServer__C4152_IfaceVT
+        .word jacdac_ProxyServer__C4151_IfaceVT
         .short 20 ; class-id
         .short 0 ; reserved
         .word 883080985 ; hash-mult
@@ -38107,9 +38107,9 @@ jacdac_ProxyServer__C4152_VT:
         .word 0
         .word jacdac_Server_handlePacketOuter__P3506_nochk@fn
         .word jacdac_Server_handlePacket__P3507_nochk@fn
-        .word jacdac_Server_log__P4047_nochk@fn
+        .word jacdac_Server_log__P4046_nochk@fn
         .balign 4
-jacdac_ProxyServer__C4152_IfaceVT:
+jacdac_ProxyServer__C4151_IfaceVT:
   .short 264, 262, 260, 258, 256, 270, 252, 250, 272, 246, 244, 538, 240, 438, 236, 466, 352, 318, 228, 234, 224, 222, 220, 218, 216, 214, 212, 210, 208, 518, 204, 202, 200, 198, 308, 418, 192, 190, 460, 378, 184, 182, 180, 178, 272, 310, 172, 170, 168, 166, 164, 162, 160, 230, 156, 154, 152, 438, 204, 146, 144, 390, 180, 138, 416, 134, 132, 130, 128, 126, 124, 154, 384, 118, 116, 114, 112, 110, 108, 106, 232, 102, 100, 354, 96, 94, 92, 274, 296, 86, 300, 82, 80, 78, 76, 74, 400, 70, 68, 402, 64, 62, 364, 58, 56, 54, 100, 50, 152, 46, 196, 42, 40, 214, 36, 34, 352, 270, 28, 106, 24, 22, 84, 18, 16, 182, 12, 10, 8, 6, 4, 2
   .short 112, 0 ; listeners
   .word 4
@@ -38160,41 +38160,41 @@ jacdac_ProxyServer__C4152_IfaceVT:
   .short 86, 2 ; handlePacket
   .word jacdac_Server_handlePacket__P3507_args@fn
   .short 162, 2 ; sendReport
-  .word jacdac_Server_sendReport__P4033_args@fn
+  .word jacdac_Server_sendReport__P4032_args@fn
   .short 161, 2 ; sendEvent
   .word jacdac_Server_sendEvent__P3509_args@fn
   .short 159, 2 ; sendChangeEvent
   .word jacdac_Server_sendChangeEvent__P3510_args@fn
   .short 91, 2 ; handleStatusCode
-  .word jacdac_Server_handleStatusCode__P4034_args@fn
+  .word jacdac_Server_handleStatusCode__P4033_args@fn
   .short 84, 2 ; handleInstanceName
-  .word jacdac_Server_handleInstanceName__P4035_args@fn
+  .word jacdac_Server_handleInstanceName__P4034_args@fn
   .short 93, 2 ; handleVariant
-  .word jacdac_Server_handleVariant__P4036_args@fn
+  .word jacdac_Server_handleVariant__P4035_args@fn
   .short 92, 2 ; handleValue
-  .word jacdac_Server_handleValue__P4037_args@fn
+  .word jacdac_Server_handleValue__P4036_args@fn
   .short 85, 2 ; handleIntensity
-  .word jacdac_Server_handleIntensity__P4038_args@fn
+  .word jacdac_Server_handleIntensity__P4037_args@fn
   .short 81, 2 ; handleCalibrateCommand
-  .word jacdac_Server_handleCalibrateCommand__P4039_args@fn
+  .word jacdac_Server_handleCalibrateCommand__P4038_args@fn
   .short 66, 2 ; doCalibrate
-  .word jacdac_Server_doCalibrate__P4040_args@fn
+  .word jacdac_Server_doCalibrate__P4039_args@fn
   .short 89, 2 ; handleRegFormat
-  .word jacdac_Server_handleRegFormat__P4041_args@fn
+  .word jacdac_Server_handleRegFormat__P4040_args@fn
   .short 90, 2 ; handleRegValue
-  .word jacdac_Server_handleRegValue__P4042_args@fn
+  .word jacdac_Server_handleRegValue__P4041_args@fn
   .short 187, 2 ; toString
   .word jacdac_Server_toString__P3511_args@fn
   .short 88, 2 ; handleRegBool
-  .word jacdac_Server_handleRegBool__P4043_args@fn
+  .word jacdac_Server_handleRegBool__P4042_args@fn
   .short 179, 2 ; start
   .word jacdac_Server_start__P3512_args@fn
   .short 113, 2 ; log
-  .word jacdac_Server_log__P4047_args@fn
+  .word jacdac_Server_log__P4046_args@fn
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
@@ -38275,39 +38275,39 @@ jacdac_LoggerServer__C3205_IfaceVT:
   .short 87, 2 ; handlePacketOuter
   .word jacdac_Server_handlePacketOuter__P3506_args@fn
   .short 162, 2 ; sendReport
-  .word jacdac_Server_sendReport__P4033_args@fn
+  .word jacdac_Server_sendReport__P4032_args@fn
   .short 161, 2 ; sendEvent
   .word jacdac_Server_sendEvent__P3509_args@fn
   .short 159, 2 ; sendChangeEvent
   .word jacdac_Server_sendChangeEvent__P3510_args@fn
   .short 91, 2 ; handleStatusCode
-  .word jacdac_Server_handleStatusCode__P4034_args@fn
+  .word jacdac_Server_handleStatusCode__P4033_args@fn
   .short 84, 2 ; handleInstanceName
-  .word jacdac_Server_handleInstanceName__P4035_args@fn
+  .word jacdac_Server_handleInstanceName__P4034_args@fn
   .short 93, 2 ; handleVariant
-  .word jacdac_Server_handleVariant__P4036_args@fn
+  .word jacdac_Server_handleVariant__P4035_args@fn
   .short 92, 2 ; handleValue
-  .word jacdac_Server_handleValue__P4037_args@fn
+  .word jacdac_Server_handleValue__P4036_args@fn
   .short 85, 2 ; handleIntensity
-  .word jacdac_Server_handleIntensity__P4038_args@fn
+  .word jacdac_Server_handleIntensity__P4037_args@fn
   .short 81, 2 ; handleCalibrateCommand
-  .word jacdac_Server_handleCalibrateCommand__P4039_args@fn
+  .word jacdac_Server_handleCalibrateCommand__P4038_args@fn
   .short 66, 2 ; doCalibrate
-  .word jacdac_Server_doCalibrate__P4040_args@fn
+  .word jacdac_Server_doCalibrate__P4039_args@fn
   .short 89, 2 ; handleRegFormat
-  .word jacdac_Server_handleRegFormat__P4041_args@fn
+  .word jacdac_Server_handleRegFormat__P4040_args@fn
   .short 90, 2 ; handleRegValue
-  .word jacdac_Server_handleRegValue__P4042_args@fn
+  .word jacdac_Server_handleRegValue__P4041_args@fn
   .short 187, 2 ; toString
   .word jacdac_Server_toString__P3511_args@fn
   .short 88, 2 ; handleRegBool
-  .word jacdac_Server_handleRegBool__P4043_args@fn
+  .word jacdac_Server_handleRegBool__P4042_args@fn
   .short 179, 2 ; start
   .word jacdac_Server_start__P3512_args@fn
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
@@ -38327,7 +38327,7 @@ jacdac__rolemgr_RoleManagerServer__C3328_VT:
         .word 0
         .word jacdac_Server_handlePacketOuter__P3506_nochk@fn
         .word jacdac__rolemgr_RoleManagerServer_handlePacket__P3331_nochk@fn
-        .word jacdac_Server_log__P4047_nochk@fn
+        .word jacdac_Server_log__P4046_nochk@fn
         .balign 4
 jacdac__rolemgr_RoleManagerServer__C3328_IfaceVT:
   .short 264, 262, 260, 258, 256, 270, 252, 250, 272, 246, 244, 578, 240, 478, 236, 506, 352, 318, 228, 234, 224, 222, 220, 218, 216, 350, 212, 210, 208, 558, 204, 202, 368, 198, 308, 458, 192, 190, 500, 418, 184, 182, 180, 178, 272, 358, 172, 170, 168, 166, 164, 162, 160, 230, 156, 154, 152, 478, 204, 146, 144, 430, 180, 138, 456, 134, 132, 130, 128, 126, 124, 154, 424, 118, 116, 114, 112, 270, 108, 106, 280, 102, 100, 394, 96, 94, 220, 234, 336, 86, 340, 82, 80, 78, 76, 74, 440, 70, 68, 442, 64, 62, 404, 58, 208, 54, 100, 50, 152, 46, 244, 42, 40, 262, 36, 34, 392, 310, 28, 106, 24, 22, 84, 18, 16, 230, 12, 10, 8, 6, 4, 2
@@ -38370,11 +38370,11 @@ jacdac__rolemgr_RoleManagerServer__C3328_IfaceVT:
   .short 86, 2 ; handlePacket
   .word jacdac__rolemgr_RoleManagerServer_handlePacket__P3331_args@fn
   .short 38, 2 ; bindingHash
-  .word jacdac__rolemgr_RoleManagerServer_bindingHash__P4116_args@fn
+  .word jacdac__rolemgr_RoleManagerServer_bindingHash__P4115_args@fn
   .short 37, 2 ; bindRoles
   .word jacdac__rolemgr_RoleManagerServer_bindRoles__P3332_args@fn
   .short 45, 2 ; checkChanges
-  .word jacdac__rolemgr_RoleManagerServer_checkChanges__P4117_args@fn
+  .word jacdac__rolemgr_RoleManagerServer_checkChanges__P4116_args@fn
   .short 183, 1 ; statusCode
   .word jacdac_Server_statusCode__P3496_args@fn
   .short 99, 1 ; intensity
@@ -38390,41 +38390,41 @@ jacdac__rolemgr_RoleManagerServer__C3328_IfaceVT:
   .short 87, 2 ; handlePacketOuter
   .word jacdac_Server_handlePacketOuter__P3506_args@fn
   .short 162, 2 ; sendReport
-  .word jacdac_Server_sendReport__P4033_args@fn
+  .word jacdac_Server_sendReport__P4032_args@fn
   .short 161, 2 ; sendEvent
   .word jacdac_Server_sendEvent__P3509_args@fn
   .short 159, 2 ; sendChangeEvent
   .word jacdac_Server_sendChangeEvent__P3510_args@fn
   .short 91, 2 ; handleStatusCode
-  .word jacdac_Server_handleStatusCode__P4034_args@fn
+  .word jacdac_Server_handleStatusCode__P4033_args@fn
   .short 84, 2 ; handleInstanceName
-  .word jacdac_Server_handleInstanceName__P4035_args@fn
+  .word jacdac_Server_handleInstanceName__P4034_args@fn
   .short 93, 2 ; handleVariant
-  .word jacdac_Server_handleVariant__P4036_args@fn
+  .word jacdac_Server_handleVariant__P4035_args@fn
   .short 92, 2 ; handleValue
-  .word jacdac_Server_handleValue__P4037_args@fn
+  .word jacdac_Server_handleValue__P4036_args@fn
   .short 85, 2 ; handleIntensity
-  .word jacdac_Server_handleIntensity__P4038_args@fn
+  .word jacdac_Server_handleIntensity__P4037_args@fn
   .short 81, 2 ; handleCalibrateCommand
-  .word jacdac_Server_handleCalibrateCommand__P4039_args@fn
+  .word jacdac_Server_handleCalibrateCommand__P4038_args@fn
   .short 66, 2 ; doCalibrate
-  .word jacdac_Server_doCalibrate__P4040_args@fn
+  .word jacdac_Server_doCalibrate__P4039_args@fn
   .short 89, 2 ; handleRegFormat
-  .word jacdac_Server_handleRegFormat__P4041_args@fn
+  .word jacdac_Server_handleRegFormat__P4040_args@fn
   .short 90, 2 ; handleRegValue
-  .word jacdac_Server_handleRegValue__P4042_args@fn
+  .word jacdac_Server_handleRegValue__P4041_args@fn
   .short 187, 2 ; toString
   .word jacdac_Server_toString__P3511_args@fn
   .short 88, 2 ; handleRegBool
-  .word jacdac_Server_handleRegBool__P4043_args@fn
+  .word jacdac_Server_handleRegBool__P4042_args@fn
   .short 179, 2 ; start
   .word jacdac_Server_start__P3512_args@fn
   .short 113, 2 ; log
-  .word jacdac_Server_log__P4047_args@fn
+  .word jacdac_Server_log__P4046_args@fn
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
@@ -38492,13 +38492,13 @@ jacdac_Client__C3540_IfaceVT:
   .short 1, 2 ; _attach
   .word jacdac_Client__attach__P3559_args@fn
   .short 82, 2 ; handleConnected
-  .word jacdac_Client_handleConnected__P4027_args@fn
+  .word jacdac_Client_handleConnected__P4026_args@fn
   .short 4, 2 ; _detach
   .word jacdac_Client__detach__P3560_args@fn
   .short 160, 2 ; sendCommand
   .word jacdac_Client_sendCommand__P3561_args@fn
   .short 140, 2 ; raiseEvent
-  .word jacdac_Client_raiseEvent__P4028_args@fn
+  .word jacdac_Client_raiseEvent__P4027_args@fn
   .short 179, 2 ; start
   .word jacdac_Client_start__P3565_args@fn
   .short 32, 2 ; announceCallback
@@ -38506,16 +38506,16 @@ jacdac_Client__C3540_IfaceVT:
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
-        .object jacdac__rolemgr_DeviceWrapper__C4104_VT
+        .object jacdac__rolemgr_DeviceWrapper__C4103_VT
         .balign 4
-jacdac__rolemgr_DeviceWrapper__C4104_VT:
+jacdac__rolemgr_DeviceWrapper__C4103_VT:
         .short 16  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac__rolemgr_DeviceWrapper__C4104_IfaceVT
+        .word jacdac__rolemgr_DeviceWrapper__C4103_IfaceVT
         .short 27 ; class-id
         .short 0 ; reserved
         .word 1468534558 ; hash-mult
@@ -38525,7 +38525,7 @@ jacdac__rolemgr_DeviceWrapper__C4104_VT:
         .word pxt::RefRecord_gcsize@fn
         .word 0
         .balign 4
-jacdac__rolemgr_DeviceWrapper__C4104_IfaceVT:
+jacdac__rolemgr_DeviceWrapper__C4103_IfaceVT:
   .short 32, 14, 20, 10, 8, 6, 4, 2
   .short 39, 0 ; bindings
   .word 4
@@ -38534,12 +38534,12 @@ jacdac__rolemgr_DeviceWrapper__C4104_IfaceVT:
   .short 56, 0 ; device
   .word 12
   .word 0, 0 ; the end
-        .object jacdac__rolemgr_RoleBinding__C4106_VT
+        .object jacdac__rolemgr_RoleBinding__C4105_VT
         .balign 4
-jacdac__rolemgr_RoleBinding__C4106_VT:
+jacdac__rolemgr_RoleBinding__C4105_VT:
         .short 24  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac__rolemgr_RoleBinding__C4106_IfaceVT
+        .word jacdac__rolemgr_RoleBinding__C4105_IfaceVT
         .short 28 ; class-id
         .short 0 ; reserved
         .word 1783883549 ; hash-mult
@@ -38549,7 +38549,7 @@ jacdac__rolemgr_RoleBinding__C4106_VT:
         .word pxt::RefRecord_gcsize@fn
         .word 0
         .balign 4
-jacdac__rolemgr_RoleBinding__C4106_IfaceVT:
+jacdac__rolemgr_RoleBinding__C4105_IfaceVT:
   .short 32, 54, 36, 58, 16, 14, 60, 34, 8, 6, 4, 2
   .short 40, 0 ; boundToDev
   .word 4
@@ -38562,16 +38562,16 @@ jacdac__rolemgr_RoleBinding__C4106_IfaceVT:
   .short 152, 0 ; roleQuery
   .word 20
   .short 97, 2 ; host
-  .word jacdac__rolemgr_RoleBinding_host__P4107_args@fn
+  .word jacdac__rolemgr_RoleBinding_host__P4106_args@fn
   .short 156, 2 ; select
-  .word jacdac__rolemgr_RoleBinding_select__P4108_args@fn
+  .word jacdac__rolemgr_RoleBinding_select__P4107_args@fn
   .word 0, 0 ; the end
-        .object jacdac__rolemgr_ServerBindings__C4110_VT
+        .object jacdac__rolemgr_ServerBindings__C4109_VT
         .balign 4
-jacdac__rolemgr_ServerBindings__C4110_VT:
+jacdac__rolemgr_ServerBindings__C4109_VT:
         .short 12  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac__rolemgr_ServerBindings__C4110_IfaceVT
+        .word jacdac__rolemgr_ServerBindings__C4109_IfaceVT
         .short 29 ; class-id
         .short 0 ; reserved
         .word 1783883550 ; hash-mult
@@ -38581,16 +38581,16 @@ jacdac__rolemgr_ServerBindings__C4110_VT:
         .word pxt::RefRecord_gcsize@fn
         .word 0
         .balign 4
-jacdac__rolemgr_ServerBindings__C4110_IfaceVT:
+jacdac__rolemgr_ServerBindings__C4109_IfaceVT:
   .short 16, 22, 28, 34, 8, 6, 4, 2
   .short 39, 0 ; bindings
   .word 4
   .short 97, 0 ; host
   .word 8
   .short 78, 1 ; fullyBound
-  .word jacdac__rolemgr_ServerBindings_fullyBound__P4111_args@fn
+  .word jacdac__rolemgr_ServerBindings_fullyBound__P4110_args@fn
   .short 155, 2 ; scoreFor
-  .word jacdac__rolemgr_ServerBindings_scoreFor__P4112_args@fn
+  .word jacdac__rolemgr_ServerBindings_scoreFor__P4111_args@fn
   .word 0, 0 ; the end
         .object jacdac_Device__C3569_VT
         .balign 4
@@ -38640,11 +38640,11 @@ jacdac_Device__C3569_IfaceVT:
   .short 116, 2 ; matchesRoleAt
   .word jacdac_Device_matchesRoleAt__P3582_args@fn
   .short 114, 2 ; lookupQuery
-  .word jacdac_Device_lookupQuery__P4149_args@fn
+  .word jacdac_Device_lookupQuery__P4148_args@fn
   .short 168, 1 ; serviceClassLength
   .word jacdac_Device_serviceClassLength__P3583_args@fn
   .short 172, 2 ; serviceOffsetAt
-  .word jacdac_Device_serviceOffsetAt__P4150_args@fn
+  .word jacdac_Device_serviceOffsetAt__P4149_args@fn
   .short 167, 2 ; serviceClassAt
   .word jacdac_Device_serviceClassAt__P3584_args@fn
   .short 136, 2 ; processPacket
@@ -38656,16 +38656,16 @@ jacdac_Device__C3569_IfaceVT:
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
-        .object jacdac_DelayedPacket__C4062_VT
+        .object jacdac_DelayedPacket__C4061_VT
         .balign 4
-jacdac_DelayedPacket__C4062_VT:
+jacdac_DelayedPacket__C4061_VT:
         .short 12  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac_DelayedPacket__C4062_IfaceVT
+        .word jacdac_DelayedPacket__C4061_IfaceVT
         .short 30 ; class-id
         .short 0 ; reserved
         .word 1468534559 ; hash-mult
@@ -38675,7 +38675,7 @@ jacdac_DelayedPacket__C4062_VT:
         .word pxt::RefRecord_gcsize@fn
         .word 0
         .balign 4
-jacdac_DelayedPacket__C4062_IfaceVT:
+jacdac_DelayedPacket__C4061_IfaceVT:
   .short 20, 10, 8, 6, 4, 2
   .short 186, 0 ; timestamp
   .word 4
@@ -38822,16 +38822,16 @@ jacdac_RegisterClient__C3518_IfaceVT:
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
-        .object jacdac_ClientPacketQueue__C4135_VT
+        .object jacdac_ClientPacketQueue__C4134_VT
         .balign 4
-jacdac_ClientPacketQueue__C4135_VT:
+jacdac_ClientPacketQueue__C4134_VT:
         .short 12  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac_ClientPacketQueue__C4135_IfaceVT
+        .word jacdac_ClientPacketQueue__C4134_IfaceVT
         .short 32 ; class-id
         .short 0 ; reserved
         .word 476074270 ; hash-mult
@@ -38841,21 +38841,21 @@ jacdac_ClientPacketQueue__C4135_VT:
         .word pxt::RefRecord_gcsize@fn
         .word 0
         .balign 4
-jacdac_ClientPacketQueue__C4135_IfaceVT:
+jacdac_ClientPacketQueue__C4134_IfaceVT:
   .short 32, 22, 12, 10, 8, 6, 4, 2
   .short 133, 0 ; pkts
   .word 4
   .short 130, 0 ; parent
   .word 8
   .short 145, 2 ; resend
-  .word jacdac_ClientPacketQueue_resend__P4139_args@fn
+  .word jacdac_ClientPacketQueue_resend__P4138_args@fn
   .word 0, 0 ; the end
-        .object jacdac_TokenParser__C4016_VT
+        .object jacdac_TokenParser__C4015_VT
         .balign 4
-jacdac_TokenParser__C4016_VT:
+jacdac_TokenParser__C4015_VT:
         .short 40  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac_TokenParser__C4016_IfaceVT
+        .word jacdac_TokenParser__C4015_IfaceVT
         .short 33 ; class-id
         .short 0 ; reserved
         .word 883080988 ; hash-mult
@@ -38865,7 +38865,7 @@ jacdac_TokenParser__C4016_VT:
         .word pxt::RefRecord_gcsize@fn
         .word 0
         .balign 4
-jacdac_TokenParser__C4016_IfaceVT:
+jacdac_TokenParser__C4015_IfaceVT:
   .short 104, 70, 36, 58, 72, 46, 36, 74, 24, 22, 20, 18, 72, 14, 84, 10, 8, 6, 4, 2
   .short 43, 0 ; c0
   .word 4
@@ -38886,7 +38886,7 @@ jacdac_TokenParser__C4016_IfaceVT:
   .short 73, 0 ; fmt
   .word 36
   .short 131, 2 ; parse
-  .word jacdac_TokenParser_parse__P4017_args@fn
+  .word jacdac_TokenParser_parse__P4016_args@fn
   .word 0, 0 ; the end
         .object jacdac_ClientRoleQuery__C3532_VT
         .balign 4
@@ -38952,7 +38952,7 @@ jacdac_ControlServer__C3594_VT:
         .word 0
         .word jacdac_ControlServer_handlePacketOuter__P3597_nochk@fn
         .word jacdac_Server_handlePacket__P3507_nochk@fn
-        .word jacdac_Server_log__P4047_nochk@fn
+        .word jacdac_Server_log__P4046_nochk@fn
         .balign 4
 jacdac_ControlServer__C3594_IfaceVT:
   .short 264, 262, 260, 258, 256, 270, 252, 250, 272, 382, 244, 554, 240, 454, 236, 482, 352, 318, 228, 234, 224, 222, 220, 218, 216, 214, 212, 210, 208, 534, 204, 202, 200, 198, 308, 434, 192, 190, 476, 394, 184, 182, 180, 178, 272, 334, 172, 170, 168, 166, 164, 162, 160, 230, 156, 154, 152, 454, 204, 146, 144, 406, 180, 138, 432, 262, 132, 130, 128, 126, 124, 154, 400, 118, 116, 114, 112, 110, 108, 106, 256, 102, 100, 370, 96, 94, 92, 290, 312, 86, 316, 82, 80, 78, 76, 74, 416, 70, 68, 418, 64, 62, 380, 58, 56, 54, 100, 50, 152, 46, 220, 42, 40, 182, 36, 34, 368, 286, 28, 106, 24, 22, 84, 18, 16, 206, 12, 10, 8, 6, 4, 2
@@ -38991,7 +38991,7 @@ jacdac_ControlServer__C3594_IfaceVT:
   .short 163, 2 ; sendUptime
   .word jacdac_ControlServer_sendUptime__P3596_args@fn
   .short 83, 2 ; handleFloodPing
-  .word jacdac_ControlServer_handleFloodPing__P4159_args@fn
+  .word jacdac_ControlServer_handleFloodPing__P4158_args@fn
   .short 87, 2 ; handlePacketOuter
   .word jacdac_ControlServer_handlePacketOuter__P3597_args@fn
   .short 183, 1 ; statusCode
@@ -39009,41 +39009,41 @@ jacdac_ControlServer__C3594_IfaceVT:
   .short 86, 2 ; handlePacket
   .word jacdac_Server_handlePacket__P3507_args@fn
   .short 162, 2 ; sendReport
-  .word jacdac_Server_sendReport__P4033_args@fn
+  .word jacdac_Server_sendReport__P4032_args@fn
   .short 161, 2 ; sendEvent
   .word jacdac_Server_sendEvent__P3509_args@fn
   .short 159, 2 ; sendChangeEvent
   .word jacdac_Server_sendChangeEvent__P3510_args@fn
   .short 91, 2 ; handleStatusCode
-  .word jacdac_Server_handleStatusCode__P4034_args@fn
+  .word jacdac_Server_handleStatusCode__P4033_args@fn
   .short 84, 2 ; handleInstanceName
-  .word jacdac_Server_handleInstanceName__P4035_args@fn
+  .word jacdac_Server_handleInstanceName__P4034_args@fn
   .short 93, 2 ; handleVariant
-  .word jacdac_Server_handleVariant__P4036_args@fn
+  .word jacdac_Server_handleVariant__P4035_args@fn
   .short 92, 2 ; handleValue
-  .word jacdac_Server_handleValue__P4037_args@fn
+  .word jacdac_Server_handleValue__P4036_args@fn
   .short 85, 2 ; handleIntensity
-  .word jacdac_Server_handleIntensity__P4038_args@fn
+  .word jacdac_Server_handleIntensity__P4037_args@fn
   .short 81, 2 ; handleCalibrateCommand
-  .word jacdac_Server_handleCalibrateCommand__P4039_args@fn
+  .word jacdac_Server_handleCalibrateCommand__P4038_args@fn
   .short 66, 2 ; doCalibrate
-  .word jacdac_Server_doCalibrate__P4040_args@fn
+  .word jacdac_Server_doCalibrate__P4039_args@fn
   .short 89, 2 ; handleRegFormat
-  .word jacdac_Server_handleRegFormat__P4041_args@fn
+  .word jacdac_Server_handleRegFormat__P4040_args@fn
   .short 90, 2 ; handleRegValue
-  .word jacdac_Server_handleRegValue__P4042_args@fn
+  .word jacdac_Server_handleRegValue__P4041_args@fn
   .short 187, 2 ; toString
   .word jacdac_Server_toString__P3511_args@fn
   .short 88, 2 ; handleRegBool
-  .word jacdac_Server_handleRegBool__P4043_args@fn
+  .word jacdac_Server_handleRegBool__P4042_args@fn
   .short 179, 2 ; start
   .word jacdac_Server_start__P3512_args@fn
   .short 113, 2 ; log
-  .word jacdac_Server_log__P4047_args@fn
+  .word jacdac_Server_log__P4046_args@fn
   .short 126, 2 ; on
   .word jacdac_EventSource_on__P3620_args@fn
   .short 28, 2 ; addListenerInternal
-  .word jacdac_EventSource_addListenerInternal__P4024_args@fn
+  .word jacdac_EventSource_addListenerInternal__P4023_args@fn
   .short 67, 2 ; emit
   .word jacdac_EventSource_emit__P3622_args@fn
   .word 0, 0 ; the end
@@ -39071,11 +39071,11 @@ jacdac_OutPipe__C2986_IfaceVT:
   .short 134, 0 ; port
   .word 12
   .short 75, 2 ; from
-  .word jacdac_OutPipe_from__P4059_args@fn
+  .word jacdac_OutPipe_from__P4058_args@fn
   .short 148, 2 ; respondForEach
   .word jacdac_OutPipe_respondForEach__P2988_args@fn
   .short 195, 2 ; writeEx
-  .word jacdac_OutPipe_writeEx__P4060_args@fn
+  .word jacdac_OutPipe_writeEx__P4059_args@fn
   .short 193, 2 ; write
   .word jacdac_OutPipe_write__P2990_args@fn
   .short 194, 2 ; writeAndClose
@@ -39083,12 +39083,12 @@ jacdac_OutPipe__C2986_IfaceVT:
   .short 48, 2 ; close
   .word jacdac_OutPipe_close__P2992_args@fn
   .word 0, 0 ; the end
-        .object jacdac_AckAwaiter__C3985_VT
+        .object jacdac_AckAwaiter__C3984_VT
         .balign 4
-jacdac_AckAwaiter__C3985_VT:
+jacdac_AckAwaiter__C3984_VT:
         .short 28  ; size in bytes
         .byte 4, 249 ; magic
-        .word jacdac_AckAwaiter__C3985_IfaceVT
+        .word jacdac_AckAwaiter__C3984_IfaceVT
         .short 37 ; class-id
         .short 0 ; reserved
         .word 1650515229 ; hash-mult
@@ -39098,7 +39098,7 @@ jacdac_AckAwaiter__C3985_VT:
         .word pxt::RefRecord_gcsize@fn
         .word 0
         .balign 4
-jacdac_AckAwaiter__C3985_IfaceVT:
+jacdac_AckAwaiter__C3984_IfaceVT:
   .short 32, 22, 36, 18, 56, 46, 12, 34, 8, 6, 4, 2
   .short 121, 0 ; nextRetry
   .word 4
