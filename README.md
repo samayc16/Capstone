@@ -3,6 +3,7 @@
 ![OOP Software Diagram](softwareDiagram.png)
 #### Useful Links
 * [micro:bit API for TS](https://makecode.microbit.org/reference)
+* [micro:bit Pinout](https://makecode.microbit.org/device/pins)
 * [micro:bit Progress with Simulator](https://makecode.microbit.org/_6Y6azqKkKF0U)
 
 #### Progress Made so far
