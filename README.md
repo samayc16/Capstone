@@ -11,6 +11,6 @@
   * [Have skeleton working in block code](https://makecode.microbit.org/_6Y6azqKkKF0U)
   * ![Today's Progress](Progress26092023.png)
 * 28/09/2023
-  * Moved from naive implementation to I2C 
+  * [Moved from naive implementation to I2C](https://makecode.microbit.org/S04872-52139-73553-07116)
   * ![Real block code with descriptions](mainBodyBlocks.png)
   * ![Today's Progress](Progress28092023.png)
