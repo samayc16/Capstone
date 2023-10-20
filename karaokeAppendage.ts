@@ -11,11 +11,17 @@ class karaokeAppendage extends appendageParent {
     override writeAppendage() {
         super.writeAppendage()
         while (true) {
+<<<<<<< HEAD
             pins.analogWritePin(AnalogPin.P0, (this.appendageID + 1) * 200);
+=======
+>>>>>>> 2bb0cc86835a8408b690059242777c3b0a7aaab5
             // karaoke code
         }
     }
 }
 
+<<<<<<< HEAD
 let karaoke = new karaokeAppendage();
 karaoke.writeAppendage()
+=======
+>>>>>>> 2bb0cc86835a8408b690059242777c3b0a7aaab5
