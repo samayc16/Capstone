@@ -1,13 +1,15 @@
 // Top Level Object for all micro:bit modules
-namespace Test {
-    class microBit {
+/**
+* MicroBit Parent Block
+*/
+//% weight=90 color=#29c484 icon="\uf0e8"
+namespace MicroBit {
+    export class microBit {
         isPowered: boolean
         isTesting: boolean
-        inProdMode: boolean
         constructor() {
             this.isPowered = true
             this.isTesting = false
-            this.inProdMode = false
         }
     }
     /** 
@@ -19,8 +21,8 @@ namespace Test {
      * 
         *  if not, the microBit proceeds as normal 
     */
-    //% help=MicroBit/i2c-read-number blockGap=8 advanced=false
-    //% blockId=MicroBit_SetTestingMode block="set this desired|microbit device %microBit|to testing mode" weight=7
+    //% help=MicroBit/Set-Testing-Mode blockGap=8 advanced=false
+    //% blockId=MicroBit_SetTestingMode block="check if|microbit device %microBit is set|to testing mode" weight=7
     //% group="Basic Functionality"
     //% weight=45
     export function setTestingMode(microbit: microBit): void {
@@ -56,5 +58,15 @@ namespace Test {
             pause(1)
             ms += 1
         }
+    }
+    /** 
+    * This will return true if testing, false if not
+   */
+    //% help=MicroBit/Check-Testing-Mode blockGap=8 advanced=false
+    //% blockId=MicroBit_CheckTestingMode block="%microBit is set|to testing mode" weight=7
+    //% group="Basic Functionality"
+    //% weight=45
+    export function isTesting(microbit: microBit): boolean {
+        return microbit.isTesting;
     }
 }
