@@ -75,22 +75,15 @@ namespace MicroBit {
 enum controlValues {
     musicBlockIncoming = -1
 }
-enum addresses {     // enumeration of I2C addresses used by all modules
-    mainBody = 0,  // I2C addresses [0 : 15]  reserved for this module
-    karaoke = 16, // I2C addresses [16 : 31] reserved for this module
-    display = 32, // I2C addresses [32 : 47] reserved for this module
-    wheel = 48, // I2C addresses [48 : 63] reserved for this module
-    musicBlock = 64, // I2C addresses [64 : 79] reserved for this module
-    block0, // address 65
-    block1, // address 66
-    block2, // address 67
-    block3, // address 68
-    block4, // address 69
-    block5, // address 70
-    block6, // address 71
-    block7, // address 72
-    block8, // address 73
-    block9, // address 74
+enum addresses {         // enumeration of I2C addresses used by all modules
+    mainBody = 0,        // I2C addresses [0 : 15]  reserved for this module, 0x00
+    karaoke = 16,        // I2C addresses [16 : 31] reserved for this module, 0x10
+    display = 32,        // I2C addresses [32 : 47] reserved for this module, 0x20
+    wheel = 48,          // I2C addresses [48 : 63] reserved for this module, 0x30
+    musicBlock = 64,     // I2C addresses [64 : 79] reserved for this module, 0x40
+    block0,              // address 65, 0x41
+    block1,              // address 66, 0x42
+    block2,              // address 67, 0x43
 }
 class mainBody extends microBit {
     // decimal between 0 and 1 representing battery percentage
@@ -123,7 +116,7 @@ namespace MainBody {
     export function interactKaraoke(mainbody: mainBody): void {
         let karaokeInput: number = 0
         let karaokeOutput: number = 0
-        
+
     }
 
     /** 
@@ -148,7 +141,7 @@ namespace MainBody {
             right,
             termination_character,
         }
-        let bluetoothConversion : string[] = ['forward', 'backward', 'left', 'right', ':']
+        let bluetoothConversion: string[] = ['forward', 'backward', 'left', 'right', ':']
         // [type] output to motor for movement
         enum motorOutput {
             forward,
@@ -192,17 +185,16 @@ namespace MainBody {
     //% group="Appendage Interaction"
     //% weight=45
     export function interactMusicBlock(mainbody: mainBody): void {
-        let musicBlockInput: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        // let musicBlockOutput: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        // distance-from-finger input is 32-bit (4-byte) unsigned integer
+        let musicBlockInput: number[] = [0, 0, 0]
+        // distance-from-finger input is 8-bit (1-byte) unsigned, big-endian integer
         // this is put into music_block array
-        for (let i: number = addresses.block0; i < addresses.block9 + 1; i++) {
+        for (let i: number = addresses.block0; i < addresses.block2 + 1; i++) {
             musicBlockInput[i - addresses.block0] = pins.i2cReadNumber(i, NumberFormat.Int32LE, false)
         }
         // tell the karaoke module that music block is coming
         pins.i2cWriteNumber(addresses.karaoke, controlValues.musicBlockIncoming, NumberFormat.Int32LE, false)
         // this vector is now written to the karaoke-module for playback
-        for (let i: number = addresses.block0; i < addresses.block9 + 1; i++) {
+        for (let i: number = addresses.block0; i < addresses.block2 + 1; i++) {
             pins.i2cWriteNumber(addresses.karaoke, musicBlockInput[i - addresses.block0], NumberFormat.Int32LE, false)
         }
     }

@@ -1,18 +1,4 @@
 // Top Level Object for all micro:bit modules
-<<<<<<< HEAD
-class microBit {
-    isPowered: boolean;
-    isTesting: boolean;
-    inProductionMode: boolean;
-    constructor() {
-        this.isPowered = true;
-        this.isTesting = false;
-        this.inProductionMode = false;
-    }
-    // used at start to put micro:bit in testing mode within 5s of power-on
-    setTestingMode() {
-        let ms: number = 0;
-=======
 namespace Test {
     class microBit {
         isPowered: boolean
@@ -39,25 +25,12 @@ namespace Test {
     //% weight=45
     export function setTestingMode(microbit: microBit): void {
         let ms: number = 0
->>>>>>> 2bb0cc86835a8408b690059242777c3b0a7aaab5
         while (ms < 5000) {
             // if button A or B are pressed
             if (
                 input.buttonIsPressed(Button.A) ||
                 input.buttonIsPressed(Button.B)
             ) {
-<<<<<<< HEAD
-                //our micro:bit is in testing mode
-                this.isTesting = true;
-                this.inProductionMode = false;
-                break;
-            }
-            pause(1);
-            ms += 1;
-        }
-    }
-}
-=======
                 // our micro:bit is in testing mode
                 microbit.isTesting = true
                 // filler code
@@ -85,4 +58,3 @@ namespace Test {
         }
     }
 }
->>>>>>> 2bb0cc86835a8408b690059242777c3b0a7aaab5
