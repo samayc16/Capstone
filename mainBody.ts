@@ -119,7 +119,21 @@ namespace MainBody {
                 `)
         pause(250)
     }
-
+    enum bluetoothInput {
+        forward,
+        backward,
+        left,
+        right,
+        termination_character,
+    }
+    enum motorOutput {
+        forward,
+        backward,
+        left,
+        right,
+        default,
+    }
+    let bluetoothConversion: string[] = ['forward', 'backward', 'left', 'right', ':']
     /** 
      * This will be a threaded function used to check if wheel module is connected
      * 
@@ -135,22 +149,7 @@ namespace MainBody {
         let wheelInput: string = ''
         let wheelOutput: number = 0
         // string input from bluetooth controller
-        enum bluetoothInput {
-            forward,
-            backward,
-            left,
-            right,
-            termination_character,
-        }
-        let bluetoothConversion: string[] = ['forward', 'backward', 'left', 'right', ':']
         // [type] output to motor for movement
-        enum motorOutput {
-            forward,
-            backward,
-            left,
-            right,
-            default,
-        }
         // bluetooth input is 32-bit (4-byte) unsigned integer
         // if __ go forward
         // if __ go backward
@@ -202,6 +201,11 @@ namespace MainBody {
     let block0 = new VL53L0X.vl53l0x(addresses.block0);
     let block1 = new VL53L0X.vl53l0x(addresses.block1);
     let block2 = new VL53L0X.vl53l0x(addresses.block0);
+    enum notes {
+        C = 292,
+        E = 330,
+        G = 392
+    }
     /**
      * This will set up the music block connections, if one is not connected, it won't be used
     */
@@ -235,6 +239,7 @@ namespace MainBody {
     //% weight=45
     export function interactMusicBlock(mainbody: mainBody): void {
         let musicBlockInput: number[] = [0, 0, 0]
+        // 0 will be C, 1 will be E, 2 will be G (C major chord)
         // distance-from-finger input is 8-bit (1-byte) unsigned, big-endian integer
         // this is put into music_block array
         // if music block not connected, set to max distance
@@ -243,8 +248,14 @@ namespace MainBody {
         musicBlockInput[2] = block2.started ? block2.readSingleDistance() : 0xFF
         // this vector is now written to the karaoke-module for playback
         // arduino on karaoke module will handle playback of audio
-        for (let i: number = addresses.block0; i < addresses.block2 + 1; i++) {
-            pins.i2cWriteNumber(addresses.karaoke, musicBlockInput[i - addresses.block0], NumberFormat.Int8BE, false)
-        }
+        // for (let i: number = addresses.block0; i < addresses.block2 + 1; i++) {
+        //     pins.i2cWriteNumber(addresses.karaoke, musicBlockInput[i - addresses.block0], NumberFormat.Int8BE, false)
+        // }
+        music.setVolume(0xFF - musicBlockInput[0])
+        music.play(music.tonePlayable(notes.C, 20), music.PlaybackMode.UntilDone)
+        music.setVolume(0xFF - musicBlockInput[1])
+        music.play(music.tonePlayable(notes.E, 20), music.PlaybackMode.UntilDone)
+        music.setVolume(0xFF - musicBlockInput[1])
+        music.play(music.tonePlayable(notes.G, 20), music.PlaybackMode.UntilDone)
     }
 }
