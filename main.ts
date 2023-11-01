@@ -1,10 +1,11 @@
 let mainbody = MainBody.makeMainBody()
+bluetooth.startUartService()
+serial.redirectToUSB()
 basic.forever(function () {
     if (MicroBit.isTesting(mainbody)) {
-        MainBody.testMusicBlock(mainbody)
+        MainBody.testWheel(mainbody)
     } else {
-        MainBody.checkBlocksConnected()
-        MainBody.interactMusicBlock(mainbody)
+        MainBody.interactWheel(mainbody)
     }
 })
 basic.forever(function () {
@@ -19,8 +20,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (MicroBit.isTesting(mainbody)) {
-        MainBody.testWheel(mainbody)
+        MainBody.testMusicBlock(mainbody)
     } else {
-        MainBody.interactWheel(mainbody)
+        MainBody.checkBlocksConnected()
+        MainBody.interactMusicBlock(mainbody)
     }
 })

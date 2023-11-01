@@ -17,5 +17,9 @@
     "python.envFile": "${workspacefolder}/.env",
     "python.linting.pylintArgs": [
         "--disable=W,C"
-    ]
+    ],
+    "files.associations": {
+        "type_traits": "cpp",
+        "xtr1common": "cpp"
+    }
 }

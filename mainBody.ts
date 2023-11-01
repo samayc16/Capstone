@@ -119,13 +119,6 @@ namespace MainBody {
                 `)
         pause(250)
     }
-    enum bluetoothInput {
-        forward,
-        backward,
-        left,
-        right,
-        termination_character,
-    }
     enum motorOutput {
         forward,
         backward,
@@ -133,7 +126,6 @@ namespace MainBody {
         right,
         default,
     }
-    let bluetoothConversion: string[] = ['forward', 'backward', 'left', 'right', ':']
     /** 
      * This will be a threaded function used to check if wheel module is connected
      * 
@@ -156,20 +148,23 @@ namespace MainBody {
         // if __ go left
         // if __ go right
         // will implement using enums and case statement
-        wheelInput = bluetooth.uartReadUntil(bluetoothConversion[bluetoothInput.termination_character])
-        switch (wheelInput) {
-            case (bluetoothConversion[bluetoothInput.forward]):
-                wheelOutput = motorOutput.forward
-            case (bluetoothConversion[bluetoothInput.backward]):
-                wheelOutput = motorOutput.backward
-            case (bluetoothConversion[bluetoothInput.left]):
-                wheelOutput = motorOutput.left
-            case (bluetoothConversion[bluetoothInput.right]):
-                wheelOutput = motorOutput.right
-            default:
-                wheelOutput = motorOutput.default
-        }
-        pins.i2cWriteNumber(addresses.wheel, wheelOutput, NumberFormat.Int32LE, false)
+        // wheelInput = bluetooth.uartReadUntil(bluetoothConversion[bluetoothInput.termination_character])
+        // switch (wheelInput) {
+        //     case (bluetoothConversion[bluetoothInput.forward]):
+        //         wheelOutput = motorOutput.forward
+        //     case (bluetoothConversion[bluetoothInput.backward]):
+        //         wheelOutput = motorOutput.backward
+        //     case (bluetoothConversion[bluetoothInput.left]):
+        //         wheelOutput = motorOutput.left
+        //     case (bluetoothConversion[bluetoothInput.right]):
+        //         wheelOutput = motorOutput.right
+        //     default:
+        //         wheelOutput = motorOutput.default
+        // }
+        devices.onGamepadButton(MesDpadButtonInfo.ADown, function() {pins.i2cWriteNumber(addresses.wheel, motorOutput.forward, NumberFormat.Int32LE, false)})
+        devices.onGamepadButton(MesDpadButtonInfo.BDown, function() {pins.i2cWriteNumber(addresses.wheel, motorOutput.backward, NumberFormat.Int32LE, false)})
+        devices.onGamepadButton(MesDpadButtonInfo.CDown, function() {pins.i2cWriteNumber(addresses.wheel, motorOutput.left, NumberFormat.Int32LE, false)})
+        devices.onGamepadButton(MesDpadButtonInfo.DDown, function() {pins.i2cWriteNumber(addresses.wheel, motorOutput.right, NumberFormat.Int32LE, false)})
     }
 
     /** 
