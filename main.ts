@@ -1,15 +1,14 @@
+music.setVolume(255)
+music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
 let mainbody = MainBody.makeMainBody()
-bluetooth.startUartService()
-serial.redirectToUSB()
+MicroBit.setTestingMode(MainBody.makeMainBody())
+Rangefinder.init()
 basic.forever(function () {
     if (MicroBit.isTesting(mainbody)) {
-        MainBody.testWheel(mainbody)
+        MainBody.testMusicBlock(mainbody)
     } else {
-        MainBody.interactWheel(mainbody)
+        MainBody.interactMusicBlock(mainbody)
     }
-})
-basic.forever(function () {
-    MicroBit.setTestingMode(mainbody)
 })
 basic.forever(function () {
     if (MicroBit.isTesting(mainbody)) {
@@ -20,9 +19,8 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (MicroBit.isTesting(mainbody)) {
-        MainBody.testMusicBlock(mainbody)
+        MainBody.testWheel(mainbody)
     } else {
-        MainBody.checkBlocksConnected()
-        MainBody.interactMusicBlock(mainbody)
+        MainBody.interactWheel(mainbody)
     }
 })

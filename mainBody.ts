@@ -4,9 +4,10 @@
 // 5 : battery pin
 // Communicate via I2C Bus
 // Pin 19: SCL
-// Pin 18: SDA
+// Pin 20: SDA
 // Pin 0 : Speaker +
 // GND   : Speaker -
+
 /**
 * MainBody Brain Block
 */
@@ -20,10 +21,7 @@ namespace MainBody {
         karaoke = 16,        // I2C addresses [16 : 31] reserved for this module, 0x10
         display = 32,        // I2C addresses [32 : 47] reserved for this module, 0x20
         wheel = 48,          // I2C addresses [48 : 63] reserved for this module, 0x30
-        musicBlock = 64,     // I2C addresses [64 : 79] reserved for this module, 0x40
-        block0,              // address 65, 0x41
-        block1,              // address 66, 0x42
-        block2,              // address 67, 0x43
+        TCAADDR = 0x73       // Addr of mux for music blocks: 0x73
     }
     export class mainBody extends MicroBit.microBit {
         // decimal between 0 and 1 representing battery percentage
@@ -54,23 +52,23 @@ namespace MainBody {
     //% group="Karaoke Interaction"
     //% weight=45
     export function testKaraoke(mainbody: mainBody): void {
-        basic.showLeds(`
-                . . . . .
-                . . . . .
-                . . # . .
-                . . . . .
-                . . . . .
-                `)
-        // waits 0.5 seconds and turns LED blank
-        pause(250)
-        basic.showLeds(`
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                `)
-        pause(250)
+        // basic.showLeds(`
+        //         . . . . .
+        //         . . . . .
+        //         . . # . .
+        //         . . . . .
+        //         . . . . .
+        //         `)
+        // // waits 0.5 seconds and turns LED blank
+        // pause(250)
+        // basic.showLeds(`
+        //         . . . . .
+        //         . . . . .
+        //         . . . . .
+        //         . . . . .
+        //         . . . . .
+        //         `)
+        // pause(250)
     }
     /** 
      * This will be a threaded function used to check if karaoke module is connected
@@ -101,23 +99,10 @@ namespace MainBody {
     //% group="Wheel Interaction"
     //% weight=45
     export function testWheel(mainbody: mainBody): void {
-        basic.showLeds(`
-                # . . . #
-                . # . # .
-                . . # . .
-                . # . # .
-                # . . . #
-                `)
-        // waits 0.5 seconds and turns LED blank
-        pause(250)
-        basic.showLeds(`
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                `)
-        pause(250)
+        devices.onGamepadButton(MesDpadButtonInfo.ADown, function () { music.playTone(notes.C, 100)} )
+        devices.onGamepadButton(MesDpadButtonInfo.BDown, function () { music.playTone(notes.E, 100)} )
+        devices.onGamepadButton(MesDpadButtonInfo.CDown, function () { music.playTone(notes.G, 100)} )
+        devices.onGamepadButton(MesDpadButtonInfo.DDown, function () { music.playTone(notes.B, 100)} )
     }
     enum motorOutput {
         forward,
@@ -161,10 +146,10 @@ namespace MainBody {
         //     default:
         //         wheelOutput = motorOutput.default
         // }
-        devices.onGamepadButton(MesDpadButtonInfo.ADown, function() {pins.i2cWriteNumber(addresses.wheel, motorOutput.forward, NumberFormat.Int32LE, false)})
-        devices.onGamepadButton(MesDpadButtonInfo.BDown, function() {pins.i2cWriteNumber(addresses.wheel, motorOutput.backward, NumberFormat.Int32LE, false)})
-        devices.onGamepadButton(MesDpadButtonInfo.CDown, function() {pins.i2cWriteNumber(addresses.wheel, motorOutput.left, NumberFormat.Int32LE, false)})
-        devices.onGamepadButton(MesDpadButtonInfo.DDown, function() {pins.i2cWriteNumber(addresses.wheel, motorOutput.right, NumberFormat.Int32LE, false)})
+        devices.onGamepadButton(MesDpadButtonInfo.ADown, function () { pins.i2cWriteNumber(addresses.wheel, motorOutput.forward, NumberFormat.Int32LE, false) })
+        devices.onGamepadButton(MesDpadButtonInfo.BDown, function () { pins.i2cWriteNumber(addresses.wheel, motorOutput.backward, NumberFormat.Int32LE, false) })
+        devices.onGamepadButton(MesDpadButtonInfo.CDown, function () { pins.i2cWriteNumber(addresses.wheel, motorOutput.left, NumberFormat.Int32LE, false) })
+        devices.onGamepadButton(MesDpadButtonInfo.DDown, function () { pins.i2cWriteNumber(addresses.wheel, motorOutput.right, NumberFormat.Int32LE, false) })
     }
 
     /** 
@@ -175,49 +160,41 @@ namespace MainBody {
     //% group="Music Block Interaction"
     //% weight=45
     export function testMusicBlock(mainbody: mainBody): void {
-        basic.showLeds(`
-                . . # . .
-                . . # . .
-                # # # # #
-                . . # . .
-                . . # . .
-                `)
-        // waits 0.5 seconds and turns LED blank
-        pause(250)
-        basic.showLeds(`
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                . . . . .
-                `)
-        pause(250)
+        // basic.showLeds(`
+        //         . . # . .
+        //         . . # . .
+        //         # # # # #
+        //         . . # . .
+        //         . . # . .
+        //         `)
+        // // waits 0.5 seconds and turns LED blank
+        // pause(250)
+        // basic.showLeds(`
+        //         . . . . .
+        //         . . . . .
+        //         . . . . .
+        //         . . . . .
+        //         . . . . .
+        //         `)
+        // pause(250)
     }
-    let block0 = new VL53L0X.vl53l0x(addresses.block0);
-    let block1 = new VL53L0X.vl53l0x(addresses.block1);
-    let block2 = new VL53L0X.vl53l0x(addresses.block0);
     enum notes {
         C = 292,
         E = 330,
-        G = 392
+        G = 392,
+        Gs = 415,
+        B = 494,
+        D = 587
     }
-    /**
-     * This will set up the music block connections, if one is not connected, it won't be used
-    */
-    //% help=MainBody/Make-Main-Body blockGap=8 advanced=false
-    //% blockId=MainBody_CheckBlocksConnected block="check if music|blocks are connected" weight=7
-    //% group="Music Block Interaction"
-    //% weight=45
-    export function checkBlocksConnected(): void {
-        if (!block0.started) {
-            block0 = new VL53L0X.vl53l0x(addresses.block0)
-        }
-        if (!block1.started) {
-            block1 = new VL53L0X.vl53l0x(addresses.block1)
-        }
-        if (!block2.started) {
-            block0 = new VL53L0X.vl53l0x(addresses.block2)
-        }
+    // this function select with channel to write to and read from
+    function tcaselect(channel: number) {
+        // Select the channel by writing the channel mask to the multiplexer
+        pins.i2cWriteNumber(
+            addresses.TCAADDR,
+            1 << channel,
+            NumberFormat.UInt8BE,
+            false
+        )
     }
     /** 
     * This will be a threaded function used to check if the music-block module is connected
@@ -233,24 +210,107 @@ namespace MainBody {
     //% group="Music Block Interaction"
     //% weight=45
     export function interactMusicBlock(mainbody: mainBody): void {
-        let musicBlockInput: number[] = [0, 0, 0]
+        // music.setVolume(255)
+        // music.playTone(notes.C, 300)
+        // music.playTone(notes.E, 300)
+        // music.playTone(notes.G, 300)
+        // select 1st sensor connecting to port 0
+        tcaselect(0)
+        Rangefinder.init()
+        let distance0: number = Rangefinder.distance()
+        let volume0 = 0xFF - distance0 * 255 / 200
+
+        // select 2nd sensor connecting to port 1
+        tcaselect(1)
+        Rangefinder.init()
+        let distance1: number = Rangefinder.distance()
+        let volume1 = 0xFF - distance1 * 255 / 200
+
+        // select 3rd sensor connecting to port 2
+        tcaselect(2)
+        Rangefinder.init()
+        let distance2: number = Rangefinder.distance()
+        let volume2 = 0xFF - distance2 * 255 / 200
+
         // 0 will be C, 1 will be E, 2 will be G (C major chord)
-        // distance-from-finger input is 8-bit (1-byte) unsigned, big-endian integer
-        // this is put into music_block array
+        // If < 2 blocks connected, respective chord will be played
+        // C major for block 0, E major for 1, G major, for 2
+        // distance-from-finger input is between 0 and 2000 (max distance readable by TOF sensor)
         // if music block not connected, set to max distance
-        musicBlockInput[0] = block0.started ? block0.readSingleDistance() : 0xFF
-        musicBlockInput[1] = block1.started ? block1.readSingleDistance() : 0xFF
-        musicBlockInput[2] = block2.started ? block2.readSingleDistance() : 0xFF
-        // this vector is now written to the karaoke-module for playback
-        // arduino on karaoke module will handle playback of audio
-        // for (let i: number = addresses.block0; i < addresses.block2 + 1; i++) {
-        //     pins.i2cWriteNumber(addresses.karaoke, musicBlockInput[i - addresses.block0], NumberFormat.Int8BE, false)
-        // }
-        music.setVolume(0xFF - musicBlockInput[0])
-        music.play(music.tonePlayable(notes.C, 20), music.PlaybackMode.UntilDone)
-        music.setVolume(0xFF - musicBlockInput[1])
-        music.play(music.tonePlayable(notes.E, 20), music.PlaybackMode.UntilDone)
-        music.setVolume(0xFF - musicBlockInput[1])
-        music.play(music.tonePlayable(notes.G, 20), music.PlaybackMode.UntilDone)
+        // covers cases ***, **-, *-*, *--, -**, -*-, --*
+        if (distance0 != 0) {
+            if (distance1 != 0) {
+                if (distance2 != 0) {
+                    // 0 => C
+                    music.setVolume(volume0)
+                    music.playTone(notes.C, 150)
+                    // 1 => E
+                    music.setVolume(volume1)
+                    music.playTone(notes.E, 150)
+                    // 2 => G
+                    music.setVolume(volume2)
+                    music.playTone(notes.G, 150)
+                }
+                else {
+                    // 0 => C major
+                    music.setVolume(volume0)
+                    music.playTone(notes.C, 100)
+                    music.playTone(notes.E, 100)
+                    music.playTone(notes.G, 100)
+                    // 1 => E major
+                    music.setVolume(volume1)
+                    music.playTone(notes.E, 100)
+                    music.playTone(notes.Gs, 100)
+                    music.playTone(notes.B, 100)
+                }
+            }
+            else if (distance2 != 0) {
+                // 0 => C major
+                music.setVolume(volume0)
+                music.playTone(notes.C, 100)
+                music.playTone(notes.E, 100)
+                music.playTone(notes.G, 100)
+                // 2 => G major
+                music.setVolume(volume2)
+                music.playTone(notes.G, 100)
+                music.playTone(notes.B, 100)
+                music.playTone(notes.D, 100)
+            }
+            else {
+                // 0 => C major
+                music.setVolume(volume0)
+                music.playTone(notes.C, 100)
+                music.playTone(notes.E, 100)
+                music.playTone(notes.G, 100)
+            }
+        }
+        else if (distance1 != 0) {
+            if (distance2 != 0) {
+                // 1 => E major
+                music.setVolume(volume1)
+                music.playTone(notes.E, 100)
+                music.playTone(notes.Gs, 100)
+                music.playTone(notes.B, 100)
+                // 2 => G Major
+                music.setVolume(volume2)
+                music.playTone(notes.G, 100)
+                music.playTone(notes.B, 100)
+                music.playTone(notes.D, 100)
+            }
+            else {
+                // 1 => E major
+                music.setVolume(volume1)
+                music.playTone(notes.E, 100)
+                music.playTone(notes.Gs, 100)
+                music.playTone(notes.B, 100)
+            }
+        }
+        else if (distance2 != 0) {
+            // 2 => G Major
+            music.setVolume(volume2)
+            music.playTone(notes.G, 100)
+            music.playTone(notes.B, 100)
+            music.playTone(notes.D, 100)
+        }
     }
 }

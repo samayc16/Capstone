@@ -45,7 +45,7 @@ namespace MicroBit {
                 . . . . .
                 `)
                 // waits 3 seconds and turns LED blank
-                pause(3000)
+                pause(200)
                 basic.showLeds(`
                 . . . . .
                 . . . . .
@@ -58,6 +58,7 @@ namespace MicroBit {
             pause(1)
             ms += 1
         }
+        microbit.isTesting = false;
     }
     /** 
     * This will return true if testing, false if not
