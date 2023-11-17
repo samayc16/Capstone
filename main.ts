@@ -12,9 +12,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (MicroBit.isTesting(mainbody)) {
-        MainBody.testKaraoke(mainbody)
+        MainBody.testButton(mainbody)
     } else {
-        MainBody.interactKaraoke(mainbody)
+        MainBody.interactButton(mainbody)
     }
 })
 basic.forever(function () {

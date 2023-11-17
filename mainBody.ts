@@ -18,7 +18,7 @@ namespace MainBody {
     }
     export enum addresses {  // enumeration of I2C addresses used by all modules
         mainBody = 0,        // I2C addresses [0 : 15]  reserved for this module, 0x00
-        karaoke = 16,        // I2C addresses [16 : 31] reserved for this module, 0x10
+        button = 16,         // I2C addresses [16 : 31] reserved for this module, 0x10
         display = 32,        // I2C addresses [32 : 47] reserved for this module, 0x20
         wheel = 48,          // I2C addresses [48 : 63] reserved for this module, 0x30
         TCAADDR = 0x73       // Addr of mux for music blocks: 0x73
@@ -45,13 +45,13 @@ namespace MainBody {
         return new mainBody()
     }
     /** 
-     * This will be a threaded function used to test the karaoke Module
+     * This will be a threaded function used to test the button Module
     */
-    //% help=MainBody/Test-Karaoke blockGap=8 advanced=false
-    //% blockId=MainBody_Appendages_TestKaraoke block="test the karaoke|appendage with %mainBody" weight=7
-    //% group="Karaoke Interaction"
+    //% help=MainBody/Test-Button blockGap=8 advanced=false
+    //% blockId=MainBody_Appendages_TestButton block="test the button|appendage with %mainBody" weight=7
+    //% group="Button Interaction"
     //% weight=45
-    export function testKaraoke(mainbody: mainBody): void {
+    export function testButton(mainbody: mainBody): void {
         // basic.showLeds(`
         //         . . . . .
         //         . . . . .
@@ -71,23 +71,15 @@ namespace MainBody {
         // pause(250)
     }
     /** 
-     * This will be a threaded function used to check if karaoke module is connected
-     * 
-     * will use line-in mic on karaokeModule for playback
-     * 
-     * will use line-out speaker to play polyphoniously
-     * 
-     * no actual need to do anything with karaoke module and main body besides provide power
-     * 
-     * this module will be needed though for music-block playback
+     * This will be a threaded function used to check if button module is connected
     */
-    //% help=MainBody/Interact-Karaoke blockGap=8 advanced=false
-    //% blockId=MainBody_Appendages_InteractKaraoke block="interact with karaoke|appendage with %mainBody" weight=7
-    //% group="Karaoke Interaction"
+    //% help=MainBody/Interact-Button blockGap=8 advanced=false
+    //% blockId=MainBody_Appendages_InteractButton block="interact with button|appendage with %mainBody" weight=7
+    //% group="Button Interaction"
     //% weight=45
-    export function interactKaraoke(mainbody: mainBody): void {
-        let karaokeInput: number = 0
-        let karaokeOutput: number = 0
+    export function interactButton(mainbody: mainBody): void {
+        let buttonInput: number = 0
+        let buttonOutput: number = 0
 
     }
 
@@ -153,7 +145,7 @@ namespace MainBody {
     }
 
     /** 
-     * This will be a threaded function used to test the karaoke Module
+     * This will be a threaded function used to test the Music Block Module
     */
     //% help=MainBody/Test-Music-Block blockGap=8 advanced=false
     //% blockId=MainBody_Appendages_TestMusicBlock block="test the music-block|appendage with %mainBody" weight=7
@@ -218,19 +210,19 @@ namespace MainBody {
         tcaselect(0)
         Rangefinder.init()
         let distance0: number = Rangefinder.distance()
-        let volume0 = 0xFF - distance0 * 255 / 200
+        let volume0 = distance0 > 300 ? 0 : 0xFF - distance0 * 255 / 200
 
         // select 2nd sensor connecting to port 1
         tcaselect(1)
         Rangefinder.init()
         let distance1: number = Rangefinder.distance()
-        let volume1 = 0xFF - distance1 * 255 / 200
+        let volume1 = distance1 > 300 ? 0 : 0xFF - distance1 * 255 / 200
 
         // select 3rd sensor connecting to port 2
         tcaselect(2)
         Rangefinder.init()
         let distance2: number = Rangefinder.distance()
-        let volume2 = 0xFF - distance2 * 255 / 200
+        let volume2 = distance2 > 300 ? 0 : 0xFF - distance2 * 255 / 200
 
         // 0 will be C, 1 will be E, 2 will be G (C major chord)
         // If < 2 blocks connected, respective chord will be played
